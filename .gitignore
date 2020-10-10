@@ -1,0 +1,5 @@
+node_modules/
+# public-pages/
+*.lock
+*-lock.json
+*.log
