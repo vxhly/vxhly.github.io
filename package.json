@@ -4,8 +4,8 @@
   "license": "MIT",
   "author": "vxhly <pengchengou@gmail.com>",
   "scripts": {
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs",
+    "dev": "vuepress dev gh-article",
+    "build": "vuepress build gh-article",
     "deploy": "bash deploy.sh"
   },
   "devDependencies": {
