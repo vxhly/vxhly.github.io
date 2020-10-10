@@ -1,3 +1,4 @@
 node_modules/
 publish-pages
 *.log
+*-lock.*
