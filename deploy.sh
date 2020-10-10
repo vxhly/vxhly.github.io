@@ -5,7 +5,7 @@ set -e
 
 date=`date +"%Y-%m-%d %H:%M:%S"`
 commitmsg='Site updated: '$date
-yarn build
+# yarn build
 git add -A
 git commit -m "$commitmsg"
 git config --local user.name vxhly
