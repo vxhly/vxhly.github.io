@@ -142,7 +142,7 @@ $ npm install [module-name] -E
 ### 查看依赖包的所有的版本号
 
 ``` bash
-$ npm info [package-name] version
+$ npm info [package-name] versions
 ```
 
 ### 创建 package.json 文件

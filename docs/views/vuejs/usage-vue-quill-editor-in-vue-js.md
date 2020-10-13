@@ -446,7 +446,7 @@ export default {
    }
 }
 </script>
-``
+```
 
 ::: tip 场景五
 默认的 vue-quill-editor 设置工具栏的是没有对图片进行限制大小处理的, 我们需要重写上传图片的监听
