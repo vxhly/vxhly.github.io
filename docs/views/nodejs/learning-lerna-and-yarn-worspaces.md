@@ -84,6 +84,7 @@ monorepo 是比较于 multi-package 的。multi-package 就是建立多个仓库
 
 ::: tip 提示
 这边节选 [vue-next](https://github.com/vuejs/vue-next) 的项目结构来讲解实现过程
+贴上我已经实现好的 [my-lerna-repo](https://github.com/vxhly/my-lerna-repo)
 :::
 
 创建目录结构如下
@@ -102,4 +103,28 @@ my-lerna-repo
 
 ``` bash
 lerna init my-lerna-repo
+```
+
+修改你的 `lerna.json` 来支持 yarn workspaces
+
+``` json
+{
+  "npmClient": "yarn",
+  "packages": [
+    "packages/*"
+  ],
+  "version": "1.0.0",
+  "useWorkspaces": true
+}
+```
+
+还需要在 `package.json` 中添加以下配置来开启 yarn workspaces
+
+``` json
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
+}
 ```
