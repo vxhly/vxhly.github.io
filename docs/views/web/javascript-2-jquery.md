@@ -9,7 +9,7 @@ date: 2019-01-06 12:11:18
 <Boxx changeTime="10000"/>
 
 ::: tip 前言
-提供 jQuery 中的 $()、siblings()、addClass()、hasClass()、removeClass()、toggleClass() 等方法的原生 JavaScript 实现方法, 以下方法适用于 Vue.js 项目
+提供 jQuery 中的 $()、siblings()、addClass()、hasClass()、removeClass()、toggleClass() 等方法的原生 JavaScript 实现方法, 以下方法适用于 Vue.js 项目。
 :::
 <!-- more -->
 

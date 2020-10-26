@@ -9,7 +9,7 @@ date: 2020-08-19 14:14:13
 <Boxx changeTime="10000"/>
 
 ::: tip 前言
-主要介绍 pnpm 的使用, 以及如何使用 pnpm 解决 node 依赖包庞大的问题。pnpm 依赖于 Node.js, 童鞋们要注意你的系统是否有 Node.js 环境
+主要介绍 pnpm 的使用, 以及如何使用 pnpm 解决 node 依赖包庞大的问题。pnpm 依赖于 Node.js, 童鞋们要注意你的系统是否有 Node.js 环境。
 :::
 <!-- more -->
 

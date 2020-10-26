@@ -9,7 +9,7 @@ date: 2016-10-14 19:25:27
 <Boxx changeTime="10000"/>
 
 ::: tip 前言
-本篇是 Liunx 的学习笔记系列第七篇, 在 Liunx 中文件除了 rwx 权限, 还存在 SetUID 、 SetGID 、 Sicky BIT 特殊权限, 本篇就是来介绍这些特殊权限
+本篇是 Liunx 的学习笔记系列第七篇, 在 Liunx 中文件除了 rwx 权限, 还存在 SetUID 、 SetGID 、 Sicky BIT 特殊权限, 本篇就是来介绍这些特殊权限。
 :::
 <!-- more -->
 

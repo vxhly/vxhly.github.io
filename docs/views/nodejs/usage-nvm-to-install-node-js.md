@@ -9,7 +9,7 @@ date: 2016-07-31 15:11:44
 <Boxx changeTime="10000"/>
 
 ::: tip 前言
-安装 Node.js 的最佳方式是使用 nvm。nvm 最开始是在 `Mac OS` 下开发的, 所以 `Mac OS` 下同样使用 nvm 安装 Node.js
+安装 Node.js 的最佳方式是使用 nvm。nvm 最开始是在 `Mac OS` 下开发的, 所以 `Mac OS` 下同样使用 nvm 安装 Node.js。
 :::
 <!-- more -->
 

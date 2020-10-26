@@ -9,7 +9,7 @@ date: 2017-09-03 20:46:08
 <Boxx changeTime="10000"/>
 
 ::: tip 前言
-简单的一些 Liunx 命令练习
+简单的一些 Liunx 命令练习。
 :::
 <!-- more -->
 

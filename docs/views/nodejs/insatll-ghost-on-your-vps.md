@@ -9,7 +9,7 @@ date: 2017-06-02 14:53:49
 <Boxx changeTime="10000"/>
 
 ::: tip 前言
-Ghost 采用 Node.js 编写, 默认使用 SQLite3 数据库, 非常轻量, 因为是文件型数据库, 所以无需安装。Ghost 允许多用户编写博文, 使用 Markdown 来编写博文
+Ghost 采用 Node.js 编写, 默认使用 SQLite3 数据库, 非常轻量, 因为是文件型数据库, 所以无需安装。Ghost 允许多用户编写博文, 使用 Markdown 来编写博文。
 :::
 <!-- more -->
 

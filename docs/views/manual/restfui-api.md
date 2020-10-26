@@ -9,7 +9,7 @@ date: 2017-09-29 12:17:33
 <Boxx changeTime="10000"/>
 
 ::: tip 前言
-网络应用程序, 分为前端和后端两个部分。这时候必须有一种统一的机制, 方便不同的前端设备与后端进行通信。这导致 API 构架的流行, 甚至出现 "API First" 的设计思想。[ `RESTful API` ](http://en.wikipedia.org/wiki/Representational_state_transfer) 是目前比较成熟的一套互联网应用程序的 API 设计理论
+网络应用程序, 分为前端和后端两个部分。这时候必须有一种统一的机制, 方便不同的前端设备与后端进行通信。这导致 API 构架的流行, 甚至出现 "API First" 的设计思想。[ `RESTful API` ](http://en.wikipedia.org/wiki/Representational_state_transfer) 是目前比较成熟的一套互联网应用程序的 API 设计理论。
 :::
 <!-- more -->
 

@@ -9,7 +9,7 @@ date: 2020-09-14 09:14:10
 <Boxx changeTime="10000"/>
 
 ::: tip 前言
-收集常用的 JavaScript 库或者 CSS 库的 CDN 地址, 并且提供 JavaScript 在 window 对象中的全局名字.
+收集常用的 JavaScript 库或者 CSS 库的 CDN 地址, 并且提供 JavaScript 在 window 对象中的全局名字。
 :::
 <!-- more -->
 

@@ -9,7 +9,7 @@ date: 2016-08-02 15:29:46
 <Boxx changeTime="10000"/>
 
 ::: tip 前言
-Ubuntu 默认不开启 root 账户的, 所以有需开启 root 账户的按照以下做法即可, 切换 root 账户后 chromium 浏览器不能使用 
+Ubuntu 默认不开启 root 账户的, 所以有需开启 root 账户的按照以下做法即可, 切换 root 账户后 chromium 浏览器不能使用。
 :::
 <!-- more -->
 

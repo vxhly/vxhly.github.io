@@ -9,7 +9,7 @@ date: 2018-05-14 14:25:43
 <Boxx changeTime="10000"/>
 
 ::: tip 前言
-目前, 社区有多种 Commit message 的写法规范。本文介绍 [Angular 规范](https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit#heading=h.greljkmo14y0) 是目前使用最广的写法, 比较合理和系统化, 并且有配套的工具。前前端框架 [Angular.js](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md#toc10) 采用的就是该规范
+目前, 社区有多种 Commit message 的写法规范。本文介绍 [Angular 规范](https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit#heading=h.greljkmo14y0) 是目前使用最广的写法, 比较合理和系统化, 并且有配套的工具。前前端框架 [Angular.js](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md#toc10) 采用的就是该规范。
 :::
 <!-- more -->
 

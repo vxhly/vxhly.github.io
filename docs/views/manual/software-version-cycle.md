@@ -9,7 +9,7 @@ date: 2018-10-21 19:13:55
 <Boxx changeTime="10000"/>
 
 ::: tip 前言
-软件版本周期是指计算机软件的发展及发行过程, 从Pre-alpha（准预览版本）发展到Alpha（预览版本）、Beta（测试版本）、Released candidate （最终测试版本）至最后的Gold（完成版
+软件版本周期是指计算机软件的发展及发行过程, 从Pre-alpha（准预览版本）发展到Alpha（预览版本）、Beta（测试版本）、Released candidate （最终测试版本）至最后的Gold（完成版）。
 :::
 <!-- more -->
 

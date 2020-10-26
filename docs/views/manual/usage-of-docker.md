@@ -9,7 +9,7 @@ date: 2019-03-26 14:41:23
 <Boxx changeTime="10000"/>
 
 ::: tip 前言
-Docker 是一个开源的应用容器引擎, 基于 Go 语言 并遵从Apache2.0协议开源。 Docker 可以让开发者打包他们的应用以及依赖包到一个轻量级、可移植的容器中, 然后发布到任何流行的 Linux 机器上, 也可以实现虚拟化
+Docker 是一个开源的应用容器引擎, 基于 Go 语言 并遵从Apache2.0协议开源。 Docker 可以让开发者打包他们的应用以及依赖包到一个轻量级、可移植的容器中, 然后发布到任何流行的 Linux 机器上, 也可以实现虚拟化。
 :::
 <!-- more -->
 
@@ -347,14 +347,12 @@ irb(main):001:0> quit
 version: '3'
 
 services:
-    npm - private:
-    container_name: npm - private
-image: verdaccio / verdaccio
-restart: always
-ports:
-
-    - '4873:4873'
-
+  npm-private:
+    container_name: npm-private
+    image: verdaccio/verdaccio
+    restart: always
+    ports:
+      - '4873:4873'
     
 ```
 

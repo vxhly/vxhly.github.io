@@ -9,7 +9,7 @@ date: 2016-08-02 18:59:24
 <Boxx changeTime="10000"/>
 
 ::: tip 前言
-记录 windows 下常用的 CMD 命令
+记录 windows 下常用的 CMD 命令。
 :::
 <!-- more -->
 

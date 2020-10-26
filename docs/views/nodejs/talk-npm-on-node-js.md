@@ -9,7 +9,7 @@ date: 2016-08-26 15:30:10
 <Boxx changeTime="10000"/>
 
 ::: tip 前言
-主要介绍 npm 中的各个选项的作用以及其区别。npm 依赖于 Node.js, 童鞋们要注意你的系统是否有 Node.js 环境
+主要介绍 npm 中的各个选项的作用以及其区别。npm 依赖于 Node.js, 童鞋们要注意你的系统是否有 Node.js 环境。
 :::
 <!-- more -->
 

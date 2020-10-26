@@ -9,7 +9,7 @@ date: 2016-08-07 19:21:58
 <Boxx changeTime="10000"/>
 
 ::: tip 前言
-通过 JavaScript 原生方法, 获取 URL 所带的请求参数备用
+通过 JavaScript 原生方法, 获取 URL 所带的请求参数备用。
 :::
 <!-- more -->
 

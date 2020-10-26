@@ -9,7 +9,7 @@ date: 2017-08-15 21:42:25
 <Boxx changeTime="10000"/>
 
 ::: tip 前言
-SSH 是每一台 Linux 系统的标准配置服务, 本文将总结 SSH 的常见用法
+SSH 是每一台 Linux 系统的标准配置服务, 本文将总结 SSH 的常见用法。
 :::
 <!-- more -->
 

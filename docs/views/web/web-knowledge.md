@@ -9,7 +9,7 @@ date: 2018-01-07 14:36:27
 <Boxx changeTime="10000"/>
 
 ::: tip 前言
-WEB 技术基础知识点（包含: HTML、CSS、JavaScript 三大块知点点集合）
+WEB 技术基础知识点（包含: HTML、CSS、JavaScript 三大块知点点集合）。
 :::
 <!-- more -->
 

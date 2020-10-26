@@ -9,7 +9,7 @@ date: 2016-10-28 16:59:57
 <Boxx changeTime="10000"/>
 
 ::: tip 前言
-这篇文章主要介绍了 JavaScript 中 DOM 0 级事件和 DOM 2 级事件的区别介绍
+这篇文章主要介绍了 JavaScript 中 DOM 0 级事件和 DOM 2 级事件的区别介绍。
 :::
 <!-- more -->
 

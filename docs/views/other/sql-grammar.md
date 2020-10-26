@@ -9,7 +9,7 @@ date: 2018-01-23 17:04:08
 <Boxx changeTime="10000"/>
 
 ::: tip 前言
-整理了下 SQL 语法基础, 适用于 SQL server 和 MySQL, 本博文皆为实例 SQL 语句仅供参考
+整理了下 SQL 语法基础, 适用于 SQL server 和 MySQL, 本博文皆为实例 SQL 语句仅供参考。
 :::
 <!-- more -->
 

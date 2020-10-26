@@ -9,7 +9,7 @@ date: 2016-09-30 19:36:02
 <Boxx changeTime="10000"/>
 
 ::: tip 前言
-JDK 是 Java 语言的软件开发工具包, 主要用于移动设备、嵌入式设备上的 java 应用程序。JDK 是整个 java 开发的核心, 它包含了 JAVA 的运行环境, JAVA 工具和 JAVA 基础的类库。这里将介绍在 Windows 下 JDK 的安装和环境变量的配置
+JDK 是 Java 语言的软件开发工具包, 主要用于移动设备、嵌入式设备上的 java 应用程序。JDK 是整个 java 开发的核心, 它包含了 JAVA 的运行环境, JAVA 工具和 JAVA 基础的类库。这里将介绍在 Windows 下 JDK 的安装和环境变量的配置。
 :::
 <!-- more -->
 

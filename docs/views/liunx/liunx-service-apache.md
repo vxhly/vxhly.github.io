@@ -9,7 +9,7 @@ date: 2016-09-19 14:58:33
 <Boxx changeTime="10000"/>
 
 ::: tip 前言
-本篇是 Liunx 的服务配置笔记系列第四篇, 这一篇将具体介绍 Red Hat Liunx 下 APACHE 服务的安全配置。所谓 APACHE 就是一个 WEB 服务器, 为 WEB 网页提供服务
+本篇是 Liunx 的服务配置笔记系列第四篇, 这一篇将具体介绍 Red Hat Liunx 下 APACHE 服务的安全配置。所谓 APACHE 就是一个 WEB 服务器, 为 WEB 网页提供服务。
 :::
 <!-- more -->
 

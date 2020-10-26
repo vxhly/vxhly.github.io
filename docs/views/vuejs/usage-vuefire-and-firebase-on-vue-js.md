@@ -9,7 +9,7 @@ date: 2019-11-21 11:12:31
 <Boxx changeTime="10000"/>
 
 ::: tip 前言
-Vue.js 中使用 vuefire 和 firebase 的入坑笔记
+Vue.js 中使用 vuefire 和 firebase 的入坑笔记。
 :::
 <!-- more -->
 

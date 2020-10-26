@@ -9,7 +9,7 @@ date: 2016-09-15 18:59:15
 <Boxx changeTime="10000"/>
 
 ::: tip 前言
-Liunx 的学习笔记已经推出有一段时间了, 现继续推出在 Liunx 中 SAMBA 服务、SSH 服务、FTP 服务、APACHE 服务、DNS 服务的安全配置。本文就先介绍这几个服务的相关内容
+Liunx 的学习笔记已经推出有一段时间了, 现继续推出在 Liunx 中 SAMBA 服务、SSH 服务、FTP 服务、APACHE 服务、DNS 服务的安全配置。本文就先介绍这几个服务的相关内容。
 :::
 <!-- more -->
 

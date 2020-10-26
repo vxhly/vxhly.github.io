@@ -9,7 +9,7 @@ date: 2017-05-29 17:11:30
 <Boxx changeTime="10000"/>
 
 ::: tip 前言
-MongoDB 是目前在 IT 行业非常流行的一种非关系型数据库 (NoSql), 其灵活的数据存储方式备受当前 IT 从业人员的青睐。这里主要讲如何在 Windows 平台下安装 MongoDB
+MongoDB 是目前在 IT 行业非常流行的一种非关系型数据库 (NoSql), 其灵活的数据存储方式备受当前 IT 从业人员的青睐。这里主要讲如何在 Windows 平台下安装 MongoDB。
 :::
 <!-- more -->
 

@@ -9,7 +9,7 @@ date: 2016-09-19 19:33:21
 <Boxx changeTime="10000"/>
 
 ::: tip 前言
-本篇是 Liunx 的服务配置笔记系列第五篇, 这一篇将具体介绍 Red Hat Liunx 下 SAMBA 服务的安全配置。所谓 SAMBA 就是建立 Liunx 和 Windows 之间的共享, 使 Windows 能够访问 Liunx 下共享出来的文件
+本篇是 Liunx 的服务配置笔记系列第五篇, 这一篇将具体介绍 Red Hat Liunx 下 SAMBA 服务的安全配置。所谓 SAMBA 就是建立 Liunx 和 Windows 之间的共享, 使 Windows 能够访问 Liunx 下共享出来的文件。
 :::
 <!-- more -->
 

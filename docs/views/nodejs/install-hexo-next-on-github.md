@@ -9,7 +9,7 @@ date: 2016-08-03 13:11:30
 <Boxx changeTime="10000"/>
 
 ::: tip 前言
-Hexo 是一个快速, 简单而高效的静态博客框架, 本文将介绍如何在 GitHub 上使用 Hexo+NexT 搭建静态博客
+Hexo 是一个快速, 简单而高效的静态博客框架, 本文将介绍如何在 GitHub 上使用 Hexo+NexT 搭建静态博客。
 :::
 <!-- more -->
 
