@@ -140,3 +140,53 @@ lerna create <pkgName>
 ```
 
 执行这个命令后, 会问一些包名啊, 版本等问题和执行 npm init 后问的差不多, 填完这些问题后包就会自动创建一个子包。子包默认的目录结构如下
+
+### 为子包单独安装依赖
+
+``` bash
+lerna add <packageName2> --scope <packageName1>
+```
+
+如果你的仓库里的子包需要互相依赖也可用以上命令来安装
+
+例如：子包1 为 '@demo/packageName1', 子包2 为 '@demo/packageName2', 要为子包1 安装子包2 的依赖, 你可以这样做, 注意要在项目的根目录执行以下命令
+
+``` bash
+lerna add @demo/packageName2 --scope @demo/packageName1
+```
+
+### 为仓库安装依赖
+
+``` bash
+lerna bootstrap
+```
+
+以上命令可以为仓库安装所有子包的依赖
+
+### 发布和更新 package
+
+``` bash
+lerna publish
+```
+
+发布当前项目
+他创建一个新的 release, 生成新的版本, 执行 `git commit/tag` 并发布到npm
+
+发布项目里的每个模块
+执行 `lerna updated` 确定是否需要发布
+假如需要发布 给 lerna.json 版本号做自增
+更新 package.json 里的版本号至最新
+为新版本更新 dependencies
+为新版本创建一个 git commit 和 tag
+发布更新项目到 npm
+一次发布所有 packages, 删除 `lerna-temp` `tags` 和增加 tags 到 latest
+通过在 package.json 中标记 `"private": true`,将使该包不发布
+
+### 删除子包中的依赖项
+
+``` bash
+lerna clean
+```
+
+从所有软件包中删除 `node_modules` 目录。
+`lerna clean` 尊重 `--ignore` 和 `--scope` 标志（请参阅标志）。
