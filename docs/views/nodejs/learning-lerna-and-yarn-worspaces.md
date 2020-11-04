@@ -128,3 +128,9 @@ lerna init my-lerna-repo
   ]
 }
 ```
+
+接着就是安装依赖项, 你可以通过以下命令来安装
+
+``` bash
+lerna bootstrap
+```
