@@ -184,6 +184,24 @@ lerna publish
 一次发布所有 packages, 删除 `lerna-temp` `tags` 和增加 tags 到 latest
 通过在 package.json 中标记 `"private": true`,将使该包不发布
 
+::: warning 注意
+以@开头包的发布问题
+:::
+
+发布 package 的名字如果是以@开头的, 例如 @feu/tools, npm默认以为是私人发布, 需要使用 `npm publish --access public` 发布。但是 `lerna publish` 不支持该参数, 解决方法参考: [issues](https://github.com/lerna/lerna/issues/914)
+
+方案参考:
+
+``` json
+// package.json
+{
+ "name": "@feu/tools",
+ "publishConfig": {
+   "access": "public" 	// 如果该模块需要发布，对于scope模块，需要设置为publish，否则需要权限验证
+  }
+}
+```
+
 ### 删除子包中的依赖项
 
 ``` bash
