@@ -1613,6 +1613,12 @@ const randomItem = arr => arr[(Math.random() * arr.length) | 0];
 
 ## 字符串
 
+### 截取最后一个反斜杠后的内容
+
+``` javascript
+const intercept = (str) => str.substring(str.lastIndexOf('/') + 1, str.length)
+```
+
 ### 大写字符串
 
 ``` javascript
