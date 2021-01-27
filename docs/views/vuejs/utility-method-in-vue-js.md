@@ -922,9 +922,9 @@ require.context(directory,useSubdirectories,regExp)
 ::: tip 场景
 场景: 一个长列表数据,一般不会更改,但是vue会做getter和setter的转换
 
-用法: 是ES5新增的特性，可以冻结一个对象，防止对象被修改
+用法: 是ES5新增的特性, 可以冻结一个对象, 防止对象被修改
 
-支持: vue 1.0.18+对其提供了支持，对于data或vuex里使用freeze冻结了的对象，vue不会做getter和setter的转换
+支持: vue 1.0.18+对其提供了支持, 对于data或vuex里使用freeze冻结了的对象, vue不会做getter和setter的转换
 
 注意: 冻结只是冻结里面的单个属性,引用地址还是可以更改
 :::
@@ -942,7 +942,7 @@ new Vue({
         // 界面不会有响应,因为单个属性被冻结
         this.list[0].value = 100;
 
-        // 下面两种做法，界面都会响应
+        // 下面两种做法, 界面都会响应
         this.list = [
             { value: 100 },
             { value: 200 }

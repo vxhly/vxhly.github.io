@@ -48,7 +48,7 @@ const clone = arr => JSON.parse(JSON.stringify(arr));
 const clone = arr => arr.concat([]);
 ```
 
-### 比较两个数组，而不考虑顺序
+### 比较两个数组, 而不考虑顺序
 
 ``` javascript
 // `a` and `b` are arrays
@@ -1616,7 +1616,13 @@ const randomItem = arr => arr[(Math.random() * arr.length) | 0];
 ### 截取最后一个反斜杠后的内容
 
 ``` javascript
-const intercept = (str) => str.substring(str.lastIndexOf('/') + 1, str.length)
+const interceptAfter = (str) => str.substring(str.lastIndexOf('/') + 1, str.length)
+```
+
+### 截取最后一个反斜杠前的内容
+
+``` javascript
+const interceptBefore = (str) => str.substring(0, str.lastIndexOf('/') + 1)
 ```
 
 ### 大写字符串
@@ -1725,7 +1731,7 @@ toUnixPath('./foo/bar/baz');        // foo/bar/baz
 toUnixPath('C:\\foo\\bar\\baz');    // /foo/bar/baz
 ```
 
-### 将驼峰命名法转换为 kebab-case 形式，反之亦然
+### 将驼峰命名法转换为 kebab-case 形式, 反之亦然
 
 ``` javascript
 const kebabToCamel = str => str.replace(/-./g, m => m.toUpperCase()[1]);

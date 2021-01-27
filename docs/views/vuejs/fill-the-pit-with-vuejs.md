@@ -20,6 +20,7 @@ date: 2017-09-11 16:55:20
 控制台运行命令: `npm install --global vue-migration-helper` CLI 工具来帮助项目从 Vue 1.x 迁移到 2.x。 它扫描文件以查找特定于 Vue 的代码, 并对需要升级的代码提供详细的警告。 vue-migration-helper 的介绍说明告诉我们它大概能捕获 80% 的升级帮助信息, 而不是全部。所以终端输出的帮助信息并不是完全正确的, 在升级时不要盲目 copy & paste , 还是要根据实际情况去改写。
 
 进入当前的项目: 运行: `vue-migration-helper`
+
 具体升级指南, 请参照[官方文档-从 Vue 1.x 迁移](https://cn.vuejs.org/v2/guide/migration.html)
 
 ## 给与 Windows 用户的一条强烈建议
@@ -516,7 +517,7 @@ instance.interceptors.request.use(
     config => {
 
         if (store.state.token) {
-            config.headers.Authorization = `token ${store.state.token}` .replace(
+            config.headers.Authorization = `token ${store.state.token}`.replace(
                 /(^")|("$)/g,
                 ""
             );
@@ -791,3 +792,72 @@ This is Vue Mark Display
     };
 </script>
 ```
+
+## 关于父组件通过 v-on 接收子组件多个参数
+
+写组件的时候遇到一个需求, 我需要在子组件向父组件传递信息
+
+``` javascript
+this.$emit('myEvent', 信息1, 信息2)
+```
+
+在父组件使用 `v-on` 来接收
+
+``` html
+<my-component @myEvent="handler" />
+```
+
+这样就可以接收到子组件传递的信息1和信息2, easy。
+
+``` javascript
+export default {
+    methods: {
+        handler(param1, param2) {
+            console.log(param1, param2) // => 信息1, 信息2
+        }
+    }
+}
+```
+
+但我需要在内联语句中传递一个额外参数, 平时子组件只附带一个参数的时候, 可以使用 `$event`
+
+``` html
+<my-component @myEvent="handler('extra parameter', $event)" />
+```
+
+但是 $event 只接收第一个参数, 也就是这么写只能接收到信息1
+
+``` javascript
+export default {
+    methods: {
+        handler(extra, param1, param2) {
+            console.log(extra, param1, param2) // => 'extra parameter', 信息1, undefined
+        }
+    }
+}
+```
+
+最后找到了一个解决办法
+
+``` html
+<my-component @myEvent="handler('extra parameter', arguments[0], arguments[1])" />
+```
+
+可以获取到参数了
+
+``` javascript
+export default {
+    methods: {
+        handler(extra, param1, param2) {
+            console.log(extra, param1, param2) // => 'extra parameter', 信息1, 信息2
+        }
+    }
+}
+```
+
+
+因为实际上这里的 `$event` 就是 `arguments[0]`, 下面这一段现在的 vue 文档上好像已经找不到了, 但是 `arguments` 还是可以用的
+
+![fix-vue-1](https://segmentfault.com/img/bVbfKqZ?w=800&h=599)
+
+多提一句, 当 `v-on` 的参数是 `dom` 事件时, `$event` 代表的是原生的 `event` 事件
