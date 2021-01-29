@@ -17,8 +17,6 @@ MongoDB 是目前在 IT 行业非常流行的一种非关系型数据库 (NoSql)
 
 [MongoDB 官网下载链接](http://www.mongodb.com/download-center?jmp=nav#community)
 
-如果被墙的话, 请点击 [mongodb-win32-x86_64-2008plus-ssl-3.4.1-signed.msi](https://vxhly.github.io/assets/mongodb-win32-x86_64-2008plus-ssl-3.4.1-signed.msi?attname=) 下载
-
 ## 手动简单的配置
 
 ### 配置环境变量
