@@ -26,7 +26,7 @@ console.log("The %s jumped over %d tall buildings", animal, count);
 console.log("The", animal, "jumped over", count, "tall buildings");
 ```
 
-![console.log](http://oss-blog.test.upcdn.net/debug-console-1.png)
+![console.log](https://vxhly.github.io/assets/debug-console-1.png)
 
 console 对象可以使用 printf 风格的占位符。支持的占位符, 有字符（%s）、整数（%d 或%i）、浮点数（%f）和对象（%o）四种。
 
@@ -47,7 +47,7 @@ console.log(
 );
 ```
 
-![console.log](http://oss-blog.test.upcdn.net/debug-console-2.png)
+![console.log](https://vxhly.github.io/assets/debug-console-2.png)
 
 以%c 开头, 后面的文字就打印的信息, 后面一个参数就是样式属性；可以尝试多个样式, 每碰到一个%c 开头就会应用对应的样式。
 
@@ -62,7 +62,7 @@ console.warn("this is warn");
 console.error("this is error");
 ```
 
-![console.log](http://oss-blog.test.upcdn.net/debug-console-3.png)
+![console.log](https://vxhly.github.io/assets/debug-console-3.png)
 
 ### console.debug(object)
 
@@ -112,7 +112,7 @@ console.log("第二组第二条");
 console.groupEnd();
 ```
 
-![分组显示信息](http://oss-blog.test.upcdn.net/debug-console-4.png)
+![分组显示信息](https://vxhly.github.io/assets/debug-console-4.png)
 
 console.groupCollapsed() 跟 console.group() 相同, 区别在于嵌套块默认是收起的。
 
@@ -130,7 +130,7 @@ dog.bark = function() {
 console.dir(dog);
 ```
 
-![console.dir](http://oss-blog.test.upcdn.net/debug-console-5.png)
+![console.dir](https://vxhly.github.io/assets/debug-console-5.png)
 
 ## console.dirxml(node)
 
@@ -141,7 +141,7 @@ var footer = document.getElementById("footer");
 console.dirxml(footer);
 ```
 
-![console.dirxml](http://oss-blog.test.upcdn.net/debug-console-6.png)
+![console.dirxml](https://vxhly.github.io/assets/debug-console-6.png)
 
 ## console.assert(expression)
 
@@ -157,7 +157,7 @@ var i = 5,
 console.assert(i < j);
 ```
 
-![console.assert](http://oss-blog.test.upcdn.net/debug-console-7.png)
+![console.assert](https://vxhly.github.io/assets/debug-console-7.png)
 
 # console.trace()
 
@@ -200,7 +200,7 @@ function add1(a, b) {
 
 运行后, 会显示 `add()` 的调用轨迹, 从上到下依次为 `add()` 、 `add1()` 、 `add2()` 、 `add3()` 。
 
-![console.trace](http://oss-blog.test.upcdn.net/debug-console-8.png)
+![console.trace](https://vxhly.github.io/assets/debug-console-8.png)
 
 ## console.time(name)
 
@@ -216,7 +216,7 @@ for (var i = 0; i < 1000; i++) {
 console.timeEnd("time");
 ```
 
-![console.time](http://oss-blog.test.upcdn.net/debug-console-9.png)
+![console.time](https://vxhly.github.io/assets/debug-console-9.png)
 
 注:  console.time(slugName) – console.timeEnd(slugName) 记录某一个 javascript 程序的执行时间, 可用于优化循环语句
 

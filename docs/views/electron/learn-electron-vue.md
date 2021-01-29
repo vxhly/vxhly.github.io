@@ -359,22 +359,21 @@ Build success
 1. 打开xcode主界面
 2. Xcode==>Preferences…
 
-![electron-mac](http://oss-blog.test.upcdn.net/electron-1.png)
+![electron-mac](https://vxhly.github.io/assets/electron-1.png)
 
 3. Accounts==>Apple IDs==>Manage Certificates…, 如果没有登录的话, 先登录Apple ID, 注意一定要登录开发者账号。登录成功后再进行Manage Certificates；
 
-![electron-mac](http://oss-blog.test.upcdn.net/electron-2.png)
+![electron-mac](https://vxhly.github.io/assets/electron-2.png)
 
 4. 添加“+”Developer ID Application,注意一定要添加Developer ID Application到钥匙串中, 不要选错了。
 
-![electron-mac](http://oss-blog.test.upcdn.net/electron-3.png)
+![electron-mac](https://vxhly.github.io/assets/electron-3.png)
 
 5. 成功添加到钥匙串我的证书中, 经过以上的步骤可以成功添加一个证书到钥匙串中的我的证书中。
 
-![electron-mac](http://oss-blog.test.upcdn.net/electron-4.png)
+![electron-mac](https://vxhly.github.io/assets/electron-4.png)
 
-![electron-mac](http://oss-blog.test.upcdn.net/electron-5.png)
+![electron-mac](https://vxhly.github.io/assets/electron-5.png)
 
 6. 正确签名之后, 打包成功！
 
-![electron-mac](http://oss-blog.test.upcdn.net/electron-6.png)

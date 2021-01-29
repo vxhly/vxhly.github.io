@@ -30,7 +30,7 @@ date: 2016-09-08 22:20:23
 
 ### vim 操作模式转换图
 
-![vim 操作模式转换图](http://oss-blog.test.upcdn.net/liunx-vim.png)
+![vim 操作模式转换图](https://vxhly.github.io/assets/liunx-vim.png)
 
 ### 插入命令
 

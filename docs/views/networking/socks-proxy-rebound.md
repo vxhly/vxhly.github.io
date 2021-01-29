@@ -72,7 +72,7 @@ cd ssocks-0.0.14/src
 
 等待远程 Socks5 服务器访问本地 1080 端口, 创建端口 1080 与本地端口 1088 的连接通道<br>
 
-![Socks 代理](http://oss-blog.test.upcdn.net/socks-proxy-1.png)
+![Socks 代理](https://vxhly.github.io/assets/socks-proxy-1.png)
 
 ### 开启 Socks5 代理服务, 反弹
 
@@ -85,11 +85,11 @@ cd ssocks-0.0.14/src
 
 启用 Socks5 服务, 反弹到 `192.168.199.130` （即 `kali Liunx` ） 的端口 1080 上<br>
 
-![Socks 代理](http://oss-blog.test.upcdn.net/socks-proxy-2.png)
+![Socks 代理](https://vxhly.github.io/assets/socks-proxy-2.png)
 
 此时在渗透测试端 `192.168.199.130` （即 `kali Liunx` ） 可看到通道连接成功<br>
 
-![Socks 代理](http://oss-blog.test.upcdn.net/socks-proxy-3.png)
+![Socks 代理](https://vxhly.github.io/assets/socks-proxy-3.png)
 
 ### 利用 proxychains 进行 Socks5 代理
 
@@ -126,7 +126,7 @@ make && make install
 socks5 127.0.0.1 1088
 ```
 
-![Socks 代理](http://oss-blog.test.upcdn.net/socks-proxy-4.png)
+![Socks 代理](https://vxhly.github.io/assets/socks-proxy-4.png)
 
  配置成功后若要启动程序, 仅需要在启动程序命令前加上 `proxychains`
 
@@ -138,7 +138,7 @@ socks5 127.0.0.1 1088
 proxychains firefox
 ```
 
-![Socks 代理](http://oss-blog.test.upcdn.net/socks-proxy-5.png)
+![Socks 代理](https://vxhly.github.io/assets/socks-proxy-5.png)
 
 ### 访问内网机子
 
@@ -147,11 +147,11 @@ proxychains firefox
 现在已经可以直接访问内网主机了, IP: `192.168.235.142`
 :::
 
-![Socks 代理](http://oss-blog.test.upcdn.net/socks-proxy-6.png)
+![Socks 代理](https://vxhly.github.io/assets/socks-proxy-6.png)
 
 随便点个链接, 然后再看一眼 `ubuntu-server` 中的日志, 成功访问到内网中的页面<br>
 
-![Socks 代理](http://oss-blog.test.upcdn.net/socks-proxy-7.png)
+![Socks 代理](https://vxhly.github.io/assets/socks-proxy-7.png)
 
 ## 后记
 

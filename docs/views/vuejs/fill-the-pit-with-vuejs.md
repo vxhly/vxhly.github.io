@@ -858,6 +858,6 @@ export default {
 
 因为实际上这里的 `$event` 就是 `arguments[0]`, 下面这一段现在的 vue 文档上好像已经找不到了, 但是 `arguments` 还是可以用的
 
-![fix-vue-1](https://segmentfault.com/img/bVbfKqZ?w=800&h=599)
+![fix-vue-1](https://vxhly.github.io/assets/fit-vue-1.png)
 
 多提一句, 当 `v-on` 的参数是 `dom` 事件时, `$event` 代表的是原生的 `event` 事件

@@ -15,7 +15,7 @@ date: 2016-09-08 19:35:12
 
 ## 目录结构图
 
-![目录结构图](http://oss-blog.test.upcdn.net/liunx-directory-structure.png)
+![目录结构图](https://vxhly.github.io/assets/liunx-directory-structure.png)
 
 ## 目录结构说明
 

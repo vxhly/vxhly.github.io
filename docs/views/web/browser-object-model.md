@@ -24,8 +24,8 @@ BOM (Browser Object Model) 是指浏览器对象模型, 是用于描述这种对
 
 ### BOM 的结构图
 
-在线查看 [browser-object-model.jpg](http://oss-blog.test.upcdn.net/browser-object-model.jpg?attname=)<br>
-请下载查看 [browser-object-model.jpg](http://oss-blog.test.upcdn.net/browser-object-model.jpg?attname=)
+在线查看 [browser-object-model.jpg](https://vxhly.github.io/assets/browser-object-model.jpg?attname=)<br>
+请下载查看 [browser-object-model.jpg](https://vxhly.github.io/assets/browser-object-model.jpg?attname=)
 
 ## BOM 和 DOM 的不同之处
 
@@ -63,7 +63,7 @@ window.open("https://www.baidu.com", "NewWin", "height=400, width=400");
 
 第三个参数还可能有的值如: <br>
 
-![window 对象](http://oss-blog.test.upcdn.net/window-object.png)
+![window 对象](https://vxhly.github.io/assets/window-object.png)
 
 #### 间歇调用（setTimeout）
 

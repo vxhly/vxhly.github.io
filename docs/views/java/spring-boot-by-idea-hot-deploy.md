@@ -17,23 +17,23 @@ Spring Boot 是由 Pivotal 团队提供的全新框架, 其设计目的是用来
 
 ### 新建 Spring Initializr 项目
 
-![Spring Boot](http://oss-blog.test.upcdn.net/spring-boot-1.png)
+![Spring Boot](https://vxhly.github.io/assets/spring-boot-1.png)
 
 ### 填写项目信息
 
-![Spring Boot](http://oss-blog.test.upcdn.net/spring-boot-2.png)
+![Spring Boot](https://vxhly.github.io/assets/spring-boot-2.png)
 
 ### 选择项目使用的技术
 
-![Spring Boot](http://oss-blog.test.upcdn.net/spring-boot-3.png)
+![Spring Boot](https://vxhly.github.io/assets/spring-boot-3.png)
 
 ### 填写项目名称
 
-![Spring Boot](http://oss-blog.test.upcdn.net/spring-boot-4.png)
+![Spring Boot](https://vxhly.github.io/assets/spring-boot-4.png)
 
 ### 项目架构及依赖
 
-![Spring Boot](http://oss-blog.test.upcdn.net/spring-boot-5.png)
+![Spring Boot](https://vxhly.github.io/assets/spring-boot-5.png)
 
 ## 添加测试控制器
 
@@ -69,15 +69,15 @@ public class FirstApplication {
 
 运行项目, 把它当成一个java类运行就可以了
 
-![Spring Boot](http://oss-blog.test.upcdn.net/spring-boot-6.png)
+![Spring Boot](https://vxhly.github.io/assets/spring-boot-6.png)
 
 运行信息
 
-![Spring Boot](http://oss-blog.test.upcdn.net/spring-boot-7.png)
+![Spring Boot](https://vxhly.github.io/assets/spring-boot-7.png)
 
 浏览器访问
 
-![Spring Boot](http://oss-blog.test.upcdn.net/spring-boot-8.png)
+![Spring Boot](https://vxhly.github.io/assets/spring-boot-8.png)
 
 ## IntelliJ IDEA 配置热部署
 
@@ -169,12 +169,12 @@ project 中添加 spring-boot-maven-plugin, 主要在 eclipse 中起作用, idea
 
 点击 file , Settings , Build , Execution, Deplment
 
-![Spring Boot](http://oss-blog.test.upcdn.net/spring-boot-9.png)
+![Spring Boot](https://vxhly.github.io/assets/spring-boot-9.png)
 
 然后记得apply, ok
 
 组合键: `Shift+ALT+Ctrl+/` , 选择"Registry", 回车, 找到"complier.automake.allow.when.app.running"
 
-![Spring Boot](http://oss-blog.test.upcdn.net/spring-boot-10.png)
+![Spring Boot](https://vxhly.github.io/assets/spring-boot-10.png)
 
 到此全部配置完毕, 手动重启一次, 修改代码保持即可看到控制台在自动重启

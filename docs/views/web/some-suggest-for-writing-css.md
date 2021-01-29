@@ -137,11 +137,11 @@ td {
 }
 ```
 
-![CSS 代码编写](http://oss-blog.test.upcdn.net/css-write-1.jpg)
+![CSS 代码编写](https://vxhly.github.io/assets/css-write-1.jpg)
 
 这里存在的问题是出现了很多的重复的边, 会导致视觉上不协调的情况, 那么我们可以通过设置 `border-collapse:collapse` 来进行处理:<br>
 
-![CSS 代码编写](http://oss-blog.test.upcdn.net/css-write-2.jpg)
+![CSS 代码编写](https://vxhly.github.io/assets/css-write-2.jpg)
 
 ## 注释格式优化
 

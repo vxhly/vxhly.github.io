@@ -47,7 +47,7 @@ service sshd restart       # 重启
 
 `Example Configuration:` <br>
 
-![SSH 服务安全配置](http://oss-blog.test.upcdn.net/liunx-ssh-1.png)
+![SSH 服务安全配置](https://vxhly.github.io/assets/liunx-ssh-1.png)
 
 #### 使用客户端进行验证
 
@@ -69,7 +69,7 @@ ssh: connect to host [host | ip] [port] 22: Connection refused
 
 `Example Connection:` <br>
 
-![SSH 服务安全配置](http://oss-blog.test.upcdn.net/liunx-ssh-2.png)
+![SSH 服务安全配置](https://vxhly.github.io/assets/liunx-ssh-2.png)
 
 使用配置端口连接, `Connection Format:`
 
@@ -85,7 +85,7 @@ Last login: [date] from [host | ip]
 
 `Example Connection:` <br>
 
-![SSH 服务安全配置](http://oss-blog.test.upcdn.net/liunx-ssh-3.png)
+![SSH 服务安全配置](https://vxhly.github.io/assets/liunx-ssh-3.png)
 
 ### 禁止 root 用户登录
 
@@ -103,7 +103,7 @@ Last login: [date] from [host | ip]
 PermitRootLogin no
 ```
 
-![SSH 服务安全配置](http://oss-blog.test.upcdn.net/liunx-ssh-4.png)
+![SSH 服务安全配置](https://vxhly.github.io/assets/liunx-ssh-4.png)
 
 #### 使用客户端进行验证
 
@@ -123,7 +123,7 @@ Connection to [host | ip] closed
 
 `Example Connection:` <br>
 
-![SSH 服务安全配置](http://oss-blog.test.upcdn.net/liunx-ssh-5.png)
+![SSH 服务安全配置](https://vxhly.github.io/assets/liunx-ssh-5.png)
 
 ### 禁止空密码登录
 
@@ -141,7 +141,7 @@ Connection to [host | ip] closed
 PermitEmptyPasswords no
 ```
 
-![SSH 服务安全配置](http://oss-blog.test.upcdn.net/liunx-ssh-6.png)
+![SSH 服务安全配置](https://vxhly.github.io/assets/liunx-ssh-6.png)
 
 #### 使用客户端进行验证
 
@@ -157,13 +157,13 @@ ssh [userName]@[host | ip] -p [port]
 
 `Example Connection:` <br>
 
-![SSH 服务安全配置](http://oss-blog.test.upcdn.net/liunx-ssh-7.png)
+![SSH 服务安全配置](https://vxhly.github.io/assets/liunx-ssh-7.png)
 
 断开连接, 我们尝试使用空密码连接, 只需回车就好
 
 `Example Connection:` <br>
 
-![SSH 服务安全配置](http://oss-blog.test.upcdn.net/liunx-ssh-8.png)
+![SSH 服务安全配置](https://vxhly.github.io/assets/liunx-ssh-8.png)
 
 ### 设置必需使用密码登录
 
@@ -199,7 +199,7 @@ PasswordAuthentication no
 
 接下来就是将下图所示的注释去掉, 就好了<br>
 
-![SSH 服务安全配置](http://oss-blog.test.upcdn.net/liunx-ssh-16.png)
+![SSH 服务安全配置](https://vxhly.github.io/assets/liunx-ssh-16.png)
 
 #### 免密码登录
 
@@ -231,7 +231,7 @@ ssh-copy-id [user]@[server]
 MaxAuthTries 3
 ```
 
-![SSH 服务安全配置](http://oss-blog.test.upcdn.net/liunx-ssh-9.png)
+![SSH 服务安全配置](https://vxhly.github.io/assets/liunx-ssh-9.png)
 
 #### 使用客户端进行验证
 
@@ -251,7 +251,7 @@ Permission denied (publickey,gssapi-with-mic,password).
 
 `Example Connection:` <br>
 
-![SSH 服务安全配置](http://oss-blog.test.upcdn.net/liunx-ssh-10.png)
+![SSH 服务安全配置](https://vxhly.github.io/assets/liunx-ssh-10.png)
 
 ### 设置多长时间没有成功连接上, 就断线
 
@@ -269,7 +269,7 @@ Permission denied (publickey,gssapi-with-mic,password).
 LoginGraceTime 10s
 ```
 
-![SSH 服务安全配置](http://oss-blog.test.upcdn.net/liunx-ssh-11.png)
+![SSH 服务安全配置](https://vxhly.github.io/assets/liunx-ssh-11.png)
 
 #### 使用客户端进行验证
 
@@ -283,7 +283,7 @@ Connection closed by [host | ip]
 
 `Example Connection:` <br>
 
-![SSH 服务安全配置](http://oss-blog.test.upcdn.net/liunx-ssh-12.png)
+![SSH 服务安全配置](https://vxhly.github.io/assets/liunx-ssh-12.png)
 
 ### 设置白名单和黑名单
 
@@ -305,7 +305,7 @@ DenyGroups groupName1 groupName2 ...
 
 `Example Configuration:` <br>
 
-![SSH 服务安全配置](http://oss-blog.test.upcdn.net/liunx-ssh-13.png)
+![SSH 服务安全配置](https://vxhly.github.io/assets/liunx-ssh-13.png)
 
 #### 使用客户端进行验证
 
@@ -315,7 +315,7 @@ DenyGroups groupName1 groupName2 ...
 
 `Example Connection:` <br>
 
-![SSH 服务安全配置](http://oss-blog.test.upcdn.net/liunx-ssh-14.png)
+![SSH 服务安全配置](https://vxhly.github.io/assets/liunx-ssh-14.png)
 
 ### 限制 IP 登录
 

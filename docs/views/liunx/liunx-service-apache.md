@@ -68,7 +68,7 @@ echo "this is test." >> /mnt/www/index.html
 
 接下来, 在浏览器里输入你的服务器的 `IP` 地址就可以访问了。<br>
 
-![APACHE 服务安全配置](http://oss-blog.test.upcdn.net/liunx-apache-2.png)
+![APACHE 服务安全配置](https://vxhly.github.io/assets/liunx-apache-2.png)
 
 ### 配置目录的别名
 
@@ -86,7 +86,7 @@ Alias /test "/var/www/html/test"
 </Directory>
 ```
 
-![APACHE 服务安全配置](http://oss-blog.test.upcdn.net/liunx-apache-3.png)
+![APACHE 服务安全配置](https://vxhly.github.io/assets/liunx-apache-3.png)
 
 #### 使用客户端进行验证
 
@@ -103,7 +103,7 @@ echo "dir dir dir dir." >> /var/www/html/index.html
 
 接下来, 在浏览器里输入 `IP/test` 就可以访问了。注意大小写敏感。<br>
 
-![APACHE 服务安全配置](http://oss-blog.test.upcdn.net/liunx-apache-4.png)
+![APACHE 服务安全配置](https://vxhly.github.io/assets/liunx-apache-4.png)
 
 ### 关闭版本信息的显示
 
@@ -125,11 +125,11 @@ ServerSignature Off
 
 先看一下, 没有进行修改之前会显示什么吧！随便写一个目录, 访问它吧！
 
-![APACHE 服务安全配置](http://oss-blog.test.upcdn.net/liunx-apache-5.png)
+![APACHE 服务安全配置](https://vxhly.github.io/assets/liunx-apache-5.png)
 
 修改好配置之后, 重新访问, 再次看一下有没有吧！
 
-![APACHE 服务安全配置](http://oss-blog.test.upcdn.net/liunx-apache-6.png)
+![APACHE 服务安全配置](https://vxhly.github.io/assets/liunx-apache-6.png)
 
 ### 禁用目录浏览、符号连接追踪
 
@@ -159,7 +159,7 @@ ServerSignature Off
 </Directory>
 ```
 
-![APACHE 服务安全配置](http://oss-blog.test.upcdn.net/liunx-apache-7.png)
+![APACHE 服务安全配置](https://vxhly.github.io/assets/liunx-apache-7.png)
 
 #### 使用客户端进行验证
 
@@ -223,7 +223,7 @@ LimitRequestLine 1024k
 LimitRequestFieldSize 1024k
 ```
 
-![APACHE 服务安全配置](http://oss-blog.test.upcdn.net/liunx-apache-15.png)
+![APACHE 服务安全配置](https://vxhly.github.io/assets/liunx-apache-15.png)
 
 ## 配置 https
 
@@ -257,7 +257,7 @@ openssl req -x509 -days 365 -key server.key -in server.csr > server.crt
 
 注意路径, 记住它。
 
-![APACHE 服务安全配置](http://oss-blog.test.upcdn.net/liunx-apache-9.png)
+![APACHE 服务安全配置](https://vxhly.github.io/assets/liunx-apache-9.png)
 
 ### 确认是否安装 ssl 模块
 
@@ -267,7 +267,7 @@ openssl req -x509 -days 365 -key server.key -in server.csr > server.crt
 find / -iname "*mod_ssl.so*"    # 使用 find 命令进行搜索
 ```
 
-![APACHE 服务安全配置](http://oss-blog.test.upcdn.net/liunx-apache-8.png)
+![APACHE 服务安全配置](https://vxhly.github.io/assets/liunx-apache-8.png)
 
 ### 配置 httpd-ssl.conf 文件
 
@@ -300,7 +300,7 @@ NameVirtualHost *:443
 </VirtualHost>
 ```
 
-![APACHE 服务安全配置](http://oss-blog.test.upcdn.net/liunx-apache-10.png)
+![APACHE 服务安全配置](https://vxhly.github.io/assets/liunx-apache-10.png)
 
 #### 修改主配置文件
 
@@ -313,7 +313,7 @@ LoadModule ssl_module /usr/lib/httpd/modules/mod_ssl.so
 Include "/etc/httpd/conf/httpd-ssl.conf"
 ```
 
-![APACHE 服务安全配置](http://oss-blog.test.upcdn.net/liunx-apache-11.png)
+![APACHE 服务安全配置](https://vxhly.github.io/assets/liunx-apache-11.png)
 
 这里提供简洁方法, 在 vi 下使用 `:r !find / -iname "*mod_ssl.so*"` , 在配置文件中也可以很任性的将 `httpd-ssl.conf` 里的内容填入主配置文件。
 
@@ -342,7 +342,7 @@ SSLEngine on
 </VirtualHost>
 ```
 
-![APACHE 服务安全配置](http://oss-blog.test.upcdn.net/liunx-apache-16.png)
+![APACHE 服务安全配置](https://vxhly.github.io/assets/liunx-apache-16.png)
 
 #### 将监听 80 端口注释
 
@@ -350,7 +350,7 @@ SSLEngine on
 
 `For Example:` <br>
 
-![APACHE 服务安全配置](http://oss-blog.test.upcdn.net/liunx-apache-12.png)
+![APACHE 服务安全配置](https://vxhly.github.io/assets/liunx-apache-12.png)
 
 ### 访问
 
@@ -358,4 +358,4 @@ SSLEngine on
 
 `For Example:` <br>
 
-![APACHE 服务安全配置](http://oss-blog.test.upcdn.net/liunx-apache-13.png)
+![APACHE 服务安全配置](https://vxhly.github.io/assets/liunx-apache-13.png)

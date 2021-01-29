@@ -59,7 +59,7 @@ rpm -ivh perl-Convert-ASN1-0.20-1.1.noarch.rpm
 rpm -ivh samba-3.0.33-3.28.el5.i386.rpm
 ```
 
-![SAMBA 服务安全配置](http://oss-blog.test.upcdn.net/liunx-samba-1.png)
+![SAMBA 服务安全配置](https://vxhly.github.io/assets/liunx-samba-1.png)
 
 ## 安全配置
 
@@ -77,7 +77,7 @@ workgroup = MYGROUP
 该文件默认将 NetBIOS 的名字注释掉了, NetBIOS 名字就是会在 Windows 下的网上邻居能够看到的名字, 注释掉就是会看不到, 建议去掉注释。
 :::
 
-![SAMBA 服务安全配置](http://oss-blog.test.upcdn.net/liunx-samba-2.png)
+![SAMBA 服务安全配置](https://vxhly.github.io/assets/liunx-samba-2.png)
 
 ### 配置安全级别
 
@@ -105,7 +105,7 @@ security = user
 encrypt passwords = yes
 ```
 
-![SAMBA 服务安全配置](http://oss-blog.test.upcdn.net/liunx-samba-3.png)
+![SAMBA 服务安全配置](https://vxhly.github.io/assets/liunx-samba-3.png)
 
 ### 配置用户密码的存储方式
 
@@ -124,7 +124,7 @@ passdb backend = tdbsam
 * **ldapsam**: 该方式基于 LADP 的账户管理方式来验证用户, 先要建立 LDAP 服务。
 * **mysql**: 该方式是将 Samba 服务器的用户名和密码存储到 MySQL 数据库中。
 
-![SAMBA 服务安全配置](http://oss-blog.test.upcdn.net/liunx-samba-4.png)
+![SAMBA 服务安全配置](https://vxhly.github.io/assets/liunx-samba-4.png)
 
 ### 设置白名单
 
@@ -140,7 +140,7 @@ passdb backend = tdbsam
 
 `For Example:` <br>
 
-![SAMBA 服务安全配置](http://oss-blog.test.upcdn.net/liunx-samba-5.png)
+![SAMBA 服务安全配置](https://vxhly.github.io/assets/liunx-samba-5.png)
 
 ### 单目录限定用户访问, 禁止写入文件
 
@@ -164,7 +164,7 @@ passdb backend = tdbsam
 * **create mode** => 指明新建立的文件的属性, 一般是 `0755` 。
 * **directory mode** => 指明新建立的目录的属性, 一般是 `0755` 。
 
-![SAMBA 服务安全配置](http://oss-blog.test.upcdn.net/liunx-samba-6.png)
+![SAMBA 服务安全配置](https://vxhly.github.io/assets/liunx-samba-6.png)
 
 ### 创建共享目录, 设置权限
 
@@ -179,7 +179,7 @@ chmod 777 /home/test
 共享目录一定要有执行权限, 一般 `755` 就够了, 这里设置 `777` 就是权限大一点就是了。
 :::
 
-![SAMBA 服务安全配置](http://oss-blog.test.upcdn.net/liunx-samba-7.png)
+![SAMBA 服务安全配置](https://vxhly.github.io/assets/liunx-samba-7.png)
 
 ### 添加 SAMBA 用户
 
@@ -196,13 +196,13 @@ smbpasswd -a sx
 这里需要注意的是, 要使用 `smbpasswd -a` 创建用户, 因为之前设置了用户密码的存储方式为 `tdbsam` 。
 :::
 
-![SAMBA 服务安全配置](http://oss-blog.test.upcdn.net/liunx-samba-8.png)
+![SAMBA 服务安全配置](https://vxhly.github.io/assets/liunx-samba-8.png)
 
 ### 使用 windows 访问
 
 `For Example:` <br>
 
-![SAMBA 服务安全配置](http://oss-blog.test.upcdn.net/liunx-samba-9.png)
+![SAMBA 服务安全配置](https://vxhly.github.io/assets/liunx-samba-9.png)
 
 输入用户名和密码, 就可以愉快的进行测试了, 这里就不多说了。
 

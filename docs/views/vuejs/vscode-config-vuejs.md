@@ -23,7 +23,7 @@ date: 2020-02-16 13:19:19
 
 通常使用 `vue create [projectName]` 创建项目时会询问你使用哪种风格的 ESlint, 这时候你就应该毫不犹豫的选择 `ESLint + Standard config` 这种风格, 因为这种风格的代码更符合官方推荐的代码风格
 
-![vscode-config](http://oss-blog.test.upcdn.net/vscode-config-1.png)
+![vscode-config](https://vxhly.github.io/assets/vscode-config-1.png)
 
 当然对于强迫症的童鞋这些是不够的, 能够更加符合官方推荐风格指南你还需要阅读 [eslint-plugin-vue](https://eslint.vuejs.org/rules/)
 
@@ -159,7 +159,7 @@ module.exports = {
 
 无需进行过多的配置, 基本上默认的就足够了, 这边推荐的是修改以下这一配置项
 
-![vscode-config](http://oss-blog.test.upcdn.net/vscode-config-2.png)
+![vscode-config](https://vxhly.github.io/assets/vscode-config-2.png)
 
 ### ESlint 
 
@@ -274,4 +274,4 @@ HTML 的颜色值高亮, 无需额外的配置
 
 配置过程也很简单, 新建一个文件输入 `TabNine::config` 会自动开启一个 WEB 配置页面, 按照下图开启配置即可, 至于 `Activation key` 需要通过邮箱验证来获取的
 
-![vscode-config](http://oss-blog.test.upcdn.net/vscode-config-3.png)
+![vscode-config](https://vxhly.github.io/assets/vscode-config-3.png)

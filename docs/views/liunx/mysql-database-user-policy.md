@@ -25,7 +25,7 @@ date: 2016-10-30 16:02:43
 mysqladmin -u root password "upassword"
 ```
 
-![MySQL 数据库加固](http://oss-blog.test.upcdn.net/mysql-reinforce-1.png)
+![MySQL 数据库加固](https://vxhly.github.io/assets/mysql-reinforce-1.png)
 
 ### 使用 SQL 语句修改
 
@@ -45,7 +45,7 @@ mysql> update mysql.user set password=password('upassword') where user='root';
 mysql> flush privileges; -- 强制刷新内存授权表,否则用的还是内存缓存中的口令。
 ```
 
-![MySQL 数据库加固](http://oss-blog.test.upcdn.net/mysql-reinforce-2.png)
+![MySQL 数据库加固](https://vxhly.github.io/assets/mysql-reinforce-2.png)
 
 修改完成之后可以执行 SQL 语句查询, `For Example:`
 
@@ -69,15 +69,15 @@ mysql> delete from mysql.user where user='root' and password='';
 mysql> flush privileges;
 ```
 
-![MySQL 数据库加固](http://oss-blog.test.upcdn.net/mysql-reinforce-3.png)
+![MySQL 数据库加固](https://vxhly.github.io/assets/mysql-reinforce-3.png)
 
 <br>
 
-![MySQL 数据库加固](http://oss-blog.test.upcdn.net/mysql-reinforce-4.png)
+![MySQL 数据库加固](https://vxhly.github.io/assets/mysql-reinforce-4.png)
 
 <br>
 
-![MySQL 数据库加固](http://oss-blog.test.upcdn.net/mysql-reinforce-5.png)
+![MySQL 数据库加固](https://vxhly.github.io/assets/mysql-reinforce-5.png)
 
 ## 改变默认 MySQL 管理员账号
 
@@ -88,7 +88,7 @@ mysql> update mysql.user set user="newroot" where user="root";
 mysql> flush privileges;
 ```
 
-![MySQL 数据库加固](http://oss-blog.test.upcdn.net/mysql-reinforce-6.png)
+![MySQL 数据库加固](https://vxhly.github.io/assets/mysql-reinforce-6.png)
 
 ## 关于密码的管理
 
@@ -113,7 +113,7 @@ mysql> insert into users values (1,password(1234),'test');
 user=mysql
 ```
 
-![MySQL 数据库加固](http://oss-blog.test.upcdn.net/mysql-reinforce-7.png)
+![MySQL 数据库加固](https://vxhly.github.io/assets/mysql-reinforce-7.png)
 
 该命令使服务器用指定的用户来启动, 无论你手动启动或通过 `mysqld_safe` 或 `mysql.server` 启动, 都能确保使用 mysql 的身份。也可以在启动数据库是, 加上 `user` 参数。
 
@@ -123,7 +123,7 @@ user=mysql
 
 作为其它 linux 用户而不用 root 运行 mysqld, 你不需要更改 user 表中的 root 用户名, 因为 `MySQL 账户` 的用户名与 `linux 账户` 的用户名无关。确保 mysqld 运行时, 只使用对数据库目录具有读或写权限的 linux 用户来运行。
 
-![MySQL 数据库加固](http://oss-blog.test.upcdn.net/mysql-reinforce-8.png)
+![MySQL 数据库加固](https://vxhly.github.io/assets/mysql-reinforce-8.png)
 
 ## 禁止远程连接数据库
 
@@ -138,7 +138,7 @@ user=mysql
 skip-networking
 ```
 
-![MySQL 数据库加固](http://oss-blog.test.upcdn.net/mysql-reinforce-9.png)
+![MySQL 数据库加固](https://vxhly.github.io/assets/mysql-reinforce-9.png)
 
 执行重启语句, `For Example:`
 
@@ -157,7 +157,7 @@ service mysqld restart
 max_user_connections 2
 ```
 
-![MySQL 数据库加固](http://oss-blog.test.upcdn.net/mysql-reinforce-10.png)
+![MySQL 数据库加固](https://vxhly.github.io/assets/mysql-reinforce-10.png)
 
 ## 用户目录权限限制
 
@@ -170,7 +170,7 @@ chown -R root /usr/share/mysql
 chown -R mysql:mysql /var/lib/mysql
 ```
 
-![MySQL 数据库加固](http://oss-blog.test.upcdn.net/mysql-reinforce-11.png)
+![MySQL 数据库加固](https://vxhly.github.io/assets/mysql-reinforce-11.png)
 
 ## 命令历史记录保护
 
@@ -185,19 +185,19 @@ chown -R mysql:mysql /var/lib/mysql
 log=~/.mysql_history
 ```
 
-![MySQL 数据库加固](http://oss-blog.test.upcdn.net/mysql-reinforce-12.png)
+![MySQL 数据库加固](https://vxhly.github.io/assets/mysql-reinforce-12.png)
 
 随意执行一些操作, `For Example:` <br>
 
-![MySQL 数据库加固](http://oss-blog.test.upcdn.net/mysql-reinforce-13.png)
+![MySQL 数据库加固](https://vxhly.github.io/assets/mysql-reinforce-13.png)
 
 查看 `~/.mysql_history` 文件, 可以看到数据库操作纪录（将会纪录所有成功或者失败的操作 SQL 语句）<br>
 
-![MySQL 数据库加固](http://oss-blog.test.upcdn.net/mysql-reinforce-14.png)
+![MySQL 数据库加固](https://vxhly.github.io/assets/mysql-reinforce-14.png)
 
 查看 `~/.bash_history` 文件, 可以看到有关于数据操作的 shell 命令<br>
 
-![MySQL 数据库加固](http://oss-blog.test.upcdn.net/mysql-reinforce-15.png)
+![MySQL 数据库加固](https://vxhly.github.io/assets/mysql-reinforce-15.png)
 
 删除操作命令, `For Example:`
 
@@ -207,7 +207,7 @@ ln -s /dev/null .bash_history
 ln -s /dev/null .mysql_history
 ```
 
-![MySQL 数据库加固](http://oss-blog.test.upcdn.net/mysql-reinforce-16.png)
+![MySQL 数据库加固](https://vxhly.github.io/assets/mysql-reinforce-16.png)
 
 ## 禁止 MySQL 对本地文件存取
 
@@ -217,7 +217,7 @@ ln -s /dev/null .mysql_history
 
 测试: 首先在测试数据库下建立 `sqlfile.txt` 文件, 用逗号隔开各个字段<br>
 
-![MySQL 数据库加固](http://oss-blog.test.upcdn.net/mysql-reinforce-19.png)
+![MySQL 数据库加固](https://vxhly.github.io/assets/mysql-reinforce-19.png)
 
 在测试数据库, 先新建一张表, 建表的 SQL 语句如下, `For Example:`
 
@@ -229,7 +229,7 @@ create table users (
 );
 ```
 
-![MySQL 数据库加固](http://oss-blog.test.upcdn.net/mysql-reinforce-17.png)
+![MySQL 数据库加固](https://vxhly.github.io/assets/mysql-reinforce-17.png)
 
 执行导入语句, `For Example:`
 
@@ -238,7 +238,7 @@ mysql> load data local infile 'sqlfile.txt' into table test.users fields termina
 mysql> select * from test.users;
 ```
 
-![MySQL 数据库加固](http://oss-blog.test.upcdn.net/mysql-reinforce-18.png)
+![MySQL 数据库加固](https://vxhly.github.io/assets/mysql-reinforce-18.png)
 
 成功的将本地数据插入数据中, 此时应该禁止 MySQL 中用 `load data local infile` 命令。网络上流传的一些攻击方法中就有用它 `load data local infile` 的, 同时它也是很多新发现的 `SQL Injection` 攻击利用的手段！黑客还能通过使用 `load data local infile` 装载 `/etc/passwd` 进一个数据库表, 然后能用 `SELECT` 显示它, 这个操作对服务器的安全来说, 是致命的。可以在 `/etc/my.cnf` 中添加 `local-infile=0` , 或者加参数 `local-infile=0` 启动 `mysql` 。
 
@@ -246,7 +246,7 @@ mysql> select * from test.users;
 
 黑客使用 `load data local infile` 获取 `/etc/passwd` 文件内容步骤<br>
 
-![MySQL 数据库加固](http://oss-blog.test.upcdn.net/mysql-reinforce-20.png)
+![MySQL 数据库加固](https://vxhly.github.io/assets/mysql-reinforce-20.png)
 
 接下来黑客只需执行 `select * from test.passwd` 就可以查询到数据了。
 
@@ -259,7 +259,7 @@ mysql> select * from test.users;
 local-infile=0
 ```
 
-![MySQL 数据库加固](http://oss-blog.test.upcdn.net/mysql-reinforce-21.png)
+![MySQL 数据库加固](https://vxhly.github.io/assets/mysql-reinforce-21.png)
 
 或者直接执行命令, `For Example:`
 
@@ -273,7 +273,7 @@ mysql_safe --user=mysql --local-infile=0
 mysql> load data local infile '/etc/passwd' into table test.passwd fields terminated by ':';
 ```
 
-![MySQL 数据库加固](http://oss-blog.test.upcdn.net/mysql-reinforce-22.png)
+![MySQL 数据库加固](https://vxhly.github.io/assets/mysql-reinforce-22.png)
 
 ## MySQL 服务器权限控制
 
@@ -292,11 +292,11 @@ mysql> update mysql.user set file_priv='N' where user='root';
 mysql> flush privileges;
 ```
 
-![MySQL 数据库加固](http://oss-blog.test.upcdn.net/mysql-reinforce-23.png)
+![MySQL 数据库加固](https://vxhly.github.io/assets/mysql-reinforce-23.png)
 
 <br>
 
-![MySQL 数据库加固](http://oss-blog.test.upcdn.net/mysql-reinforce-24.png)
+![MySQL 数据库加固](https://vxhly.github.io/assets/mysql-reinforce-24.png)
 
 ::: warning 注意
 刷新授权表之后, 一定要重新登录再进行测试, 否则还是会执行成功的
@@ -310,11 +310,11 @@ mysql> select * from test.passwd into outfile 'test.txt' fields terminated by ':
 
 当然还原配置之后, 黑客就可以很愉快的获取数据库中内容
 
-![MySQL 数据库加固](http://oss-blog.test.upcdn.net/mysql-reinforce-25.png)
+![MySQL 数据库加固](https://vxhly.github.io/assets/mysql-reinforce-25.png)
 
 <br>
 
-![MySQL 数据库加固](http://oss-blog.test.upcdn.net/mysql-reinforce-26.png)
+![MySQL 数据库加固](https://vxhly.github.io/assets/mysql-reinforce-26.png)
 
 ## 使用 chroot 来控制 MySQL 的运行目录
 

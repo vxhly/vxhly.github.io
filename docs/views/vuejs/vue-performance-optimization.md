@@ -21,7 +21,7 @@ date: 2018-10-24 13:51:50
 
 这是一个通过 Vue-cli 3.0 构建的 demo 项目, 先执行一下 `npm run build` , 当然也可以通过 `vue ui` 的 GUI 界面进行编译
 
-![vue-performance](http://oss-blog.test.upcdn.net/vue-performance-1.png)
+![vue-performance](https://vxhly.github.io/assets/vue-performance-1.png)
 
 可以看到这个默认项目的各个 JS 文件还可以, 不算是比较大的
 
@@ -29,7 +29,7 @@ date: 2018-10-24 13:51:50
 
 禁用浏览器缓存, 网速限定为 Fast 3G 下的 Network 图(运行在本地的nginx服务器上)
 
-![vue-performance](http://oss-blog.test.upcdn.net/vue-performance-2.png)
+![vue-performance](https://vxhly.github.io/assets/vue-performance-2.png)
 
 嗯~ , 故意调了个比较慢的网络环境, 可以看到这边的加载速度真的慢到极致了
 
@@ -155,7 +155,7 @@ module.exports = {
 
 再来看看使用了 CDN 之后的编译大小
 
-![vue-performance](http://oss-blog.test.upcdn.net/vue-performance-3.png)
+![vue-performance](https://vxhly.github.io/assets/vue-performance-3.png)
 
 天哪!!! `chunk-vendors` 这个文件小了不是一点点
 
@@ -165,9 +165,6 @@ module.exports = {
 
 构建的话, 自行百度, 比较懒的推荐 [upupw](https://www.baidu.com/link?url=A3pEi1xHX8pn-3a6xug88gaY_LZPuY9nlZQ51dGXsNW&wd=&eqid=e847c04100012f59000000065bd1d0be) , 当然闲的无聊的话可以写一个 express 当作本地服务器
 
-![vue-performance](http://oss-blog.test.upcdn.net/vue-performance-4.png)
-
-果然加载的速度变快了许多
 
 ## Gzip
 

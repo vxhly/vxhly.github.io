@@ -24,7 +24,7 @@ date: 2016-10-14 19:25:27
 
 ### 概念图
 
-![SetUID](http://oss-blog.test.upcdn.net/setuid-1.png)
+![SetUID](https://vxhly.github.io/assets/setuid-1.png)
 
 ### 设置 SUID
 
@@ -54,7 +54,7 @@ chmod u-s [fileName]      # 取消 SUID 权限
 
 `For Examlpe:` <br>
 
-![SetUID](http://oss-blog.test.upcdn.net/setuid-2.png)
+![SetUID](https://vxhly.github.io/assets/setuid-2.png)
 
 ### 危险的 SetUID
 
@@ -105,7 +105,7 @@ chmod g-s [fileName]      # 取消 SGID 权限
 
 `For Examlpe:` <br>
 
-![SetUID](http://oss-blog.test.upcdn.net/setgid.png)
+![SetUID](https://vxhly.github.io/assets/setgid.png)
 
 ## Sicky BIT
 
@@ -139,4 +139,4 @@ chmod o-t [folderName]       # 取消 SBIT 权限
 
 `For Examlpe:` <br>
 
-![SetUID](http://oss-blog.test.upcdn.net/sticky-bit.png)
+![SetUID](https://vxhly.github.io/assets/sticky-bit.png)

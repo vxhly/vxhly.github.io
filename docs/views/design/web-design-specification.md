@@ -17,13 +17,13 @@ date: 2019-08-08 10:07:37
 
 虽然H5的页面与PC的Web页面相比简单了不少, 但让我们头痛的事情是要想尽办法让页面能适配众多不同的终端设备。看看下图你就会知道, 这是多么痛苦的一件事情: 
 
-![web-design-1](http://oss-blog.test.upcdn.net/web-design-1.png)
+![web-design-1](https://vxhly.github.io/assets/web-design-1.png)
 
 ## 手淘团队适配协作模式
 
 早期移动端开发, 对于终端设备适配问题只属于Android系列, 只不过很多设计师常常忽略Android适配问题, 只出一套iOS平台设计稿。但随着iPhone6, iPhone6+的出现, 从此终端适配问题不再是Android系列了, 也从这个时候让移动端适配全面进入到“杂屏”时代。
 
-![web-design-2](http://oss-blog.test.upcdn.net/web-design-2.png)
+![web-design-2](https://vxhly.github.io/assets/web-design-2.png)
 
 上图来自于 [paintcodeapp.com](http://www.paintcodeapp.com/news/ultimate-guide-to-iphone-resolutions)
 
@@ -37,7 +37,7 @@ date: 2019-08-08 10:07:37
 
 还是上一张图吧, 因为一图胜过千言万语: 
 
-![web-design-3](http://oss-blog.test.upcdn.net/web-design-3.jpg)
+![web-design-3](https://vxhly.github.io/assets/web-design-3.jpg)
 
 在此也不做更多的阐述。在手淘的设计师和前端开发协作过程中: 手淘设计师常选择iPhone6作为基准设计尺寸, 交付给前端的设计尺寸是按750px * 1334px为准(高度会随着内容多少而改变)。前端开发人员通过一套适配规则自动适配到其他的尺寸。著作权归作者所有。
 

@@ -33,7 +33,7 @@ git log <last release> HEAD --grep feature
 
 Change Log 是发布新版本时, 用来说明与上一个版本差异的文档, 详见后文
 
-![Change Log](http://oss-blog.test.upcdn.net/git-commit-1.png)
+![Change Log](https://vxhly.github.io/assets/git-commit-1.png)
 
 ### 其他优点
 

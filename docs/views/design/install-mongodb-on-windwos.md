@@ -17,7 +17,7 @@ MongoDB 是目前在 IT 行业非常流行的一种非关系型数据库 (NoSql)
 
 [MongoDB 官网下载链接](http://www.mongodb.com/download-center?jmp=nav#community)
 
-如果被墙的话, 请点击 [mongodb-win32-x86_64-2008plus-ssl-3.4.1-signed.msi](http://oss-blog.test.upcdn.net/mongodb-win32-x86_64-2008plus-ssl-3.4.1-signed.msi?attname=) 下载
+如果被墙的话, 请点击 [mongodb-win32-x86_64-2008plus-ssl-3.4.1-signed.msi](https://vxhly.github.io/assets/mongodb-win32-x86_64-2008plus-ssl-3.4.1-signed.msi?attname=) 下载
 
 ## 手动简单的配置
 
@@ -25,13 +25,13 @@ MongoDB 是目前在 IT 行业非常流行的一种非关系型数据库 (NoSql)
 
 安装成功之后, 将 mongodb 目录下的 bin 目录添加至 path 变量中, 如: 
 
-![Windows 下安装 MongoDB](http://oss-blog.test.upcdn.net/install-mongodb-1.png)
+![Windows 下安装 MongoDB](https://vxhly.github.io/assets/install-mongodb-1.png)
 
 ### 创建数据库文件存放目录
 
 创建数据库文件的存放位置, 比如 `D:\mongodb\data\db` 。启动 mongodb 服务之前需要必须创建数据库文件的存放文件夹, 否则命令不会自动创建, 而且不能启动成功。
 
-![Windows 下安装 MongoDB](http://oss-blog.test.upcdn.net/install-mongodb-2.png)
+![Windows 下安装 MongoDB](https://vxhly.github.io/assets/install-mongodb-2.png)
 
 接下来打开命令行窗口, 切换到 `D:\MongoDB\bin` 目录执行如下命令: 
 
@@ -53,7 +53,7 @@ mongod --dbpath D:\MongoDB\data\db # 其中 --dbpath 是指定数据库存放目
 mongod --dbpath D:\MongoDB\data\db --logpath=D:\MongoDB\data\logs\mongodb.log --logappend
 ```
 
-![Windows 下安装 MongoDB](http://oss-blog.test.upcdn.net/install-mongodb-3.png)
+![Windows 下安装 MongoDB](https://vxhly.github.io/assets/install-mongodb-3.png)
 
 这是命令行窗口会打印一些启动信息, 最后一行显示为如下信息时表示启动成功了
 
@@ -73,7 +73,7 @@ sc create MongoDB binPath= "D:\MongoDB\bin\mongod.exe --service --dbpath D:\Mong
 net start MongoDB
 ```
 
-![Windows 下安装 MongoDB](http://oss-blog.test.upcdn.net/install-mongodb-4.png)
+![Windows 下安装 MongoDB](https://vxhly.github.io/assets/install-mongodb-4.png)
 
 ## 使用配置文件
 
@@ -126,7 +126,7 @@ net start MongoDB
 
 打开浏览器, 访问 <http://127.0.0.1:27017/> , 显示以下内容表示安装成功<br>
 
-![Windows 下安装 MongoDB](http://oss-blog.test.upcdn.net/install-mongodb-5.png)
+![Windows 下安装 MongoDB](https://vxhly.github.io/assets/install-mongodb-5.png)
 
 ## 附上 Ubuntu 下安装
 
@@ -166,7 +166,7 @@ pm2 start app.js
 
 打开浏览器, 访问 <http://127.0.0.1:1234/> , 显示以下内容表示安装成功<br>
 
-![Windows 下安装 MongoDB](http://oss-blog.test.upcdn.net/install-mongodb-6.png)
+![Windows 下安装 MongoDB](https://vxhly.github.io/assets/install-mongodb-6.png)
 
 ### 配置使用
 
@@ -174,8 +174,8 @@ Connection name => 连接名随意 Connection string => 连接方法: `mongodb:/
 
 连接成功后创建一个数据库进行测试<br>
 
-![Windows 下安装 MongoDB](http://oss-blog.test.upcdn.net/install-mongodb-7.png)
+![Windows 下安装 MongoDB](https://vxhly.github.io/assets/install-mongodb-7.png)
 
 随意添加一些数据, 注意数据为 JSON 格式<br>
 
-![Windows 下安装 MongoDB](http://oss-blog.test.upcdn.net/install-mongodb-8.png)
+![Windows 下安装 MongoDB](https://vxhly.github.io/assets/install-mongodb-8.png)

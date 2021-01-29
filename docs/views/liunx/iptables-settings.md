@@ -94,7 +94,7 @@ iptables -nL
 service iptables status
 ```
 
-![iptables 的设置与查看](http://oss-blog.test.upcdn.net/iptables-1.png)
+![iptables 的设置与查看](https://vxhly.github.io/assets/iptables-1.png)
 
 ### 清除已有 iptables 规则
 
@@ -104,7 +104,7 @@ iptables -X
 iptables -Z
 ```
 
-![iptables 的设置与查看](http://oss-blog.test.upcdn.net/iptables-2.png)
+![iptables 的设置与查看](https://vxhly.github.io/assets/iptables-2.png)
 
 ### 开放指定的端口
 
@@ -141,7 +141,7 @@ iptables -A FORWARD -j REJECT
 `-A` 是在 `iptables` 的最后添加一条规则, `-I` 是在 `iptables` 的前面添加一条规则
 :::
 
-![iptables 的设置与查看](http://oss-blog.test.upcdn.net/iptables-3.png)
+![iptables 的设置与查看](https://vxhly.github.io/assets/iptables-3.png)
 
 ### 屏蔽 IP
 
@@ -165,8 +165,8 @@ iptables -I INPUT -s 123.45.6.0/24 -j DROP
 /etc/rc.d/init.d/iptables save
 ```
 
-![iptables 的设置与查看](http://oss-blog.test.upcdn.net/iptables-4.png)
+![iptables 的设置与查看](https://vxhly.github.io/assets/iptables-4.png)
 
 <br>
 
-![iptables 的设置与查看](http://oss-blog.test.upcdn.net/iptables-5.png)
+![iptables 的设置与查看](https://vxhly.github.io/assets/iptables-5.png)

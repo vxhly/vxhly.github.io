@@ -82,7 +82,7 @@ npm i vuepress-article-cli -g
 va-cli new
 ```
 
-![nodejs-cli](http://oss-blog.test.upcdn.net/nodejs-cli-1.png)
+![nodejs-cli](https://vxhly.github.io/assets/nodejs-cli-1.png)
 
 批量删除文章
 
@@ -90,7 +90,7 @@ va-cli new
 va-cli del
 ```
 
-![nodejs-cli](http://oss-blog.test.upcdn.net/nodejs-cli-2.png)
+![nodejs-cli](https://vxhly.github.io/assets/nodejs-cli-2.png)
 
 创建模版文件
 
@@ -98,7 +98,7 @@ va-cli del
 va-cli tmp
 ```
 
-![nodejs-cli](http://oss-blog.test.upcdn.net/nodejs-cli-3.png)
+![nodejs-cli](https://vxhly.github.io/assets/nodejs-cli-3.png)
 
 ## 进阶配置
 
@@ -527,19 +527,19 @@ branches:
 
 首先进入 [travis-ci 官网](https://travis-ci.org/), 将对应的项目启用 Travis CI
 
-![vuepress-blog](http://oss-blog.test.upcdn.net/vuepress-blog-1.png)
+![vuepress-blog](https://vxhly.github.io/assets/vuepress-blog-1.png)
 
 点进去之后可以进行更多的配置
 
-![vuepress-blog](http://oss-blog.test.upcdn.net/vuepress-blog-2.png)
+![vuepress-blog](https://vxhly.github.io/assets/vuepress-blog-2.png)
 
 生成你的 GitHub Token, 首先获取这个 token, 进入 Github 设置, 左下的 Developer settings
 
-![vuepress-blog](http://oss-blog.test.upcdn.net/vuepress-blog-3.png)
+![vuepress-blog](https://vxhly.github.io/assets/vuepress-blog-3.png)
 
 添加描述, 这里只需勾选 `repo` , 如果需要其他的配置自行勾选
 
-![vuepress-blog](http://oss-blog.test.upcdn.net/vuepress-blog-4.png)
+![vuepress-blog](https://vxhly.github.io/assets/vuepress-blog-4.png)
 
 保存之后将会生成的 token, 将生成的 token 放入 Travis 配置中
 
@@ -547,7 +547,7 @@ branches:
 这边配置的变量名需要和 `.travis.yml` 中指定的名字一样, 这边使用的变量名为 GITHUB_TOKEN
 :::
 
-![vuepress-blog](http://oss-blog.test.upcdn.net/vuepress-blog-5.png)
+![vuepress-blog](https://vxhly.github.io/assets/vuepress-blog-5.png)
 
 至此, 你可以进行发布代码操作了, 执行下面的命令即可将代码提交到你的 GitHub 上了
 
@@ -561,7 +561,7 @@ npm run deploy
 状态颜色一定要是绿色才代表编译并且部署成功了
 :::
 
-![vuepress-blog](http://oss-blog.test.upcdn.net/vuepress-blog-6.png)
+![vuepress-blog](https://vxhly.github.io/assets/vuepress-blog-6.png)
 
 ### 拓展阅读
 
@@ -573,7 +573,7 @@ npm ci
 
 它是从 `package-lock.json` 文件安装依赖, 具有快以及可靠优点, 关于速度的比较引用官方图
 
-![vuepress-blog](http://oss-blog.test.upcdn.net/vuepress-blog-7.png)
+![vuepress-blog](https://vxhly.github.io/assets/vuepress-blog-7.png)
 
 官方有下面补充：
 

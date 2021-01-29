@@ -136,7 +136,7 @@ date: 2016-08-15 18:12:36
 </html>
 ```
 
-![H5元素](http://oss-blog.test.upcdn.net/html5-1.png)
+![H5元素](https://vxhly.github.io/assets/html5-1.png)
 
 ### 表单新元素、类型
 
@@ -221,7 +221,7 @@ date: 2016-08-15 18:12:36
 </html>
 ```
 
-![H5表单](http://oss-blog.test.upcdn.net/html5-2.png)
+![H5表单](https://vxhly.github.io/assets/html5-2.png)
 
 ## HTML5 废弃的内容
 

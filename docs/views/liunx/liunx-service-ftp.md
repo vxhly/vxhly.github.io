@@ -58,7 +58,7 @@ cd /mnt/cdrom/Server
 rpm -ivh vsftpd-2.0.5-16.e15i386.rpm
 ```
 
-![FTP 安全配置](http://oss-blog.test.upcdn.net/liunx-ftp-1.png)
+![FTP 安全配置](https://vxhly.github.io/assets/liunx-ftp-1.png)
 
 ## 安全配置
 
@@ -72,7 +72,7 @@ anonymous_enable=YES
 
 默认的值是允许的, 这样匿名用户就可以不需要密码就可以登录 FTP 了, 这样很不安全, 把它修改成 NO 吧。
 
-![FTP 安全配置](http://oss-blog.test.upcdn.net/liunx-ftp-7.png)
+![FTP 安全配置](https://vxhly.github.io/assets/liunx-ftp-7.png)
 
 #### 使用客户端进行验证
 
@@ -96,7 +96,7 @@ ftp [host]
 221 Googbye
 ```
 
-![FTP 安全配置](http://oss-blog.test.upcdn.net/liunx-ftp-8.png)
+![FTP 安全配置](https://vxhly.github.io/assets/liunx-ftp-8.png)
 
 ### 使用户不能登录系统, 但可以登录 FTP
 
@@ -111,7 +111,7 @@ passwd test
 
 `For Example:` <br>
 
-![FTP 安全配置](http://oss-blog.test.upcdn.net/liunx-ftp-9.png)
+![FTP 安全配置](https://vxhly.github.io/assets/liunx-ftp-9.png)
 
 #### 使用客户端进行验证
 
@@ -123,7 +123,7 @@ passwd test
 230 Login successful
 ```
 
-![FTP 安全配置](http://oss-blog.test.upcdn.net/liunx-ftp-11.png)
+![FTP 安全配置](https://vxhly.github.io/assets/liunx-ftp-11.png)
 
 ### 禁止用户写入或者上传文件
 
@@ -135,7 +135,7 @@ write_enable=YES
 
 默认是允许用户进行上传或者写入文件, 我们可以根据需求进行修改。
 
-![FTP 安全配置](http://oss-blog.test.upcdn.net/liunx-ftp-12.png)
+![FTP 安全配置](https://vxhly.github.io/assets/liunx-ftp-12.png)
 
 #### 使用客户端进行验证
 
@@ -153,7 +153,7 @@ write_enable=YES
 250 Directory successfully changed.
 ```
 
-![FTP 安全配置](http://oss-blog.test.upcdn.net/liunx-ftp-12.png)
+![FTP 安全配置](https://vxhly.github.io/assets/liunx-ftp-12.png)
 
 ### 配置空闲会话中断时间
 
@@ -165,7 +165,7 @@ write_enable=YES
 
 默认的配置时间是十分钟, （默认的单位为秒）, 我们可以根据需求进行修改。
 
-![FTP 安全配置](http://oss-blog.test.upcdn.net/liunx-ftp-2.png)
+![FTP 安全配置](https://vxhly.github.io/assets/liunx-ftp-2.png)
 
 #### 使用客户端进行验证
 
@@ -177,7 +177,7 @@ write_enable=YES
 421 Timeout
 ```
 
-![FTP 安全配置](http://oss-blog.test.upcdn.net/liunx-ftp-3.png)
+![FTP 安全配置](https://vxhly.github.io/assets/liunx-ftp-3.png)
 
 ### 配置数据连接超时时间
 
@@ -189,7 +189,7 @@ write_enable=YES
 
 默认的配置是两分钟, （默认的单位为秒）, 我们可以根据需求进行修改。
 
-![FTP 安全配置](http://oss-blog.test.upcdn.net/liunx-ftp-4.png)
+![FTP 安全配置](https://vxhly.github.io/assets/liunx-ftp-4.png)
 
 #### 使用客户端进行验证
 
@@ -206,7 +206,7 @@ write_enable=YES
 
 默认是允许用户跳出自己的家目录的, 我们可以限制他只能在自己的家目录里。注意, 要将用户限制在家目录中, 还需要设置 'chroot_local_user=YES'。
 
-![FTP 安全配置](http://oss-blog.test.upcdn.net/liunx-ftp-5.png)
+![FTP 安全配置](https://vxhly.github.io/assets/liunx-ftp-5.png)
 
 别忘了将禁止的用户添加至 `/etc/vsftpd/chroot_list`
 
@@ -220,7 +220,7 @@ write_enable=YES
 550 Failed to changed directory.
 ```
 
-![FTP 安全配置](http://oss-blog.test.upcdn.net/liunx-ftp-6.png)
+![FTP 安全配置](https://vxhly.github.io/assets/liunx-ftp-6.png)
 
 ### 设置黑名单
 
@@ -232,7 +232,7 @@ userlist_enable=YES
 
 默认情况下就是开启的, 若无开启, 我们可以根据需求进行修改。
 
-![FTP 安全配置](http://oss-blog.test.upcdn.net/liunx-ftp-13.png)
+![FTP 安全配置](https://vxhly.github.io/assets/liunx-ftp-13.png)
 
 别忘了, 将禁止的用户填入 `/etc/vsftpd/ftpusers`
 
@@ -242,13 +242,13 @@ userlist_enable=YES
 
 新建用户, `For Example:` <br>
 
-![FTP 安全配置](http://oss-blog.test.upcdn.net/liunx-ftp-14.png)
+![FTP 安全配置](https://vxhly.github.io/assets/liunx-ftp-14.png)
 
 添加至黑名单, `For Example:` <br>
 
-![FTP 安全配置](http://oss-blog.test.upcdn.net/liunx-ftp-15.png)
+![FTP 安全配置](https://vxhly.github.io/assets/liunx-ftp-15.png)
 
-![FTP 安全配置](http://oss-blog.test.upcdn.net/liunx-ftp-16.png)
+![FTP 安全配置](https://vxhly.github.io/assets/liunx-ftp-16.png)
 
 ## 配置虚拟用户登录
 
@@ -260,7 +260,7 @@ userlist_enable=YES
 rpm -ivh db4-utils-4.3.29-10.el5.i386.rpm
 ```
 
-![FTP 安全配置](http://oss-blog.test.upcdn.net/liunx-ftp-17.png)
+![FTP 安全配置](https://vxhly.github.io/assets/liunx-ftp-17.png)
 
 ### 生成虚拟用户口令库文件
 
@@ -272,7 +272,7 @@ vim /etc/vsftpd/login.txt
 
 需要注意的是, 该文件的格式如下, 单数行为用户名, 偶数行为口令。
 
-![FTP 安全配置](http://oss-blog.test.upcdn.net/liunx-ftp-18.png)
+![FTP 安全配置](https://vxhly.github.io/assets/liunx-ftp-18.png)
 
 ### 生成口令库文件, 并修改其权限
 
@@ -285,7 +285,7 @@ chmod 600 /etc/vsftpd/login.db
 
 注意要设置权限, 只有 root 用户拥有读写权限。
 
-![FTP 安全配置](http://oss-blog.test.upcdn.net/liunx-ftp-19.png)
+![FTP 安全配置](https://vxhly.github.io/assets/liunx-ftp-19.png)
 
 ### 修改虚拟用户的 PAM 文件
 
@@ -302,7 +302,7 @@ auth required pam_userdb.so db=/etc/vsftpd/login
 account required pam_userdb.so db=/etc/vsftpd/login
 ```
 
-![FTP 安全配置](http://oss-blog.test.upcdn.net/liunx-ftp-20.png)
+![FTP 安全配置](https://vxhly.github.io/assets/liunx-ftp-20.png)
 
 数据文件的地址, 记得要写对哦。
 
@@ -316,7 +316,7 @@ chmod 777 /home/ftp
 passwd virtual
 ```
 
-![FTP 安全配置](http://oss-blog.test.upcdn.net/liunx-ftp-21.png)
+![FTP 安全配置](https://vxhly.github.io/assets/liunx-ftp-21.png)
 
 #### 修改主配置文件
 
@@ -328,7 +328,7 @@ guest_username=virtual
 user_config_dir=/etc/vsftpd_user_conf
 ```
 
-![FTP 安全配置](http://oss-blog.test.upcdn.net/liunx-ftp-24.png)
+![FTP 安全配置](https://vxhly.github.io/assets/liunx-ftp-24.png)
 
 #### 创建配置文件存放目录
 
@@ -361,7 +361,7 @@ local_root=/var/ftp/share/123
 # 指定虚拟用户在系统用户下面的路径,限制虚拟用户的家目录,虚拟用户登录后的主目录。
 ```
 
-![FTP 安全配置](http://oss-blog.test.upcdn.net/liunx-ftp-25.png)
+![FTP 安全配置](https://vxhly.github.io/assets/liunx-ftp-25.png)
 
 最后只需创建一下虚拟用户登录后的主目录, `For Example:`
 
@@ -373,4 +373,4 @@ mkdir -p /var/ftp/share/123
 
 这时候就要使用虚拟用户口令库文件里的用户名和密码来登录 FTP 服务器
 
-![FTP 安全配置](http://oss-blog.test.upcdn.net/liunx-ftp-23.png)
+![FTP 安全配置](https://vxhly.github.io/assets/liunx-ftp-23.png)

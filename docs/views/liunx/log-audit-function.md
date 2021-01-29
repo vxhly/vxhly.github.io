@@ -27,7 +27,7 @@ more /etc/syslog.conf | grep authpriv
 more /var/log/secure | grep refused
 ```
 
-![RedHat 安全加固](http://oss-blog.test.upcdn.net/redhat-reinforce-16.png)
+![RedHat 安全加固](https://vxhly.github.io/assets/redhat-reinforce-16.png)
 
 ## 审计功能的进程
 
@@ -67,4 +67,4 @@ lastcomm -f /var/account/pacct
 lastlog
 ```
 
-![RedHat 安全加固](http://oss-blog.test.upcdn.net/redhat-reinforce-17.png)
+![RedHat 安全加固](https://vxhly.github.io/assets/redhat-reinforce-17.png)

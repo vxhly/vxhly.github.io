@@ -32,25 +32,25 @@ Chrome 浏览器不仅可以调试页面、 JavaScript、请求、资源、 cook
 
 直接在页面上点击右键, 然后选择审查元素
 
-![打开调试方法](http://oss-blog.test.upcdn.net/open-browser-debug-1.png)
+![打开调试方法](https://vxhly.github.io/assets/open-browser-debug-1.png)
 
 ### 方法二
 
 在 Chrome 的工具中找到开发者工具
 
-![打开调试方法](http://oss-blog.test.upcdn.net/open-broswer-debug-2.png)
+![打开调试方法](https://vxhly.github.io/assets/open-broswer-debug-2.png)
 
 #### 方法三
 
 使用快捷键 Ctrl+Shift+I (或者 Ctrl+Shift+J 直接打开控制台), 或者直接按 F12
 
-![打开调试方法](http://oss-blog.test.upcdn.net/open-browser-debug-3.png)
+![打开调试方法](https://vxhly.github.io/assets/open-browser-debug-3.png)
 
 ### Elements 标签页
 
 Elements 标签页的左侧就是对页面 HTML 结构的查看与编辑, 你可以直接在某个元素上双击修改元素的属性。
 
-![Elements 标签页](http://oss-blog.test.upcdn.net/broswer-debug-elements-1.png)
+![Elements 标签页](https://vxhly.github.io/assets/broswer-debug-elements-1.png)
 
 * **Add attribute**: 向该元素添加其他的属性
 * **Edit as HTML**: 直接对元素的 `HTML` 进行编辑, 或者删除某个元素, 所有的修改都会即时在页面上得到呈现。
@@ -62,7 +62,7 @@ Elements 标签页的左侧就是对页面 HTML 结构的查看与编辑, 你可
 
 Elements 标签页的右侧可以对元素的 CSS 进行查看与编辑修改
 
-![Elements 标签页](http://oss-blog.test.upcdn.net/broswer-debug-elements-2.png)
+![Elements 标签页](https://vxhly.github.io/assets/broswer-debug-elements-2.png)
 
 * **Styles**: 看 `HTML` 元素的样式
 * **Computed**: 可以看元素的盒子模型
@@ -74,11 +74,11 @@ Elements 标签页的右侧可以对元素的 CSS 进行查看与编辑修改
 
 Network 标签页对于分析网站请求的网络情况、查看某一请求的请求头和响应头还有响应内容很有用。 注意是在你打开 Chrome 开发者工具后发起的请求, 才会在这里显示的哦。
 
-![Network 标签页](http://oss-blog.test.upcdn.net/browser-debug-network-1.png)
+![Network 标签页](https://vxhly.github.io/assets/browser-debug-network-1.png)
 
 点击左侧某一个具体请求 URL, 可以看到该请求的详细 HTTP 请求情况
 
-![Network 标签页](http://oss-blog.test.upcdn.net/browser-debug-network-2.png)
+![Network 标签页](https://vxhly.github.io/assets/browser-debug-network-2.png)
 
 我们可以在这里看到 `HTTP 请求头` 、 `HTTP 响应头` 、 `HTTP 返回的内容` 等信息。
 
@@ -88,48 +88,44 @@ Network 标签页对于分析网站请求的网络情况、查看某一请求的
 * **Cookies**: 请求和响应的 `Cookie`
 * **Timing**: 具体的响应时间
 
-![Network 标签页](http://oss-blog.test.upcdn.net/browser-debug-network-4.png)
+![Network 标签页](https://vxhly.github.io/assets/browser-debug-network-4.png)
 
 <br>
 
-![Network 标签页](http://oss-blog.test.upcdn.net/browser-debug-network-5.png)
+![Network 标签页](https://vxhly.github.io/assets/browser-debug-network-5.png)
 
 <br>
 
-![Network 标签页](http://oss-blog.test.upcdn.net/browser-debug-network-6.png)
+![Network 标签页](https://vxhly.github.io/assets/browser-debug-network-6.png)
 
 ## Sources 标签页
 
 Sources 标签页可以查看到请求的资源情况, 包括 CSS、 JavaScript、图片等的内容。也可以设置各种断点。对存储的内容进行编辑然后保存也会实时的反应到页面上。
 
-![Sources 标签页](http://oss-blog.test.upcdn.net/browser-debug-sources-1.png)
+![Sources 标签页](https://vxhly.github.io/assets/browser-debug-sources-1.png)
 
 ## Audits 标签页
 
 这个对于优化前端页面、加速网页加载速度很有用哦。（相当与 Yslow）
 
-![Audits 标签页](http://oss-blog.test.upcdn.net/browser-debug-audits-3.png)
-
-<br>
-
-![Audits 标签页](http://oss-blog.test.upcdn.net/borwser-debug-audits-2.png)
+![Audits 标签页](https://vxhly.github.io/assets/browser-debug-audits-3.png)
 
 ## Console 标签页
 
 JavaScript 控制台, 前端开发人员最经常使用它来调试 js 的错误。
 
-![Console 标签页](http://oss-blog.test.upcdn.net/browser-debug-console-1.png)
+![Console 标签页](https://vxhly.github.io/assets/browser-debug-console-1.png)
 
 <br>
 
-![Console 标签页](http://oss-blog.test.upcdn.net/browser-debug-console-2.png)
+![Console 标签页](https://vxhly.github.io/assets/browser-debug-console-2.png)
 
 ## 移动端开发调试
 
 可以模拟出不同分辨率的移动端显示的效果, 此效果仅供参考, 因为还有可能受浏览器的不同而显示效果不同。
 
-![移动端开发调试](http://oss-blog.test.upcdn.net/browser-debug-moblie-1.png)
+![移动端开发调试](https://vxhly.github.io/assets/browser-debug-moblie-1.png)
 
 <br>
 
-![移动端开发调试](http://oss-blog.test.upcdn.net/browser-debug-moblie-2.png)
+![移动端开发调试](https://vxhly.github.io/assets/browser-debug-moblie-2.png)

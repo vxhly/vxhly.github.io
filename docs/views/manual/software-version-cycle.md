@@ -15,7 +15,7 @@ date: 2018-10-21 19:13:55
 
 ## 一张图诠释发展软件的过程
 
-![software-version](http://oss-blog.test.upcdn.net/software.jpg)
+![software-version](https://vxhly.github.io/assets/software.jpg)
 
 ## 开发期
 

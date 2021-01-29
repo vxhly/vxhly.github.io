@@ -112,7 +112,7 @@ div {
 }
 ```
 
-![CSS 度量单位](http://oss-blog.test.upcdn.net/css-length-unit-1.png)
+![CSS 度量单位](https://vxhly.github.io/assets/css-length-unit-1.png)
 
 如果你要让这个方形框框始终铺满整个视口的可见区域（四边始终触摸到屏幕的四边）
 
@@ -123,7 +123,7 @@ div {
 }
 ```
 
-![CSS 度量单位](http://oss-blog.test.upcdn.net/css-length-unit-2.png)
+![CSS 度量单位](https://vxhly.github.io/assets/css-length-unit-2.png)
 
 结合使用这些单位可以为我们提供一个新颖有意思的方式来灵活地利用我们视口的大小。
 
@@ -135,7 +135,7 @@ div {
 
 `ex` 定义为当前字体的小写 x 字母的高度或者 1/2 的 1em 。 很多时候, 它是字体的中间标志。<br>
 
-![CSS 度量单位](http://oss-blog.test.upcdn.net/css-length-unit-3.png)
+![CSS 度量单位](https://vxhly.github.io/assets/css-length-unit-3.png)
 
 这些单位有很多用途, 大部分用于版式的微调。 比方说, `sup` 元素（上角文字标）, 可以通过 `position:relative;bottom: 1ex;` 实现 。 类似的方法, 你可以实现一个下角文字标。 浏览器默认的方式是利用
 

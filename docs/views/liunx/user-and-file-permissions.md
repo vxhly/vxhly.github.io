@@ -97,7 +97,7 @@ umask 022
 echo $PATH | egrep '(^|:)(\.|:|$)'
 ```
 
-![RedHat 安全加固](http://oss-blog.test.upcdn.net/redhat-reinforce-12.png)
+![RedHat 安全加固](https://vxhly.github.io/assets/redhat-reinforce-12.png)
 
 检查是否包含组目录权限为 `o+w` 的目录或者 `g+w` 的目录
 
@@ -193,8 +193,6 @@ chmod 600 /etc/security
 find / -type d -perm -0222 -exec ls -ldg {} \;
 ```
 
-![RedHat 安全加固](http://oss-blog.test.upcdn.net/redhat-reinforce-13.png)
-
 ::: tip 提示
 这些目录是存放每个用户临时文件的, 目录本身是带 `Sticky BIT` 粘滞位的, 即使里面的文件有 `o+w` 权限也没问题, 系统本身有保护性措施。
 ::: 
@@ -207,7 +205,7 @@ find / -type d -perm -0222 -exec ls -ldg {} \;
 find / -type f -perm -0222 -exec ls -lg {} \;
 ```
 
-![RedHat 安全加固](http://oss-blog.test.upcdn.net/redhat-reinforce-14.png)
+![RedHat 安全加固](https://vxhly.github.io/assets/redhat-reinforce-14.png)
 
 ## 检查没有属主的文件
 
@@ -243,7 +241,7 @@ find / -xdev -name "..^G" -print
 
 基本上系统默认只有一个文件 `/usr/share/man/man1/..1.gz` , 在加固脚本中的处理方式是存在就直接把它删除掉。<br>
 
-![RedHat 安全加固](http://oss-blog.test.upcdn.net/redhat-reinforce-15.png)
+![RedHat 安全加固](https://vxhly.github.io/assets/redhat-reinforce-15.png)
 
 ## 加锁重要口令文件和组文件
 

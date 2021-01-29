@@ -41,7 +41,7 @@ rpm -ivh bind-9.3.6-4.P1.el5_4.2.i386.rpm
 rpm -ivh caching-namedserver-9.3.6-4.P1.el5_4.2.i386.rpm
 ```
 
-![DNS](http://oss-blog.test.upcdn.net/liunx-dns-1.png)
+![DNS](https://vxhly.github.io/assets/liunx-dns-1.png)
 
 ### 复制模板配置文件
 
@@ -52,7 +52,7 @@ cd /etc/
 cp -p named.caching-nameserver.conf named.conf
 ```
 
-![DNS](http://oss-blog.test.upcdn.net/liunx-dns-2.png)
+![DNS](https://vxhly.github.io/assets/liunx-dns-2.png)
 
 复制的时候, 建议带上 `-p` 选项, 否则不能使用该文件, 如果忘记加上 `-p` 选项, 不要紧, 使用以下命令还可以挽救。
 
@@ -76,7 +76,7 @@ allow-recursion { 192.168.199.2;};     # 限制 IP 查询
 allow-recursion { any;};               # 所有的都可以查询
 ```
 
-![DNS](http://oss-blog.test.upcdn.net/liunx-dns-3.png)
+![DNS](https://vxhly.github.io/assets/liunx-dns-3.png)
 
 ### 限制查询
 
@@ -96,7 +96,7 @@ allow-query { 192.168.199.2;};     # 限制 IP 查询
 allow-query { any;};               # 所有的都可以查询
 ```
 
-![DNS](http://oss-blog.test.upcdn.net/liunx-dns-4.png)
+![DNS](https://vxhly.github.io/assets/liunx-dns-4.png)
 
 ### 限制区传送
 
@@ -110,4 +110,4 @@ allow-transfer { 192.168.199.2;};     # 限制 IP 查询
 allow-transfer { any;};               # 所有的都可以查询
 ```
 
-![DNS](http://oss-blog.test.upcdn.net/liunx-dns-5.png)
+![DNS](https://vxhly.github.io/assets/liunx-dns-5.png)

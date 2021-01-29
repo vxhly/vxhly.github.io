@@ -132,4 +132,4 @@ Zepto(function($) {
 
 如果你说一个页面的 `css` 有几百行, 写完再去改太麻烦了, 那可以用 `px` 转换成 `rem` 的插件。 我这里有一款推荐: `cssrem` （下载使用网址 [cssrem](http://github.com/flashlizi/cssrem)）。 该插件是 `sublime text` 的一款插件。<br>
 
-![cssrem](http://oss-blog.test.upcdn.net/layout-moblie.gif)
+![cssrem](https://vxhly.github.io/assets/layout-moblie.gif)
