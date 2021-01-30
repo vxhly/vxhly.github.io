@@ -639,6 +639,26 @@ const sortDescending = arr => arr.sort((a, b) => a.getTime() > b.getTime());
 const sortAscending = arr => arr.sort((a, b) => a.getTime() < b.getTime());
 ```
 
+### 检查日期是否为工作日
+
+``` javascript
+const isWeekday = (date) => date.getDay() % 6 !== 0;
+console.log(isWeekday(new Date(2021, 0, 11)));
+// Result: true (Monday)
+console.log(isWeekday(new Date(2021, 0, 10)));
+// Result: false (Sunday)
+```
+
+### 从日期中获取时间
+
+``` javascript
+const timeFromDate = date => date.toTimeString().slice(0, 8);
+console.log(timeFromDate(new Date(2021, 0, 10, 17, 30, 0))); 
+// Result: "17:30:00"
+console.log(timeFromDate(new Date()));
+// Result: will log the current time
+```
+
 ## DOM
 
 ### 检查一个元素是否是另一个元素的后代
@@ -650,13 +670,19 @@ const isDescendant = (child, parent) => parent.contains(child);
 ### 检查元素是否获得焦点
 
 ``` javascript
-const hasFocus = ele => (ele === document.activeElement);
+const elementIsInFocus = (el) => (el === document.activeElement);
+elementIsInFocus(anyElement)
+// Result: will return true if in focus, false if not in focus
 ```
 
 ### 检查是否支持触摸事件
 
 ``` javascript
-const touchSupported = () => ('ontouchstart' in window || window.DocumentTouch && document instanceof window.DocumentTouch);
+const touchSupported = () => {
+  ('ontouchstart' in window || window.DocumentTouch && document instanceof window.DocumentTouch);
+}
+console.log(touchSupported());
+// Result: will return true if touch events are supported, false if not
 ```
 
 ### 检测 Internet Explorer 浏览器
@@ -668,7 +694,9 @@ const isIE = !!document.documentMode;
 ### 检测 macos 浏览器
 
 ``` javascript
-const isMacBrowser = /Mac|iPod|iPhone|iPad/.test(navigator.platform);
+const isAppleDevice = /Mac|iPod|iPhone|iPad/.test(navigator.platform);
+console.log(isAppleDevice);
+// Result: will return true if user is on an Apple device
 ```
 
 ### 获取元素的所有同级
@@ -757,6 +785,8 @@ const replace = (ele, newEle) => ele.parentNode.replaceChild(newEle, ele);
 
 ``` javascript
 const goToTop = () => window.scrollTo(0, 0);
+goToTop();
+// Result: will scroll the browser to the top of the page
 ```
 
 ### 显示元素
@@ -775,6 +805,14 @@ const stripHtml = html => (new DOMParser().parseFromString(html, 'text/html')).b
 
 ``` javascript
 const toggle = ele => (ele.style.display = (ele.style.display === 'none') ? 'block' : 'none');
+```
+
+### 检查当前 Tab 页是否在前台
+
+``` javascript
+const isBrowserTabInView = () => document.hidden;
+isBrowserTabInView();
+// Result: returns true or false depending on if tab is in view / focus
 ```
 
 ## 功能
