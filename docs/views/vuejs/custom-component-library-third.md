@@ -154,6 +154,14 @@ const config = {
 module.exports = config
 ```
 
+::: danger
+在做组件库时，有可能出现 `windows`、`document` 未能找到问题，可以参考以下文章进行配置
+
+[VuePress window document is not defined](https://segmentfault.com/a/1190000022727986)
+:::
+
+
+
 ### CLI 工具
 
 ::: tip 提示
