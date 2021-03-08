@@ -208,6 +208,28 @@ lerna publish
 }
 ```
 
+#### options
+
+##### canary
+
+::: tip
+可以用来独立发布每个commit，不打tag
+:::
+
+``` bash
+lerna publish --canary
+# 1.0.0 => 1.0.1-alpha.0+${SHA} of packages changed since the previous commit
+# a subsequent canary publish will yield 1.0.1-alpha.1+${SHA}, etc
+
+lerna publish --canary --preid beta
+# 1.0.0 => 1.0.1-beta.0+${SHA}
+
+# The following are equivalent:
+lerna publish --canary minor
+lerna publish --canary preminor
+# 1.0.0 => 1.1.0-alpha.0+${SHA}
+```
+
 ### 删除子包中的依赖项
 
 ``` bash
