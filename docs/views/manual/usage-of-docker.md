@@ -378,7 +378,7 @@ listen: 0.0.0.0:4873
 
 开始脚本 `forever-npm-start.bat`
 
-``` bat
+```
 @echo off
 C:
 cd C:\Users\Administrator\AppData\Roaming\npm\node_modules\verdaccio\build\lib 
@@ -388,7 +388,7 @@ exit
 
 结束脚本 `forever-npm-stop.bat`
 
-``` bat
+```
 @echo off
 C:
 cd C:\Users\Administrator\AppData\Roaming\npm\node_modules\verdaccio\build\lib

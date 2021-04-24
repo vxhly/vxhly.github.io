@@ -41,7 +41,7 @@ vue create vtp-component ## vtp-component 作为教学的库名
 
 在根目录下新增四个文件夹, 一个用来存放组件的代码（packages）, 一个用来存放 预览示例的网站 代码（examples）（这里直接把初始化模板的 src 目录更改为 examples 即可, 有需要的话可以将该目录进行清空操作, 这里就不做过多的说明）, 一个用来存放编译脚本代码（build）, 一个用来存放自定义生成组件和组件的说明文档等脚本（scripts）
 
-``` text
+```
 |-- build
 |
 |-- examples
@@ -108,7 +108,7 @@ module.exports = {
 
 在 `scripts` 中创建以下几个文件, 其中 `create-comp.js` 是用来生成自定义组件目录和自定义组件说明文档脚本, `delete-comp.js` 是用来删除无用的组件目录和自定义组件说明文档脚本, `template.js` 是生成代码的模板文件
 
-``` text
+```
 |-- create-comp.js
 |
 |-- delete-comp.js
@@ -428,7 +428,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 在 `build` 中创建以下几个文件, 其中 `build-entry.js` 脚本是用来生成自定义组件导出 `packages/index.js` , `get-components.js` 脚本是用来获取 `packages` 目录下的所有组件
 
-``` text
+```
 |--- build-entry.js
 |
 |--- get-components.js

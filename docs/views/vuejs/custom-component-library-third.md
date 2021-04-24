@@ -45,7 +45,7 @@ vue create vtp-ui # vtp-ui 作为教学的库名
 
 大致的目录结构如下：
 
-``` text
+```
 |-- BAT_SCRIPT
 |
 |-- DOCKER
@@ -332,7 +332,7 @@ module.exports = delPackage
 
  `forever-npm-start.bat`
 
-``` bat
+```
 @echo off
 C:
 cd C:\Users\Administrator\AppData\Roaming\npm\node_modules\verdaccio\build\lib
@@ -342,7 +342,7 @@ exit
 
  `forever-npm-stop.bat`
 
-``` bat
+```
 @echo off
 C:
 cd C:\Users\Administrator\AppData\Roaming\npm\node_modules\verdaccio\build\lib

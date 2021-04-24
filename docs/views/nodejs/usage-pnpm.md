@@ -129,7 +129,7 @@ $ pnpm store add lodash
 
 使用过 node 的同学都知道, npm 会在全局创建一个 .npmrc 文件, 这个文件通常用于存放 npm 的相关配置信息, 例如 npm 的下载软件源
 
-``` text
+```
 registry=https://registry.npm.taobao.org/
 ```
 
@@ -230,13 +230,13 @@ When `false` , packages are downloaded and installed from the registry. However,
 
 Create a `.npmrc` file in the root of your monorepo with the following content:
 
-``` text
+```
 link-workspace-packages = true
 ```
 
 Create a `pnpm-workspace.yaml` file with the following content:
 
-``` text
+```
 packages:
   - '**'
 ```
@@ -278,7 +278,7 @@ The base URL of the npm package registry.
 
 准备一个项目工程, 工程目录结构如下
 
-``` text
+```
 --- test-project 
   |
   |- common
@@ -304,7 +304,7 @@ packages:
 
 然后我们还需要对 `.npmrc` 文件进行一定的配置, 配置如下
 
-``` text
+```
 link-workspace-packages = true  # 告诉 pnpm 如何去下载工作区的依赖项
 shamefully-hoist = true # 告诉 pnpm 不采用半严格的 node_modules 目录结构
 store-dir= .pnpm-store # 所有软件包保存在磁盘上的位置
@@ -321,7 +321,7 @@ registry = https://registry.npm.taobao.org
 
 接着尝试在子工程中也创建 `.npmrc` 这个文件, 文件内容如下
 
-``` text
+```
 store-dir= ../common/.pnpm-store # 所有软件包保存在磁盘上的位置, 需要指向 common 目录
 virtual-store-dir= ../common/node_modules/.pnpm #  项目的所有直接和间接依赖关系都链接到此目录, 需要指向 common 目录
 package-import-method= auto # 依赖包从 store 中导入的方式

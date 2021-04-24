@@ -44,7 +44,7 @@ vue create vtp-component # vtp-component 作为教学的库名
 
 大致的目录结构如下：
 
-``` text
+```
 |-- build
 |
 |-- docs
@@ -370,7 +370,7 @@ Vue.use(VtpButton)
 
 在 `scripts` 中创建以下几个文件, 其中 `create-comp.js` 是用来生成自定义组件目录和自定义组件说明文档脚本, `delete-comp.js` 是用来删除无用的组件目录和自定义组件说明文档脚本, `template.js` 是生成代码的模板文件
 
-``` text
+```
 |-- create-comp.js
 |
 |-- delete-comp.js
@@ -702,7 +702,7 @@ export default {
 
 在 `build` 中创建以下几个文件, 其中 `build-entry.js` 脚本是用来生成自定义组件导出 `packages/index.js` , `get-components.js` 脚本是用来获取 `packages` 目录下的所有组件
 
-``` text
+```
 |-- build-entry.js
 |
 |-- get-components.js
@@ -874,7 +874,7 @@ module.exports = function() {
 
 在项目目录下创建 `.npmignore`
 
-``` text
+```
 *.js
 .browserslistrc
 .editorconfig
@@ -888,6 +888,6 @@ public/
 
 如果该组件库作为私有库发至私有 npm 代理库中, 建议在组件库项目以及依赖组件库的项目中创建 `.npmrc` , 注意这里的地址千万千万不能写 `127.0.0.1` 或者 `localhost` , 必须写成公网 IP 或者局域网 IP 或者域名, 否则在多人合作模式下则不能正确的发布或者下载
 
-``` text
+```
 registry=http://192.168.8.10:4873 
 ```

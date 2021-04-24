@@ -19,7 +19,7 @@ date: 2020-09-14 09:14:10
 `Vue`
 :::
 
-``` text
+```
 https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js
 ```
 
@@ -29,7 +29,7 @@ https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js
 `axios`
 :::
 
-``` text
+```
 https://cdn.jsdelivr.net/npm/vue@0.19.0/dist/vue.min.js
 ```
 
@@ -39,7 +39,7 @@ https://cdn.jsdelivr.net/npm/vue@0.19.0/dist/vue.min.js
 `VueI18n`
 :::
 
-``` text
+```
 https://cdn.jsdelivr.net/npm/vue-i18n@8.15.1/dist/vue-i18n.min.js
 ```
 
@@ -49,7 +49,7 @@ https://cdn.jsdelivr.net/npm/vue-i18n@8.15.1/dist/vue-i18n.min.js
 `VueRouter`
 :::
 
-``` text
+```
 https://cdn.jsdelivr.net/npm/vue-router@3.1.3/dist/vue-router.min.js
 ```
 
@@ -59,7 +59,7 @@ https://cdn.jsdelivr.net/npm/vue-router@3.1.3/dist/vue-router.min.js
 `Vuex`
 :::
 
-``` text
+```
 https://cdn.jsdelivr.net/npm/vuex@3.1.3/dist/vuex.min.js
 ```
 
@@ -69,11 +69,11 @@ https://cdn.jsdelivr.net/npm/vuex@3.1.3/dist/vuex.min.js
 `antd`
 :::
 
-``` text
+```
 https://cdn.jsdelivr.net/npm/ant-design-vue@1.6.5/dist/antd.min.js
 ```
 
-``` text
+```
 https://cdn.jsdelivr.net/npm/ant-design-vue@1.6.5/dist/antd.min.css
 ```
 
@@ -83,11 +83,11 @@ https://cdn.jsdelivr.net/npm/ant-design-vue@1.6.5/dist/antd.min.css
 `ELEMENT`
 :::
 
-``` text
+```
 https://cdn.jsdelivr.net/npm/element-ui@2.13.2/lib/index.js
 ```
 
-``` text
+```
 https://cdn.jsdelivr.net/npm/element-ui@2.13.2/lib/theme-chalk/index.css
 ```
 
@@ -97,7 +97,7 @@ https://cdn.jsdelivr.net/npm/element-ui@2.13.2/lib/theme-chalk/index.css
 `echarts`
 :::
 
-``` text
+```
 https://cdn.jsdelivr.net/npm/echarts@4.9.0/dist/echarts.min.js
 ```
 
@@ -107,7 +107,7 @@ https://cdn.jsdelivr.net/npm/echarts@4.9.0/dist/echarts.min.js
 `moment`
 :::
 
-``` text
+```
 https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js
 ```
 
@@ -117,7 +117,7 @@ https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js
 `VueStorage`
 :::
 
-``` text
+```
 https://cdn.jsdelivr.net/npm/vue-ls@3.2.1/dist/vue-ls.min.js
 ```
 
@@ -127,6 +127,6 @@ https://cdn.jsdelivr.net/npm/vue-ls@3.2.1/dist/vue-ls.min.js
 `$`
 :::
 
-``` text
+```
 https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js
 ```
