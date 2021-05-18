@@ -364,6 +364,47 @@ new Vue({
 });
 ```
 
+::: tip
+如果遇上重复路由的时候，可以使用以下方法进行封装
+:::
+
+``` javascript
+import Vue from 'vue'
+import Router from 'vue-router'
+
+// hack router push callback
+const originalPush = Router.prototype.push
+Router.prototype.push = function push (location, onResolve, onReject) {
+  if (onResolve || onReject) return originalPush.call(this, location, onResolve, onReject)
+  return originalPush.call(this, location).catch(err => err)
+}
+
+const constantRouterMap = [
+  {
+
+  }
+]
+
+Vue.use(Router)
+
+const router = new Router({
+  mode: 'history',
+  routes: constantRouterMap
+})
+
+// 重写addRoutes方法，解决重复添加路由问题
+router.$addRoutes = (params) => {
+  router.matcher = new Router({
+    mode: 'history',
+    routes: constantRouterMap
+  }).matcher
+  router.addRoutes(params)
+}
+
+export default router
+
+```
+
 ### HTML5 History 模式
 
 下面这一代码片段是使用 `vue-cli` 下载的模板写法, 但是这种写法会使你的 URL 变成 `http://localhost:8080/#/`
