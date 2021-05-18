@@ -132,11 +132,7 @@ lerna init
 
 其文件结构如下：
 
-<<<<<<< HEAD
 ``` text
-=======
-```
->>>>>>> 52644af64428130ef52a364eefa208afe2eff2de
 lerna-repo/
   packages/          // 子包都放在这个目录中
   package.json
@@ -217,7 +213,7 @@ lerna publish
 ##### canary
 
 ::: tip
-可以用来独立发布每个commit，不打tag
+可以用来独立发布每个commit, 不打tag
 :::
 
 ``` bash

@@ -347,7 +347,7 @@ export const chinanum = (digit) => {
       for (let j = 0; j < segment.length; j++) {
         if (segment[j] !== 0) {
           if (zeroFlag.length > 0) {
-            // 第一次执行zeroFlag长度不为0，说明上一个分区最后有0待处理
+            // 第一次执行zeroFlag长度不为0, 说明上一个分区最后有0待处理
             if (j === 0) {
               result += quot[breakLen - 1] + zh[segment[j]] + unit[j]
             } else {

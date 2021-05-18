@@ -173,11 +173,7 @@ auth required pam_tally2.so deny = 3 unlock_time = 300
 
 当登录错误次数达到最大限制后, 用户再次登录时, 会提示
 
-<<<<<<< HEAD
 ``` text
-=======
-```
->>>>>>> 52644af64428130ef52a364eefa208afe2eff2de
 Your account is locked.Maximum amount of failed attempts was reached.
 ```
 

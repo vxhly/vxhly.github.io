@@ -67,14 +67,14 @@ module.exports = {
         'link': 'https://www.recoluan.com'
       }
     ],
-    'valineConfig': {
-      'appId': 'bplAa0Fmk0scSFweIQkW1zlG-gzGzoHsz',
-      'appKey': 'kOFtniD34zTlLvSdftu62aKu',
-      'placeholder': '文明发言, 您的支持将是我继续下去的动力...',
-      'notify': true,
-      'verify': true,
-      'visitor': true
-    },
+    // 'valineConfig': {
+    //   'appId': 'bplAa0Fmk0scSFweIQkW1zlG-gzGzoHsz',
+    //   'appKey': 'kOFtniD34zTlLvSdftu62aKu',
+    //   'placeholder': '文明发言, 您的支持将是我继续下去的动力...',
+    //   'notify': true,
+    //   'verify': true,
+    //   'visitor': true
+    // },
     'nav': [{
         'text': 'Home',
         'link': '/',

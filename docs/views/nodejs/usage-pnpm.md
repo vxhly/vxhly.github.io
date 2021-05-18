@@ -230,21 +230,13 @@ When `false` , packages are downloaded and installed from the registry. However,
 
 Create a `.npmrc` file in the root of your monorepo with the following content:
 
-<<<<<<< HEAD
 ``` text
-=======
-```
->>>>>>> 52644af64428130ef52a364eefa208afe2eff2de
 link-workspace-packages = true
 ```
 
 Create a `pnpm-workspace.yaml` file with the following content:
 
-<<<<<<< HEAD
 ``` text
-=======
-```
->>>>>>> 52644af64428130ef52a364eefa208afe2eff2de
 packages:
   - '**'
 ```
@@ -286,11 +278,7 @@ The base URL of the npm package registry.
 
 准备一个项目工程, 工程目录结构如下
 
-<<<<<<< HEAD
 ``` text
-=======
-```
->>>>>>> 52644af64428130ef52a364eefa208afe2eff2de
 --- test-project 
   |
   |- common
@@ -316,11 +304,7 @@ packages:
 
 然后我们还需要对 `.npmrc` 文件进行一定的配置, 配置如下
 
-<<<<<<< HEAD
 ``` text
-=======
-```
->>>>>>> 52644af64428130ef52a364eefa208afe2eff2de
 link-workspace-packages = true  # 告诉 pnpm 如何去下载工作区的依赖项
 shamefully-hoist = true # 告诉 pnpm 不采用半严格的 node_modules 目录结构
 store-dir= .pnpm-store # 所有软件包保存在磁盘上的位置
@@ -337,11 +321,7 @@ registry = https://registry.npm.taobao.org
 
 接着尝试在子工程中也创建 `.npmrc` 这个文件, 文件内容如下
 
-<<<<<<< HEAD
 ``` text
-=======
-```
->>>>>>> 52644af64428130ef52a364eefa208afe2eff2de
 store-dir= ../common/.pnpm-store # 所有软件包保存在磁盘上的位置, 需要指向 common 目录
 virtual-store-dir= ../common/node_modules/.pnpm #  项目的所有直接和间接依赖关系都链接到此目录, 需要指向 common 目录
 package-import-method= auto # 依赖包从 store 中导入的方式

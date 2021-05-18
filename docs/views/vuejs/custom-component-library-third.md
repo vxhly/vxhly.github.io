@@ -155,7 +155,7 @@ module.exports = config
 ```
 
 ::: danger
-在做组件库时，有可能出现 `windows`、`document` 未能找到问题，可以参考以下文章进行配置
+在做组件库时, 有可能出现 `windows`、`document` 未能找到问题, 可以参考以下文章进行配置
 
 [VuePress window document is not defined](https://segmentfault.com/a/1190000022727986)
 :::
@@ -332,11 +332,7 @@ module.exports = delPackage
 
  `forever-npm-start.bat`
 
-<<<<<<< HEAD
 ``` bat
-=======
-```
->>>>>>> 52644af64428130ef52a364eefa208afe2eff2de
 @echo off
 C:
 cd C:\Users\Administrator\AppData\Roaming\npm\node_modules\verdaccio\build\lib
@@ -346,11 +342,7 @@ exit
 
  `forever-npm-stop.bat`
 
-<<<<<<< HEAD
 ``` bat
-=======
-```
->>>>>>> 52644af64428130ef52a364eefa208afe2eff2de
 @echo off
 C:
 cd C:\Users\Administrator\AppData\Roaming\npm\node_modules\verdaccio\build\lib

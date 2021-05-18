@@ -108,11 +108,7 @@ module.exports = {
 
 在 `scripts` 中创建以下几个文件, 其中 `create-comp.js` 是用来生成自定义组件目录和自定义组件说明文档脚本, `delete-comp.js` 是用来删除无用的组件目录和自定义组件说明文档脚本, `template.js` 是生成代码的模板文件
 
-<<<<<<< HEAD
 ``` text
-=======
-```
->>>>>>> 52644af64428130ef52a364eefa208afe2eff2de
 |-- create-comp.js
 |
 |-- delete-comp.js
@@ -432,11 +428,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 在 `build` 中创建以下几个文件, 其中 `build-entry.js` 脚本是用来生成自定义组件导出 `packages/index.js` , `get-components.js` 脚本是用来获取 `packages` 目录下的所有组件
 
-<<<<<<< HEAD
 ``` text
-=======
-```
->>>>>>> 52644af64428130ef52a364eefa208afe2eff2de
 |--- build-entry.js
 |
 |--- get-components.js
