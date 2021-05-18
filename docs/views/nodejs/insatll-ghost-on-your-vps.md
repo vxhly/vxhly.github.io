@@ -124,7 +124,7 @@ config = {
 
 打开 `/etc/nginx/nginx.conf` , 在 http 语句块内追加上: 
 
-``` text
+```text
 server {
   listen 80;
   server_name www.yourdomian;
@@ -147,13 +147,21 @@ server {
 
 打开 `/etc/httpd/conf/httpd.conf`
 
+<<<<<<< HEAD
 ``` text
+=======
+```
+>>>>>>> 52644af64428130ef52a364eefa208afe2eff2de
 # NameVirtualHost *:80 #这一行取消注释
 ```
 
 再在文件末尾加上如下语句, 配置请求转发
 
+<<<<<<< HEAD
 ``` text
+=======
+```
+>>>>>>> 52644af64428130ef52a364eefa208afe2eff2de
 <VirtualHost *:80>
     ServerName linuxidc.com
     ProxyRequests Off

@@ -378,7 +378,7 @@ listen: 0.0.0.0:4873
 
 开始脚本 `forever-npm-start.bat`
 
-``` bat
+```bat
 @echo off
 C:
 cd C:\Users\Administrator\AppData\Roaming\npm\node_modules\verdaccio\build\lib 
@@ -388,15 +388,13 @@ exit
 
 结束脚本 `forever-npm-stop.bat`
 
-``` bat
+```bat
 @echo off
 C:
 cd C:\Users\Administrator\AppData\Roaming\npm\node_modules\verdaccio\build\lib
 forever stop cli.js
 exit
 ```
-
-## 拓展
 
 ### CSS预处理SASS的默认实现将迁移到 Dart Sass
 

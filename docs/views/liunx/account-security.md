@@ -21,7 +21,7 @@ date: 2016-10-14 11:06:38
 
  `Default Configuration:`
 
-``` 
+``` text
 PASS_MAX_DAYS 99999 # 两次改变密码之间相距的最大天数, 密码有效最大天数
 PASS_MIN_DAYS 0 # 两次改变密码之间相距的最小天数, 为零时代表任何时候都可以更改密码
 PASS_MIN_LEN 5 # 密码最小长度
@@ -173,7 +173,11 @@ auth required pam_tally2.so deny = 3 unlock_time = 300
 
 当登录错误次数达到最大限制后, 用户再次登录时, 会提示
 
+<<<<<<< HEAD
 ``` text
+=======
+```
+>>>>>>> 52644af64428130ef52a364eefa208afe2eff2de
 Your account is locked.Maximum amount of failed attempts was reached.
 ```
 

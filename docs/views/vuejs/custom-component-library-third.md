@@ -332,7 +332,11 @@ module.exports = delPackage
 
  `forever-npm-start.bat`
 
+<<<<<<< HEAD
 ``` bat
+=======
+```
+>>>>>>> 52644af64428130ef52a364eefa208afe2eff2de
 @echo off
 C:
 cd C:\Users\Administrator\AppData\Roaming\npm\node_modules\verdaccio\build\lib
@@ -342,7 +346,11 @@ exit
 
  `forever-npm-stop.bat`
 
+<<<<<<< HEAD
 ``` bat
+=======
+```
+>>>>>>> 52644af64428130ef52a364eefa208afe2eff2de
 @echo off
 C:
 cd C:\Users\Administrator\AppData\Roaming\npm\node_modules\verdaccio\build\lib

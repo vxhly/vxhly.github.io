@@ -21,23 +21,18 @@ date: 2019-11-05 15:29:47
 ERROR in Template execution failed: ReferenceError: process is not defined
 
 ERROR in   ReferenceError: process is not defined
-  
 
-  + index.ejs:102 
++ index.ejs:102
 
-    /Users/codeman/github/my-project/src/index.ejs:102:2
+  /Users/codeman/github/my-project/src/index.ejs:102:2
 
-  
++ index.ejs:107 module.exports
 
-  + index.ejs:107 module.exports
+  /Users/codeman/github/my-project/src/index.ejs:107:3
 
-    /Users/codeman/github/my-project/src/index.ejs:107:3
++ index.js:284
 
-  
-
-  + index.js:284 
-
-    [my-project]/[html-webpack-plugin]/index.js:284:18
+  [my-project]/[html-webpack-plugin]/index.js:284:18
 
 :::
 
