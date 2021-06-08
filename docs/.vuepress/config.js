@@ -48,7 +48,12 @@ module.exports = {
     ['meta', {
       'name': 'google-site-verification',
       'content': 'XCppppl60fPQTlwxDodwZIhMarkybEgwVpcEz85KTuQ'
-    }]
+    }],
+    ['meta', {
+      'name': 'baidu-site-verification',
+      'content': 'code-3AkOmZ7jDr'
+    }],
+    ['meta', { name: 'keywords', content: 'Coding and Fixing,Coding,Fixing,博客,vxhly,blog,vuepress-blog' }]
   ],
   'theme': 'reco',
   'themeConfig': {
@@ -208,6 +213,7 @@ module.exports = {
       'disabled': false,
       'noSelect': true
     }],
+    [require('./plugin/baidu-autopush/index.js')],
     [require('./plugin/kanbanniang/index.js'), {
       'theme': ['kesshouban'],
       'messages': {
@@ -235,8 +241,15 @@ module.exports = {
       'width': 216,
       'height': 281.6
     }],
+    // ['sitemap', {
+    //   'hostname': 'https://vxhly.github.io',
+    //   'exclude': ['/404.html'],
+    //   'dateFormatter': val => {
+    //     return new Date().toISOString()
+    //   }
+    // }],
     ['sitemap', {
-      'hostname': 'https://vxhly.github.io',
+      'hostname': 'https://vxhly.netlify.app',
       'exclude': ['/404.html'],
       'dateFormatter': val => {
         return new Date().toISOString()
