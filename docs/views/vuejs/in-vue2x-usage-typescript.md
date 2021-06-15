@@ -213,7 +213,7 @@ date: 2021-05-18 11:20:19
 ```
 
 ::: tip
-`onNumChange` 方法要紧挨着 `@Watch`,它们中间不能有其他代码,而且这个方法名称可以自定义，没有强制要求。
+`onNumChange` 方法要紧挨着 `@Watch`,它们中间不能有其他代码,而且这个方法名称可以自定义, 没有强制要求。
 :::
 
 ### ref
@@ -311,7 +311,7 @@ date: 2021-05-18 11:20:19
   @Component
   export default class HelloWorld extends Vue {
     @Inject() readonly foo!: string //接收依赖注入的值
-    @Inject({ from: 'optional', default: 'default' }) readonly optional!: string //父组件，爷爷组件没传optional时，使用default设置默认值
+    @Inject({ from: 'optional', default: 'default' }) readonly optional!: string //父组件, 爷爷组件没传optional时, 使用default设置默认值
     @Inject('bar') readonly bar!: string
     
     private moun ted(): void {
@@ -384,7 +384,7 @@ date: 2021-05-18 11:20:19
   } from 'vue-property-decorator'
   @Component
   export default class HelloWorld extends Vue {
-    @Prop() private msg!: string //!，非null和undefined
+    @Prop() private msg!: string //!, 非null和undefined
     @Prop(Number) readonly propA: number | undefined
     @Prop({ default: 'default value' }) readonly propB!: string
     @Prop([String, Boolean]) readonly propC: string | boolean | undefined
@@ -518,7 +518,7 @@ date: 2021-05-18 11:20:19
   } from 'vue-property-decorator'
   @Component
   export default class HelloWorld extends Vue {
-    @PropSync('name', { type: String }) syncedName!: string //同步，可让子组件修改父组件的值
+    @PropSync('name', { type: String }) syncedName!: string //同步, 可让子组件修改父组件的值
     public setSyncedName(): void {
       console.log('prop双向绑定',)
       this.syncedName = '同步、子组件修改父组件'

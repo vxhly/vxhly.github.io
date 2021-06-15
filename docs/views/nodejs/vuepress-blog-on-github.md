@@ -522,7 +522,7 @@ branches:
 
 #### GitHub Actions
 
-在项目中创建 `.github` 文件夹，GitHub Actions 将会自动执行该目录下的所有 .yml 文件
+在项目中创建 `.github` 文件夹, GitHub Actions 将会自动执行该目录下的所有 .yml 文件
 
 ``` yml
 name: VUEPRESS DEPLOY
@@ -541,7 +541,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          # “最近更新时间” 等 git 日志相关信息，需要拉取全部提交记录
+          # “最近更新时间” 等 git 日志相关信息, 需要拉取全部提交记录
           fetch-depth: 0
 
       - name: Setup Node.js
@@ -561,7 +561,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
 
-      # 如果缓存没有命中，安装依赖
+      # 如果缓存没有命中, 安装依赖
       - name: Install dependencies
         if: steps.yarn-cache.outputs.cache-hit != 'true'
         run: yarn --frozen-lockfile
