@@ -55,13 +55,6 @@ export default hopeTheme({
       triggerWords: 1,
       global: true,
     },
-    comment: {
-      provider: "Giscus",
-      repo: "vxhly/vxhly.github.io",
-      repoId: "R_kgDOHfESGg",
-      category: "Announcements",
-      categoryId: "DIC_kwDOHfESGs4CPmxQ",
-    },
     feed: {
       atom: true,
       json: true,
@@ -89,6 +82,6 @@ export default hopeTheme({
 
     seo: {
       canonical: "https://vxhly.github.io/",
-    }
+    },
   },
 });

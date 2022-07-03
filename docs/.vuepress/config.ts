@@ -1,16 +1,16 @@
-import { defineUserConfig } from "@vuepress/cli"
-import { viteBundler } from '@vuepress/bundler-vite'
-import theme from "./theme"
-import { baiduAutopushPlugin } from "@vuepress-denaro/vuepress-plugin-baidu-autopush"
-import { rewardPlugin } from "@vuepress-denaro/vuepress-plugin-reward"
-import { dynamicTitlePlugin } from "@vuepress-denaro/vuepress-plugin-dynamic-title"
+import { defineUserConfig } from "@vuepress/cli";
+import { viteBundler } from "@vuepress/bundler-vite";
+import theme from "./theme";
+import { baiduAutopushPlugin } from "@vuepress-denaro/vuepress-plugin-baidu-autopush";
+import { rewardPlugin } from "@vuepress-denaro/vuepress-plugin-reward";
+import { dynamicTitlePlugin } from "@vuepress-denaro/vuepress-plugin-dynamic-title";
 import {
   moefyCanvasPlugin,
   MoefyCanvasTheme,
-} from "@vuepress-denaro/vuepress-plugin-moefy-canvas"
-import { externalLinkIconPlugin } from '@vuepress/plugin-external-link-icon'
-import {googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
-import { mediumZoomPlugin } from '@vuepress/plugin-medium-zoom'
+} from "@vuepress-denaro/vuepress-plugin-moefy-canvas";
+import { externalLinkIconPlugin } from "@vuepress/plugin-external-link-icon";
+import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
+import { mediumZoomPlugin } from "@vuepress/plugin-medium-zoom";
 // import { docsearchPlugin } from "@vuepress/plugin-docsearch"
 
 export default defineUserConfig({
@@ -51,7 +51,7 @@ export default defineUserConfig({
     // }),
     mediumZoomPlugin(),
     googleAnalyticsPlugin({
-      id: 'G-VPGVX3F6D4'
+      id: "G-VPGVX3F6D4",
     }),
     externalLinkIconPlugin(),
     baiduAutopushPlugin(),
@@ -67,4 +67,4 @@ export default defineUserConfig({
       theme: MoefyCanvasTheme.Sakura,
     }),
   ],
-})
+});

@@ -30,7 +30,7 @@ projects:
     icon: /assets/img/sass.png
 
   - name: vxhly.github.io
-    desc: 使用 vuepress-next 搭建的个人博客 
+    desc: 使用 vuepress-next 搭建的个人博客
     link: https://vxhly.github.io/
     icon: /assets/img/favicon.ico
 ---
