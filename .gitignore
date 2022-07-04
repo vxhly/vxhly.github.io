@@ -5,3 +5,4 @@ dist
 *.lock
 .cache
 .temp
+publish-pages
