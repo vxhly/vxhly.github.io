@@ -62,7 +62,18 @@ export default hopeTheme({
     },
 
     mdEnhance: {
-      enableAll: true,
+      demo: true,
+      mermaid: true,
+      flowchart: true,
+      container: true,
+      align: true,
+      sup: true,
+      sub: true,
+      footnote: true,
+      mark: true,
+      tasklist: true,
+      tex: true,
+      presentation: true
     },
 
     pwa: {

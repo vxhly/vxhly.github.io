@@ -43,6 +43,8 @@ export default defineUserConfig({
 
   theme,
 
+  shouldPrefetch: false,
+  
   plugins: [
     // docsearchPlugin({
     //   apiKey: '',
