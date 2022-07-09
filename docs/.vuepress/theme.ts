@@ -73,7 +73,7 @@ export default hopeTheme({
       mark: true,
       tasklist: true,
       tex: true,
-      presentation: true
+      presentation: true,
     },
 
     pwa: {

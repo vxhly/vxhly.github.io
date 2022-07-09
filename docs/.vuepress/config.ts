@@ -11,7 +11,7 @@ import {
 import { externalLinkIconPlugin } from "@vuepress/plugin-external-link-icon";
 import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
 import { mediumZoomPlugin } from "@vuepress/plugin-medium-zoom";
-// import { docsearchPlugin } from "@vuepress/plugin-docsearch"
+import { docsearchPlugin } from "@vuepress/plugin-docsearch";
 
 export default defineUserConfig({
   dest: "publish-pages",
@@ -44,13 +44,13 @@ export default defineUserConfig({
   theme,
 
   shouldPrefetch: false,
-  
+
   plugins: [
-    // docsearchPlugin({
-    //   apiKey: '',
-    //   indexName: '',
-    //   appId: ''
-    // }),
+    docsearchPlugin({
+      appId: "R2IYF7ETH7",
+      apiKey: "599cec31baffa4868cae4e79f180729b",
+      indexName: "docsearch",
+    }),
     mediumZoomPlugin(),
     googleAnalyticsPlugin({
       id: "G-VPGVX3F6D4",
