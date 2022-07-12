@@ -8,7 +8,6 @@
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
     "lint": "prettier --check --write .",
-    "lint:check": "prettier --check .",
     "deploy": "bash deploy.sh",
     "update": "yarn upgrade-interactive --latest"
   },
