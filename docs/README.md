@@ -25,7 +25,7 @@ projects:
     icon: /assets/img/v-charts2.png
 
   - name: scss-flex
-    desc: flexbox 布局神器，使用 SASS 语法编写，使用 webpack 前端打包工具进行打包
+    desc: flexbox 布局神器, 使用 SASS 语法编写, 使用 webpack 前端打包工具进行打包
     link: https://github.com/vxhly/scss-flex
     icon: /assets/img/sass.png
 
