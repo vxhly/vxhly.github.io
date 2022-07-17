@@ -4,7 +4,6 @@
   "description": "Coding and Fixing",
   "main": "index.js",
   "scripts": {
-    "lint-md": "markdownlint **/*.md --ignore node_modules --fix",
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
     "lint": "prettier --check --write .",
