@@ -48,7 +48,7 @@ export default defineUserConfig({
   plugins: [
     docsearchPlugin({
       appId: "056G9DZUHE",
-      apiKey: "19fbbffb72f61507c04e4debdb5dfe5e",
+      apiKey: "9d3669d8c9413c54c42ca8c12d1c7e17",
       indexName: "vxhly",
     }),
     mediumZoomPlugin(),
