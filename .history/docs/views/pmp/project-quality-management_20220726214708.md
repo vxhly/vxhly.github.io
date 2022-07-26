@@ -18,4 +18,4 @@ date: 2022-07-20 19:20:00
 
 ## 思维导图
 
-![项目质量管理](/assets/project-quality-management.png)
+![项目质量管理](/assets/project-progress-managementt.png)

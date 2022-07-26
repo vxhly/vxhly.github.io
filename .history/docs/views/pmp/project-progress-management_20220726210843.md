@@ -22,7 +22,7 @@ date: 2022-07-20 19:20:00
 
 ## 思维导图
 
-![项目进度管理](/assets/project-progress-management.png)
+![项目进度管理](/assets/project-scope-management.png)
 
 ## 规划过程组
 

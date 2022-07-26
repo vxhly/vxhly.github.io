@@ -15,7 +15,3 @@ date: 2022-07-20 19:20:00
 <!-- more -->
 
 ## 核心概念
-
-## 思维导图
-
-![项目质量管理](/assets/project-quality-management.png)
