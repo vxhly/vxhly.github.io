@@ -145,7 +145,7 @@ $ yarn yarn install v1.19.2 warning You are using Node "7.10.1" which is not sup
 
 `.travis.yml`
 
-```yaml
+```yml
 osx_image: xcode8.3
 sudo: required
 dist: trusty
@@ -202,7 +202,7 @@ branches:
 
 `appveyor.yml`
 
-```yaml
+```yml
 version: 0.1.{build}
 
 branches:

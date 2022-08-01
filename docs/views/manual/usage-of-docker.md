@@ -68,7 +68,7 @@ $ docker run --name test-phpmyadmin -p 8080:80 --link test-mysql:db -d phpmyadmi
 
 #### 通过 docker-compose.yml
 
-```yaml
+```yml
 version: "2"
 services:
   mysql:
@@ -112,7 +112,7 @@ mysql> grant all privileges on *.*  to 'root'@'%';
 mysql> flush privileges;
 ```
 
-```yaml
+```yml
 # Use root/p@ssw0rd as user/password credentials
 version: "3.1"
 
@@ -187,7 +187,7 @@ EXPOSE 5000
 
 在项目文件夹下创建 `docker-compose.yml`
 
-```yaml
+```yml
 version: '3'
 services:
     dev:
@@ -262,13 +262,13 @@ module.exports = {
 
 到此已经全部配置完毕, 重新 `yarn serve` 然后就可以愉快的写代码了
 
-### gitlab
+### Gitlab
 
 #### 英文官方原版
 
 在项目文件夹下创建 `docker-compose.yml`
 
-```yaml
+```yml
 version: "3"
 
 services:
@@ -295,7 +295,7 @@ services:
 
 在项目文件夹下创建 `docker-compose.yml`
 
-```yaml
+```yml
 version: "3"
 
 services:
@@ -319,6 +319,30 @@ services:
       - ./cn/config:/etc/gitlab
       - ./cn/logs:/var/log/gitlab
       - ./cn/data:/var/opt/gitlab
+```
+
+### MongoDB
+
+```yml
+version: "3"
+
+services:
+  mongo:
+    image: mongo
+    container_name: mongo
+    hostname: mongo
+    restart: always
+    ports:
+      - "27017:27017"
+    environment:
+      TZ: Asia/Shanghai
+      MONGO_INITDB_DATABASE: test
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: yourpassword
+    volumes:
+      - /etc/localtime:/etc/localtime
+      - ./data:/data/db
+    command: mongod
 ```
 
 ### 拓展
@@ -353,7 +377,7 @@ irb(main):001:0> quit
 
 在项目文件夹下创建 `docker-compose.yml`
 
-```yaml
+```yml
 version: "3"
 
 services:

@@ -402,7 +402,7 @@ npm  install  -g  forever  verdaccio
 
 `DOCKER` 中的 `docker-compose.yml`
 
-```yaml
+```yml
 version: "3"
 
 services:

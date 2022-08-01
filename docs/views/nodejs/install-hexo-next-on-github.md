@@ -152,7 +152,7 @@ hexo g -d
 
 `./_config.yml`
 
-```yaml
+```yml
 deploy:
     type: git
 repo: git @github.com: youName / youName.github.io.git
@@ -216,7 +216,7 @@ npm install hexo-generator-search --save
 
 在任意位置添加以下内容
 
-```yaml
+```yml
 search:
   path: search.xml
 field: post
@@ -228,7 +228,7 @@ limit: 10000
 
 `./themes/next/_config.yml`
 
-```yaml
+```yml
 #
 Local search
 local_search:
@@ -247,7 +247,7 @@ npm install hexo-wordcount --save
 
 `./themes/next/_config.yml`
 
-```yaml
+```yml
 post_wordcount:
   item_text: true
 wordcount: true
@@ -260,7 +260,7 @@ min2read: true
 
 `./_config.yml`
 
-```yaml
+```yml
 #
 Site
 language: zh - Hans
@@ -298,7 +298,7 @@ branch: master
 
 `./themes/next/_config.yml`
 
-```yaml
+```yml
 # Specify the date when the site was setup
 since: 2016
 

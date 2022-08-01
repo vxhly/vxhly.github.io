@@ -306,7 +306,7 @@ The base URL of the npm package registry.
 
 我们指定 common 文件夹即是 pnpm 工作区的跟路径, 在这个文件夹里面创建 pnpm-workspace.yaml 和 .npmrc 文件
 
-```yaml
+```yml
 packages:
   - "../**/" # 允许安装上一级目录下的所有工程的依赖
   - "!../**/node_modules/**" # 不允许安装 上一级目录下 node_modules 下的依赖项

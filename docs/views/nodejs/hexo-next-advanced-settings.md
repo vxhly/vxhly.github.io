@@ -28,7 +28,7 @@ Next 自带的代码高亮并不符合我的口味, 所以就采用了第三方�
 
 `./_config.yml`
 
-```yaml
+```yml
 highlight:
   enable: false
 line_number: true
@@ -254,7 +254,7 @@ tab_replace:
 
 `./themes/_config.yml`
 
-```yaml
+```yml
 #
 Canvas - nest
 canvas_nest: true
@@ -285,7 +285,7 @@ vendors: #Internal version: 1.0 .0# https: //github.com/hustcc/canvas-nest.js
 
 `./themes/_config.yml`
 
-```yaml
+```yml
 #
 Valine.#You can get your appid and appkey from https: //leancloud.cn
     #more info please open https: //github.com/xCss/Valine

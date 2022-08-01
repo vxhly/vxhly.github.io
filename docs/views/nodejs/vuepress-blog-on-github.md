@@ -515,7 +515,7 @@ git commit -m "$commitmsg"
 
 在你的项目目录中创建 `.travis.yml` , 更多的配置项戳这里 [Travis CI Deployment](https://docs.travis-ci.com/user/deployment)
 
-```yaml
+```yml
 language: node_js
 node_js: + lts/*
 
