@@ -134,7 +134,7 @@ EAC = AC + (BAC - EV) / 1 = AC + BAC - EV
 
 :::
 
-::: tip EAC（进度成本同时作用）
+::: tip EAC（进度成本同时作用, 成本超支或进度落后）
 
 EAC = AC + (BAC - EV) / (CPI \* SPI)
 
