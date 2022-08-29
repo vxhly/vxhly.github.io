@@ -1,10 +1,11 @@
-import { hopeTheme } from "vuepress-theme-hope";
-import { zhNavbarConfig } from "./navbar";
+import {hopeTheme} from "vuepress-theme-hope";
+import {zhNavbarConfig} from "./navbar";
+import {zhSidebarConfig} from "./sidebar";
 
 export default hopeTheme({
   hostname: "https://vxhly.github.io/",
 
-  breadcrumb: false,
+  breadcrumb: true,
 
   author: {
     name: "星火燎原@vxhly",
@@ -16,20 +17,21 @@ export default hopeTheme({
 
   logo: "/favicon.ico",
 
-  repo: "https://github.com/vxhly/vxhly.github.io",
+  // repo: "https://github.com/vxhly/vxhly.github.io",
 
-  repoDisplay: false,
+  displayFooter: true,
+  copyright: "Copyright © 2022-present 星火燎原@vxhly",
 
   docsDir: "docs",
 
   locales: {
     "/": {
       navbar: zhNavbarConfig,
-      sidebar: false,
+      sidebar: zhSidebarConfig,
       blog: {
         avatar: "/avatar.jpeg",
         roundAvatar: true,
-        description: "伪前端开发工作者",
+        description: "Coding and Fixing",
         // intro: "/about/",
         medias: {
           Gmail: "mailto:pengchengou@gmail.com",
@@ -40,9 +42,6 @@ export default hopeTheme({
       },
     },
   },
-
-  displayFooter: true,
-  copyright: "MIT Licensed | Copyright © 2022 vxhly",
 
   plugins: {
     blog: true,

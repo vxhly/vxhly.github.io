@@ -1,15 +1,13 @@
-import { navbar } from "vuepress-theme-hope";
+import {navbar} from "vuepress-theme-hope";
 
 export const zhNavbarConfig = navbar([
   "/",
   {
-    text: "关于本站",
-    icon: "info",
+    text: "PMP 第六版",
+    // icon: "pmp",
+    prefix: "/pmp/",
     children: [
-      {
-        text: "站点介绍",
-        link: "/about/site/",
-      },
+      "knowledge/"
     ],
   },
 ]);
