@@ -1,6 +1,6 @@
-import {hopeTheme} from "vuepress-theme-hope";
-import {zhNavbarConfig} from "./navbar";
-import {zhSidebarConfig} from "./sidebar";
+import { hopeTheme } from "vuepress-theme-hope";
+import { zhNavbarConfig } from "./navbar";
+import { zhSidebarConfig } from "./sidebar";
 
 export default hopeTheme({
   hostname: "https://vxhly.github.io/",

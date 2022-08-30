@@ -2,7 +2,12 @@
 author: 星火燎原@vxhly
 title: PMP 关键词篇
 category: [PMP]
-tag: [PMP]
+
+tag:
+  - PMP
+  - 项目管理
+  - 项目管理知识领域
+
 date: 2022-07-19 22:50:00
 ---
 

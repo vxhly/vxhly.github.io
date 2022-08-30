@@ -2,7 +2,12 @@
 author: 星火燎原@vxhly
 title: PMP 敏捷开发流程之Scrum：3355
 category: [PMP]
-tag: [PMP]
+
+tag:
+  - PMP
+  - 项目管理
+  - 项目管理知识领域
+
 date: 2022-08-20 19:20:00
 ---
 
