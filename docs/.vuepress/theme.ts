@@ -43,6 +43,12 @@ export default hopeTheme({
     },
   },
 
+  encrypt: {
+    config: {
+      "/pmp/": ["PMP", "PMP2022"],
+    },
+  },
+
   plugins: {
     blog: true,
 
