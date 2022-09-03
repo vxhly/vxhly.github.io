@@ -10,7 +10,8 @@ import {
 } from "@vuepress-denaro/vuepress-plugin-moefy-canvas";
 import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
 import { mediumZoomPlugin } from "@vuepress/plugin-medium-zoom";
-// import { docsearchPlugin } from "@vuepress/plugin-docsearch";
+// import {docsearchPlugin} from "@vuepress/plugin-docsearch";
+import { searchPlugin } from "@vuepress/plugin-search";
 
 export default defineUserConfig({
   dest: "publish-pages",
@@ -50,6 +51,7 @@ export default defineUserConfig({
     //   apiKey: '4448542913ae102fb0c430bd188314a5',
     //   appId: 'EFXXZD2NI0'
     // }),
+    searchPlugin({}),
     mediumZoomPlugin(),
     googleAnalyticsPlugin({
       id: "G-VPGVX3F6D4",
