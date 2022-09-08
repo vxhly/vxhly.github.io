@@ -1,17 +1,12 @@
-import { defineUserConfig } from "@vuepress/cli";
-import { viteBundler } from "@vuepress/bundler-vite";
+import {defineUserConfig} from "@vuepress/cli";
+import {viteBundler} from "@vuepress/bundler-vite";
 import theme from "./theme";
-import { baiduAutopushPlugin } from "@vuepress-denaro/vuepress-plugin-baidu-autopush";
-import { rewardPlugin } from "@vuepress-denaro/vuepress-plugin-reward";
-import { dynamicTitlePlugin } from "@vuepress-denaro/vuepress-plugin-dynamic-title";
-import {
-  moefyCanvasPlugin,
-  MoefyCanvasTheme,
-} from "@vuepress-denaro/vuepress-plugin-moefy-canvas";
-import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
-import { mediumZoomPlugin } from "@vuepress/plugin-medium-zoom";
-// import {docsearchPlugin} from "@vuepress/plugin-docsearch";
-import { searchPlugin } from "@vuepress/plugin-search";
+import {baiduAutopushPlugin} from "@vuepress-denaro/vuepress-plugin-baidu-autopush";
+import {rewardPlugin} from "@vuepress-denaro/vuepress-plugin-reward";
+import {dynamicTitlePlugin} from "@vuepress-denaro/vuepress-plugin-dynamic-title";
+import {moefyCanvasPlugin, MoefyCanvasTheme,} from "@vuepress-denaro/vuepress-plugin-moefy-canvas";
+import {googleAnalyticsPlugin} from "@vuepress/plugin-google-analytics";
+import {mediumZoomPlugin} from "@vuepress/plugin-medium-zoom";
 
 export default defineUserConfig({
   dest: "publish-pages",
@@ -46,12 +41,6 @@ export default defineUserConfig({
   shouldPrefetch: false,
 
   plugins: [
-    // docsearchPlugin({
-    //   indexName: 'Coding and Fixing',
-    //   apiKey: '4448542913ae102fb0c430bd188314a5',
-    //   appId: 'EFXXZD2NI0'
-    // }),
-    searchPlugin({}),
     mediumZoomPlugin(),
     googleAnalyticsPlugin({
       id: "G-VPGVX3F6D4",
