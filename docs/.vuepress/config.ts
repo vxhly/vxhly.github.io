@@ -1,12 +1,15 @@
-import {defineUserConfig} from "@vuepress/cli";
-import {viteBundler} from "@vuepress/bundler-vite";
+import { defineUserConfig } from "@vuepress/cli";
+import { viteBundler } from "@vuepress/bundler-vite";
 import theme from "./theme";
-import {baiduAutopushPlugin} from "@vuepress-denaro/vuepress-plugin-baidu-autopush";
-import {rewardPlugin} from "@vuepress-denaro/vuepress-plugin-reward";
-import {dynamicTitlePlugin} from "@vuepress-denaro/vuepress-plugin-dynamic-title";
-import {moefyCanvasPlugin, MoefyCanvasTheme,} from "@vuepress-denaro/vuepress-plugin-moefy-canvas";
-import {googleAnalyticsPlugin} from "@vuepress/plugin-google-analytics";
-import {mediumZoomPlugin} from "@vuepress/plugin-medium-zoom";
+import { baiduAutopushPlugin } from "@vuepress-denaro/vuepress-plugin-baidu-autopush";
+import { rewardPlugin } from "@vuepress-denaro/vuepress-plugin-reward";
+import { dynamicTitlePlugin } from "@vuepress-denaro/vuepress-plugin-dynamic-title";
+import {
+  moefyCanvasPlugin,
+  MoefyCanvasTheme,
+} from "@vuepress-denaro/vuepress-plugin-moefy-canvas";
+import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
+import { mediumZoomPlugin } from "@vuepress/plugin-medium-zoom";
 
 export default defineUserConfig({
   dest: "publish-pages",
