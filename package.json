@@ -22,18 +22,18 @@
   "author": "vxhly <pengchengou@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@vuepress-denaro/vuepress-plugin-baidu-autopush": "^1.1.0-alpha.2",
-    "@vuepress-denaro/vuepress-plugin-dynamic-title": "^1.1.0-alpha.2",
-    "@vuepress-denaro/vuepress-plugin-moefy-canvas": "^1.1.0-alpha.2",
-    "@vuepress-denaro/vuepress-plugin-reward": "^1.1.0-alpha.2",
-    "@vuepress/bundler-vite": "^2.0.0-beta.51",
-    "@vuepress/plugin-google-analytics": "^2.0.0-beta.51",
-    "@vuepress/plugin-medium-zoom": "^2.0.0-beta.51",
+    "@vuepress-denaro/vuepress-plugin-baidu-autopush": "^1.1.0-alpha.3",
+    "@vuepress-denaro/vuepress-plugin-dynamic-title": "^1.1.0-alpha.3",
+    "@vuepress-denaro/vuepress-plugin-moefy-canvas": "^1.1.0-alpha.3",
+    "@vuepress-denaro/vuepress-plugin-reward": "^1.1.0-alpha.3",
+    "@vuepress/bundler-vite": "^2.0.0-beta.53",
+    "@vuepress/plugin-google-analytics": "^2.0.0-beta.53",
+    "@vuepress/plugin-medium-zoom": "^2.0.0-beta.53",
     "eslint": "^8.23.0",
     "eslint-plugin-markdown": "^3.0.0",
     "markdownlint-cli": "0.32.2",
     "prettier": "^2.7.1",
-    "vuepress": "^2.0.0-beta.51",
-    "vuepress-theme-hope": "^2.0.0-beta.100"
+    "vuepress": "^2.0.0-beta.53",
+    "vuepress-theme-hope": "^2.0.0-beta.121"
   }
 }
