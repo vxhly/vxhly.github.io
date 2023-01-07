@@ -1,6 +1,6 @@
-import { defineUserConfig } from "@vuepress/cli";
-import { viteBundler } from "@vuepress/bundler-vite";
-import theme from "./theme";
+import { defineUserConfig } from "vuepress";
+import theme from "./theme.js";
+import { searchProPlugin } from "vuepress-plugin-search-pro";
 import { baiduAutopushPlugin } from "@vuepress-denaro/vuepress-plugin-baidu-autopush";
 import { rewardPlugin } from "@vuepress-denaro/vuepress-plugin-reward";
 import { dynamicTitlePlugin } from "@vuepress-denaro/vuepress-plugin-dynamic-title";
@@ -8,16 +8,11 @@ import {
   moefyCanvasPlugin,
   MoefyCanvasTheme,
 } from "@vuepress-denaro/vuepress-plugin-moefy-canvas";
-import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
-import { mediumZoomPlugin } from "@vuepress/plugin-medium-zoom";
 
 export default defineUserConfig({
-  dest: "publish-pages",
+  base: "/",
 
-  bundler: viteBundler({
-    viteOptions: {},
-    vuePluginOptions: {},
-  }),
+  dest: "publish-pages",
 
   lang: "zh-CN",
 
@@ -30,7 +25,6 @@ export default defineUserConfig({
       },
     ],
   ],
-
   locales: {
     "/": {
       lang: "zh-CN",
@@ -44,9 +38,8 @@ export default defineUserConfig({
   shouldPrefetch: false,
 
   plugins: [
-    mediumZoomPlugin(),
-    googleAnalyticsPlugin({
-      id: "G-VPGVX3F6D4",
+    searchProPlugin({
+      indexContent: true,
     }),
     baiduAutopushPlugin(),
     rewardPlugin(),

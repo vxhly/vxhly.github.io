@@ -1,6 +1,6 @@
 ---
 home: true
-layout: Blog
+layout: BlogHome
 icon: home
 title: 主页
 heroImage: /denaro.svg
@@ -33,4 +33,5 @@ projects:
     desc: 使用 vuepress-next 搭建的个人博客
     link: https://vxhly.github.io/
     icon: /assets/img/favicon.ico
+# footer: 由 GitHub Page 服务驱动
 ---

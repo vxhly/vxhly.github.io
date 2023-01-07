@@ -98,7 +98,6 @@ Sprint 计划会旨在澄清待办事项列表中事项的详细信息, 验收�
 
 :::
 
-
 - Sprint 规划会的核心议题是下一次冲刺要实现的目标和范围。
 - 从 Product Backlog 中选取高优先级的需求, 确定 Sprint 的目标, 对产品 backIog 中故事进行估算, 以作为是否放入下期的参考。对于需求不清楚的故事, 需要产品负责人进行说明。
 - 会议中输入是 Product backIog, 输出是 Sprint BackIog。
