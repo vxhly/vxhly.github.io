@@ -3,7 +3,7 @@
   <id>https://vxhly.github.io/</id>
   <title>Coding and Fixing</title>
   <subtitle>源于生活而高于生活.</subtitle>
-  <updated>2023-01-07T16:41:42.392Z</updated>
+  <updated>2023-02-08T01:09:22.826Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://vxhly.github.io/atom.xml"/>
   <link rel="alternate" href="https://vxhly.github.io/"/>
@@ -160,7 +160,7 @@
     <title type="html">PMP 敏捷知识点</title>
     <id>https://vxhly.github.io/pmp/agile/agile-knowledge.html</id>
     <link href="https://vxhly.github.io/pmp/agile/agile-knowledge.html"/>
-    <updated>2023-01-07T16:06:48.000Z</updated>
+    <updated>2023-02-08T01:07:09.000Z</updated>
     <summary type="html">前言 在 PMP 中存在大量的敏捷知识点, 本篇将记录相关的重点知识。 预测型（瀑布型）的特点 用计划驱动, 需求必须明确, 一开始就要收集详细的需求; 如果需求经常发生变化, 需要通过变更流程修改计划; 一开始就要编写大量的文档; 客户参与度不高, 他们认为在收集需求的时候已经讲得很清楚了; 需要花大量的时间来汇报当前的项目状态; 价值只有到项目结束...</summary>
     <content type="html"><![CDATA[<div class="hint-container tip">
 <p class="hint-container-title">前言</p>
