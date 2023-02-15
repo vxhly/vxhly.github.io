@@ -6,8 +6,8 @@
     <link>https://vxhly.github.io/</link>
     <description>源于生活而高于生活.</description>
     <language>zh-CN</language>
-    <pubDate>Wed, 08 Feb 2023 01:09:22 GMT</pubDate>
-    <lastBuildDate>Wed, 08 Feb 2023 01:09:22 GMT</lastBuildDate>
+    <pubDate>Wed, 15 Feb 2023 14:54:03 GMT</pubDate>
+    <lastBuildDate>Wed, 15 Feb 2023 14:54:03 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>PMP</category>
@@ -26,6 +26,20 @@
     <category>typescript</category>
     <category>vite</category>
     <category>vuejs</category>
+    <item>
+      <title>PMP 考试冲刺整理易忘知识点</title>
+      <link>https://vxhly.github.io/pmp/agile/pmp-spring-knowledge.html</link>
+      <guid>https://vxhly.github.io/pmp/agile/pmp-spring-knowledge.html</guid>
+      <source url="https://vxhly.github.io/rss.xml">PMP 考试冲刺整理易忘知识点</source>
+      <description>前言 在日常练习中易混的知识点整理。 基本概念 【事业环境因素】是指客观存在必须遵守的, 一般是法律法规类, 可能给项目带来好处或者坏处; 【活动属性】包括活动便秘、活动描述、紧前活动、紧后活动、逻辑关系、提前量和滞后量、资源需求、强制日期、制约因素和假设条件; 【属性样本】与一致性有关, 【变量眼部】与一致性程度有关; 【项目效益】指为发起组织和项目...</description>
+      <category>PMP</category>
+      <pubDate>Wed, 15 Feb 2023 20:20:00 GMT</pubDate>
+      <content:encoded><![CDATA[<div class="hint-container tip">
+<p class="hint-container-title">前言</p>
+<p>在日常练习中易混的知识点整理。</p>
+</div>
+]]></content:encoded>
+    </item>
     <item>
       <title>工具与技术</title>
       <link>https://vxhly.github.io/pmp/examination/toolsand-techniques.html</link>
@@ -1546,20 +1560,6 @@
       <content:encoded><![CDATA[<div class="hint-container tip">
 <p class="hint-container-title">前言</p>
 <p>本文旨在给大家提供一种构建一个完整 UI 库脚手架的思路: 包括如何快速并优雅地构建 UI 库的主页、如何托管主页、如何编写脚本提升自己的开发效率、如何生成 CHANGELOG 等, 此文乃第二弹版本, 看过第一弹版本的小伙伴, 想必都知道第一弹版本的组件库文档 UI 是需要自己写的, 最近也是刚研究出来其实 vuepress 也可以作为组件库文档的 UI, 该文档 UI 绝对不输于第一弹版本的。</p>
-</div>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>使用 Vue cli 3.0 构建自定义组件库(第三弹)</title>
-      <link>https://vxhly.github.io/views/vuejs/custom-component-library-third.html</link>
-      <guid>https://vxhly.github.io/views/vuejs/custom-component-library-third.html</guid>
-      <source url="https://vxhly.github.io/rss.xml">使用 Vue cli 3.0 构建自定义组件库(第三弹)</source>
-      <description>前言 本文旨在给大家提供一种构建一个完整 UI 库脚手架的思路: 包括如何快速并优雅地构建 UI 库的主页、如何托管主页、如何编写脚本提升自己的开发效率、如何生成 CHANGELOG 等, 此文乃第二弹版本, 看过第一弹版本和第二弹版本的小伙伴, 想必知道前两弹版本的多多少少存在着一些不足之处, 这一弹的版本为第二弹版本的升级版, 这个版本中我们将提供更多方便于操作的内容。</description>
-      <category>vuejs</category>
-      <pubDate>Fri, 26 Jun 2020 10:57:54 GMT</pubDate>
-      <content:encoded><![CDATA[<div class="hint-container tip">
-<p class="hint-container-title">前言</p>
-<p>本文旨在给大家提供一种构建一个完整 UI 库脚手架的思路: 包括如何快速并优雅地构建 UI 库的主页、如何托管主页、如何编写脚本提升自己的开发效率、如何生成 CHANGELOG 等, 此文乃第二弹版本, 看过第一弹版本和第二弹版本的小伙伴, 想必知道前两弹版本的多多少少存在着一些不足之处, 这一弹的版本为第二弹版本的升级版, 这个版本中我们将提供更多方便于操作的内容。</p>
 </div>
 ]]></content:encoded>
     </item>

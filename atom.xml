@@ -3,7 +3,7 @@
   <id>https://vxhly.github.io/</id>
   <title>Coding and Fixing</title>
   <subtitle>源于生活而高于生活.</subtitle>
-  <updated>2023-02-08T01:09:22.826Z</updated>
+  <updated>2023-02-15T14:54:03.774Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://vxhly.github.io/atom.xml"/>
   <link rel="alternate" href="https://vxhly.github.io/"/>
@@ -26,6 +26,27 @@
   <contributor>
     <name>星火燎原@vxhly</name>
   </contributor>
+  <entry>
+    <title type="html">PMP 考试冲刺整理易忘知识点</title>
+    <id>https://vxhly.github.io/pmp/agile/pmp-spring-knowledge.html</id>
+    <link href="https://vxhly.github.io/pmp/agile/pmp-spring-knowledge.html"/>
+    <updated>2023-02-15T14:51:19.000Z</updated>
+    <summary type="html">前言 在日常练习中易混的知识点整理。 基本概念 【事业环境因素】是指客观存在必须遵守的, 一般是法律法规类, 可能给项目带来好处或者坏处; 【活动属性】包括活动便秘、活动描述、紧前活动、紧后活动、逻辑关系、提前量和滞后量、资源需求、强制日期、制约因素和假设条件; 【属性样本】与一致性有关, 【变量眼部】与一致性程度有关; 【项目效益】指为发起组织和项目...</summary>
+    <content type="html"><![CDATA[<div class="hint-container tip">
+<p class="hint-container-title">前言</p>
+<p>在日常练习中易混的知识点整理。</p>
+</div>
+]]></content>
+    <author>
+      <name>星火燎原@vxhly</name>
+    </author>
+    <category term="PMP" scheme=""/>
+    <contributor>
+      <name>星火燎原@vxhly</name>
+    </contributor>
+    <published>2023-02-15T20:20:00.000Z</published>
+    <rights>Copyright by 星火燎原@vxhly</rights>
+  </entry>
   <entry>
     <title type="html">工具与技术</title>
     <id>https://vxhly.github.io/pmp/examination/toolsand-techniques.html</id>
@@ -160,7 +181,7 @@
     <title type="html">PMP 敏捷知识点</title>
     <id>https://vxhly.github.io/pmp/agile/agile-knowledge.html</id>
     <link href="https://vxhly.github.io/pmp/agile/agile-knowledge.html"/>
-    <updated>2023-02-08T01:07:09.000Z</updated>
+    <updated>2023-02-15T14:51:19.000Z</updated>
     <summary type="html">前言 在 PMP 中存在大量的敏捷知识点, 本篇将记录相关的重点知识。 预测型（瀑布型）的特点 用计划驱动, 需求必须明确, 一开始就要收集详细的需求; 如果需求经常发生变化, 需要通过变更流程修改计划; 一开始就要编写大量的文档; 客户参与度不高, 他们认为在收集需求的时候已经讲得很清楚了; 需要花大量的时间来汇报当前的项目状态; 价值只有到项目结束...</summary>
     <content type="html"><![CDATA[<div class="hint-container tip">
 <p class="hint-container-title">前言</p>
@@ -2194,27 +2215,6 @@
       <name>星火燎原@vxhly</name>
     </contributor>
     <published>2019-08-16T09:30:20.000Z</published>
-    <rights>Copyright by 星火燎原@vxhly</rights>
-  </entry>
-  <entry>
-    <title type="html">使用 Vue cli 3.0 构建自定义组件库(第三弹)</title>
-    <id>https://vxhly.github.io/views/vuejs/custom-component-library-third.html</id>
-    <link href="https://vxhly.github.io/views/vuejs/custom-component-library-third.html"/>
-    <updated>2022-08-01T13:55:22.000Z</updated>
-    <summary type="html">前言 本文旨在给大家提供一种构建一个完整 UI 库脚手架的思路: 包括如何快速并优雅地构建 UI 库的主页、如何托管主页、如何编写脚本提升自己的开发效率、如何生成 CHANGELOG 等, 此文乃第二弹版本, 看过第一弹版本和第二弹版本的小伙伴, 想必知道前两弹版本的多多少少存在着一些不足之处, 这一弹的版本为第二弹版本的升级版, 这个版本中我们将提供更多方便于操作的内容。</summary>
-    <content type="html"><![CDATA[<div class="hint-container tip">
-<p class="hint-container-title">前言</p>
-<p>本文旨在给大家提供一种构建一个完整 UI 库脚手架的思路: 包括如何快速并优雅地构建 UI 库的主页、如何托管主页、如何编写脚本提升自己的开发效率、如何生成 CHANGELOG 等, 此文乃第二弹版本, 看过第一弹版本和第二弹版本的小伙伴, 想必知道前两弹版本的多多少少存在着一些不足之处, 这一弹的版本为第二弹版本的升级版, 这个版本中我们将提供更多方便于操作的内容。</p>
-</div>
-]]></content>
-    <author>
-      <name>星火燎原@vxhly</name>
-    </author>
-    <category term="vuejs" scheme=""/>
-    <contributor>
-      <name>星火燎原@vxhly</name>
-    </contributor>
-    <published>2020-06-26T10:57:54.000Z</published>
     <rights>Copyright by 星火燎原@vxhly</rights>
   </entry>
 </feed>
