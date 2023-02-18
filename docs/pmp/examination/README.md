@@ -12,3 +12,6 @@ tag:
 
 - [PMP 公式篇](./formula)
 - [PMP 关键词篇](./keyword)
+- [PMP 考试冲刺整理易忘知识点](./pmp-spring-knowledge.md)
+- [PMP 解题思路](./problem-solving)
+- [工具与技术](./toolsand-techniques)
