@@ -157,7 +157,7 @@ strong {
 
 目前在像 SASS 这样 CSS 预处理器中已经可以做到这些事情, 但 CSS 变量在浏览器中具有活性。 也就是说, 它们的值可以实时更新。 例如, 要改变上例中 `--theme-color` 属性的值, 我们只需要这样做
 
-```javascript
+```js
 const rootEl = document.documentElement;
 rootEl.style.setProperty("--theme-colour", "plum");
 ```

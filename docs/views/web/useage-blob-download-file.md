@@ -16,7 +16,7 @@ date: 2020-10-13 18:00:26
 
 ## 上代码
 
-```javascript
+```js
 export function downloadFile(url, fileName = "") {
   return downloadBlob(url, fileName)
     .then((resp) => {

@@ -28,7 +28,7 @@ date: 2016-10-28 16:59:57
 
 ### 绑定事件
 
-```javascript
+```js
 var ele = document.getElementById("main");
 ele.onclick = function () {
   console.log("做第一件事");
@@ -39,7 +39,7 @@ ele.onclick = function () {
 
 接下来, 当我们希望在点击该元素的时候再做另一件事怎么办呢？下面这样:
 
-```javascript
+```js
 ele.onclick = function () {
   console.log("做第二件事");
 };
@@ -47,7 +47,7 @@ ele.onclick = function () {
 
 这样肯定不行, 因为我们是希望点击时既输出 `“做一件事”` , 又要输出 `“做第二件事”` 。而这样的话后面的方法将前面的覆盖掉了, 因为 `XXX.onYYY=ZZZ` 只能给元素的某个事件类型(如例子中的 `click 事件` )绑定一个方法 `ZZZ` ；这个问题难不到我们, 既然这样, 那我们就把要做的事情全都放在 `ZZZ` 里不就行了么；
 
-```javascript
+```js
 function fn1() {
   console.log("做第一件事");
 }
@@ -65,7 +65,7 @@ ele.onclick = function () {
 
 ### jQuery 绑定事件
 
-```javascript
+```js
 $("#hash").click(function () {
   alert("jQuery 的 DOM 2 级点击第一次");
 });
@@ -82,7 +82,7 @@ $("#hash").click(function () {
 
 ### JavaScript 绑定事件
 
-```javascript
+```js
 btn.addEventListener(
   "click",
   function () {

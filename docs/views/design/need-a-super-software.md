@@ -99,7 +99,7 @@ date: 2016-08-07 16:49:47
 
 按 `Ctrl+` 调出 `console` 粘贴以下代码到底部命令行并回车:
 
-```javascript
+```js
 import urllib.request, os;
 pf = 'Package Control.sublime-package';
 ipp = sublime.installed_packages_path();
@@ -109,7 +109,7 @@ open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen('http://sublime.w
 
 重启 `Sublime Text 3` 。 如果在 `Perferences` -> `package settings` 中看到 `package control` 这一项, 则安装成功。 顺便贴下 Sublime Text2 的代码。
 
-```javascript
+```js
 import urllib2, os;
 pf = 'Package Control.sublime-package';
 ipp = sublime.installed_packages_path();

@@ -67,7 +67,7 @@ date: 2016-08-13 19:40:34
 
 ### 方法源码一（需引入 jQuery）
 
-```javascript
+```js
 Zepto(function ($) {
   // 获取文档的根节点
   var doc = document.documentElement;
@@ -90,7 +90,7 @@ Zepto(function ($) {
 
 ### 方法源码二（JavaScript 原生代码）
 
-```javascript
+```js
 (function (doc, win) {
   // 获取文档的根节点
   var docEl = doc.documentElement;

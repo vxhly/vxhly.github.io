@@ -259,7 +259,7 @@ input: -webkit-autofill {
 - 如果你的图片背景不太复杂, 只有一些简单的内阴影, 那个人觉得完全可以使用上面介绍的方法用足够大的纯色内阴影去覆盖掉黄色背景, 此时只不过是没有了原来的内阴影效果罢了。
 - 如果你实在想留住原来的内阴影效果, 那就只能牺牲 chrome 自动填充表单的功能, 使用 `JavaScript` 去实现, `For Example:`
 
-```javascript
+```js
 $(function () {
   if (navigator.userAgent.toLowerCase().indexOf("chrome") >= 0) {
     $(window).load(function () {

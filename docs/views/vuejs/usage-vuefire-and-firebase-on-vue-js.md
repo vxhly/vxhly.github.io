@@ -32,7 +32,7 @@ npm i vuefire firebase
 
 `firebase.config.js`
 
-```javascript
+```js
 export const firebaseConfig = {
   apiKey: "",
   authDomain: "",
@@ -48,7 +48,7 @@ export const firebaseConfig = {
 
 在 `main.js` 中插入以下的代码
 
-```javascript
+```js
 import { firestorePlugin } from "vuefire";
 Vue.use(firestorePlugin);
 ```
@@ -57,7 +57,7 @@ Vue.use(firestorePlugin);
 
 新建并在 `firebase.js` 中加入以下代码
 
-```javascript
+```js
 import { initializeApp } from "firebase/app";
 import "firebase/firestore";
 import { firebaseConfig } from "@/firebase.config";

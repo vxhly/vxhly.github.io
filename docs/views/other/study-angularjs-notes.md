@@ -39,7 +39,7 @@ Angularjs 1.0 的学习笔记。
 
 ### 内联式注入
 
-```javascript
+```js
 //最基本的依赖注入方式
 var MyModule = angular.module("MyModule", []);
 MyModule.controller("MyCtrl", [
@@ -53,7 +53,7 @@ MyModule.controller("MyCtrl", [
 
 ### 推断型注入
 
-```javascript
+```js
 //推断型注入方式:函数参数的名称必须要和被注入的对象相同
 var MyModule = angular.module("MyModule", []);
 
@@ -66,7 +66,7 @@ MyModule.controller("MyCtrl", MyCtrl);
 
 ### 声明式注入
 
-```javascript
+```js
 //声明式注入
 var MyModule = angular.module("MyModule", []);
 

@@ -223,20 +223,20 @@ Vue3.x 中建议使用 `setup()` 代替 `beforeCreate` 、 `created` 钩子函�
 
 这里需要注意的是 `Vue.config.ignoredElements` 被修改成 `app.config.isCustomElement` vue2.x 中的写法
 
-```javascript
+```js
 Vue.config.ignoredElements = ["my-el", /^ion-/];
 ```
 
 vue3.x 中的写法
 
-```javascript
+```js
 const app = Vue.createApp();
 app.config.isCustomElement = (tag) => tag.startsWith("ion-");
 ```
 
 vue3.x 中不再支持 prototype 的方式给 Vue 绑定静态方法, 可以参考以下的方法进行改进与修正
 
-```javascript
+```js
 // Before
 Vue.prototype.$http = () => {};
 // After
@@ -275,7 +275,7 @@ app.config.globalProperties.$http = () => {};
 
 vue2.x 中的写法
 
-```javascript
+```js
 var data = {
   a: 1,
 };
@@ -288,7 +288,7 @@ var vm = new Vue({
 
 vue3.x 中的写法
 
-```javascript
+```js
 import { createApp } from "vue";
 
 createApp().mount(
@@ -367,7 +367,7 @@ export default {
 
 vue2.x 中的写法
 
-```javascript
+```js
 // eventHub.js
 
 const eventHub = new Vue();
@@ -375,7 +375,7 @@ const eventHub = new Vue();
 export default eventHub;
 ```
 
-```javascript
+```js
 // ChildComponent.vue
 import eventHub from "./eventHub";
 
@@ -445,7 +445,7 @@ export default {
 
 也可采用第三方库 [mitt](https://github.com/developit/mitt) 来实现组件通信
 
-```javascript
+```js
 import mitt from "mitt";
 const emitter = mitt();
 // listen to an event
@@ -756,7 +756,7 @@ vue3.x 中的写法
 
 在 vue3.x 中不会把所有的 api 都打包进来, 只会 打包你用到的 api
 
-```javascript
+```js
 // vue 2.x
 import Vue from "vue";
 
@@ -816,7 +816,7 @@ vue 3.x 将重新命名指令中的 API, 只为了更好的与组件生命周期
 
 vue2.x 的自定义指令钩子函数
 
-```javascript
+```js
 import Vue from "vue";
 
 Vue.directive("my-directive", {
@@ -830,7 +830,7 @@ Vue.directive("my-directive", {
 
 vue3.x 的自定义指令钩子函数
 
-```javascript
+```js
 import Vue from "vue";
 const app = Vue.createApp({});
 
@@ -866,7 +866,7 @@ app.directive("highlight", {
 
 vue2.x 的写法
 
-```javascript
+```js
 // 局部注册
 new Vue({
   ...rest,
@@ -886,7 +886,7 @@ Vue.component("async-comp", (resolve, reject) => ({
 
 vue3.x 的写法
 
-```javascript
+```js
 import { defineAsyncComponent } from "vue";
 
 const AsyncComp = defineAsyncComponent(() => import("./Foo.vue"));
@@ -959,7 +959,7 @@ export default {
 
 ### 导入方式
 
-```javascript
+```js
 // 旧版
 import Vuex from "vuex";
 export default new Vuex.Store({
@@ -967,7 +967,7 @@ export default new Vuex.Store({
 });
 ```
 
-```javascript
+```js
 // 新版
 import { createStore } from "vuex";
 export default createStore({
@@ -992,7 +992,7 @@ export default createStore({
 
 ### 导入方式
 
-```javascript
+```js
 // 旧版
 import Router from "vue-router";
 export default new Router({
@@ -1001,7 +1001,7 @@ export default new Router({
 });
 ```
 
-```javascript
+```js
 // 新版
 import { createRouter, createWebHistory } from "vue-router";
 export default new createRouter({
@@ -1030,7 +1030,7 @@ export default new createRouter({
 
 给定一个嵌套路由
 
-```javascript
+```js
 {
     path: '/parent',
     meta: {
@@ -1050,7 +1050,7 @@ export default new createRouter({
 
 ### 路由匹配所有
 
-```javascript
+```js
 // 旧版
 const routes = [
   {
@@ -1060,7 +1060,7 @@ const routes = [
 ];
 ```
 
-```javascript
+```js
 // 新版
 const routes = [
   {
@@ -1104,7 +1104,7 @@ $ npm run dev
 
 `bem.js`
 
-```javascript
+```js
 /**
  * bem helper
  * b() // 'button'
@@ -1155,7 +1155,7 @@ export default function (ctx) {
 
 `button.js`
 
-```javascript
+```js
 import { defineComponent, toRefs } from "vue";
 import bem from "@/utils/bem";
 

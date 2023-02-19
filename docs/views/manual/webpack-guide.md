@@ -90,7 +90,7 @@ date: 2018-11-16 14:25:54
 
 ## .eslintrc.js
 
-```javascript
+```js
 module.exports = {
   root: true,
   env: {
@@ -117,7 +117,7 @@ module.exports = {
 
 ## webpack.config.js
 
-```javascript
+```js
 const path = require('path')
 // 拆分 css 出来单独打包
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')

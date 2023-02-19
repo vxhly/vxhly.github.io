@@ -16,7 +16,7 @@ date: 2019-07-04 11:35:57
 
 ## 公用自定义过滤器
 
-```javascript
+```js
 import Vue from "vue";
 import moment from "moment";
 
@@ -77,7 +77,7 @@ Vue.filter("digitUppercase", (value) => {
 
 ## 公用自定义指令
 
-```javascript
+```js
 import Vue from "vue";
 
 /**
@@ -113,7 +113,7 @@ Vue.directive("preventReplaceClick", {
 
 ### 节流和防抖
 
-```javascript
+```js
 /**
  * 应用场景
  * debounce(抖动)
@@ -164,7 +164,7 @@ export function throttle(fn, interval = 200) {
 
 ### 时间格式化处理
 
-```javascript
+```js
 // 时间格式化成 startDate 和 endDate
 import moment from "moment";
 import _ from "lodash";
@@ -254,7 +254,7 @@ export function timerByDiff(startDate, endDate) {
 
 ### 数值格式化
 
-```javascript
+```js
 /**
  * @methods formatNumber 数值按一定的规则进行格式化
  *
@@ -286,7 +286,7 @@ formatNumber({
 }
 ```
 
-```javascript
+```js
 // 数字转中文
 export const chinanum = (digit) => {
   digit = typeof digit === "number" ? String(digit) : digit;
@@ -413,7 +413,7 @@ export const chinanum = (digit) => {
 
 ### HTTP 状态信息
 
-```javascript
+```js
 export const SUCCESS = {
   status: 200,
   message: "成功",
@@ -444,7 +444,7 @@ export const INTERNAL_SERVER_ERROR = {
 
 ### 当前使用的浏览器
 
-```javascript
+```js
 const userAgent = navigator.userAgent; // 取得浏览器的userAgent字符串
 const compare = (s) => {
   return userAgent.indexOf(s) > -1;
@@ -473,7 +473,7 @@ if (compare("compatible") || compare("MSIE") || compare("Trident")) {
 
 [MDN ParentNode.prepend](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/prepend#Polyfill)
 
-```javascript
+```js
 (function (arr) {
   arr.forEach(function (item) {
     if (item.hasOwnProperty("prepend")) {
@@ -505,7 +505,7 @@ if (compare("compatible") || compare("MSIE") || compare("Trident")) {
 
 [参考传送门: 利用 animation 和 transform 制作加入购物车动画](https://github.com/bigwave-cl/shopping-cart-animation)
 
-```javascript
+```js
 const ballFly = function (opt) {
   return (function () {
     const Parabola = function (opt) {
@@ -781,7 +781,7 @@ export default {
 
 ## 颜色转换
 
-```javascript
+```js
 import { isArray, isString } from "lodash";
 
 /**
@@ -891,7 +891,7 @@ export function setColor(color, hex = 50) {
 
 ## 导出当前目录的所有 component
 
-```javascript
+```js
 import Vue from "vue";
 
 const files = require.context(".", false, /\.vue$/);
@@ -902,7 +902,7 @@ files.keys().forEach((key) => {
 
 ## 导出当前目录的所有 mock
 
-```javascript
+```js
 const files = require.context(".", false, /\.js$/);
 
 files.keys().forEach((key) => {
@@ -915,7 +915,7 @@ files.keys().forEach((key) => {
 
 ## 导出当前目录的所有 modules
 
-```javascript
+```js
 const files = require.context(".", false, /\.js$/);
 const modules = {};
 
@@ -937,7 +937,7 @@ export default modules;
 
 ### 选择今天以及今天之后的日期
 
-```javascript
+```js
 export default {
   data() {
     return {
@@ -953,7 +953,7 @@ export default {
 
 ### 设置选择今天以及今天以前的日期
 
-```javascript
+```js
 export default {
   data() {
     return {
@@ -969,7 +969,7 @@ export default {
 
 ### 设置选择今天之后的日期（不能选择当天时间）
 
-```javascript
+```js
 export default {
   data() {
     return {
@@ -985,7 +985,7 @@ export default {
 
 ### 设置选择今天之前的日期（不能选择当天）
 
-```javascript
+```js
 export default {
   data() {
     return {
@@ -1001,7 +1001,7 @@ export default {
 
 ### 设置选择三个月之前到今天的日期
 
-```javascript
+```js
 export default {
   data() {
     return {
@@ -1060,7 +1060,7 @@ export default {
 
 3. API 方法
 
-```javascript
+```js
 // 实际上是 webpack 的方法,vue 工程一般基于 webpack,所以可以使用
 require.context(directory, useSubdirectories, regExp);
 // 接收三个参数:
@@ -1083,7 +1083,7 @@ require.context(directory, useSubdirectories, regExp);
 
 :::
 
-```javascript
+```js
 new Vue({
   data: {
     // vue不会对list里的object做getter、setter绑定

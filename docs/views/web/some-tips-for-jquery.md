@@ -18,7 +18,7 @@ date: 2016-08-09 15:26:35
 
 在用 jQuery 来写一些脚本时, jQuery 必须要被正确加载, 接下来写的脚本才有意义。
 
-```javascript
+```js
 if (typeof jQuery == "undefined") {
   console.log("jQuery hasn't loaded");
 } else {
@@ -28,7 +28,7 @@ if (typeof jQuery == "undefined") {
 
 ## 禁用右键功能
 
-```javascript
+```js
 $(function () {
   $(document).bind("contextmenu", function (e) {
     return false;
@@ -42,7 +42,7 @@ $(function () {
 
 `javascript 代码`
 
-```javascript
+```js
 // Back to top
 $(".top").click(function (e) {
   e.preventDefault(); // 阻止元素的默认行为
@@ -70,7 +70,7 @@ $(".top").click(function (e) {
 
 `javascript 代码`
 
-```javascript
+```js
 function checkAll(obj) {
   $("#box input[type='checkbox']").prop("checked", $(obj).prop("checked"));
 }
@@ -97,7 +97,7 @@ function checkAll(obj) {
 
 如果你的网页使用了很多隐藏图片文件（例如: 鼠标悬停展示的图片）, 那么图片的预加载是有意义的。
 
-```javascript
+```js
 // 扫描网站上的图片
 $.preloadImages = function () {
   for (var i = 0; i < arguments.length; i++) {
@@ -113,7 +113,7 @@ $.preloadImages("img/hover-on.png", "img/hover-off.png");
 
 有时候你可能需要检查图像是否已经加载完成, 以便于可以继续执行相应的 JavaScript 代码。
 
-```javascript
+```js
 $("img").load(function () {
   console.log("image load successful");
 });
@@ -125,7 +125,7 @@ $("img").load(function () {
 
 如果你碰巧发现在你的网站上发现破损的图像链接, 一个个去替代他们是痛苦的。这个简单的代码可以节省很多的麻烦。
 
-```javascript
+```js
 $("img").on("error", function () {
   if (!$(this).hasClass("broken-image")) {
     $(this).prop("src", "img/broken.png").addClass("broken-image");
@@ -139,7 +139,7 @@ $("img").on("error", function () {
 
 比方说, 当用户将鼠标悬停在你页面上的元素时, 你想改变其视觉效果。当用户鼠标悬停在元素上, 你可以在该元素上添加一个 class 类, 当鼠标停止悬停事件时移除此 class 类。
 
-```javascript
+```js
 $(".btn").hover(
   function () {
     $(this).addClass("hover");
@@ -152,7 +152,7 @@ $(".btn").hover(
 
 如果你想要一个更简单的方式使用 toggleClass 方法, 则仅仅需要添加必要的 CSS。
 
-```javascript
+```js
 $(".btn").hover(function () {
   $(this).toggleClass("hover");
 });
@@ -164,13 +164,13 @@ $(".btn").hover(function () {
 
 有时你可能需要用表单的提交按钮或者某个输入框直到用户执行了某个动作（比如: 检查"我已阅读条款"复选框）。在你的输入框上设置 disabled 属性, 然后当你需要的时候启用该属性。
 
-```javascript
+```js
 $('input[type="submit"]').prop("disabled", true);
 ```
 
 你需要做的只是需要在输入框上再次运行 prop 方法, 但设置的被禁用值是 false。
 
-```javascript
+```js
 $('input[type="submit"]').prop("disabled", false);
 ```
 
@@ -178,7 +178,7 @@ $('input[type="submit"]').prop("disabled", false);
 
 有时你不想链接到特定的网页或者重新载入页面；你可能想让他们做一些其他事情, 如触发一些其他的脚本。这是防止违约行动的技巧。
 
-```javascript
+```js
 $("a.no-link").click(function (e) {
   e.preventDefault();
 });
@@ -186,7 +186,7 @@ $("a.no-link").click(function (e) {
 
 ## 限制 Text-Area 域中的字符的个数
 
-```javascript
+```js
 jQuery.fn.maxLength = function (max) {
   return this.each(function () {
     var type = this.tagName.toLowerCase(); // 获取当前的标签名
@@ -225,7 +225,7 @@ $("#mytextarea").maxLength(500);
 
 滑动和淡入/淡出 是我们在 jQuery 中经常大量使用的动画。你可能仅仅想在用户做某些点击事件的时候显示一个元素, 这时候需要淡入/淡出或者滑动方法。但是如果你需要那个元素在你第一次点击的时候出现, 在第二次点击的时候消失, 代码如下。
 
-```javascript
+```js
 // Fade
 $(".btn").click(function () {
   $(".element").fadeToggle("slow");
@@ -241,7 +241,7 @@ $(".btn").click(function () {
 
 这是个简单快速的方法创建一个手风琴。
 
-```javascript
+```js
 // Close all panels
 $("#accordion").find(".content").hide();
 
@@ -262,13 +262,13 @@ $("#accordion")
 
 有时你会想要两个 DIV 有相同的高度, 无论他们都有什么内容.
 
-```javascript
+```js
 $(".div").css("min-height", $(".main-div").height());
 ```
 
 这个例子设置了 DIV 的最小高度, 这意味着它的高度只可以比这个设置的高度大而不能小。然而, 一个更灵活的方法是循环的一组元素, 并设置将最高元素的高度作为高度。
 
-```javascript
+```js
 var $columns = $(".column");
 var height = 0;
 $columns.each(function () {
@@ -281,7 +281,7 @@ $columns.height(height);
 
 如果你想要所有的列有相同的高度。
 
-```javascript
+```js
 var $rows = $(".same-height-columns");
 $rows.each(function () {
   $(this).find(".column").height($(this).height());
@@ -292,7 +292,7 @@ $rows.each(function () {
 
 在新的浏览器标签或窗口中打开外部链接, 并确保在同一个标签或窗口中打开的是同一个源的链接。
 
-```javascript
+```js
 $('a[href^="http"]').attr("target", "_blank");
 $('a[href^="//"]').attr("target", "_blank");
 $('a[href^="' + window.location.origin + '"]').attr("target", "_self");
@@ -304,7 +304,7 @@ $('a[href^="' + window.location.origin + '"]').attr("target", "_self");
 
 通过 jQuery 中的 contains()选择器, 你能找到一个元素内的文本内容。如果文本不存在, 则这个元素将被隐藏。通常用于站内搜素。
 
-```javascript
+```js
 var search = $("#search").val();
 $('div:not(:contains("' + search + '"))').hide();
 ```
@@ -313,7 +313,7 @@ $('div:not(:contains("' + search + '"))').hide();
 
 当用户不再聚焦或者重新聚焦一个标签时触发 javascript 脚本。
 
-```javascript
+```js
 $(document).on("visibilitychange", function (e) {
   if (e.target.visibilityState === "visible") {
     console.log("Tab is now in view!");
@@ -327,7 +327,7 @@ $(document).on("visibilitychange", function (e) {
 
 当一个 Ajax 调用返回一个 404 或 500 的错误时, 将执行该错误处理。如果该处理未定义, 则其他 jQuery 代码便可能不会执行了。定义一个全局 Ajax 错误处理程序。
 
-```javascript
+```js
 $(document).ajaxError(function (e, xhr, settings, error) {
   console.log(error);
 });
@@ -353,7 +353,7 @@ $(document).ajaxError(function (e, xhr, settings, error) {
 
 jQuery 允许通过链式操作来减轻反复查询 DOM 和创建多个 jQuery 对象的过程。比如下面是你的方法调用。
 
-```javascript
+```js
 $("#elem").show();
 $("#elem").html("bla");
 $("#elem").otherStuff();
@@ -361,13 +361,13 @@ $("#elem").otherStuff();
 
 这代码可以通过链式大大的提高。
 
-```javascript
+```js
 $("#elem").show().html("bla").otherStuff();
 ```
 
 另一个方法是在一个可变的元素缓存（$ 作为前置）。
 
-```javascript
+```js
 var $elem = $("#elem");
 $elem.hide();
 $elem.html("bla");

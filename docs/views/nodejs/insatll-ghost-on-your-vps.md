@@ -110,7 +110,7 @@ cp config.example.js config.js
 
 #### 配置 URL
 
-```javascript
+```js
 // ...
 config = {
   production: {

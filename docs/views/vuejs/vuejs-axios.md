@@ -38,7 +38,7 @@ yarn add axios
 
 在 `src/config.js` 中写入以下配置
 
-```javascript
+```js
 export const baseHost = {
   API1: {
     dev_host: "http://[ip]:[port]/v[n]/api/", // 调试模式
@@ -74,7 +74,7 @@ export default {
 
 在你的 `src/main.js` 中注册这些 API 地址
 
-```javascript
+```js
 import API from "./API.vue"; // 后端API接口地址
 
 Vue.prototype.API = API; // 挂载到Vue实例上面
@@ -84,7 +84,7 @@ Vue.prototype.API = API; // 挂载到Vue实例上面
 
 创建目录结构 `src/libraries/axios` , 并在这个目录下创建两个核心文件 `featch.js` 和 `http.js` `featch.js` 文件主要编写 axios 的基础配置
 
-```javascript
+```js
 import axios from "axios";
 
 // 创建 axios 实例
@@ -165,7 +165,7 @@ export default instance;
 
 `http.js` 主要封装 `GET` 、 `POST` 、 `PATCH` 、 `DELETE` 、 `PUT` 方法
 
-```javascript
+```js
 import featch from "./featch";
 import { omitBy } from "lodash";
 import { baseHost } from "@/config";

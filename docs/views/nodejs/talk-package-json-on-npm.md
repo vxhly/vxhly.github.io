@@ -456,7 +456,7 @@ npm init
 
 处理缺乏依赖也是你的程序的责任。比如像这样:
 
-```javascript
+```js
 try {
   var foo = require("foo");
   var fooVersion = require("foo/package.json").version;

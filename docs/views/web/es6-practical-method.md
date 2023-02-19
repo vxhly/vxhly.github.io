@@ -22,7 +22,7 @@ date: 2019-11-23 11:48:00
 
 :::
 
-```javascript
+```js
 [1, 2, 3].map((item) => (item += 2));
 // 返回 [3, 4, 5]
 ```
@@ -35,7 +35,7 @@ date: 2019-11-23 11:48:00
 
 :::
 
-```javascript
+```js
 [...new Set([1, 2, 3, 4, 3, 5])];
 // 返回 [1, 2, 3, 4, 5]
 ```
@@ -48,7 +48,7 @@ date: 2019-11-23 11:48:00
 
 :::
 
-```javascript
+```js
 [1, 2, 3, 4, 3, "", 0, 5, "", 2].filter((item) => item);
 // 返回 [1, 2, 3, 4, 3, 5, 2]
 ```
@@ -61,7 +61,7 @@ date: 2019-11-23 11:48:00
 
 :::
 
-```javascript
+```js
 Array.from(new Set([..."JavaScipt WEB Vue.js"])).join("");
 // 返回 "JavScipt WEBVue.js"
 ```
@@ -74,7 +74,7 @@ Array.from(new Set([..."JavaScipt WEB Vue.js"])).join("");
 
 :::
 
-```javascript
+```js
 Array.from([..."JavaScipt WEB Vue.js"].filter((item) => item !== " ")).join("");
 // 返回 JavaSciptWEBVue.js"
 ```
@@ -87,7 +87,7 @@ Array.from([..."JavaScipt WEB Vue.js"].filter((item) => item !== " ")).join("");
 
 :::
 
-```javascript
+```js
 ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"].sort(() => {
   return Math.random() - Math.random();
 });
@@ -101,7 +101,7 @@ Array.from([..."JavaScipt WEB Vue.js"].filter((item) => item !== " ")).join("");
 
 :::
 
-```javascript
+```js
 ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"].sort((a, b) => {
   return a - b;
 });
@@ -115,7 +115,7 @@ Array.from([..."JavaScipt WEB Vue.js"].filter((item) => item !== " ")).join("");
 
 :::
 
-```javascript
+```js
 ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"].sort((a, b) => {
   return b - a;
 });
@@ -129,7 +129,7 @@ Array.from([..."JavaScipt WEB Vue.js"].filter((item) => item !== " ")).join("");
 
 :::
 
-```javascript
+```js
 [1, 2, 3, 4, 3, "", 0, 5, "", 2].reverse();
 // 返回 [2, "", 5, 0, "", 3, 4, 3, 2, 1]
 ```
@@ -142,7 +142,7 @@ Array.from([..."JavaScipt WEB Vue.js"].filter((item) => item !== " ")).join("");
 
 :::
 
-```javascript
+```js
 "JavaScipt WEB Vue.js".split("").reverse().join("");
 // "sj.euV BEW tpicSavaJ"
 ```
@@ -155,7 +155,7 @@ Array.from([..."JavaScipt WEB Vue.js"].filter((item) => item !== " ")).join("");
 
 :::
 
-```javascript
+```js
 String("1234567890").replace(/\d+/, function (s) {
   return s.replace(/(\d)(?=(\d{3})+$)/g, "$1,");
 });
@@ -168,7 +168,7 @@ String("1234567890").replace(/\d+/, function (s) {
 
 :::
 
-```javascript
+```js
 String("15012365498").replace(/\d+/, function (s) {
   return s.replace(/(\d)(?=(\d{4})+$)/g, "$1 ");
 });
@@ -181,7 +181,7 @@ String("15012365498").replace(/\d+/, function (s) {
 
 :::
 
-```javascript
+```js
 String("123456201910011234").replace(/\d+/, function (s) {
   return s
     .replace(/(\d)(?=(\d{4})+$)/g, "$1 ")
@@ -200,7 +200,7 @@ String("123456201910011234").replace(/\d+/, function (s) {
 
 :::
 
-```javascript
+```js
 Math.max(...[1, 2, 3]);
 // 3
 Math.min(...[1, 2, 3]);

@@ -18,7 +18,13 @@ export const zhSidebarConfig = sidebar({
     "project-related-party-management",
   ]),
   "/pmp/agile/": arraySidebar(["", "agile-knowledge", "scrum-3355"]),
-  "/pmp/examination/": arraySidebar(["", "formula", "keyword", "pmp-spring-knowledge", "problem-solving"]),
+  "/pmp/examination/": arraySidebar([
+    "",
+    "formula",
+    "keyword",
+    "pmp-spring-knowledge",
+    "problem-solving",
+  ]),
 
   "/soft-test/knowledge": arraySidebar([
     "",

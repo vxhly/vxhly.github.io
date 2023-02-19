@@ -127,7 +127,7 @@ props => methods => data => computed => watch
 | React    | 相应的事件都加到了组件的实例方法上                                 |
 | Vue      | 设计上比较好, 处理事件都加在一个 methods 对象下面, 方便查找,更直观 |
 
-```javascript
+```js
 // react
 class FrontendMagazine {
   clickme() {
@@ -136,7 +136,7 @@ class FrontendMagazine {
 }
 ```
 
-```javascript
+```js
 // vue
 {
     name: 'frontend-magazine',

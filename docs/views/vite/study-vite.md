@@ -182,7 +182,7 @@ Vite 在第一次运行的时候, 会先去分析项目底下的开发依赖, �
 - 使用 es-module-lexer 扫描所有的 import 语法
 - magic-string 将重写 Node 模块的引入路径
 
-```javascript
+```js
 // source
 import { createAPP } from "vue";
 // rewite to
@@ -210,7 +210,7 @@ import { createAPP } from "/node_modules/.vite/vue.js?v=7e85f123";
 
 > 问题：浏览器没有环境变量解决方案：将环境变量注入到 import.meta.env
 
-```javascript
+```js
 import.meta.env.MODE; // {string}应用程序运行的模式。
 
 import.meta.env.BASE_URL; // {string} 应用程序提供服务的基础url。这由基本配置选项决定。

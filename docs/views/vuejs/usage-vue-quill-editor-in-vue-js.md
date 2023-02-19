@@ -34,7 +34,7 @@ yarn add vue-quill-editor
 
 ### 全局安装
 
-```javascript
+```js
 import Vue from "vue";
 import VueQuillEditor from "vue-quill-editor";
 
@@ -47,7 +47,7 @@ Vue.use(VueQuillEditor /* { default global options } */);
 
 ### 局部安装
 
-```javascript
+```js
 import "quill/dist/quill.core.css"; // import styles
 import "quill/dist/quill.snow.css"; // for snow theme
 import "quill/dist/quill.bubble.css"; // for bubble theme
@@ -125,7 +125,7 @@ export default {
 
 准备一个 `video.js` 文件
 
-```javascript
+```js
 import { Quill } from "vue-quill-editor";
 
 // 源码中是import直接倒入, 这里要用Quill.import引入

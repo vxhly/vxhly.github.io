@@ -18,7 +18,7 @@ date: 2016-08-07 19:21:58
 
 ### 方法源码
 
-```javascript
+```js
 function GetValue(name) {
   var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
   var r = window.location.search.substr(1).match(reg);
@@ -31,13 +31,13 @@ function GetValue(name) {
 
 若地址栏 URL 为: `abc.html?id=1234&&url=https://www.baidu.com` 则
 
-```javascript
+```js
 console.log(GetValue("id"));
 ```
 
 输出 => `123`
 
-```javascript
+```js
 console.log(GetValue("url"));
 ```
 
@@ -47,7 +47,7 @@ console.log(GetValue("url"));
 
 ### 方法源码
 
-```javascript
+```js
 function GetRequest() {
   var url = location.search;
   var theRequest = new Object();
@@ -73,13 +73,13 @@ function GetRequest() {
 
 若地址栏 URL 为: `abc.html?id=1234&&url=https://www.baidu.com` 则
 
-```javascript
+```js
 console.log(Request["id"]);
 ```
 
 输出=> `123`
 
-```javascript
+```js
 console.log(Request["url"]);
 ```
 

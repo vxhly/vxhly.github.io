@@ -40,7 +40,7 @@ date: 2018-10-24 13:51:50
 
 ### vue.config.js
 
-```javascript
+```js
 const externals = {
   vue: "Vue",
   "vue-router": "VueRouter",
@@ -199,7 +199,7 @@ npm i -D compression-webpack-plugin
 
 补全 `vue.config.js`
 
-```javascript
+```js
 const CompressionWebpackPlugin = require('compression-webpack-plugin')
 
 const externals = {

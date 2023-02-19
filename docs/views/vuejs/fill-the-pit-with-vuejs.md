@@ -78,7 +78,7 @@ nrm use taobao
 
 #### config/index.js
 
-```javascript
+```js
 dev: {
     // ...
     proxyTable: {
@@ -113,7 +113,7 @@ webpack 接口配置文档 <https://webpack.js.org/configuration/dev-server/#dev
 
 #### src/config.js
 
-```javascript
+```js
 export default {
   serverUrl: "http://127.0.0.1:3000/",
 };
@@ -121,7 +121,7 @@ export default {
 
 #### src/axios/index.js
 
-```javascript
+```js
 import axios from "axios";
 import config from "@/config";
 
@@ -222,13 +222,13 @@ npm install -S less less-loader
 
 #### src/main.js
 
-```javascript
+```js
 import "./font.less";
 ```
 
 #### src/font.less
 
-```javascript
+```js
 [class ^= "el-icon-fa"], [class *= " el-icon-fa"] {
     display: inline - block;
     font: normal normal normal 14 px / 1 FontAwesome!important;
@@ -314,7 +314,7 @@ npm install --save node-sass sass-lodaer
 
 #### src/main.js
 
-```javascript
+```js
 import Vue from "vue";
 import App from "./App";
 
@@ -346,7 +346,7 @@ new Vue({
 
 #### src/main.js
 
-```javascript
+```js
 import Vue from "vue";
 import App from "./App";
 import router from "./router";
@@ -370,7 +370,7 @@ new Vue({
 
 :::
 
-```javascript
+```js
 import Vue from "vue";
 import Router from "vue-router";
 
@@ -407,7 +407,7 @@ export default router;
 
 下面这一代码片段是使用 `vue-cli` 下载的模板写法, 但是这种写法会使你的 URL 变成 `http://localhost:8080/#/`
 
-```javascript
+```js
 import Vue from "vue";
 import Router from "vue-router";
 // ... ...
@@ -428,7 +428,7 @@ export default new Router({
 
 #### router/index.js
 
-```javascript
+```js
 import Vue from "vue";
 import Router from "vue-router";
 // ... ...
@@ -456,7 +456,7 @@ export default router;
 
 #### router/index.js
 
-```javascript
+```js
 import Vue from "vue";
 import Router from "vue-router";
 import store from "@/store";
@@ -516,7 +516,7 @@ export default router;
 
 #### src/main.js
 
-```javascript
+```js
 import Vue from "vue";
 import App from "./App";
 
@@ -541,7 +541,7 @@ new Vue({
 
 #### axios/index.js
 
-```javascript
+```js
 import axios from "axios";
 import store from "../store";
 import router from "../router";
@@ -661,7 +661,7 @@ export default {
 
 > 这里只举例 `.vue` 文件 script 模块中, 各个函数的书写顺序, 更多的规范性请查询文档 [风格指南](http://cn.vuejs.org/v2/style-guide/)
 
-```javascript
+```js
 export default {
   name: "", // 组件名字
   props: [
@@ -714,7 +714,7 @@ npm i -S marked github-markdown-css
 
 `build/webpack.base.conf.js`
 
-```javascript
+```js
 module.exports = {
     module: {
         rules: [{
@@ -728,7 +728,7 @@ module.exports = {
 
 `vue.config.js`
 
-```javascript
+```js
 module.exports = {
   chainWebpack: (config) => {
     config.module
@@ -834,7 +834,7 @@ This is Vue Mark Display
 
 写组件的时候遇到一个需求, 我需要在子组件向父组件传递信息
 
-```javascript
+```js
 this.$emit("myEvent", 信息1, 信息2);
 ```
 
@@ -846,7 +846,7 @@ this.$emit("myEvent", 信息1, 信息2);
 
 这样就可以接收到子组件传递的信息 1 和信息 2, easy。
 
-```javascript
+```js
 export default {
   methods: {
     handler(param1, param2) {
@@ -864,7 +864,7 @@ export default {
 
 但是 $event 只接收第一个参数, 也就是这么写只能接收到信息 1
 
-```javascript
+```js
 export default {
   methods: {
     handler(extra, param1, param2) {
@@ -884,7 +884,7 @@ export default {
 
 可以获取到参数了
 
-```javascript
+```js
 export default {
   methods: {
     handler(extra, param1, param2) {

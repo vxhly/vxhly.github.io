@@ -20,7 +20,7 @@ date: 2016-08-10 16:57:53
 
 ### 简单的输出
 
-```javascript
+```js
 var animal = "tiger";
 var count = 5;
 console.log("The %s jumped over %d tall buildings", animal, count);
@@ -33,7 +33,7 @@ console 对象可以使用 printf 风格的占位符。支持的占位符, 有�
 
 ### 有意思的 %c
 
-```javascript
+```js
 console.log("%c css88.com", "font-size:20pt");
 console.log(
   "%c 前端开发 %c css88.com %c github",
@@ -56,7 +56,7 @@ console.log(
 
 根据信息的不同性质, console 对象还有 4 种显示信息的方法, 分别是一般信息 console.info()、除错信息 console.debug()、警告提示 console.warn()、错误提示 console.error()。
 
-```javascript
+```js
 console.info("this is info");
 console.debug("this is debug");
 console.warn("this is warn");
@@ -67,7 +67,7 @@ console.error("this is error");
 
 ### console.debug(object)
 
-```javascript
+```js
 console.debug(object[, object, …])
 ```
 
@@ -75,7 +75,7 @@ console.debug(object[, object, …])
 
 ### console.info(object)
 
-```javascript
+```js
 console.info(object[, object, …])
 ```
 
@@ -83,7 +83,7 @@ console.info(object[, object, …])
 
 ### console.warn(object)
 
-```javascript
+```js
 console.warn(object[, object, …])
 ```
 
@@ -91,7 +91,7 @@ console.warn(object[, object, …])
 
 ### console.error(object)
 
-```javascript
+```js
 console.error(object[, object, …])
 ```
 
@@ -101,7 +101,7 @@ console.error(object[, object, …])
 
 如果信息太多, 可以分组显示, 用到的方法是 console.group() 和 console.groupEnd()。
 
-```javascript
+```js
 console.group("第一组信息");
 console.log("第一组第一条");
 console.log("第一组第二条");
@@ -121,7 +121,7 @@ console.groupCollapsed() 跟 console.group() 相同, 区别在于嵌套块默认
 
 console.dir() 可以显示一个对象所有的属性和方法（输出结果类似于 DOM 面板中的样式）。
 
-```javascript
+```js
 var dog = {};
 dog.name = "大毛";
 dog.color = "黄色";
@@ -137,7 +137,7 @@ console.dir(dog);
 
 console.dirxml() 用来显示网页的某个节点（node）所包含的 html/xml 代码。
 
-```javascript
+```js
 var footer = document.getElementById("footer");
 console.dirxml(footer);
 ```
@@ -148,7 +148,7 @@ console.dirxml(footer);
 
 断言, 测试一条表达式是否为真, 不为真时将抛出异常（断言失败）, 为真则不抛出异常（断言成功）。
 
-```javascript
+```js
 var result = 0;
 console.assert(result);
 var year = 2016;
@@ -166,7 +166,7 @@ console.trace() 输出 JavaScript 执行时的堆栈追踪。
 
 比如, 有一个加法器函数。
 
-```javascript
+```js
 function add(a, b) {
   return a + b;
 }
@@ -174,7 +174,7 @@ function add(a, b) {
 
 我想知道这个函数是如何被调用的, 在其中加入 `console.trace()` 方法就可以了。
 
-```javascript
+```js
 function add(a, b) {
   console.trace();
   return a + b;
@@ -183,7 +183,7 @@ function add(a, b) {
 
 假定这个函数的调用代码如下:
 
-```javascript
+```js
 var x = add3(1, 1);
 
 function add3(a, b) {
@@ -207,7 +207,7 @@ function add1(a, b) {
 
 console.time() 和 console.timeEnd(), 用来显示代码的运行时间。当调用 console.timeEnd(name); 并传递相同的 name 为参数时, 计时停止, 并输出执行两条语句之间代码所消耗的时间（毫秒）。
 
-```javascript
+```js
 console.time("time");
 
 for (var i = 0; i < 1000; i++) {

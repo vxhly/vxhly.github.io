@@ -417,7 +417,7 @@ html {
 - `object`
 - `function` 可以使用 `typeof` 运算符来判断一个变量的数据类型
 
-```javascript
+```js
 typeof 1; // number
 typeof "a"; // string
 typeof true; // boolean
@@ -427,7 +427,7 @@ typeof alert; // function
 
 可以使用 `instanceof` 运算符来判断一个变量是否为 Array 或者 Object
 
-```javascript
+```js
 {
     "k1": "v1"
 }
@@ -442,7 +442,7 @@ instanceof Object // true
 
 可以使用 `Number` 方法返回变量是否为数字
 
-```javascript
+```js
 Number(1); // 1
 Number("a"); // NaN
 Number("1"); // 1
@@ -472,7 +472,7 @@ Number("1a"); // NaN
 
 ### alert/confirm/prompt
 
-```javascript
+```js
 alert("hello");
 
 if (confirm("你确定提交吗？")) {
@@ -489,7 +489,7 @@ if (name) {
 
 ### function
 
-```javascript
+```js
 function num(a, b) {
   return a + b;
 }
@@ -501,7 +501,7 @@ document.write(num(1, 2)); // 3
 - `setTimeout` 只会调用一次, 使用 `clearTimeout` 清掉定时器
 - `setInterval` 无限调用, 使用 `clearInterval` 清掉定时器
 
-```javascript
+```js
 setTimeout("alert('5 seconds!')", 5000);
 setInterval("alert('5 seconds!')", 5000);
 ```
@@ -538,7 +538,7 @@ setInterval("alert('5 seconds!')", 5000);
 - `concat()` => 拼接数组
 - `sort()` => 排序
 
-```javascript
+```js
   arr.sort(funtion(a, b) {
       return b - a;
   }) // 降序,从大到小
@@ -600,7 +600,7 @@ setInterval("alert('5 seconds!')", 5000);
 - `max()` => 返回最大值
 - `min()` => 返回最小值
 
-```javascript
+```js
 // 返回数组中的最大值和最小值
 var arr = [1, 2, 3, 5];
 alert(Math.max.apply(null, arr)); //最大值
@@ -631,7 +631,7 @@ alert(Math.min.apply(null, arr)); //最小值
 
 ### try-catch
 
-```javascript
+```js
 try {
   document.getElementById("now").innerHTML = "hello";
 } catch (e) {
@@ -643,7 +643,7 @@ try {
 
 #### if-else
 
-```javascript
+```js
 if () {
     //
 } else if () {
@@ -655,7 +655,7 @@ if () {
 
 #### while
 
-```javascript
+```js
 while () {
     //
 }
@@ -663,7 +663,7 @@ while () {
 
 #### do-while
 
-```javascript
+```js
 do {
     //
 } while ()
@@ -671,7 +671,7 @@ do {
 
 #### for
 
-```javascript
+```js
 for (;;) {
   //
 }
@@ -679,7 +679,7 @@ for (;;) {
 
 #### switch-case
 
-```javascript
+```js
 switch () {
     case '':
         //
@@ -695,7 +695,7 @@ switch () {
 
 #### for-in
 
-```javascript
+```js
 for ( in ) {
     //
 }

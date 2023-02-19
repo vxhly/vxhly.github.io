@@ -99,7 +99,7 @@ vue create vtp-ui # vtp-ui 作为教学的库名
 
 `.vuepress/config.js`
 
-```javascript
+```js
 const fs = require("fs");
 const path = require("path");
 const baseDir = fs.readdirSync(path.resolve(__dirname, "../base"));
@@ -169,7 +169,7 @@ module.exports = config;
 
 `vtp-cli/bin/vtp-cli.js`
 
-```javascript
+```js
 #! /usr/bin/env node
 
 const fs = require("fs");
@@ -200,7 +200,7 @@ if (isProject) {
 
 `vtp-cli/bin/vtp-new.js`
 
-```javascript
+```js
 #! /usr/bin/env node
 
 const path = require("path");
@@ -272,7 +272,7 @@ module.exports = initPackage;
 
 `vtp-cli/bin/vtp-del.js`
 
-```javascript
+```js
 #! /usr/bin/env node
 
 const fs = require("fs");

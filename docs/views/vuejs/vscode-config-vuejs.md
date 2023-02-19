@@ -33,7 +33,7 @@ date: 2020-02-16 13:19:19
 
 默认生成的项目 eslint 检测规则是这样的, 米娜桑可以查阅项目目录下的 `.eslintrc.js`
 
-```javascript
+```js
 module.exports = {
   root: true,
   env: {
@@ -54,7 +54,7 @@ module.exports = {
 
 下面贴出我个人使用的代码风格配置（强迫症患者福音）
 
-```javascript
+```js
 module.exports = {
   root: true,
   env: {

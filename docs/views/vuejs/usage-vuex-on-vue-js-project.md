@@ -69,7 +69,7 @@ yarn add vuex
 
 `src/mian.js`
 
-```javascript
+```js
 import Vue from "vue";
 import store from "@/store";
 Vue.config.productionTip = false;
@@ -81,7 +81,7 @@ new Vue({
 
 `strore/index.js`
 
-```javascript
+```js
 import Vue from "vue";
 import Vuex from "vuex";
 import modules from "./modules";
@@ -97,7 +97,7 @@ export default new Vuex.Store({
 
 `strore/getters.js`
 
-```javascript
+```js
 const getters = {
     [stateName]: state => state. [modulesName]. [stateName]
 }
@@ -106,7 +106,7 @@ export default getters
 
 `store/modules/index.js`
 
-```javascript
+```js
 const files = require.context(".", false, /\.js$/);
 const modules = {};
 files.keys().forEach((key) => {
@@ -118,7 +118,7 @@ export default modules;
 
 `store/mutation-types.js`
 
-```javascript
+```js
 // 这边必须使用全大写, 没有为什么
 export const TYPES_NAME = "TYPES_NAME";
 ```
@@ -131,7 +131,7 @@ export const TYPES_NAME = "TYPES_NAME";
 
 `store/mutation-types.js`
 
-```javascript
+```js
 export const ADDITION = "ADDITION"; // + 加法
 export const SUBSTRUCTION = "SUBSTRUCTION"; // - 减法
 export const MULTIPLICATION = "MULTIPLICATION"; // * 乘法
@@ -140,7 +140,7 @@ export const DIVISION = "DIVISION"; // / 除法
 
 `store/modules/operation.js`
 
-```javascript
+```js
 import {
   ADDITION,
   SUBSTRUCTION,
@@ -185,7 +185,7 @@ export default operation;
 
 `store/getters.js`
 
-```javascript
+```js
 const getters = {
   result: (state) => state.operation.result,
 };

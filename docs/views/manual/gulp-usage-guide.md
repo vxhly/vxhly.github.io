@@ -112,7 +112,7 @@ npm install gulp-notify --save-dev        # 更新
 
 打开 `gulpfile.js` 文件, 填写相关配置。
 
-```javascript
+```js
 // 引入 gulp
 var gulp = require("gulp"); // 基础库
 

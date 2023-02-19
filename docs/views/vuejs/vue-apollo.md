@@ -49,7 +49,7 @@ date: 2021-06-10 09:51:35
 
 为了帮助我们更简便的调用 GraphQL API, 在使用 GraphQL 时更加方便, 像普通 js 模块一样轻松自如, 使前端开发人员能在 js 文件中通过 import 或 require 导入 `.gql` 和 `.graphql` 文件, 然后直接调用, 并且还需要支持通过 `#import` 语法导入其它 `.gql` 文件, 比如 `fragments`。我们在 `vue.config.js` 中加入以下配置项来配置加载 `GraphQL API` 文件
 
-```javascript
+```js
 module.exports = {
   chainWebpack: (config) => {
     // GraphQL Loader
@@ -69,7 +69,7 @@ module.exports = {
 
 `apollo-client/index.js`
 
-```javascript
+```js
 import Vue from "vue";
 import ApolloClient from "apollo-boost";
 import VueApollo from "vue-apollo";
@@ -89,7 +89,7 @@ export const apolloProvider = new VueApollo({
 
 需要在 `main.js` 中注册
 
-```javascript
+```js
 import Vue from "vue";
 
 import { apolloProvider } from "@/apollo-client";

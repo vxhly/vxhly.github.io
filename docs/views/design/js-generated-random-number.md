@@ -16,7 +16,7 @@ date: 2016-08-02 13:49:41
 
 ## 方法源码一
 
-```javascript
+```js
 /**
  * Math 对象的扩展方法,可用于生成随机数
  * @param  {number} startNum  起始数,整型
@@ -58,7 +58,7 @@ Math.randNum = function (startNum, endNum, count, repeat) {
 
 ### 如何调用
 
-```javascript
+```js
 Math.randNum(number, number, number, true | false);
 ```
 
@@ -66,7 +66,7 @@ Math.randNum(number, number, number, true | false);
 
 控制台代码
 
-```javascript
+```js
 console.log(Math.randNum(3, 16, 5, true);)
 ```
 
@@ -76,7 +76,7 @@ console.log(Math.randNum(3, 16, 5, true);)
 
 控制台代码
 
-```javascript
+```js
 console.log(Math.randNum(3, 16, 5, false);)
 ```
 
@@ -86,7 +86,7 @@ console.log(Math.randNum(3, 16, 5, false);)
 
 > 一种更简单的写法
 
-```javascript
+```js
 var arr = new Array(); //新建一个数组
 
 // 向数组赋值 0~100

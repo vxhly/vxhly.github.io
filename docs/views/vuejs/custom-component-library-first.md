@@ -58,7 +58,7 @@ vue create vtp-component ## vtp-component 作为教学的库名
 
 由于我们将 src 目录修改成了 examples, 所以在 `vue.config.js` 中需要进行相应的修改
 
-```javascript
+```js
 const path = require("path");
 
 function resolve(dir) {
@@ -121,7 +121,7 @@ module.exports = {
 
 `create-comp.js`
 
-```javascript
+```js
 // 创建自定义组件脚本
 
 const chalk = require("chalk");
@@ -235,7 +235,7 @@ function mkdirs(directory, callback) {
 
 `delete-comp.js`
 
-```javascript
+```js
 // 删除自定义组件脚本
 
 const chalk = require("chalk");
@@ -305,7 +305,7 @@ function removePromise(dir) {
 
 `template.js`
 
-```javascript
+```js
 module.exports = {
     vueTemplate: compoenntName => {
 
@@ -411,7 +411,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 `build-entry.js`
 
-```javascript
+```js
 const fs = require("fs-extra");
 const path = require("path");
 const chalk = require("chalk");
@@ -473,7 +473,7 @@ buildPackagesEntry();
 
 `get-components.js`
 
-```javascript
+```js
 const fs = require("fs");
 const path = require("path");
 

@@ -19,7 +19,7 @@ date: 2020-10-29 16:29:37
 
 ### 检查数组是否为空
 
-```javascript
+```js
 // `arr` is an array
 const isEmpty = (arr) => !Array.isArray(arr) || arr.length === 0;
 
@@ -30,7 +30,7 @@ isEmpty([1, 2, 3]); // false
 
 ### 克隆数组
 
-```javascript
+```js
 // `arr` is an array
 const clone = (arr) => arr.slice(0);
 
@@ -52,7 +52,7 @@ const clone = (arr) => arr.concat([]);
 
 ### 比较两个数组, 而不考虑顺序
 
-```javascript
+```js
 // `a` and `b` are arrays
 const isEqual = (a, b) => JSON.stringify(a.sort()) === JSON.stringify(b.sort());
 
@@ -64,7 +64,7 @@ isEqual([1, 2, 3], [1, "2", 3]); // false
 
 ### 比较两个数组
 
-```javascript
+```js
 // `a` and `b` are arrays
 const isEqual = (a, b) => JSON.stringify(a) === JSON.stringify(b);
 
@@ -79,7 +79,7 @@ isEqual([1, 2, 3], [1, "2", 3]); // false
 
 ### 将数组转换为单个对象
 
-```javascript
+```js
 const toObject = (arr, key) =>
   arr.reduce(
     (a, b) => ({
@@ -121,7 +121,7 @@ toObject(
 
 ### 将字符串数组转换成数字
 
-```javascript
+```js
 const toNumbers = (arr) => arr.map(Number);
 
 // Or
@@ -133,7 +133,7 @@ toNumbers(["2", "3", "4"]); // [2, 3, 4]
 
 ### 按对象数组的属性计数
 
-```javascript
+```js
 const countBy = (arr, prop) =>
   arr.reduce(
     (prev, curr) => ((prev[curr[prop]] = ++prev[curr[prop]] || 1), prev),
@@ -177,7 +177,7 @@ countBy(
 
 ### 计算数组中的某个值的出现
 
-```javascript
+```js
 const countOccurrences = (arr, val) =>
   arr.reduce((a, v) => (v === val ? a + 1 : a), 0);
 
@@ -188,7 +188,7 @@ countOccurrences(["a", "b", "a", "c", "a", "b"], "a"); // 3
 
 ### 计算数组元素的出现次数
 
-```javascript
+```js
 const countOccurrences = (arr) =>
   arr.reduce((prev, curr) => ((prev[curr] = ++prev[curr] || 1), prev), {});
 
@@ -199,7 +199,7 @@ countOccurrences(["a", "b", "a", "c", "a", "b"]); // { 'a': 3, 'b': 2, 'c': 1 }
 
 ### 创建一个累积和的数组
 
-```javascript
+```js
 const accumulate = (arr) =>
   arr.map(
     (
@@ -226,7 +226,7 @@ accumulate([1, 2, 3, 4]); // [1, 3, 6, 10]
 
 ### 给定范围内创建一个数字数组
 
-```javascript
+```js
 const range = (min, max) =>
   [...Array(max - min + 1).keys()].map((i) => i + min);
 
@@ -251,7 +251,7 @@ range(5, 10); // [5, 6, 7, 8, 9, 10]
 
 ### 空数组
 
-```javascript
+```js
 const empty = (arr) => (arr.length = 0);
 
 // Or
@@ -260,7 +260,7 @@ arr = [];
 
 ### 在数组中查找最接近的数字
 
-```javascript
+```js
 // Find the number from `arr` which is closest to `n`
 const closest = (arr, n) =>
   arr.reduce((prev, curr) =>
@@ -277,7 +277,7 @@ closest([29, 87, 8, 78, 97, 20, 75, 33, 24, 17], 50); // 33
 
 ### 查找数字中最长字符串的长度
 
-```javascript
+```js
 const findLongest = (words) => Math.max(...words.map((el) => el.length));
 
 // Example
@@ -286,19 +286,19 @@ findLongest(["always", "look", "on", "the", "bright", "side", "of", "life"]); //
 
 ### 从一个数组中找到最大的元素
 
-```javascript
+```js
 const max = (arr) => Math.max(...arr);
 ```
 
 ### 从一个数组中找到最小的元素
 
-```javascript
+```js
 const min = (arr) => Math.min(...arr);
 ```
 
 ### 展平数组
 
-```javascript
+```js
 const flat = (arr) =>
   [].concat.apply(
     [],
@@ -318,13 +318,13 @@ flat(["cat", ["lion", "tiger"]]); // ['cat', 'lion', 'tiger']
 
 ### 获取数组的平均值
 
-```javascript
+```js
 const average = (arr) => arr.reduce((a, b) => a + b, 0) / arr.length;
 ```
 
 ### 获取数组的交集
 
-```javascript
+```js
 const getIntersection = (a, ...arr) =>
   [...new Set(a)].filter((v) => arr.every((b) => b.includes(v)));
 
@@ -335,13 +335,13 @@ getIntersection([1, 2, 3], [2, 3, 4, 5], [1, 3, 5]); // [3]
 
 ### 获取数字数组的总和
 
-```javascript
+```js
 const sum = (arr) => arr.reduce((a, b) => a + b, 0);
 ```
 
 ### 获取数组的唯一值
 
-```javascript
+```js
 const unique = (arr) => [...new Set(arr)];
 
 // Or
@@ -354,7 +354,7 @@ const unique = (arr) =>
 
 ### 获取数组的并集
 
-```javascript
+```js
 const union = (...arr) => [...new Set(arr.flat())];
 
 // Example
@@ -363,7 +363,7 @@ union([1, 2], [2, 3], [3]); // [1, 2, 3]
 
 ### 通过键将对象数组分组
 
-```javascript
+```js
 const groupBy = (arr, key) =>
   arr.reduce(
     (acc, item) => ((acc[item[key]] = [...(acc[item[key]] || []), item]), acc),
@@ -421,7 +421,7 @@ groupBy(
 
 ### 合并两个数组
 
-```javascript
+```js
 // Merge but don't remove the duplications
 const merge = (a, b) => a.concat(b);
 // Or
@@ -435,7 +435,7 @@ const merge = [...new Set([...a, ...b])];
 
 ### 根据条件对数组进行分区
 
-```javascript
+```js
 const partition = (arr, criteria) =>
   arr.reduce((acc, i) => (acc[criteria(i) ? 0 : 1].push(i), acc), [[], []]);
 
@@ -445,7 +445,7 @@ partition([1, 2, 3, 4, 5], (n) => n % 2); // [[2, 4], [1, 3, 5]]
 
 ### 从数组中删除虚假值
 
-```javascript
+```js
 const removeFalsy = (arr) => arr.filter(Boolean);
 
 // Example
@@ -464,7 +464,7 @@ removeFalsy([
 
 ### 随机排列数组
 
-```javascript
+```js
 const shuffle = (arr) =>
   arr
     .map((a) => ({
@@ -483,7 +483,7 @@ shuffle([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]); // [9, 1, 10, 6, 8, 5, 2, 3, 7, 4]
 
 ### 排序数字数组
 
-```javascript
+```js
 const sort = (arr) => arr.sort((a, b) => a - b);
 
 // Example
@@ -492,7 +492,7 @@ sort([1, 5, 2, 4, 3]); // [1, 2, 3, 4, 5]
 
 ### 将数组拆分为大块
 
-```javascript
+```js
 const chunk = (arr, size) =>
   arr.reduce(
     (acc, e, i) => (
@@ -508,7 +508,7 @@ chunk([1, 2, 3, 4, 5, 6, 7, 8], 4); // [[1, 2, 3, 4], [5, 6, 7, 8]]
 
 ### 交换矩阵的行和列
 
-```javascript
+```js
 const transpose = (matrix) =>
   matrix[0].map((col, i) => matrix.map((row) => row[i]));
 
@@ -534,7 +534,7 @@ transpose([
 
 ### 解压缩数组中的数组
 
-```javascript
+```js
 const unzip = (arr) =>
   arr.reduce(
     (acc, c) => (c.forEach((v, i) => acc[i].push(v)), acc),
@@ -566,7 +566,7 @@ unzip([
 
 ### 压缩多个数组
 
-```javascript
+```js
 const zip = (...arr) =>
   Array.from(
     {
@@ -592,7 +592,7 @@ Does it look like a zipper?
 
 ### 计算两个日期之间的差异天数
 
-```javascript
+```js
 const diffDays = (date, otherDate) =>
   Math.ceil(Math.abs(date - otherDate) / (1000 * 60 * 60 * 24));
 
@@ -602,7 +602,7 @@ diffDays(new Date("2014-12-19"), new Date("2020-01-01")); // 1839
 
 ### 计算两个日期之间的月数
 
-```javascript
+```js
 const monthDiff = (startDate, endDate) =>
   Math.max(
     0,
@@ -617,7 +617,7 @@ monthDiff(new Date("2020-01-01"), new Date("2021-01-01")); // 12
 
 ### 比较两个日期
 
-```javascript
+```js
 // `a` and `b` are `Date` instances
 const compare = (a, b) => a.getTime() > b.getTime();
 
@@ -627,7 +627,7 @@ compare(new Date("2020-03-30"), new Date("2020-01-01")); // true
 
 ### 将日期转换为 yyyy-mm-dd 格式
 
-```javascript
+```js
 // `date` is a `Date` object
 const formatYmd = (date) => date.toISOString().slice(0, 10);
 
@@ -637,7 +637,7 @@ formatYmd(new Date()); // 2020-05-06
 
 ### 将秒转换为 hh:mm:ss 格式
 
-```javascript
+```js
 // `s` is number of seconds
 const formatSeconds = (s) => new Date(s * 1000).toISOString().substr(11, 8);
 
@@ -658,7 +658,7 @@ formatSeconds(500); // 00:08:20
 
 ### 从日期中提取年月日时分秒和毫秒
 
-```javascript
+```js
 // `date` is a `Date` object
 const extract = (date) =>
   date
@@ -671,7 +671,7 @@ const extract = (date) =>
 
 ### 格式化给定语言环境的日期
 
-```javascript
+```js
 // `date` is a `Date` object
 // `locale` is a locale (en-US, pt-BR, for example)
 const format = (date, locale) => new Intl.DateTimeFormat(locale).format(date);
@@ -682,13 +682,13 @@ format(new Date(), "pt-BR"); // 06/05/2020
 
 ### 以秒为单位获取当前时间戳
 
-```javascript
+```js
 const ts = () => Math.floor(new Date().getTime() / 1000);
 ```
 
 ### 从日期获取一年中的某天
 
-```javascript
+```js
 // `date` is a Date object
 const dayOfYear = (date) =>
   Math.floor(
@@ -701,7 +701,7 @@ dayOfYear(new Date(2020, 04, 16)); // 137
 
 ### 获取日期的月份名称
 
-```javascript
+```js
 // `date` is a Date object
 const getMonthName = (date) =>
   [
@@ -722,14 +722,14 @@ const getMonthName = (date) =>
 
 ### 获取给定月份的天数
 
-```javascript
+```js
 // `month` is zero-based index
 const daysInMonth = (month, year) => new Date(year, month, 0).getDate();
 ```
 
 ### 获取明天的日期
 
-```javascript
+```js
 const tomorrow = ((d) => new Date(d.setDate(d.getDate() + 1)))(new Date());
 
 // Or
@@ -738,7 +738,7 @@ const tomorrow = new Date(new Date().valueOf() + 1000 * 60 * 60 * 24);
 
 ### 获取日期的工作日
 
-```javascript
+```js
 // `date` is a Date object
 const getWeekday = (date) =>
   [
@@ -754,7 +754,7 @@ const getWeekday = (date) =>
 
 ### 获取昨天的日期
 
-```javascript
+```js
 const yesterday = ((d) => new Date(d.setDate(d.getDate() - 1)))(new Date());
 
 // Or
@@ -763,7 +763,7 @@ const yesterday = new Date(new Date().valueOf() - 1000 * 60 * 60 * 24);
 
 ### 排序日期数组
 
-```javascript
+```js
 // `arr` is an array of `Date` items
 const sortDescending = (arr) => arr.sort((a, b) => a.getTime() > b.getTime());
 const sortAscending = (arr) => arr.sort((a, b) => a.getTime() < b.getTime());
@@ -771,7 +771,7 @@ const sortAscending = (arr) => arr.sort((a, b) => a.getTime() < b.getTime());
 
 ### 检查日期是否为工作日
 
-```javascript
+```js
 const isWeekday = (date) => date.getDay() % 6 !== 0;
 console.log(isWeekday(new Date(2021, 0, 11)));
 // Result: true (Monday)
@@ -781,7 +781,7 @@ console.log(isWeekday(new Date(2021, 0, 10)));
 
 ### 从日期中获取时间
 
-```javascript
+```js
 const timeFromDate = (date) => date.toTimeString().slice(0, 8);
 console.log(timeFromDate(new Date(2021, 0, 10, 17, 30, 0)));
 // Result: "17:30:00"
@@ -793,13 +793,13 @@ console.log(timeFromDate(new Date()));
 
 ### 检查一个元素是否是另一个元素的后代
 
-```javascript
+```js
 const isDescendant = (child, parent) => parent.contains(child);
 ```
 
 ### 检查元素是否获得焦点
 
-```javascript
+```js
 const elementIsInFocus = (el) => el === document.activeElement;
 elementIsInFocus(anyElement);
 // Result: will return true if in focus, false if not in focus
@@ -807,7 +807,7 @@ elementIsInFocus(anyElement);
 
 ### 检查是否支持触摸事件
 
-```javascript
+```js
 const touchSupported = () => {
   "ontouchstart" in window ||
     (window.DocumentTouch && document instanceof window.DocumentTouch);
@@ -818,13 +818,13 @@ console.log(touchSupported());
 
 ### 检测 Internet Explorer 浏览器
 
-```javascript
+```js
 const isIE = !!document.documentMode;
 ```
 
 ### 检测 macos 浏览器
 
-```javascript
+```js
 const isAppleDevice = /Mac|iPod|iPhone|iPad/.test(navigator.platform);
 console.log(isAppleDevice);
 // Result: will return true if user is on an Apple device
@@ -832,20 +832,20 @@ console.log(isAppleDevice);
 
 ### 获取元素的所有同级
 
-```javascript
+```js
 const siblings = (ele) =>
   [].slice.call(ele.parentNode.children).filter((child) => child !== ele);
 ```
 
 ### 获取所选文本
 
-```javascript
+```js
 const getSelectedText = () => window.getSelection().toString();
 ```
 
 ### 返回上一个页面
 
-```javascript
+```js
 history.back();
 
 // Or
@@ -854,7 +854,7 @@ history.go(-1);
 
 ### 隐藏元素
 
-```javascript
+```js
 // Pick the method that is suitable for your use case
 const hide = (ele) => (ele.style.display = "none");
 
@@ -864,7 +864,7 @@ const hide = (ele) => (ele.style.visibility = "hidden");
 
 ### 在另一个元素之后插入一个元素
 
-```javascript
+```js
 const insertAfter = (ele, anotherEle) =>
   anotherEle.parentNode.insertBefore(ele, anotherEle.nextSibling);
 
@@ -875,7 +875,7 @@ const insertAfter = (ele, anotherEle) =>
 
 ### 在其他元素之前插入元素
 
-```javascript
+```js
 const insertBefore = (ele, anotherEle) =>
   anotherEle.parentNode.insertBefore(ele, anotherEle);
 
@@ -886,26 +886,26 @@ const insertBefore = (ele, anotherEle) =>
 
 ### 在元素后插入给定的 html
 
-```javascript
+```js
 const insertHtmlAfter = (html, ele) => ele.insertAdjacentHTML("afterend", html);
 ```
 
 ### 在元素之前插入给定的 html
 
-```javascript
+```js
 const insertHtmlBefore = (html, ele) =>
   ele.insertAdjacentHTML("beforebegin", html);
 ```
 
 ### 重定向到另一个页面
 
-```javascript
+```js
 const goTo = (url) => (location.href = url);
 ```
 
 ### 重新加载当前页面
 
-```javascript
+```js
 const reload = () => location.reload();
 
 // Or
@@ -914,13 +914,13 @@ const reload = () => (location.href = location.href);
 
 ### 替换元素
 
-```javascript
+```js
 const replace = (ele, newEle) => ele.parentNode.replaceChild(newEle, ele);
 ```
 
 ### 滚动到页面顶部
 
-```javascript
+```js
 const goToTop = () => window.scrollTo(0, 0);
 goToTop();
 // Result: will scroll the browser to the top of the page
@@ -928,27 +928,27 @@ goToTop();
 
 ### 显示元素
 
-```javascript
+```js
 const show = (ele) => (ele.style.display = "");
 ```
 
 ### 从给定的文本中删除 HTML
 
-```javascript
+```js
 const stripHtml = (html) =>
   new DOMParser().parseFromString(html, "text/html").body.textContent || "";
 ```
 
 ### 切换元素
 
-```javascript
+```js
 const toggle = (ele) =>
   (ele.style.display = ele.style.display === "none" ? "block" : "none");
 ```
 
 ### 检查当前 Tab 页是否在前台
 
-```javascript
+```js
 const isBrowserTabInView = () => document.hidden;
 isBrowserTabInView();
 // Result: returns true or false depending on if tab is in view / focus
@@ -958,7 +958,7 @@ isBrowserTabInView();
 
 ### 装箱机
 
-```javascript
+```js
 const boxHandler = (x) => ({
   next: (f) => boxHandler(f(x)),
   done: (f) => f(x),
@@ -989,7 +989,7 @@ getDiscountPrice("$6.00", "20%"); // 4.8
 
 ### 检查值是否为函数
 
-```javascript
+```js
 const isFunction = (v) =>
   [
     "[object Function]",
@@ -1006,7 +1006,7 @@ isFunction(async function () {}); // true
 
 ### 检查值是否是生成器函数
 
-```javascript
+```js
 const isGeneratorFunction = (v) =>
   Object.prototype.toString.call(v) === "[object GeneratorFunction]";
 
@@ -1017,7 +1017,7 @@ isGeneratorFunction(function* () {}); // true
 
 ### 检查值是否是异步函数
 
-```javascript
+```js
 const isAsyncFunction = (v) =>
   Object.prototype.toString.call(v) === "[object AsyncFunction]";
 
@@ -1029,7 +1029,7 @@ isAsyncFunction(async function () {}); // true
 
 ### 从左到右编写功能
 
-```javascript
+```js
 // Compose functions from left to right
 const pipe =
   (...fns) =>
@@ -1049,7 +1049,7 @@ fn("Hello World") === "dlrow olleH";
 
 ### 撰写功能
 
-```javascript
+```js
 // Compose functions from right to left
 const compose =
   (...fns) =>
@@ -1069,7 +1069,7 @@ fn("Hello World") === "dlrow olleH";
 
 ### 创建一个空函数
 
-```javascript
+```js
 const noop = () => {};
 
 // Or
@@ -1079,7 +1079,7 @@ const noop = Function();
 
 ### 咖喱功能
 
-```javascript
+```js
 const curry = (fn, ...args) =>
   fn.length <= args.length ? fn(...args) : curry.bind(null, fn, ...args);
 
@@ -1095,7 +1095,7 @@ curry(sum, 1, 2, 3); // 6
 
 ### 延迟功能评估
 
-```javascript
+```js
 // returns a new version of `fn` that returns values as lazy evaluable
 const thunkfy =
   (fn) =>
@@ -1115,7 +1115,7 @@ const probablyFaster = manyThings
 
 ### 一次执行一个功能
 
-```javascript
+```js
 const once = (fn) =>
   (
     (ran = false) =>
@@ -1133,7 +1133,7 @@ incOnce(); // n = 1
 
 ### 翻转函数的参数
 
-```javascript
+```js
 // Reverse the order of arguments
 const flip =
   (fn) =>
@@ -1153,13 +1153,13 @@ const isChild = flip(isParent);
 
 ### 身份功能
 
-```javascript
+```js
 const identity = (x) => x;
 ```
 
 ### 逻辑异或运算符
 
-```javascript
+```js
 // returns `true` if one of the arguments is truthy and the other is falsy
 
 const xor = (a, b) => (a && !b) || (!a && b);
@@ -1179,7 +1179,7 @@ xor(false, true); // true
 
 ### 记忆功能
 
-```javascript
+```js
 const memoize = (fn) =>
   (
     (cache = {}) =>
@@ -1201,7 +1201,7 @@ fibo(6); // 8
 
 ### 部分应用功能
 
-```javascript
+```js
 const partial =
   (fn, ...a) =>
   (...b) =>
@@ -1215,7 +1215,7 @@ inc(9); // 10
 
 ### 泛函功能
 
-```javascript
+```js
 // `fn` is a curried function
 // `n` is the depth of parameters
 const uncurry =
@@ -1237,7 +1237,7 @@ uncurry(sum, 3)(1, 2, 3); // 6
 
 ### 检查代码是否在节点 js 中运行
 
-```javascript
+```js
 const isNode =
   typeof process !== "undefined" &&
   process.versions != null &&
@@ -1246,13 +1246,13 @@ const isNode =
 
 ### 检查代码是否在浏览器中运行
 
-```javascript
+```js
 const isBrowser = typeof window === "object" && typeof document === "object";
 ```
 
 ### 将摄氏度转换为华氏度
 
-```javascript
+```js
 const celsiusToFahrenheit = (celsius) => (celsius * 9) / 5 + 32;
 
 const fahrenheitToCelsius = (fahrenheit) => ((fahrenheit - 32) * 5) / 9;
@@ -1268,7 +1268,7 @@ fahrenheitToCelsius(32); // 0
 
 ### 将 cookie 转换为对象
 
-```javascript
+```js
 const cookies = document.cookie
   .split(";")
   .map((item) => item.split("="))
@@ -1277,7 +1277,7 @@ const cookies = document.cookie
 
 ### 将十六进制转换为 RGB
 
-```javascript
+```js
 const hexToRgb = (hex) =>
   hex
     .replace(
@@ -1295,7 +1295,7 @@ hexToRgb("#0ff"); // [0, 255, 255]
 
 ### 将 RGB 颜色转换为十六进制
 
-```javascript
+```js
 const rgbToHex = (red, green, blue) =>
   `#${((1 << 24) + (red << 16) + (green << 8) + blue).toString(16).slice(1)}`;
 
@@ -1309,7 +1309,7 @@ rgbToHex(0, 255, 255); // '#00ffff'
 
 ### 解码 jwt 令牌
 
-```javascript
+```js
 const decode = (token) =>
   decodeURIComponent(
     atob(token.split(".")[1].replace("-", "+").replace("_", "/"))
@@ -1330,7 +1330,7 @@ decode(`
 
 ### 检测暗模式
 
-```javascript
+```js
 const isDarkMode =
   window.matchMedia &&
   window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -1338,7 +1338,7 @@ const isDarkMode =
 
 ### 缓动功能
 
-```javascript
+```js
 // Some easing functions
 // See https://gist.github.com/gre/1650294 and https://easings.net
 
@@ -1377,7 +1377,7 @@ const easeInOutElastic = (t) =>
 
 ### 模拟掷骰子
 
-```javascript
+```js
 const throwdice = () => ~~(Math.random() * 6) + 1;
 
 // Examples
@@ -1388,7 +1388,7 @@ throwdice(); // 6
 
 ### 编码网址
 
-```javascript
+```js
 // `encodeURIComponent` doesn't encode -_.!~*'()
 const encode = (url) =>
   encodeURIComponent(url)
@@ -1403,7 +1403,7 @@ const encode = (url) =>
 
 ### 获取第一个已定义且非 null 的参数
 
-```javascript
+```js
 const coalesce = (...args) =>
   args.find((item) => item !== undefined && item !== null);
 
@@ -1417,7 +1417,7 @@ coalesce(undefined, null, "helloworld", NaN); // 'helloworld'
 
 ### 获取 Cookie 的值
 
-```javascript
+```js
 const cookie = (name) =>
   `; ${document.cookie}`.split(`; ${name}=`).pop().split(";").shift();
 
@@ -1427,7 +1427,7 @@ cookie("_ga"); // GA1.2.825309271.1581874719
 
 ### 从网址获取参数值
 
-```javascript
+```js
 const getParam = (url, param) =>
   new URLSearchParams(new URL(url).search).get(param);
 
@@ -1437,7 +1437,7 @@ getParam("http://domain.com?message=hello", "message"); // 'hello'
 
 ### 将页面重定向到 https（如果位于 http 中）
 
-```javascript
+```js
 const redirectHttps = () =>
   location.protocol === "https:"
     ? {}
@@ -1450,7 +1450,7 @@ const redirectHttps = () =>
 
 ### 依次兑现承诺
 
-```javascript
+```js
 // `promises` is an array of `Promise`
 const run = (promises) =>
   promises.reduce(
@@ -1466,7 +1466,7 @@ run(promises).then((results) => {
 
 ### 交换两个变量
 
-```javascript
+```js
 [a, b] = [b, a];
 
 // Or
@@ -1484,7 +1484,7 @@ a = b * ((b = a), 1);
 
 ### 等待一段时间
 
-```javascript
+```js
 const wait = async (milliseconds) =>
   new Promise((resolve) => setTimeout(resolve, milliseconds));
 ```
@@ -1493,7 +1493,7 @@ const wait = async (milliseconds) =>
 
 ### 在数字后添加序数后缀
 
-```javascript
+```js
 // `n` is a position number
 const addOrdinal = (n) =>
   `${n}${["st", "nd", "rd"][((((n + 90) % 100) - 10) % 10) - 1] || "th"}`;
@@ -1524,7 +1524,7 @@ addOrdinal(13); // '13th'
 
 ### 计算斐波那契数
 
-```javascript
+```js
 const fibo = (n, memo = {}) =>
   memo[n] || (n <= 2 ? 1 : (memo[n] = fibo(n - 1, memo) + fibo(n - 2, memo)));
 
@@ -1539,7 +1539,7 @@ fibo(6); // 8
 
 ### 计算参数的平均值
 
-```javascript
+```js
 const average = (...args) => args.reduce((a, b) => a + b) / args.length;
 
 // Example
@@ -1548,7 +1548,7 @@ average(1, 2, 3, 4); // 2.5
 
 ### 技术参数除法
 
-```javascript
+```js
 const division = (...args) => args.reduce((a, b) => a / b);
 
 // Example
@@ -1557,7 +1557,7 @@ division(1, 2, 3, 4); // 0.04166666666666666
 
 ### 计算数字的阶乘
 
-```javascript
+```js
 const factorial = (n) => (n <= 1 ? 1 : n * factorial(n - 1));
 
 // Examples
@@ -1570,7 +1570,7 @@ factorial(6); // 720
 
 ### 计算集合索引的 mod
 
-```javascript
+```js
 const mod = (a, b) => ((a % b) + b) % b;
 
 // Examples
@@ -1581,7 +1581,7 @@ mod(6, 5); // 1
 
 ### 计算参数除法的余数
 
-```javascript
+```js
 const remainder = (...args) => args.reduce((a, b) => a % b);
 
 // Example
@@ -1590,7 +1590,7 @@ remainder(1, 2, 3, 4); // 1
 
 ### 计算参数之和
 
-```javascript
+```js
 const sum = (...args) => args.reduce((a, b) => a + b);
 
 // Example
@@ -1599,7 +1599,7 @@ sum(1, 2, 3, 4); // 10
 
 ### 将数字限制在两个值之间
 
-```javascript
+```js
 const clamp = (val, min = 0, max = 1) => Math.max(min, Math.min(max, val));
 
 // Example
@@ -1608,7 +1608,7 @@ clamp(199, 10, 25); // 25
 
 ### 计算两个数字之间的最大公约数
 
-```javascript
+```js
 const gcd = (a, b) => (b === 0 ? a : gcd(b, a % b));
 
 // Example
@@ -1617,7 +1617,7 @@ gcd(10, 15); // 5
 
 ### 将数字转换为等效字符
 
-```javascript
+```js
 const toChars = (n) =>
   `${n >= 26 ? toChars(Math.floor(n / 26) - 1) : ""}${
     "ABCDEFGHIJKLMNOPQRSTUVWXYZ"[n % 26]
@@ -1639,7 +1639,7 @@ toChars(703); // AAB
 
 ### 将字符串转换为数字
 
-```javascript
+```js
 const toNumber = (str) => +str;
 
 // Example
@@ -1648,7 +1648,7 @@ toNumber("42"); // 42
 
 ### 将度转换为弧度
 
-```javascript
+```js
 const degsToRads = (deg) => (deg * Math.PI) / 180.0;
 
 const radsToDegs = (rad) => (rad * 180) / Math.PI;
@@ -1656,7 +1656,7 @@ const radsToDegs = (rad) => (rad * 180) / Math.PI;
 
 ### 从数字中获取数字数组
 
-```javascript
+```js
 const digits = (n) => `${n}`.split("").map((v) => parseInt(v));
 
 // Example
@@ -1665,7 +1665,7 @@ digits(123); // [1, 2, 3]
 
 ### 相乘参数
 
-```javascript
+```js
 const mul = (...args) => args.reduce((a, b) => a * b);
 
 // Example
@@ -1674,7 +1674,7 @@ mul(1, 2, 3, 4); // 24
 
 ### 在整数前加上零
 
-```javascript
+```js
 const prefixWithZeros = (number, length) =>
   (number / Math.pow(10, length)).toFixed(length).substr(2);
 
@@ -1692,7 +1692,7 @@ prefixWithZeros(42, 5); // '00042'
 
 ### 将数字四舍五入到给定的数字
 
-```javascript
+```js
 const round = (n, decimals = 0) =>
   Number(`${Math.round(`${n}e${decimals}`)}e-${decimals}`);
 
@@ -1703,7 +1703,7 @@ round(1.234567, 4); // 1.2346
 
 ### 减去参数
 
-```javascript
+```js
 const subtract = (...args) => args.reduce((a, b) => a - b);
 
 // Example
@@ -1712,7 +1712,7 @@ subtract(1, 2, 3, 4); // -8
 
 ### 截断十进制数字
 
-```javascript
+```js
 const truncate = (n) => ~~n;
 
 // Examples
@@ -1722,7 +1722,7 @@ truncate(-25.198726354); // -25
 
 ### 将数字截断为给定的小数位数而不四舍五入
 
-```javascript
+```js
 const toFixed = (n, fixed) =>
   `${n}`.match(new RegExp(`^-?\\d+(?:\.\\d{0,${fixed}})?`))[0];
 
@@ -1742,7 +1742,7 @@ toFixed(25.198726354, 6); // 25.198726
 
 ### 检查多个对象是否相等
 
-```javascript
+```js
 const isEqual = (...objects) =>
   objects.every((obj) => JSON.stringify(obj) === JSON.stringify(objects[0]));
 
@@ -1753,7 +1753,7 @@ isEqual({ foo: "bar" }, { bar: "foo" }); // false
 
 ### 创建一个没有属性的空地图
 
-```javascript
+```js
 // `map` doesn't have any properties
 const map = Object.create(null);
 
@@ -1763,7 +1763,7 @@ const map = Object.create(null);
 
 ### 从键和值对创建对象
 
-```javascript
+```js
 const toObj = (arr) => Object.fromEntries(arr);
 
 // Or
@@ -1779,7 +1779,7 @@ toObj([
 
 ### 从对象数组中提取属性的值
 
-```javascript
+```js
 const pluck = (objs, property) => objs.map((obj) => obj[property]);
 
 // Example
@@ -1795,7 +1795,7 @@ pluck(
 
 ### 获取对象给定路径的值
 
-```javascript
+```js
 const getValue = (path, obj) =>
   path.split(".").reduce((acc, c) => acc && acc[c], obj);
 
@@ -1805,7 +1805,7 @@ getValue("a.b", { a: { b: "Hello World" } }); // 'Hello World';
 
 ### 反转对象的键和值
 
-```javascript
+```js
 const invert = (obj) =>
   Object.keys(obj).reduce((res, k) => Object.assign(res, { [obj[k]]: k }), {});
 
@@ -1815,7 +1815,7 @@ invert({ a: "1", b: "2", c: "3" }); // { 1: 'a', 2: 'b', 3: 'c' }
 
 ### 忽略对象的属性子集
 
-```javascript
+```js
 const omit = (obj, keys) =>
   Object.keys(obj)
     .filter((k) => !keys.includes(k))
@@ -1827,7 +1827,7 @@ omit({ a: "1", b: "2", c: "3" }, ["a", "b"]); // { c: '3' }
 
 ### 选择一个对象的属性子集
 
-```javascript
+```js
 const pick = (obj, keys) =>
   Object.keys(obj)
     .filter((k) => keys.includes(k))
@@ -1839,7 +1839,7 @@ pick({ a: "1", b: "2", c: "3" }, ["a", "b"]); // { a: '1', b: '2' }
 
 ### 浅复制对象
 
-```javascript
+```js
 const shallowCopy = obj => Object.assign({}, obj);
 
 // or
@@ -1850,19 +1850,19 @@ const shallowCopy = obj => {...obj};
 
 ### 产生一个随机的布尔值
 
-```javascript
+```js
 const randomBoolean = () => Math.random() >= 0.5;
 ```
 
 ### 生成给定范围内的随机浮点数
 
-```javascript
+```js
 const randomFloat = (min, max) => Math.random() * (max - min) + min;
 ```
 
 ### 生成随机的十六进制颜色
 
-```javascript
+```js
 const randomColor = () =>
   `#${Math.random().toString(16).slice(2, 8).padEnd(6, "0")}`;
 
@@ -1872,14 +1872,14 @@ const randomColor = () => `#${(~~(Math.random() * (1 << 24))).toString(16)}`;
 
 ### 生成给定范围内的随机整数
 
-```javascript
+```js
 const randomInteger = (min, max) =>
   Math.floor(Math.random() * (max - min + 1)) + min;
 ```
 
 ### 生成一个随机 IP 地址
 
-```javascript
+```js
 const randomIp = () =>
   Array(4)
     .fill(0)
@@ -1892,7 +1892,7 @@ randomIp(); // 175.89.174.131
 
 ### 从给定字符生成随机字符串
 
-```javascript
+```js
 const generateString = (length, chars) =>
   Array(length)
     .fill("")
@@ -1908,13 +1908,13 @@ generateString(
 
 ### 使用节点加密模块生成随机字符串
 
-```javascript
+```js
 const randomStr = () => require("crypto").randomBytes(32).toString("hex");
 ```
 
 ### 生成给定长度的随机字符串
 
-```javascript
+```js
 const generateString = (length) =>
   Array(length)
     .fill("")
@@ -1924,7 +1924,7 @@ const generateString = (length) =>
 
 ### 生成随机的 uuid
 
-```javascript
+```js
 const uuid = (a) =>
   a
     ? (a ^ ((Math.random() * 16) >> (a / 4))).toString(16)
@@ -1933,7 +1933,7 @@ const uuid = (a) =>
 
 ### 生成给定范围内的随机整数数组
 
-```javascript
+```js
 const randomArrayInRange = (min, max, n) =>
   Array.from(
     { length: n },
@@ -1946,7 +1946,7 @@ randomArrayInRange(1, 100, 10); // [11, 82, 41, 35, 76, 83, 43, 15, 60, 54]
 
 ### 从数组中获取随机项
 
-```javascript
+```js
 const randomItem = (arr) => arr[(Math.random() * arr.length) | 0];
 ```
 
@@ -1954,20 +1954,20 @@ const randomItem = (arr) => arr[(Math.random() * arr.length) | 0];
 
 ### 截取最后一个反斜杠后的内容
 
-```javascript
+```js
 const interceptAfter = (str) =>
   str.substring(str.lastIndexOf("/") + 1, str.length);
 ```
 
 ### 截取最后一个反斜杠前的内容
 
-```javascript
+```js
 const interceptBefore = (str) => str.substring(0, str.lastIndexOf("/") + 1);
 ```
 
 ### 大写字符串
 
-```javascript
+```js
 const capitalize = (str) => `${str.charAt(0).toUpperCase()}${str.slice(1)}`;
 
 // Example
@@ -1976,7 +1976,7 @@ capitalize("hello world"); // 'Hello world'
 
 ### 检查路径是否相对
 
-```javascript
+```js
 const isRelative = (path) => !/^([a-z]+:)?[\\/]/i.test(path);
 
 // Examples
@@ -1988,7 +1988,7 @@ isRelative("foo.md"); // true
 
 ### 检查字符串是否是回文
 
-```javascript
+```js
 const isPalindrome = (str) => str === str.split("").reverse().join("");
 
 // Examples
@@ -1998,7 +1998,7 @@ isPalindrom("abcba"); // true
 
 ### 检查网址是否为绝对网址
 
-```javascript
+```js
 const isAbsoluteUrl = (url) => /^[a-z][a-z0-9+.-]*:/.test(url);
 
 // Example
@@ -2010,7 +2010,7 @@ isAbsoluteUrl("//1loc.dev"); // false
 
 ### 检查两个字符串是否为字谜
 
-```javascript
+```js
 const areAnagram = (str1, str2) =>
   str1.toLowerCase().split("").sort().join("") ===
   str2.toLowerCase().split("").sort().join("");
@@ -2023,7 +2023,7 @@ areAnagram("node", "deno"); // true
 
 ### 转换字母以关联表情符号
 
-```javascript
+```js
 const letterToEmoji = (c) =>
   String.fromCodePoint(c.toLowerCase().charCodeAt() + 127365);
 
@@ -2034,7 +2034,7 @@ letterToEmoji("b"); // 🇧
 
 ### 将字符串转换为驼峰式大小写
 
-```javascript
+```js
 const toCamelCase = (str) =>
   str.trim().replace(/[-_\s]+(.)?/g, (_, c) => (c ? c.toUpperCase() : ""));
 
@@ -2047,7 +2047,7 @@ toCamelCase("hello_world"); // helloWorld
 
 ### 将字符串转换为 Pascal 大小写
 
-```javascript
+```js
 const toPascalCase = (str) =>
   (str.match(/[a-zA-Z0-9]+/g) || [])
     .map((w) => `${w.charAt(0).toUpperCase()}${w.slice(1)}`)
@@ -2061,7 +2061,7 @@ toPascalCase("foo_bar-baz"); // FooBarBaz
 
 ### 将字符串转换为 url slug
 
-```javascript
+```js
 const slugify = (string) =>
   string
     .toLowerCase()
@@ -2074,7 +2074,7 @@ slugify("Chapter One: Once upon a time..."); // 'chapter-one-once-upon-a-time'
 
 ### 将 Windows 文件路径转换为 Unix 路径
 
-```javascript
+```js
 const toUnixPath = (path) =>
   path.replace(/[\\/]+/g, "/").replace(/^([a-zA-Z]+:|\.\/)/, "");
 
@@ -2085,7 +2085,7 @@ toUnixPath("C:\\foo\\bar\\baz"); // /foo/bar/baz
 
 ### 将驼峰命名法转换为 kebab-case 形式, 反之亦然
 
-```javascript
+```js
 const kebabToCamel = (str) => str.replace(/-./g, (m) => m.toUpperCase()[1]);
 
 const camelToKebab = (str) =>
@@ -2098,7 +2098,7 @@ camelToKebab("backgroundColor"); // 'background-color'
 
 ### 将 snake-case 形式转换成驼峰命名形式
 
-```javascript
+```js
 const snakeToCamel = (str) =>
   str.toLowerCase().replace(/(_\w)/g, (m) => m.toUpperCase().substr(1));
 
@@ -2108,7 +2108,7 @@ snakeToCamel("HELLO_world"); // 'helloWorld'
 
 ### 将 Excel 列名转换成数字
 
-```javascript
+```js
 const getIndex = (col) =>
   col.split("").reduce((prev, next) => prev * 26 + parseInt(next, 36) - 9, 0);
 
@@ -2129,7 +2129,7 @@ getIndex("AAB"); // 704
 
 ### 转义 HTML 特殊字符
 
-```javascript
+```js
 const escape = (str) =>
   str
     .replace(/&/g, "&amp;")
@@ -2151,7 +2151,7 @@ const escape = (str) =>
 
 ### 获取不带任何参数的基本 URL
 
-```javascript
+```js
 const baseUrl = (url) =>
   url.indexOf("?") === -1 ? url : url.slice(0, url.indexOf("?"));
 
@@ -2166,13 +2166,13 @@ baseUrl("https://domain.com/path/sub/path?foo=bar&hello=world"); // 'https://dom
 
 ### 从文件名获取文件扩展名
 
-```javascript
+```js
 const ext = (fileName) => fileName.split(".").pop();
 ```
 
 ### 从网址获取文件名
 
-```javascript
+```js
 const fileName = (url) => url.substring(url.lastIndexOf("/") + 1);
 
 // Example
@@ -2181,7 +2181,7 @@ fileName("http://domain.com/path/to/document.pdf"); // 'document.pdf'
 
 ### 获取字符串的长度（以字节为单位）
 
-```javascript
+```js
 const bytes = (str) => new Blob([str]).size;
 
 // Examples
@@ -2191,7 +2191,7 @@ bytes("🎉"); // 4
 
 ### 获取字符串中的字符数
 
-```javascript
+```js
 const characterCount = (str, char) => str.split(char).length - 1;
 
 // Or
@@ -2205,7 +2205,7 @@ characterCount("star wars", "s"); // 2
 
 ### 使字符串的第一个字符小写
 
-```javascript
+```js
 const lowercaseFirst = (str) => `${str.charAt(0).toLowerCase()}${str.slice(1)}`;
 
 // Example
@@ -2214,7 +2214,7 @@ lowercaseFirst("Hello World"); // 'hello World'
 
 ### 标准化文件路径斜杠
 
-```javascript
+```js
 const normalizePath = (path) => path.replace(/[\\/]+/g, "/");
 
 // Example
@@ -2224,7 +2224,7 @@ normalizePath(".//foo//bar///////baz/"); // ./foo/bar/baz/
 
 ### 从字符串中删除空格
 
-```javascript
+```js
 const removeSpaces = (str) => str.replace(/\s/g, "");
 
 // Example
@@ -2233,7 +2233,7 @@ removeSpaces("hel lo wor ld"); // 'helloworld'
 
 ### 重复一个字符串
 
-```javascript
+```js
 const repeat = (str, numberOfTimes) => str.repeat(numberOfTimes);
 
 // Or
@@ -2242,7 +2242,7 @@ const repeat = (str, numberOfTimes) => Array(numberOfTimes + 1).join(str);
 
 ### 用 br 元素替换所有换行符
 
-```javascript
+```js
 const nl2br = (str) => str.replace(new RegExp("\r?\n", "g"), "<br>");
 
 // In React
@@ -2256,7 +2256,7 @@ str.split("\n").map((item, index) => (
 
 ### 用一个空格替换多个空格
 
-```javascript
+```js
 // Replace spaces, tabs and new line characters
 const replaceSpaces = (str) => str.replace(/\s\s+/g, " ");
 
@@ -2269,7 +2269,7 @@ replaceSpaces("this\n   is     \ta    \rmessage"); // 'this is a message'
 
 ### 将字符串的第一个给定字符数替换为另一个字符
 
-```javascript
+```js
 const mask = (str, num, mask) =>
   `${str}`.slice(num).padStart(`${str}`.length, mask);
 
@@ -2279,7 +2279,7 @@ mask(1234567890, 3, "*"); // ***4567890
 
 ### 反转字符串
 
-```javascript
+```js
 const reverse = (str) => str.split("").reverse().join("");
 
 // Or
@@ -2299,7 +2299,7 @@ reverse("hello world"); // 'dlrow olleh'
 
 ### 按字母顺序对字符串的字符进行排序
 
-```javascript
+```js
 const sort = (str) =>
   str
     .split("")
@@ -2312,7 +2312,7 @@ sort("hello world"); // dehllloorw
 
 ### 从字符串中删除 ANSI 代码
 
-```javascript
+```js
 const stripAnsiCodes = (str) =>
   str.replace(
     /[\u001b\u009b][[()#;?]*(?:[0-9]{1,4}(?:;[0-9]{0,4})*)?[0-9A-ORZcf-nqry=><]/g,
@@ -2328,7 +2328,7 @@ stripAnsiCodes(
 
 ### 在字符串的开头和结尾处使用斜杠
 
-```javascript
+```js
 const trimSlashes = (str) => str.replace(/^\/+|\/+$/g, "");
 
 // Or
@@ -2340,7 +2340,7 @@ trimSlashes("//hello/world///"); // hello/world
 
 ### 修剪一些角色
 
-```javascript
+```js
 const trim = (str, char) => str.split(char).filter(Boolean).join();
 
 // Examples
@@ -2351,7 +2351,7 @@ trim("   hello world ", " "); // hello world
 
 ### 从文件名修剪文件扩展名
 
-```javascript
+```js
 const trimExt = (fileName) =>
   fileName.indexOf(".") === -1
     ? fileName
@@ -2365,7 +2365,7 @@ trimExt("document.2020.pdf"); // document.2020
 
 ### 用完整的单词截断字符串
 
-```javascript
+```js
 const truncate = (str, max, suffix) =>
   str.length < max
     ? str
@@ -2380,7 +2380,7 @@ truncate("This is a long message", 20, "..."); // 'This is a long...'
 
 ### Unescape html 特殊字符
 
-```javascript
+```js
 const unescape = (str) =>
   str
     .replace(/&/g, "&")
@@ -2392,7 +2392,7 @@ const unescape = (str) =>
 
 ### 将字符串中每个单词的第一个字符大写
 
-```javascript
+```js
 const uppercaseWords = (str) =>
   str
     .split(" ")
@@ -2411,7 +2411,7 @@ uppercaseWords("hello world"); // 'Hello World'
 
 ### 检查日期是否在两个日期之间
 
-```javascript
+```js
 // `min`, `max` and `date` are `Date` instances
 const isBetween = (date, min, max) =>
   date.getTime() >= min.getTime() && date.getTime() <= max.getTime();
@@ -2419,7 +2419,7 @@ const isBetween = (date, min, max) =>
 
 ### 检查日期是否是今天
 
-```javascript
+```js
 // `date` is a Date object
 const isToday = (date) =>
   date.toISOString().slice(0, 10) === new Date().toISOString().slice(0, 10);
@@ -2427,7 +2427,7 @@ const isToday = (date) =>
 
 ### 检查给定的整数是否是质数
 
-```javascript
+```js
 const isPrime = (num) =>
   num > 1 &&
   Array(Math.floor(Math.sqrt(num)) - 1)
@@ -2438,7 +2438,7 @@ const isPrime = (num) =>
 
 ### 检查数字是否为 2 的幂
 
-```javascript
+```js
 const isPowerOfTwo = (number) => (number & (number - 1)) === 0;
 
 // Examples
@@ -2448,7 +2448,7 @@ isPowerOfTwo(129); // false
 
 ### 检查数字是否为偶数
 
-```javascript
+```js
 const isEven = (number) => number % 2 === 0;
 
 // Or
@@ -2467,7 +2467,7 @@ isEven(2); // true
 
 ### 检查数字是否在给定范围内
 
-```javascript
+```js
 const inRange = (num, a, b) => Math.min(a, b) <= num && num < Math.max(a, b);
 
 // Example
@@ -2479,7 +2479,7 @@ inRange(-10, -5, -15); // true
 
 ### 检查数字是否为负
 
-```javascript
+```js
 const isNegative = (number) => Math.sign(number) === -1;
 
 // Or
@@ -2492,7 +2492,7 @@ isNegative(8); // false
 
 ### 检查数字是否为奇数
 
-```javascript
+```js
 const isOdd = (number) => number % 2 !== 0;
 
 // Or
@@ -2508,7 +2508,7 @@ isOdd(2); // false
 
 ### 检查数字是否为正
 
-```javascript
+```js
 const isPositive = (number) => Math.sign(number) === 1;
 
 // Examples
@@ -2518,7 +2518,7 @@ isPositive(-8); // false
 
 ### 检查字符串是否包含小写字符
 
-```javascript
+```js
 const containsLowerCase = (str) => str !== str.toUpperCase();
 
 // Examples
@@ -2528,13 +2528,13 @@ containsLowerCase("HELLO WORLD"); // false
 
 ### 检查字符串是否仅包含 ASCII 字符
 
-```javascript
+```js
 const isAscii = (str) => /^[\x00-\x7F]+$/.test(str);
 ```
 
 ### 检查字符串是否仅包含数字
 
-```javascript
+```js
 const isNumeric = (str) => !/[^0-9]/.test(str);
 
 // Examples
@@ -2550,7 +2550,7 @@ isNumeric("NaN"); // false
 
 ### 检查字符串是否仅包含字母和数字
 
-```javascript
+```js
 const isAlphanumeric = (str) => /^[0-9A-Z]+$/i.test(str);
 
 // Examples
@@ -2563,7 +2563,7 @@ isAlphanumeric("hello 123"); // false
 
 ### 检查字符串是否仅包含字母
 
-```javascript
+```js
 const isAlpha = (str) => /^[A-Z]+$/i.test(str);
 
 // Examples
@@ -2575,7 +2575,7 @@ isAlpha("0123456789"); // false
 
 ### 检查字符串是否包含大写字符
 
-```javascript
+```js
 const containsUpperCase = (str) => str !== str.toLowerCase();
 
 // Examples
@@ -2585,7 +2585,7 @@ containsUpperCase("hello world"); // false
 
 ### 检查字符串是否包含空格
 
-```javascript
+```js
 const containsWhitespace = (str) => (str) => /\s/.test(str);
 
 // Example
@@ -2594,7 +2594,7 @@ containsWhitespace("hello world"); // true
 
 ### 检查字符串是否为十六进制颜色
 
-```javascript
+```js
 const isHexColor = (color) =>
   /^#([0-9A-F]{3}|[0-9A-F]{4}|[0-9A-F]{6}|[0-9A-F]{8})$/i.test(color);
 
@@ -2607,7 +2607,7 @@ isHexColor("#GHIJKL"); // false
 
 ### 检查字符串是否为十六进制数字
 
-```javascript
+```js
 const isHexadecimal = (str) => /^[A-F0-9]+$/i.test(str);
 
 // Or
@@ -2622,25 +2622,25 @@ isHexadecimal("#123"); // false
 
 ### 检查字符串是否为小写
 
-```javascript
+```js
 const isLowerCase = (str) => str === str.toLowerCase();
 ```
 
 ### 检查字符串是否为大写
 
-```javascript
+```js
 const isUpperCase = (str) => str === str.toUpperCase();
 ```
 
 ### 检查值是否为数字
 
-```javascript
+```js
 const isNumber = (value) => !isNaN(parseFloat(value)) && isFinite(value);
 ```
 
 ### 检查值是否为普通对象
 
-```javascript
+```js
 const isPlainObject = (v) =>
   !!v &&
   typeof v === "object" &&
@@ -2659,14 +2659,14 @@ isPlainObject({ a: "1", b: "2" }); // true
 
 ### 检查值是否为正则表达式
 
-```javascript
+```js
 const isRegExp = (value) =>
   Object.prototype.toString.call(value) === "[object RegExp]";
 ```
 
 ### 检查值是否为字符串
 
-```javascript
+```js
 const isString = (value) =>
   Object.prototype.toString.call(value) === "[object String]";
 
@@ -2678,7 +2678,7 @@ isString(10); // false
 
 ### 检查值是否为对象
 
-```javascript
+```js
 const isObject = (v) => v !== null && typeof v === "object";
 
 // Examples
@@ -2691,13 +2691,13 @@ isObject([]); // true
 
 ### 检查值是否为零
 
-```javascript
+```js
 const isNil = (value) => value == null;
 ```
 
 ### 检查一年是否为 leap 年
 
-```javascript
+```js
 const isLeapYear = (year) =>
   (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
 
@@ -2708,7 +2708,7 @@ const isLeapYear = (year) => new Date(year, 1, 29).getDate() === 29;
 
 ### 检查所有数组元素是否等于给定值
 
-```javascript
+```js
 const isEqual = (arr, value) => arr.every((item) => item === value);
 
 // Or
@@ -2723,7 +2723,7 @@ isEqual(["bar", "bar"], "foo"); // false
 
 ### 检查数组中的所有项目是否相等
 
-```javascript
+```js
 const areEqual = (arr) =>
   arr.length > 0 && arr.every((item) => item === arr[0]);
 
@@ -2737,7 +2737,7 @@ areEqual(["hello", "hello", "hello"]); // true
 
 ### 检查数组是否包含与某些条件匹配的值
 
-```javascript
+```js
 const contains = (arr, criteria) => arr.some((v) => criteria(v));
 
 // Or
@@ -2754,7 +2754,7 @@ contains([10, 20, 30], (v) => v > 100); // false
 
 ### 检查数组是否为空
 
-```javascript
+```js
 const isNotEmpty = (arr) => Array.isArray(arr) && Object.keys(arr).length > 0;
 
 // Examples
@@ -2764,7 +2764,7 @@ isNotEmpty([1, 2, 3]); // true
 
 ### 检查一个数组是否是其他数组的子集
 
-```javascript
+```js
 // Check if `b` is subset of `a`
 const isSubset = (a, b) => new Set(b).size === new Set(b.concat(a)).size;
 
@@ -2779,7 +2779,7 @@ isSubset([6], [1, 2, 3, 4]); // false
 
 ### 检查一个对象是否是一个 promise 对象
 
-```javascript
+```js
 const isPromise = (obj) =>
   !!obj &&
   (typeof obj === "object" || typeof obj === "function") &&
@@ -2788,13 +2788,13 @@ const isPromise = (obj) =>
 
 ### 检查对象是否为数组
 
-```javascript
+```js
 const isArray = (obj) => Array.isArray(obj);
 ```
 
 ### 检查对象是否为空
 
-```javascript
+```js
 const isEmpty = (obj) =>
   Reflect.ownKeys(obj).length === 0 && obj.constructor === Object;
 
@@ -2804,7 +2804,7 @@ const isEmpty = (obj) => JSON.stringify(obj) === "{}";
 
 ### 验证公历
 
-```javascript
+```js
 // `m`: the month (zero-based index)
 // `d`: the day
 // `y`: the year

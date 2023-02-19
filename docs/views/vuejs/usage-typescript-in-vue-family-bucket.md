@@ -162,14 +162,14 @@ yarn add -D @types/axios
 
 `config.ts`
 
-```javascript
+```js
 const serverURL: String = "http://127.0.0.1:8090/api";
 export { serverURL as url };
 ```
 
 `axios.ts`
 
-```javascript
+```js
 import axios from "axios";
 import { url } from "@/config";
 

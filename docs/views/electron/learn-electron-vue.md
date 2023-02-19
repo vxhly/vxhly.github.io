@@ -44,7 +44,7 @@ ERROR in ReferenceError: process is not defined
 
 `.electron-vue/webpack.renderer.config.js`
 
-```javascript
+```js
 new HtmlWebpackPlugin({
   filename: "index.html",
   template: path.resolve(__dirname, "../src/index.ejs"),
@@ -74,7 +74,7 @@ new HtmlWebpackPlugin({
 
 `.electron-vue/webpack.web.config.js`
 
-```javascript
+```js
 new HtmlWebpackPlugin({
   filename: "index.html",
   template: path.resolve(__dirname, "../src/index.ejs"),

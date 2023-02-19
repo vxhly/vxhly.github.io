@@ -49,7 +49,7 @@ vuex 加入后, 对组件之间的通信有了更加清晰的操作, 对于中�
 
 `bus.js`
 
-```javascript
+```js
 import Vue from "vue";
 const bus = new Vue({});
 let _on = bus.$on;
@@ -77,7 +77,7 @@ export default bus;
 
 `main.js`
 
-```javascript
+```js
 import Vue from "vue";
 import bus from "@/utils/bus";
 Vue.prototype.$bus = bus;

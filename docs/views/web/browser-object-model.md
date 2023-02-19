@@ -42,7 +42,7 @@ window 对象表示浏览器的一个实例, 同时也是 ECMAScript 规定的 G
 
 `For Example:`
 
-```javascript
+```js
 var str = "张三";
 
 function fun() {
@@ -57,7 +57,7 @@ window.fun();
 
 `For Example:`
 
-```javascript
+```js
 window.open("https://www.baidu.com", "NewWin", "height=400, width=400");
 ```
 
@@ -69,7 +69,7 @@ window.open("https://www.baidu.com", "NewWin", "height=400, width=400");
 
 `For Example:`
 
-```javascript
+```js
 setTimeout(function () {
   alert("Hello world!");
 }, 1000); // 会在 1000 毫秒后执行
@@ -77,7 +77,7 @@ setTimeout(function () {
 
 如果在间歇时间之前想要取消执行, 我们可以 `clearTimeout()` , `For Example:`
 
-```javascript
+```js
 // 设置超时调用
 var timeoutId = setTimeout(function () {
   alert("Hello world!");
@@ -88,7 +88,7 @@ clearTimeout(timeoutId);
 
 同样我们也可以通过间歇调用模拟实现超时调用, `For Example:`
 
-```javascript
+```js
 function fun() {
   // 这里可以实现某些逻辑
   setTimeout(fun(), 100);
@@ -100,7 +100,7 @@ fun();
 
 `For Example:`
 
-```javascript
+```js
 setInterval(function () {
   alert("Hello world!");
 }, 1000); // 每隔 1 秒 执行一遍
@@ -108,7 +108,7 @@ setInterval(function () {
 
 如果想要取消执行, 我们可以 `clearTimeout()` , `For Example:`
 
-```javascript
+```js
 var i = 1;
 var timeId = setInterval(function () {
   i++;
@@ -138,7 +138,7 @@ location 对象说来也是奇怪, 它既是 window 的属性也是 document 属
 
 有了上面这些属性, 我们可以非常方便的修改 `url` , `For Example:`
 
-```javascript
+```js
 // 假设初始 URL 为 http://www.wrox.com/WileyCDA/
 // 将 URL 修改为 "http://www.wrox.com/WileyCDA/#section1"
 location.hash = "#section1";
@@ -154,13 +154,13 @@ location.port = 8080;
 
 每次修改 `location` 的属性（ `hash` 除外）, 页面都会以新 URL 重新加载。 也就是说, 浏览器会生成一天后退的历史记录。 如果我们不想能够回退可以使用 `replace（）` 方法, `For Example:`
 
-```javascript
+```js
 location.replace("https://www.baidu.com"); // 如此就不会有回退记录了。
 ```
 
 除了 `replace` 方法外还有个比较重要的方法。 `reload` 方法用来刷新。
 
-```javascript
+```js
 location.reload(); // 重新加载（有可能从缓存中加载）
 location.reload(true); // 重新加载（从服务器重新加载）也就是强制刷新
 ```
@@ -175,7 +175,7 @@ history 对象主要保存当前也网页的历史记录。 但出于安全考�
 
 `For Example:`
 
-```javascript
+```js
 history.length; // 历史记录的数量
 history.back(); // 后退一页
 history.forward(); // 前进一页

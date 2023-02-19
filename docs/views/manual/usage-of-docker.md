@@ -249,7 +249,7 @@ yarn serve
 
 `vue.config.js`
 
-```javascript
+```js
 module.exports = {
   devServer: {
     watchOptions: {

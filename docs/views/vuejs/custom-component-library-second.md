@@ -100,7 +100,7 @@ vue create vtp-component # vtp-component 作为教学的库名
 
 `config.js` 使用插件 `vuepress-plugin-vue-demo` 将可以像 ElementUI 中写文档演示 demo 一样写文档了
 
-```javascript
+```js
 const config = {
   dest: "public",
   plugins: ["vue-demo"],
@@ -128,7 +128,7 @@ module.exports = config;
 
 `enhanceApp.js`
 
-```javascript
+```js
 import UI from "../../packages";
 
 export default ({
@@ -143,7 +143,7 @@ export default ({
 
 ### 基础的 packages 配置
 
-```javascript
+```js
 import "./assets/scss/common.scss";
 
 const version = require("../package.json").version;
@@ -370,7 +370,7 @@ Vue.use(VtpButton) \ `\` \`
 
 `config.js`
 
-```javascript
+```js
 module.exports = {
   prefix: "vtp", // 组件库的前缀,使用小写
   docsTitle: "vtp-component", // 文档的标题
@@ -381,7 +381,7 @@ module.exports = {
 
 `create-comp.js`
 
-```javascript
+```js
 // 创建自定义组件脚本
 
 const chalk = require("chalk");
@@ -503,7 +503,7 @@ function mkdirs(directory, callback) {
 
 `delete-comp.js`
 
-```javascript
+```js
 // 删除自定义组件脚本
 
 const chalk = require("chalk");
@@ -573,7 +573,7 @@ function removePromise(dir) {
 
 `template.js`
 
-```javascript
+```js
 const uppercamelize = require('uppercamelcase')
 const config = require('../config')
 
@@ -698,7 +698,7 @@ export default {
 
 `build-entry.js`
 
-```javascript
+```js
 const fs = require("fs-extra");
 const path = require("path");
 const chalk = require("chalk");
@@ -795,7 +795,7 @@ setDocsConfig();
 
 `get-components.js`
 
-```javascript
+```js
 const fs = require("fs");
 const path = require("path");
 

@@ -89,7 +89,7 @@ Avue 目前不支持按需引入, 只支持完整引入
 
 与其他 UI 框架的一样引入方式, 在项目的 `main.js` 中添加以下代码即可
 
-```javascript
+```js
 import Vue from "vue";
 import Avue from "@smallwei/avue";
 import "@smallwei/avue/lib/index.css";
@@ -101,7 +101,7 @@ Vue.use(Avue);
 
 在使用前, 我们还需要另外的导入 element-ui 库的依赖, 因为 Avue 是基于 element-ui 库进行的二次封装, 并且 Avue 源码中并没有为我们导出 element-ui 库的依赖。所以我们仍然需要在项目的 `main.js` 中添加 element-ui 库的依赖。
 
-```javascript
+```js
 import Vue from "vue";
 import ElementUI from "element-ui";
 import "element-ui/lib/theme-chalk/index.css";
@@ -820,7 +820,7 @@ export default {
 
 对于生命周期钩子函数, 混入时会将同名钩子函数加入到一个数组中, 然后在调用时依次执行。混入对象里面的钩子函数会优先于组件的钩子函数执行。如果一个组件混入了多个对象, 对于混入对象里面的同名钩子函数, 将按照数组顺序依次执行, 如下代码:
 
-```javascript
+```js
 const mixin1 = {
   created() {
     console.log("我是第一个输出的");

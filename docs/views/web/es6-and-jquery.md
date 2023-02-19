@@ -17,7 +17,7 @@ date: 2018-04-14 12:11:38
 
 ## 问题重现
 
-```javascript
+```js
 $('[data-action="imgQRCodeCtrl"]')
   .hover(
     () => {
@@ -50,7 +50,7 @@ $('[data-action="imgQRCodeCtrl"]')
 
 如下是真实浏览器上加载的解析后的代码:
 
-```javascript
+```js
 var $ = __webpack_require__("./node_modules/jquery/dist/jquery.js");
 $(function () {
   var _this = this;
@@ -102,7 +102,7 @@ $(function () {
 
 绑定 `this` 的函数不使用箭头函数不就行了
 
-```javascript
+```js
 $('[data-action="imgQRCodeCtrl"]')
   //...
   .click(function () {
@@ -116,7 +116,7 @@ $('[data-action="imgQRCodeCtrl"]')
 
 不使用 `this` , 使用 `event.currentTarget`
 
-```javascript
+```js
 $('[data-action="imgQRCodeCtrl"]')
   //...
   .click((event) => {
@@ -130,7 +130,7 @@ $('[data-action="imgQRCodeCtrl"]')
 
 利用 `each` 函数循环绑定到每一个小元素上, 如此就不需要 `this` 了
 
-```javascript
+```js
 $('[data-action="imgQRCodeCtrl"]').each((index, element) => {
   let _this = element;
   $(_this).click(() => {

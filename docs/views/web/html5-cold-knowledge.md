@@ -305,7 +305,7 @@ HTML5 废弃了一些过时的, 不合理的 HTML 标签
 
 ## 屏幕旋转的事件和样式
 
-```javascript
+```js
 function orientInit() {
   var orientChk =
     document.documentElement.clientWidth > document.documentElement.clientHeight

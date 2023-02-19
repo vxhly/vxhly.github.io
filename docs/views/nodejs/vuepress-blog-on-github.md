@@ -125,7 +125,7 @@ va-cli tmp
 
 再上配置, `/.vuepress/config.js`
 
-```javascript
+```js
 module.exports = {
   plugins: [
     [
@@ -156,7 +156,7 @@ module.exports = {
 
 再上配置, `/.vuepress/config.js`
 
-```javascript
+```js
 module.exports = {
     plugins: [
         ['@vuepress/medium-zoom': {
@@ -256,7 +256,7 @@ module.exports = {
 
 再上配置, `/.vuepress/config.js`
 
-```javascript
+```js
 module.exports = {
   plugins: [
     [
@@ -283,7 +283,7 @@ module.exports = {
 
 `clipboard-copy.js`
 
-```javascript
+```js
 const { resolve } = require("path");
 
 module.exports = (options, context) => ({
@@ -297,7 +297,7 @@ module.exports = (options, context) => ({
 
 `clientRootMixin.js`
 
-```javascript
+```js
 import "./style.css";
 
 import { message } from "ant-design-vue";
@@ -428,7 +428,7 @@ p code {
 
 再上配置, `/.vuepress/config.js`
 
-```javascript
+```js
 module.exports = {
   plugins: [
     [
@@ -456,7 +456,7 @@ module.exports = {
 
 再上配置, `/.vuepress/config.js`
 
-```javascript
+```js
 module.exports = {
   plugins: [
     [
@@ -699,7 +699,7 @@ npm install -D @babel/preset-env
 
 在 `.vuepress/config.js` 中添加以下代码
 
-```javascript
+```js
 module.exports = {
   configureWebpack: {
     // 用于解析 node_modules 目录下的 jsx 代码
