@@ -10,7 +10,7 @@
   </author>
   <logo>https://vxhly.github.io/favicon.ico</logo>
   <rights>Copyright by 星火燎原@vxhly</rights>
-  <updated>2023-02-19T02:04:12.865Z</updated>
+  <updated>2023-02-21T13:13:31.410Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://vxhly.github.io/atom.xml"/>
   <link rel="alternate" href="https://vxhly.github.io/"/>
@@ -38,7 +38,7 @@
     <title type="text">JavaScript 中几个优雅的运算符使用技巧</title>
     <id>https://vxhly.github.io/views/web/javascript-operator.html</id>
     <link href="https://vxhly.github.io/views/web/javascript-operator.html"/>
-    <updated>2023-02-19T02:00:37.000Z</updated>
+    <updated>2023-02-21T13:10:47.000Z</updated>
     <summary type="html"><![CDATA[<div class="hint-container tip">
 <p class="hint-container-title">前言</p>
 <p>新版本的 ECMAScript 引入了三个新的逻辑赋值运算符：空运算符, AND 和 OR 运算符, 这些运算符的出现, 也是希望让我们的代码更干净简洁, 下面分享几个优雅的 JavaScript 运算符使用技巧。</p>
@@ -74,12 +74,12 @@
 <p>此逻辑赋值运算符仅在左侧表达式为 <code>falsy 值（虚值）</code> 时才赋值。Falsy 值（虚值）与 null 有所不同, 因为 falsy 值（虚值）可以是任何一种值：undefined, null, 空字符串 (双引号 ""、单引号’’、反引号 ``), NaN, 0。IE 浏览器中的 document.all, 也算是一个。</p>
 <p>语法</p>
 <div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>等同于</p>
-<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>在我们想要保留现有值（如果不存在）的情况下，这很有用，否则我们想为其分配默认值。例如，如果搜索请求中没有数据，我们希望将元素的内部 HTML 设置为默认值。否则，我们要显示现有列表。这样，我们避免了不必要的更新和任何副作用，例如解析，重新渲染，失去焦点等。我们可以简单地使用此运算符来使用 JavaScript 更新 HTML：</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>在我们想要保留现有值（如果不存在）的情况下, 这很有用, 否则我们想为其分配默认值。例如, 如果搜索请求中没有数据, 我们希望将元素的内部 HTML 设置为默认值。否则, 我们要显示现有列表。这样, 我们避免了不必要的更新和任何副作用, 例如解析, 重新渲染, 失去焦点等。我们可以简单地使用此运算符来使用 JavaScript 更新 HTML：</p>
 <div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h2> 逻辑与分配（&amp;&amp; =）</h2>
-<p>可能你已经猜到了，此逻辑赋值运算符仅在左侧为真时才赋值。因此</p>
+<p>可能你已经猜到了, 此逻辑赋值运算符仅在左侧为真时才赋值。因此</p>
 <div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>等同于</p>
 <div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2> 最后</h2>
-<p>本次分享几个优雅的 JavaScript 运算符使用技巧，重点分享了可选链接运算符的使用，这样可以让我们不需要再编写大量我们例子中代码即可轻松访问嵌套属性。但是 IE 不支持它，因此，如果需要支持该版本或更旧版本的浏览器，则可能需要添加 Babel 插件。对于 Node.js，需要为此升级到 Node 14 LTS 版本，因为 12.x 不支持该版本。</p>
+<p>本次分享几个优雅的 JavaScript 运算符使用技巧, 重点分享了可选链接运算符的使用, 这样可以让我们不需要再编写大量我们例子中代码即可轻松访问嵌套属性。但是 IE 不支持它, 因此, 如果需要支持该版本或更旧版本的浏览器, 则可能需要添加 Babel 插件。对于 Node.js, 需要为此升级到 Node 14 LTS 版本, 因为 12.x 不支持该版本。</p>
 ]]></content>
     <author>
       <name>星火燎原@vxhly</name>
@@ -95,7 +95,7 @@
     <title type="text">PMP 考试冲刺整理易忘知识点</title>
     <id>https://vxhly.github.io/pmp/examination/pmp-spring-knowledge.html</id>
     <link href="https://vxhly.github.io/pmp/examination/pmp-spring-knowledge.html"/>
-    <updated>2023-02-19T02:00:37.000Z</updated>
+    <updated>2023-02-21T13:10:47.000Z</updated>
     <summary type="html"><![CDATA[<div class="hint-container tip">
 <p class="hint-container-title">前言</p>
 <p>在日常练习中易混的知识点整理。</p>
@@ -120,6 +120,7 @@
 <li>【机会成本】指为从事某项经营活动二放弃另一项经营活动的机会或利用一定资源活动某种收入是所放弃的另一种收入</li>
 <li>【项目组合】是可以实现共同组织目标的项目或者项目集, 可能会涉及到优先级和资源倾斜, 项目之间有优先级就是项目组合管理</li>
 <li>【项目集】是一组相互关联且被协调管理的项目、子项目集和项目集活动, 以便活动分别管理所无法获得的利益</li>
+<li>【商业价值】分为有形价值和无形价值。有行价值的例子包括：货币资产；股东权益；公共事业；固定设施；工具；市场份额。无形价值的例子包括：商誉；品牌认知度度；公共利益；商标；战略一致性；声誉</li>
 </ul>
 <h2> 工具与技术</h2>
 <ul>
@@ -141,7 +142,7 @@
 <li>【快速跟进】是指在关键路径上原先先后顺序进行的工作调整为并行进行, 以达到压缩进度的目的</li>
 <li>【隐性知识】相当个人化而富有弹性的知识, 通常是难以被记录和传递的。比如个人主观的洞察力、直觉、经验诀窍与预感</li>
 <li>【RACI 矩阵】对明确划分团队成员的角色和职责特别有用, 与成员技能水平无关</li>
-<li></li>
+<li>【累积流图】是一个综合的价值流度量方法, 可以通过它得到不同维度的信息, 反应限制在制品（WIP）的状态、项目的步调、并且快速识别出交付时间存在的风险以及瓶颈</li>
 </ul>
 <h2> 指南性文件</h2>
 <ul>
@@ -181,6 +182,7 @@
 <li>【结对编程】需要两个程序员在一个计算机上共同工作, 一个输入代码, 另一个审查他输入的每一行代码, 输入代码的人称驾驶员, 审查代码观察员（或者导航员）, 两个角色经常互换</li>
 <li>【产品待办事项列表】需要避免根据团队不同或者组件不同来设定不同的产品待办事项列表。按风险以及价值进行优先级排序。</li>
 <li>【MoScow】是对用户故事优先级排序的工具</li>
+<li>【KANO 分析（卡若分析）】是以用户需求对用户满意的影响为基础, 体现了产品的性能和用户满意之间的非线性关系</li>
 <li>【计划扑克】是估算用户故事点的工具</li>
 <li>【燃尽图】用图形显示了剩余工作与时间盒内剩余时间的关系, 可以了解团队目前的任务完成情况, 从而知道团队绩效有没有改善</li>
 <li>【发布燃起图】用图形显示项目时间与已完成的工作间的关系, 根据故事点完成的情况动态展示工作成果, 可以了解目前的工作成果以及和目标的差距</li>
@@ -194,6 +196,7 @@
 <li>【PMO 项目管理办公室】在为敏捷项目提供支持的时候, 必须遵守敏捷项目的特点, 在不确定的环境中为决策提供指导方针</li>
 <li>【迭代回顾会议】时间长度取决于迭代开发周期有多长, 项目的复杂程度, 团队的规模, 冲突的严重程度或争论的激烈程度, 与利益相关方的数量无关</li>
 <li>【敏捷教练】在【迭代回顾会议】上收集持续改进的建议；在【迭代评审会议】收集相关方的反馈意见或者建议</li>
+<li>【五拳投票法】握紧拳头表示不同意该决定, 伸出五个手指表示同意该决定, 伸三个以下指头表示团队成员有机会讨论其反对意见</li>
 </ul>
 ]]></content>
     <author>
