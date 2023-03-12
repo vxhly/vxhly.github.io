@@ -10,7 +10,7 @@
   </author>
   <logo>https://vxhly.github.io/favicon.ico</logo>
   <rights>Copyright by 星火燎原@vxhly</rights>
-  <updated>2023-02-21T13:13:31.410Z</updated>
+  <updated>2023-03-12T07:08:58.590Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://vxhly.github.io/atom.xml"/>
   <link rel="alternate" href="https://vxhly.github.io/"/>
@@ -95,7 +95,7 @@
     <title type="text">PMP 考试冲刺整理易忘知识点</title>
     <id>https://vxhly.github.io/pmp/examination/pmp-spring-knowledge.html</id>
     <link href="https://vxhly.github.io/pmp/examination/pmp-spring-knowledge.html"/>
-    <updated>2023-02-21T13:10:47.000Z</updated>
+    <updated>2023-03-12T07:04:20.000Z</updated>
     <summary type="html"><![CDATA[<div class="hint-container tip">
 <p class="hint-container-title">前言</p>
 <p>在日常练习中易混的知识点整理。</p>
@@ -197,6 +197,7 @@
 <li>【迭代回顾会议】时间长度取决于迭代开发周期有多长, 项目的复杂程度, 团队的规模, 冲突的严重程度或争论的激烈程度, 与利益相关方的数量无关</li>
 <li>【敏捷教练】在【迭代回顾会议】上收集持续改进的建议；在【迭代评审会议】收集相关方的反馈意见或者建议</li>
 <li>【五拳投票法】握紧拳头表示不同意该决定, 伸出五个手指表示同意该决定, 伸三个以下指头表示团队成员有机会讨论其反对意见</li>
+<li>【仆人式领导】在实践中进行试验且允许犯错, 是提高创造性能力最好的方法</li>
 </ul>
 ]]></content>
     <author>
