@@ -3,14 +3,7 @@
   <id>https://vxhly.github.io/</id>
   <title>Coding and Fixing</title>
   <subtitle>源于生活而高于生活.</subtitle>
-  <author>
-    <name>星火燎原@vxhly</name>
-    <email>pengchengou@gmail.com</email>
-    <uri>https://vxhly.github.io/</uri>
-  </author>
-  <logo>https://vxhly.github.io/favicon.ico</logo>
-  <rights>Copyright by 星火燎原@vxhly</rights>
-  <updated>2023-03-12T07:08:58.590Z</updated>
+  <updated>2023-04-05T03:14:29.861Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://vxhly.github.io/atom.xml"/>
   <link rel="alternate" href="https://vxhly.github.io/"/>
