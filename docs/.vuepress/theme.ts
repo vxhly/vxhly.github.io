@@ -99,7 +99,7 @@ export default hopeTheme({
     copyright: {
       author: "星火燎原@vxhly",
       license: "MIT",
-      triggerWords: 1,
+      triggerLength: 1,
       global: true,
     },
 
@@ -154,9 +154,7 @@ export default hopeTheme({
       playground: {
         presets: ["ts", "vue"],
       },
-      presentation: {
-        plugins: ["highlight", "math", "search", "notes", "zoom"],
-      },
+      presentation:  ["highlight", "math", "search", "notes", "zoom"], 
       stylize: [
         {
           matcher: "Recommended",
