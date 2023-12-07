@@ -7,9 +7,14 @@ export const zhNavbarConfig = navbar([
     prefix: "/pmp/",
     children: ["knowledge/", "agile/", "examination/"],
   },
+  // {
+  //   text: "软考-高项",
+  //   prefix: "/project-manager/",
+  //   children: ["knowledge/"],
+  // },
   {
-    text: "软考-高项",
-    prefix: "/soft-test/",
-    children: ["knowledge/"],
+    text: "软考-系统架构设计师",
+    prefix: "/system-architect/",
+    children: ["basic-knowledge/", "examination/"],
   },
 ]);

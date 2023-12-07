@@ -90,6 +90,7 @@ export default hopeTheme({
   encrypt: {
     config: {
       "/pmp/": ["PMP", "PMP2022"],
+      "/system-architect/": ["ruankao", "system-architect"],
     },
   },
 
