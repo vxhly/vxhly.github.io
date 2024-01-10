@@ -33,10 +33,7 @@ export const zhSidebarConfig = sidebar({
     "project-approval",
   ]),
 
-  "/system-architect/examination": arraySidebar([
-    "",
-    "formula",
-  ]),
+  "/system-architect/examination": arraySidebar(["", "formula"]),
 
-  "/system-architect/basic-knowledge": arraySidebar(["", "basic-knowledge",]),
+  "/system-architect/basic-knowledge": arraySidebar(["", "basic-knowledge"]),
 });
