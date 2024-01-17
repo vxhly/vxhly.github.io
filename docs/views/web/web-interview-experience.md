@@ -127,6 +127,41 @@ Vue/React/Angular 框架的视图更新机制
 
 - 使用工具进行性能监控和分析，如 Chrome DevTools、Lighthouse 等，找出性能瓶颈并进行优化。
 
+::: tip 问:
+
+webpack 打包速度优化手段?
+
+:::
+
+- exclude、include 配置来转译更少的文件
+- cache-loader 缓存编译结果
+- happypack 多核构建，把任务分给多个子进程并发执行
+- thread-loader 把 loader 放置在单独的 worker 池中进行
+- HardSourceWebpackPlugin 提供中间缓存，节省二次编译构建时间
+- DllPlugin 和 DLLReferencePlugin 实现拆分 bundles，将不会频繁更新的第三方库（如：react、react-dom 等）单独打包
+- optimization.splitChunks 抽离公共代码
+- webpack-bundle-analyzer 分析包体积
+
+## 前端安全
+
+::: tip 问:
+
+XSS 攻击和 CSRF 攻击的区别？
+
+:::
+
+- XSS 攻击指的是攻击者在网站上注入恶意的客户端代码，当用户浏览网页时，恶意代码会自动执行，从而达到攻击的目的。XSS 攻击通常可以分为存储型 XSS 攻击和反射型 XSS 攻击。
+- CSRF 攻击指的是攻击者诱导用户点击链接或打开网站时，利用用户的登录状态发起恶意请求。CSRF 攻击通常可以分为基于表单的 CSRF 攻击和基于 URL 的 CSRF 攻击。
+
+::: tip 问:
+
+预防 XSS 攻击和 CSRF 攻击？
+
+:::
+
+- 预防 XSS 攻击：对用户输入的数据进行过滤和转义，避免用户输入的数据作为代码被执行。
+- 预防 CSRF 攻击：使用验证码、Referer Check、CSRF Token 等方式来防御 CSRF 攻击。
+
 ## HTML
 
 ::: tip 问:
@@ -220,6 +255,17 @@ CSS 中的盒子模型?
 答: Flex 是 Flexible Box 的缩写, 意为"弹性布局", 用来为盒状模型提供最大的灵活性。任何一个容器都可以指定为 Flex 布局。Flex 布局, 可以简便、完整、响应式地实现各种页面布局.
 
 ## JavaScript
+
+::: tip 问:
+
+js 加载执行：async, defer, preload, prefetch 的区别？
+
+:::
+
+- `async`：立即下载（异步，不会阻碍文档解析），异步执行（执行的时候会阻碍文档解析）
+- `defer`：立即下载（异步，不会阻碍文档解析），延迟执行，在整个页面都解析完毕后执行
+- `preload`：提前下载，需要的时候立即执行，无需再下载
+- `prefetch`：提前下载，在未来的某个页面可能会执行，节省下载时间
 
 ::: tip 问:
 
@@ -406,6 +452,84 @@ Typescript 中的 interface 和 type 有什么区别？
 - type 定义数据的类型，指一个数据具体是什么类型
 - interface 可以被 class 继承和实现，也可以继承 class，但是 type 不行
 - interface 不能作为交叉、联合类型的产物，但是可以作为其组成的元素
+
+::: tip 问:
+
+TypeScript（TS）的内置数据类型
+
+:::
+
+答:
+
+1. 基本数据类型：
+
+- `number`: 用于表示数值，可以是整数或浮点数。
+- `string`: 用于表示文本字符串。
+- `boolean`: 用于表示布尔值，即 true 或 false。
+
+``` ts
+let num: number = 42;
+let str: string = "Hello, TypeScript";
+let isTrue: boolean = true;
+```
+
+2. 数组类型：
+
+TypeScript 支持数组，可以通过指定元素类型来定义数组。
+
+``` ts
+let numbers: number[] = [1, 2, 3, 4];
+let strings: string[] = ["apple", "banana", "orange"];
+```
+
+3. 元组（Tuple）类型：
+
+元组是一个固定长度的数组，每个元素可以是不同的类型。
+
+``` ts
+let tuple: [string, number] = ["John", 25];
+```
+
+4. 枚举（Enum）类型：
+
+枚举类型用于定义一组命名的常量值，默认情况下，枚举成员从 0 开始。
+
+``` ts
+enum Color {
+  Red,
+  Green,
+  Blue,
+}
+let myColor: Color = Color.Green;
+```
+
+5. 任意（Any）类型：
+
+`any` 类型可以用来表示任意类型，它不会进行类型检查。
+
+``` ts
+let variable: any = 42;
+variable = "Hello, TypeScript";
+```
+
+6. Void 类型：
+
+`void` 类型表示没有任何返回值的函数。
+
+``` ts
+function sayHello(): void {
+  console.log("Hello, TypeScript");
+}
+```
+
+7. Null 和 Undefined 类型：
+
+`null` 和 `undefined` 分别表示空值和未定义的值。
+
+``` ts
+let nullValue: null = null;
+let undefinedValue: undefined = undefined;
+```
 
 ## 计算机网络知识
 
@@ -644,3 +768,44 @@ Vue 组件间的通信方式?
 :::
 
 答: `props` 、 `$emit` 、 `EventBus` 、 `vuex` 、 `$attrs` 、 `$listeners` 、 `provide` 、 `inject` 、 `$parent` 、 `$children` 、 `$ref`
+
+## React
+
+::: tip 问:
+
+你知道哪些 React hooks？
+
+:::
+
+- `useState`：用于管理功能组件中的状态。
+- `useEffect`：用于在功能组件中执行副作用，例如获取数据或订阅事件。
+- `useContext`：用于访问功能组件内的 React 上下文的值。
+- `useRef`：用于创建对跨渲染持续存在的元素或值的可变引用。
+- `useCallback`：用于记忆函数以防止不必要的重新渲染。
+- `useMemo`：用于记忆值，通过缓存昂贵的计算来提高性能。
+- `useReducer`：用于通过 reducer 函数管理状态，类似于 Redux 的工作原理。
+- `useLayoutEffect`：与 useEffect 类似，但效果在所有 DOM 突变后同步运行。
+
+::: tip 问:
+
+react 的优势以及特点？
+
+:::
+
+优势
+
+- 实现对虚拟 DOM 的操作，使得它速度快，提高了 Web 性能
+- 组件化，模块化。react 里每一个模块都是一个组件，组件化开发，可维护性高
+- 单向数据流，比较有序，有便于管理，它随着React视图库的开发而被 Facebook 概念
+- 跨浏览器兼容：虚拟 DOM 帮助我们解决了跨浏览器问题，它为我们提供了标准化的 API，甚至在 IE8 中都是没问题的
+
+不足
+
+- react中只是 MVC 模式的 View 部分，要依赖引入很多其他模块开发
+- 当父组件进行重新渲染操作时，即使子组件的 props 或 state 没有做出任何改变，也会同样进行重新渲染
+
+特点
+
+- 声明式设计：React 采用声明范式，可以轻松描述应用
+- 高效：React 通过对DOM的模拟，最大限度地减少与 DOM 的交互
+- 灵活：React 可以与已知的库或框架很好地配合
