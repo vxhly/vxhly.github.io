@@ -18,6 +18,28 @@ date: 2023-01-01 20:35:17
 
 ::: tip 问:
 
+Vue 和 React 对比?
+
+:::
+
+- 相同点
+
+都有组件化思想
+都支持服务器端渲染
+都有 Virtual DOM（虚拟 dom）
+数据驱动视图
+都有支持 native 的方案：Vue 的 weex、React 的 React native
+都有自己的构建工具：Vue 的 vue-cli、React 的 Create React App
+
+- 区别
+
+数据流向的不同。react 从诞生开始就推崇单向数据流，而 Vue 是双向数据流
+数据变化的实现原理不同。react 使用的是不可变数据，而 Vue 使用的是可变的数据
+组件化通信的不同。react 中我们通过使用回调函数来进行通信的，而 Vue 中子组件向父组件传递消息有两种方式：事件和回调函数
+diff 算法不同。react 主要使用 diff 队列保存需要更新哪些 DOM，得到 patch 树，再统一操作批量更新 DOM。Vue 使用双向指针，边对比，边更新 DOM
+
+::: tip 问:
+
 Vue/React/Angular 框架的视图更新机制
 
 :::
@@ -467,7 +489,7 @@ TypeScript（TS）的内置数据类型
 - `string`: 用于表示文本字符串。
 - `boolean`: 用于表示布尔值，即 true 或 false。
 
-``` ts
+```ts
 let num: number = 42;
 let str: string = "Hello, TypeScript";
 let isTrue: boolean = true;
@@ -477,7 +499,7 @@ let isTrue: boolean = true;
 
 TypeScript 支持数组，可以通过指定元素类型来定义数组。
 
-``` ts
+```ts
 let numbers: number[] = [1, 2, 3, 4];
 let strings: string[] = ["apple", "banana", "orange"];
 ```
@@ -486,7 +508,7 @@ let strings: string[] = ["apple", "banana", "orange"];
 
 元组是一个固定长度的数组，每个元素可以是不同的类型。
 
-``` ts
+```ts
 let tuple: [string, number] = ["John", 25];
 ```
 
@@ -494,7 +516,7 @@ let tuple: [string, number] = ["John", 25];
 
 枚举类型用于定义一组命名的常量值，默认情况下，枚举成员从 0 开始。
 
-``` ts
+```ts
 enum Color {
   Red,
   Green,
@@ -507,7 +529,7 @@ let myColor: Color = Color.Green;
 
 `any` 类型可以用来表示任意类型，它不会进行类型检查。
 
-``` ts
+```ts
 let variable: any = 42;
 variable = "Hello, TypeScript";
 ```
@@ -516,7 +538,7 @@ variable = "Hello, TypeScript";
 
 `void` 类型表示没有任何返回值的函数。
 
-``` ts
+```ts
 function sayHello(): void {
   console.log("Hello, TypeScript");
 }
@@ -526,7 +548,7 @@ function sayHello(): void {
 
 `null` 和 `undefined` 分别表示空值和未定义的值。
 
-``` ts
+```ts
 let nullValue: null = null;
 let undefinedValue: undefined = undefined;
 ```
@@ -639,6 +661,17 @@ HTTP、HTTPS 和 WebSocket 有什么优缺点？
 - 部署复杂性：与 HTTP 相比，WebSocket 的部署可能较为复杂，需要服务器端和客户端都支持 WebSocket 协议。
 
 ## Vue
+
+:::
+
+vue2 和 vue3 核心 diff 算法区别？
+
+:::
+
+答:
+
+- Vue 2.x 使用的是双向指针遍历的算法，也就是通过逐层比对新旧虚拟 DOM 树节点的方式来计算出更新需要做的最小操作集合。但这种算法的缺点是，由于遍历是从左到右、从上到下进行的，当发生节点删除或移动时，会导致其它节点位置的计算出现错误，因此会造成大量无效的重新渲染。
+- Vue 3.x 使用了经过优化的单向遍历算法，也就是只扫描新虚拟 DOM 树上的节点，判断是否需要更新，跳过不需要更新的节点，进一步减少了不必要的操作。此外，在虚拟 DOM 创建后，Vue 3 会缓存虚拟 DOM 节点的描述信息，以便于复用，这也会带来性能。
 
 ::: tip 问:
 
@@ -796,16 +829,16 @@ react 的优势以及特点？
 
 - 实现对虚拟 DOM 的操作，使得它速度快，提高了 Web 性能
 - 组件化，模块化。react 里每一个模块都是一个组件，组件化开发，可维护性高
-- 单向数据流，比较有序，有便于管理，它随着React视图库的开发而被 Facebook 概念
+- 单向数据流，比较有序，有便于管理，它随着 React 视图库的开发而被 Facebook 概念
 - 跨浏览器兼容：虚拟 DOM 帮助我们解决了跨浏览器问题，它为我们提供了标准化的 API，甚至在 IE8 中都是没问题的
 
 不足
 
-- react中只是 MVC 模式的 View 部分，要依赖引入很多其他模块开发
+- react 中只是 MVC 模式的 View 部分，要依赖引入很多其他模块开发
 - 当父组件进行重新渲染操作时，即使子组件的 props 或 state 没有做出任何改变，也会同样进行重新渲染
 
 特点
 
 - 声明式设计：React 采用声明范式，可以轻松描述应用
-- 高效：React 通过对DOM的模拟，最大限度地减少与 DOM 的交互
+- 高效：React 通过对 DOM 的模拟，最大限度地减少与 DOM 的交互
 - 灵活：React 可以与已知的库或框架很好地配合
