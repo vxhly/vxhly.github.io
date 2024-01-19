@@ -6,40 +6,6 @@
   "description": "源于生活而高于生活.",
   "items": [
     {
-      "title": "上午-基础知识点整理",
-      "url": "https://vxhly.github.io/system-architect/basic-knowledge/basic-knowledge.html",
-      "id": "https://vxhly.github.io/system-architect/basic-knowledge/basic-knowledge.html",
-      "summary": "前言 系统架构设计师 考试中上午选择题知识点汇总。 名词解释 电子政务 G2B: 政府对企业; G2C: 政府对公民; G2E: 政府对公务员; G2G: 政府对政府; 云计算 PaaS: 平台即服务; SaaS: 软件（应用）即服务; IaaS: 基础设施即服务; 数据库设计规范 第一范式（1NF）: 若关系模型 R 的每一个属性是不可再分的数据项,...",
-      "content_html": "<div class=\"hint-container tip\">\n<p class=\"hint-container-title\">前言</p>\n<p><code>系统架构设计师</code> 考试中上午选择题知识点汇总。</p>\n</div>\n<h2> 名词解释</h2>\n<h3> 电子政务</h3>\n<ul>\n<li><code>G2B</code>: 政府对企业</li>\n<li><code>G2C</code>: 政府对公民</li>\n<li><code>G2E</code>: 政府对公务员</li>\n<li><code>G2G</code>: 政府对政府</li>\n</ul>\n<h3> 云计算</h3>\n<ul>\n<li><code>PaaS</code>: 平台即服务</li>\n<li><code>SaaS</code>: 软件（应用）即服务</li>\n<li><code>IaaS</code>: 基础设施即服务</li>\n</ul>\n<h3> 数据库设计规范</h3>\n<ul>\n<li><code>第一范式（1NF）</code>: 若关系模型 R 的每一个属性是不可再分的数据项, 则符合 <code>1NF</code></li>\n<li><code>第二范式（2NF）</code>: 若关系模型 <code>R ∈ 1NF</code>, 且每一个非主属性完全依赖主键, 则符合 <code>2NF</code></li>\n<li><code>第三范式（3NF）</code>: 即当 2NF 消除了非主属性对主键的传递依赖, 则符合 <code>3NF</code></li>\n</ul>\n<h2> 计算机原理</h2>\n<h3> 指令系统</h3>\n<ul>\n<li>指令系统是计算机硬件的语言系统, 是机器所具有的全部指令的集合, 反映了计算机所拥有的基本功能。</li>\n</ul>\n<h3> 计算机存储</h3>\n<ul>\n<li>存储速度从快到慢分别是：寄存器组、Cache、内存、Flash。</li>\n</ul>\n<h3> 系统性能评价</h3>\n<ul>\n<li>通常用户采用评价程序来评价系统的性能。评价程序一般有专门的测量程序、仿真程序等, 而评测准确度最高的评价程序是真实程序。</li>\n</ul>\n<h2> 计算机网络</h2>\n<h3> 常见的 TCP/UDP 端口号</h3>\n<ul>\n<li><code>HTTP</code>: 80</li>\n<li><code>HTTPS</code>: 443</li>\n<li><code>FTP</code>: 21 用来传输控制信息, 20 用来传输文件内容</li>\n<li><code>TFTP</code>: 69 (建立在 UDP 上)</li>\n<li><code>POP3</code>: 110</li>\n<li><code>SMTP</code>: 25</li>\n<li><code>IMAP</code>: 143</li>\n</ul>\n<h2> 数据库</h2>\n<h3> Armstrong 公理</h3>\n<div class=\"hint-container tip\">\n<p class=\"hint-container-title\">提示</p>\n<p>设关系模式 <code>R&lt;U,F&gt;</code>, 其中 U 为属性集合, F 是 U 上的一组函数依赖, 则有以下的推论</p>\n</div>\n<ul>\n<li>自反律: 若 <code>Y⊆X⊆U</code>, 则 <code>X-&gt;Y</code> 为 F 所蕴含</li>\n<li>增广律: 若 <code>X-&gt;Y</code> 为 F 所蕴含, 且 <code>Z⊆U</code>, 则 <code>XZ-&gt;YZ</code> 为 F 所蕴含</li>\n<li>传递律: 若 <code>X-&gt;Y</code>, <code>Y-&gt;Z</code> 为 F 所蕴含, 则 <code>X-&gt;Z</code> 为 F 所蕴含</li>\n<li>合并规则: 若 <code>X-&gt;Y</code>, <code>X-&gt;Z</code>, 则 <code>X-&gt;YZ</code> 为 F 所蕴含</li>\n<li>伪传递规则: 若 <code>X-&gt;Y</code>, <code>WY-&gt;Z</code>, 则 <code>XW-&gt;Z</code> 为 F 所蕴含</li>\n<li>分解规则: 若 <code>X-&gt;Y</code>, <code>Z⊆Y</code>, 则 <code>X-&gt;Z</code> 为 F 所蕴含</li>\n</ul>\n",
-      "date_published": "2023-12-07T20:25:00.000Z",
-      "date_modified": "2024-01-08T03:56:21.000Z",
-      "authors": [
-        {
-          "name": "星火燎原@vxhly"
-        }
-      ],
-      "tags": [
-        "软考"
-      ]
-    },
-    {
-      "title": "系统架构设计师-公式篇",
-      "url": "https://vxhly.github.io/system-architect/examination/formula.html",
-      "id": "https://vxhly.github.io/system-architect/examination/formula.html",
-      "summary": "前言 在 系统架构设计师 考试中存在一定的计算题, 一般分布在进度管理和成本管理章节, 以下是记录考试中会使用到的公式以及相关名词解释。 流水线执行时间 流水线执行时间 = 指令的取动作、分析动作、执行动作等的时间之和 + （指令的总条数 - 1）× 流水线周期 例题： 执行指令时, 将每一节指令部分分解为：取指、分析和执行三步, 已知取指令时间 t ...",
-      "content_html": "<div class=\"hint-container tip\">\n<p class=\"hint-container-title\">前言</p>\n<p>在 <code>系统架构设计师</code> 考试中存在一定的计算题, 一般分布在进度管理和成本管理章节, 以下是记录考试中会使用到的公式以及相关名词解释。</p>\n</div>\n<h2> 流水线执行时间</h2>\n<div class=\"hint-container tip\">\n<p class=\"hint-container-title\">提示</p>\n<p>流水线执行时间 = 指令的取动作、分析动作、执行动作等的时间之和 + （指令的总条数 - 1）× 流水线周期</p>\n</div>\n<p>例题：<br>\n执行指令时, 将每一节指令部分分解为：取指、分析和执行三步, 已知取指令时间 t 取指=5△t, 分析时间 t 分析=2△t, 执行时间 t 执行=3△t, 如果按照[执行]k、[分析]k+1、[取指]k+2 重叠的流水线方式执行指令, 从头到尾执行完 500 条指令需（）△t。</p>\n<p>解答：<br>\n根据流水线执行时间公式：（t1+t2+...+tk）+（n-1）×△t=（5△t+2△t+3△t）+（500-1）×5△t=2505△t。</p>\n<h2> 流水线周期</h2>\n<div class=\"hint-container tip\">\n<p class=\"hint-container-title\">提示</p>\n<p>计算机流水线的执行周期 = 最慢的那一条指令的执行时间</p>\n</div>\n<p>例题：<br>\n某计算机系统采用 5 级流水线结构执行指令, 设每条指令的执行由取指令(2 Δt )、分析指令(1Δt )、取操作数(3Δt )、运算(1Δt )和写回结果(2Δt ) 组成, 并分别用 5 个子部件完成, 该流水线的周期为（ ）。</p>\n<p>解答：<br>\n流水线周期为执行时间最长的一段：3Δt</p>\n<h2> 流水线吞吐率</h2>\n<div class=\"hint-container tip\">\n<p class=\"hint-container-title\">提示</p>\n<p>流水线吞吐率 = 指令条数/流水线执行时间</p>\n</div>\n<p>例题：<br>\n某计算机系统采用 5 级流水线结构执行指令, 设每条指令的执行由取指令(2 Δt )、分析指令(1Δt )、取操作数(3Δt )、运算(1Δt )和写回结果(2Δt ) 组成, 并分别用 5 个子部件完成, 该流水线的吞吐率为（ ）。</p>\n<p>解答：<br>\n流水线的吞吐率为：指令条数/流水线执行时间。即：<br>\nn/(2Δt+1Δt+3Δt+1Δt+2Δt+(n-1)*3Δt)=n/(6Δt+3nΔt)<br>\n将 n=10 代入上式, 得到：10/(6Δt+30Δt)=10/9Δt</p>\n<h2> 流水线最大吞吐率</h2>\n<div class=\"hint-container tip\">\n<p class=\"hint-container-title\">提示</p>\n<p>流水线最大吞吐率 = 1/流水线周期</p>\n</div>\n<p>例题：<br>\n某计算机系统采用 5 级流水线结构执行指令, 设每条指令的执行由取指令(2 Δt )、分析指令(1Δt )、取操作数(3Δt )、运算(1Δt )和写回结果(2Δt ) 组成, 并分别用 5 个子部件完成, 该流水线的最大吞吐率为（ ）。</p>\n<p>解答：<br>\n流水线的吞吐率为：指令条数/流水线执行时间。即：<br>\nn/(2Δt+1Δt+3Δt+1Δt+2Δt+(n-1)*3Δt)=n/(6Δt+3nΔt)<br>\n流水线的最大吞吐率就是上面的式子中, n 趋向于无穷大的结果。当 n 趋向于无穷大时, 上式的结果为：1/3Δt。</p>\n<h2> 流水线加速比</h2>\n<div class=\"hint-container tip\">\n<p class=\"hint-container-title\">提示</p>\n<p>流水线加速比 = 不用流水线的执行时间/使用流水线的执行时间</p>\n</div>\n<p>例题：<br>\n某计算机系统采用 5 级流水线结构执行指令, 设每条指令的执行由取指令(2 Δt )、分析指令(1Δt )、取操作数(3Δt )、运算(1Δt )和写回结果(2Δt ) 组成, 并分别用 5 个子部件完成, 若连续向流水线输入 10 条指令, 则该流水线的加速比为（ ）</p>\n<p>解答：<br>\n流水线加速比=不用流水线的执行时间/使用流水线的执行时间<br>\n10 条指令不用流水线的执行时间=（2Δt+1Δt+3Δt+1Δt+2Δt）*10=90Δt。<br>\n所以加速比为：90Δt/36Δt=5:2。</p>\n",
-      "date_published": "2023-12-07T19:20:00.000Z",
-      "date_modified": "2024-01-10T14:02:51.000Z",
-      "authors": [
-        {
-          "name": "星火燎原@vxhly"
-        }
-      ],
-      "tags": [
-        "软考"
-      ]
-    },
-    {
       "title": "第一章：信息化和信息系统",
       "url": "https://vxhly.github.io/project-manager/knowledge/Information-system.html",
       "id": "https://vxhly.github.io/project-manager/knowledge/Information-system.html",
@@ -89,6 +55,40 @@
       ],
       "tags": [
         "信息系统项目管理师"
+      ]
+    },
+    {
+      "title": "系统架构上午-基础知识点整理",
+      "url": "https://vxhly.github.io/system-architect/basic-knowledge/basic-knowledge.html",
+      "id": "https://vxhly.github.io/system-architect/basic-knowledge/basic-knowledge.html",
+      "summary": "前言 系统架构设计师 考试中上午选择题知识点汇总。 名词解释 电子政务 G2B: 政府对企业; G2C: 政府对公民; G2E: 政府对公务员; G2G: 政府对政府; 云计算 PaaS: 平台即服务; SaaS: 软件（应用）即服务; IaaS: 基础设施即服务; 软件工程 OOA: 面向对象分析; OOD: 面向对象设计; OOP: 面向对象的程序...",
+      "content_html": "<div class=\"hint-container tip\">\n<p class=\"hint-container-title\">前言</p>\n<p><code>系统架构设计师</code> 考试中上午选择题知识点汇总。</p>\n</div>\n<h2> 名词解释</h2>\n<h3> 电子政务</h3>\n<ul>\n<li><code>G2B</code>: 政府对企业</li>\n<li><code>G2C</code>: 政府对公民</li>\n<li><code>G2E</code>: 政府对公务员</li>\n<li><code>G2G</code>: 政府对政府</li>\n</ul>\n<h3> 云计算</h3>\n<ul>\n<li><code>PaaS</code>: 平台即服务</li>\n<li><code>SaaS</code>: 软件（应用）即服务</li>\n<li><code>IaaS</code>: 基础设施即服务</li>\n</ul>\n<h3> 软件工程</h3>\n<ul>\n<li><code>OOA</code>: 面向对象分析</li>\n<li><code>OOD</code>: 面向对象设计</li>\n<li><code>OOP</code>: 面向对象的程序设计</li>\n</ul>\n<h3> 数据库设计规范</h3>\n<ul>\n<li><code>第一范式（1NF）</code>: 若关系模型 R 的每一个属性是不可再分的数据项, 则符合 <code>1NF</code></li>\n<li><code>第二范式（2NF）</code>: 若关系模型 <code>R ∈ 1NF</code>, 且每一个非主属性完全依赖主键, 则符合 <code>2NF</code></li>\n<li><code>第三范式（3NF）</code>: 即当 2NF 消除了非主属性对主键的传递依赖, 则符合 <code>3NF</code></li>\n</ul>\n<h2> 计算机原理</h2>\n<h3> 指令系统</h3>\n<ul>\n<li>指令系统是计算机硬件的语言系统, 是机器所具有的全部指令的集合, 反映了计算机所拥有的基本功能。</li>\n</ul>\n<h3> 计算机存储</h3>\n<ul>\n<li>存储速度从快到慢分别是：寄存器组、Cache、内存、Flash。</li>\n</ul>\n<h3> 系统性能评价</h3>\n<ul>\n<li>通常用户采用评价程序来评价系统的性能。评价程序一般有专门的测量程序、仿真程序等, 而评测准确度最高的评价程序是真实程序。</li>\n</ul>\n<h2> 计算机网络</h2>\n<h3> 常见的 TCP/UDP 端口号</h3>\n<ul>\n<li><code>HTTP</code>: 80</li>\n<li><code>HTTPS</code>: 443</li>\n<li><code>FTP</code>: 21 用来传输控制信息, 20 用来传输文件内容</li>\n<li><code>TFTP</code>: 69 (建立在 UDP 上)</li>\n<li><code>POP3</code>: 110</li>\n<li><code>SMTP</code>: 25</li>\n<li><code>IMAP</code>: 143</li>\n</ul>\n<h2> 数据库</h2>\n<h3> Armstrong 公理</h3>\n<div class=\"hint-container tip\">\n<p class=\"hint-container-title\">前置条件</p>\n<p>设关系模式 <code>R&lt;U,F&gt;</code>, 其中 U 为属性集合, F 是 U 上的一组函数依赖, 则有以下的推论</p>\n</div>\n<ul>\n<li>自反律: 若 <code>Y⊆X⊆U</code>, 则 <code>X-&gt;Y</code> 为 F 所蕴含</li>\n<li>增广律: 若 <code>X-&gt;Y</code> 为 F 所蕴含, 且 <code>Z⊆U</code>, 则 <code>XZ-&gt;YZ</code> 为 F 所蕴含</li>\n<li>传递律: 若 <code>X-&gt;Y</code>, <code>Y-&gt;Z</code> 为 F 所蕴含, 则 <code>X-&gt;Z</code> 为 F 所蕴含</li>\n<li>合并规则: 若 <code>X-&gt;Y</code>, <code>X-&gt;Z</code>, 则 <code>X-&gt;YZ</code> 为 F 所蕴含</li>\n<li>伪传递规则: 若 <code>X-&gt;Y</code>, <code>WY-&gt;Z</code>, 则 <code>XW-&gt;Z</code> 为 F 所蕴含</li>\n<li>分解规则: 若 <code>X-&gt;Y</code>, <code>Z⊆Y</code>, 则 <code>X-&gt;Z</code> 为 F 所蕴含</li>\n</ul>\n<h2> 软件工程</h2>\n<h3> 软件工程的三要素</h3>\n<ul>\n<li>方法</li>\n<li>工具</li>\n<li>过程</li>\n</ul>\n<h3> 面向对象的分析步骤</h3>\n<ol>\n<li>利用用例及用例图来表示需求</li>\n<li>你用包图及类图表示目标软件系统的总体框架结构</li>\n</ol>\n<h3> 结构化设计的特征</h3>\n<ol>\n<li>可修改性、可测试性、可移植性</li>\n<li>模块化</li>\n<li>高内聚低耦合</li>\n</ol>\n<h3> 结构化方法分析模型</h3>\n<ul>\n<li>数据模型（代表为 E-R 图）</li>\n<li>功能模型（代表为 DFD 图）</li>\n<li>行为模型（代表为状态转换图）</li>\n</ul>\n<h3> 面向对象的分析模型</h3>\n<ul>\n<li>顶层架构图</li>\n<li>用例与用例图</li>\n<li>领域概念模型</li>\n</ul>\n<h3> 软件结构化设计的步骤</h3>\n<ol>\n<li>架构设计</li>\n<li>接口设计</li>\n<li>数据设计</li>\n<li>过程设计</li>\n</ol>\n",
+      "date_published": "2023-12-07T20:25:00.000Z",
+      "date_modified": "2024-01-18T05:09:37.000Z",
+      "authors": [
+        {
+          "name": "星火燎原@vxhly"
+        }
+      ],
+      "tags": [
+        "软考"
+      ]
+    },
+    {
+      "title": "系统架构设计师-公式篇",
+      "url": "https://vxhly.github.io/system-architect/examination/formula.html",
+      "id": "https://vxhly.github.io/system-architect/examination/formula.html",
+      "summary": "前言 在 系统架构设计师 考试中存在一定的计算题, 一般分布在进度管理和成本管理章节, 以下是记录考试中会使用到的公式以及相关名词解释。 流水线执行时间 流水线执行时间 = 指令的取动作、分析动作、执行动作等的时间之和 + （指令的总条数 - 1）× 流水线周期 例题： 执行指令时, 将每一节指令部分分解为：取指、分析和执行三步, 已知取指令时间 t ...",
+      "content_html": "<div class=\"hint-container tip\">\n<p class=\"hint-container-title\">前言</p>\n<p>在 <code>系统架构设计师</code> 考试中存在一定的计算题, 一般分布在进度管理和成本管理章节, 以下是记录考试中会使用到的公式以及相关名词解释。</p>\n</div>\n<h2> 流水线执行时间</h2>\n<div class=\"hint-container tip\">\n<p class=\"hint-container-title\">提示</p>\n<p>流水线执行时间 = 指令的取动作、分析动作、执行动作等的时间之和 + （指令的总条数 - 1）× 流水线周期</p>\n</div>\n<p>例题：<br>\n执行指令时, 将每一节指令部分分解为：取指、分析和执行三步, 已知取指令时间 t 取指=5△t, 分析时间 t 分析=2△t, 执行时间 t 执行=3△t, 如果按照[执行]k、[分析]k+1、[取指]k+2 重叠的流水线方式执行指令, 从头到尾执行完 500 条指令需（）△t。</p>\n<p>解答：<br>\n根据流水线执行时间公式：（t1+t2+...+tk）+（n-1）×△t=（5△t+2△t+3△t）+（500-1）×5△t=2505△t。</p>\n<h2> 流水线周期</h2>\n<div class=\"hint-container tip\">\n<p class=\"hint-container-title\">提示</p>\n<p>计算机流水线的执行周期 = 最慢的那一条指令的执行时间</p>\n</div>\n<p>例题：<br>\n某计算机系统采用 5 级流水线结构执行指令, 设每条指令的执行由取指令(2 Δt )、分析指令(1Δt )、取操作数(3Δt )、运算(1Δt )和写回结果(2Δt ) 组成, 并分别用 5 个子部件完成, 该流水线的周期为（ ）。</p>\n<p>解答：<br>\n流水线周期为执行时间最长的一段：3Δt</p>\n<h2> 流水线吞吐率</h2>\n<div class=\"hint-container tip\">\n<p class=\"hint-container-title\">提示</p>\n<p>流水线吞吐率 = 指令条数/流水线执行时间</p>\n</div>\n<p>例题：<br>\n某计算机系统采用 5 级流水线结构执行指令, 设每条指令的执行由取指令(2 Δt )、分析指令(1Δt )、取操作数(3Δt )、运算(1Δt )和写回结果(2Δt ) 组成, 并分别用 5 个子部件完成, 该流水线的吞吐率为（ ）。</p>\n<p>解答：<br>\n流水线的吞吐率为：指令条数/流水线执行时间。即：<br>\nn/(2Δt+1Δt+3Δt+1Δt+2Δt+(n-1)*3Δt)=n/(6Δt+3nΔt)<br>\n将 n=10 代入上式, 得到：10/(6Δt+30Δt)=10/9Δt</p>\n<h2> 流水线最大吞吐率</h2>\n<div class=\"hint-container tip\">\n<p class=\"hint-container-title\">提示</p>\n<p>流水线最大吞吐率 = 1/流水线周期</p>\n</div>\n<p>例题：<br>\n某计算机系统采用 5 级流水线结构执行指令, 设每条指令的执行由取指令(2 Δt )、分析指令(1Δt )、取操作数(3Δt )、运算(1Δt )和写回结果(2Δt ) 组成, 并分别用 5 个子部件完成, 该流水线的最大吞吐率为（ ）。</p>\n<p>解答：<br>\n流水线的吞吐率为：指令条数/流水线执行时间。即：<br>\nn/(2Δt+1Δt+3Δt+1Δt+2Δt+(n-1)*3Δt)=n/(6Δt+3nΔt)<br>\n流水线的最大吞吐率就是上面的式子中, n 趋向于无穷大的结果。当 n 趋向于无穷大时, 上式的结果为：1/3Δt。</p>\n<h2> 流水线加速比</h2>\n<div class=\"hint-container tip\">\n<p class=\"hint-container-title\">提示</p>\n<p>流水线加速比 = 不用流水线的执行时间/使用流水线的执行时间</p>\n</div>\n<p>例题：<br>\n某计算机系统采用 5 级流水线结构执行指令, 设每条指令的执行由取指令(2 Δt )、分析指令(1Δt )、取操作数(3Δt )、运算(1Δt )和写回结果(2Δt ) 组成, 并分别用 5 个子部件完成, 若连续向流水线输入 10 条指令, 则该流水线的加速比为（ ）</p>\n<p>解答：<br>\n流水线加速比=不用流水线的执行时间/使用流水线的执行时间<br>\n10 条指令不用流水线的执行时间=（2Δt+1Δt+3Δt+1Δt+2Δt）*10=90Δt。<br>\n所以加速比为：90Δt/36Δt=5:2。</p>\n",
+      "date_published": "2023-12-07T19:20:00.000Z",
+      "date_modified": "2024-01-10T14:02:51.000Z",
+      "authors": [
+        {
+          "name": "星火燎原@vxhly"
+        }
+      ],
+      "tags": [
+        "软考"
       ]
     },
     {
