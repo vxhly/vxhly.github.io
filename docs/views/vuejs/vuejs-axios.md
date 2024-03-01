@@ -112,7 +112,7 @@ instance.interceptors.request.use(
   },
   (error) => {
     return Promise.reject(error);
-  }
+  },
 );
 
 // http response 拦截器
@@ -157,7 +157,7 @@ instance.interceptors.response.use(
     return backoff.then(function () {
       return instance(config);
     });
-  }
+  },
 );
 
 export default instance;

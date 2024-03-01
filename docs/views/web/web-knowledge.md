@@ -215,7 +215,7 @@ WEB 技术基础知识点（包含: HTML、CSS、JavaScript 三大块知点点�
 ### 标准 HTML 模板
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />

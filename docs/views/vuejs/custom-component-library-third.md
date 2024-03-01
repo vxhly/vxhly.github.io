@@ -225,35 +225,35 @@ const initPackage = () => {
         PACKAGE_DIR,
         "entry.js.tmp",
         "index.js",
-        choices
+        choices,
       );
       copyFile(
         path.join(__dirname, "/tmp"),
         PACKAGE_DIR,
         "entry.vue.tmp",
         `${uppercamelcase(compoenntName)}.vue`,
-        choices
+        choices,
       );
       copyFile(
         path.join(__dirname, "/tmp"),
         PACKAGE_DOCS_DIR,
         "entry.md.tmp",
         `${uppercamelcase(compoenntName)}.md`,
-        choices
+        choices,
       );
       copyFile(
         path.join(__dirname, "/tmp"),
         CSS_DIR,
         "entry.scss.tmp",
         `${compoenntName}.scss`,
-        choices
+        choices,
       );
       copyFile(
         path.join(__dirname, "/tmp"),
         CSS_DIR,
         "entry.css.tmp",
         `${compoenntName}.css`,
-        choices
+        choices,
       );
       // copyFile(path.join(__dirname, '/tmp'), CSS_DIR, 'entry.min.css.tmp', `${compoenntName}.min.css` , choices)
       copyFile(
@@ -261,7 +261,7 @@ const initPackage = () => {
         PACKAGES_DIR,
         "export.js.tmp",
         "index.js",
-        choices
+        choices,
       );
     });
   });
@@ -316,13 +316,13 @@ const delPackage = () => {
       // const CSS_MIN_NAME = `${CSS_DIRECTORY}/${delPackageName}.min.css`
       const BASE_DOCS = `${DOCS_DIR}/base/${uppercamelcase(delPackageName)}.md`;
       const BUSINESS_DOCS = `${DOCS_DIR}/business/${uppercamelcase(
-        delPackageName
+        delPackageName,
       )}.md`;
       removePromise(PACKAGE_DIR);
       console.log(
         chalk.green(
-          `The package directory ${PACKAGES_DIR}/${delPackageName} was deleted successfully.`
-        )
+          `The package directory ${PACKAGES_DIR}/${delPackageName} was deleted successfully.`,
+        ),
       );
 
       const delFiles = [
@@ -344,7 +344,7 @@ const delPackage = () => {
         PACKAGES_DIR,
         "export.js.tmp",
         "index.js",
-        choices
+        choices,
       );
     } else {
       console.log(chalk.gray("已经为你取消当前的删除操作."));

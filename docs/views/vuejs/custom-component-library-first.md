@@ -426,11 +426,11 @@ function buildPackagesEntry() {
   const uninstallComponents = [];
 
   const importList = Components.map(
-    (name) => `import ${uppercamelize(name)} from './${name}'`
+    (name) => `import ${uppercamelize(name)} from './${name}'`,
   );
   const exportList = Components.map((name) => `${uppercamelize(name)}`);
   const intallList = exportList.filter(
-    (name) => !~uninstallComponents.indexOf(uppercamelize(name))
+    (name) => !~uninstallComponents.indexOf(uppercamelize(name)),
   );
   const content = `import 'normalize.css'
     

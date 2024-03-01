@@ -39,12 +39,12 @@ console.log(
   "%c 前端开发 %c css88.com %c github",
   "color:red",
   "",
-  "color:orange;font-weight:bold"
+  "color:orange;font-weight:bold",
 );
 console.log("%c 阴影文字", "text-shadow: 3px 1px 1px grey");
 console.log(
   "%c 彩色文字",
-  "background-image:-webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );color:transparent;-webkit-background-clip: text;font-size:5em;"
+  "background-image:-webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );color:transparent;-webkit-background-clip: text;font-size:5em;",
 );
 ```
 

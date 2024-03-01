@@ -563,14 +563,14 @@ instance.interceptors.request.use(
     if (store.state.token) {
       config.headers.Authorization = `token ${store.state.token}`.replace(
         /(^")|("$)/g,
-        ""
+        "",
       );
     }
     return config;
   },
   (error) => {
     return Promise.reject(error);
-  }
+  },
 );
 
 // http response 拦截器
@@ -592,7 +592,7 @@ instance.interceptors.response.use(
       }
     }
     return Promise.reject(error.response);
-  }
+  },
 );
 
 export default {

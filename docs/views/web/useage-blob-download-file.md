@@ -90,7 +90,7 @@ function click(node) {
       false,
       false,
       0,
-      null
+      null,
     );
     node.dispatchEvent(evt);
   }

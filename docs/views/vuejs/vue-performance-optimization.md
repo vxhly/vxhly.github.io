@@ -118,7 +118,7 @@ module.exports = {
 ### index.html
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />

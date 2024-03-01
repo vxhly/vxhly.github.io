@@ -105,7 +105,10 @@ date: 2016-08-22 16:21:30
 说明: 中文字体多数使用宋雅黑,英文用 Helvetica
 */
 body {
-  font-family: Microsoft Yahei, SimSun, Helvetica;
+  font-family:
+    Microsoft Yahei,
+    SimSun,
+    Helvetica;
 }
 ```
 
@@ -194,7 +197,7 @@ body {
 ## 参考模板
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />

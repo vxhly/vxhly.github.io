@@ -29,7 +29,7 @@ date: 2016-08-15 18:12:36
 ### HTML5 文档类型很简单
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 ```
 
 ### HTML5 使用 UTF-8 编码
@@ -73,7 +73,7 @@ date: 2016-08-15 18:12:36
 #### 一个简单的实例
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -324,7 +324,7 @@ window.addEventListener(
   function () {
     setTimeout(orientInit, 100);
   },
-  false
+  false,
 );
 ```
 
@@ -452,7 +452,7 @@ HTML5 能够本地存储数据, 在之前都是使用 cookies 使用的。 该�
 应用程序缓存是 HTML5 的重要特性之一, 它提供了离线使用的功能, 让应用程序可以获取本地的网站内容, 例如 HTML、CSS、图片以及 JavaScript。这个特性可以提高网站性能, 它的实现借助于 manifest 文件, 如下:
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html manifest="example.appcache">
   ...
 </html>

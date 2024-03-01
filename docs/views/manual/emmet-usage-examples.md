@@ -330,7 +330,7 @@ Emmet 的前身是大名鼎鼎的 Zen coding。如果你从事 Web 前端开发�
 `扩展写法` `!!!+doc[lang=${lang}]`
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -900,7 +900,7 @@ Emmet 的前身是大名鼎鼎的 Zen coding。如果你从事 Web 前端开发�
 
 ```css
 @font-face {
-  font-family: ;
+  font-family:;
   src: url();
 }
 ```
@@ -911,9 +911,11 @@ Emmet 的前身是大名鼎鼎的 Zen coding。如果你从事 Web 前端开发�
 @font-face {
   font-family: "FontName";
   src: url("FileName.eot");
-  src: url("FileName.eot?#iefix") format("embedded-opentype"), url("FileName.woff")
-      format("woff"), url("FileName.ttf") format("truetype"), url("FileName.svg#FontName")
-      format("svg");
+  src:
+    url("FileName.eot?#iefix") format("embedded-opentype"),
+    url("FileName.woff") format("woff"),
+    url("FileName.ttf") format("truetype"),
+    url("FileName.svg#FontName") format("svg");
   font-style: normal;
   font-weight: normal;
 }

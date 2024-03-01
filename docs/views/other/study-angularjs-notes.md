@@ -17,7 +17,7 @@ Angularjs 1.0 的学习笔记。
 ## 依赖注入
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html ng-app="MyModule">
   <head>
     <title>最基本的依赖注入方式</title>
@@ -83,7 +83,7 @@ MyModule.controller("MyCtrl", MyCtrl);
 ## 双向绑定
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />

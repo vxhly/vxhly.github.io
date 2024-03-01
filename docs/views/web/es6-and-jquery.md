@@ -35,7 +35,7 @@ $('[data-action="imgQRCodeCtrl"]')
         opacity: 0,
         "z-index": -1,
       });
-    }
+    },
   )
   .click(() => {
     if (Base.browser.mobile) {
@@ -72,7 +72,7 @@ $(function () {
           opacity: 0,
           "z-index": -1,
         });
-      }
+      },
     )
     .click(function () {
       if (_base2.default.browser.mobile) {
