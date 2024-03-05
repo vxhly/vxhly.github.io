@@ -26,17 +26,17 @@
     "@vuepress-denaro/vuepress-plugin-dynamic-title": "^1.3.1",
     "@vuepress-denaro/vuepress-plugin-moefy-canvas": "^1.3.1",
     "@vuepress-denaro/vuepress-plugin-reward": "^1.3.1",
-    "@vuepress/client": "^2.0.0-rc.8",
-    "@vuepress/plugin-google-analytics": "^2.0.0-rc.8",
+    "@vuepress/client": "2.0.0-beta.67",
+    "@vuepress/plugin-google-analytics": "2.0.0-beta.67",
     "anywhere": "^1.6.0",
     "eslint": "^8.57.0",
     "eslint-plugin-markdown": "^3.0.1",
-    "markdownlint-cli": "^0.39.0",
-    "prettier": "^3.2.5",
+    "markdownlint-cli": "0.33.0",
+    "prettier": "^2.8.8",
     "vue": "^3.4.21",
-    "vuepress": "next",
-    "vuepress-plugin-search-pro": "next",
-    "vuepress-theme-hope": "next",
-    "vuepress-vite": "next"
+    "vuepress": "2.0.0-beta.67",
+    "vuepress-plugin-search-pro": "2.0.0-beta.237",
+    "vuepress-theme-hope": "2.0.0-beta.237",
+    "vuepress-vite": "2.0.0-beta.67"
   }
 }

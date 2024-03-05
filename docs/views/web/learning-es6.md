@@ -395,7 +395,7 @@ export const changeDate =
       setTime({
         mode,
         date,
-      }),
+      })
     );
   };
 
@@ -680,7 +680,7 @@ co(function* () {
   },
   function (err) {
     console.error(err.stack);
-  },
+  }
 );
 ```
 

@@ -86,7 +86,7 @@ const toObject = (arr, key) =>
       ...a,
       [b[key]]: b,
     }),
-    {},
+    {}
   );
 
 // Example
@@ -108,7 +108,7 @@ toObject(
       gender: "Female",
     },
   ],
-  "id",
+  "id"
 );
 /* 
 {
@@ -137,7 +137,7 @@ toNumbers(["2", "3", "4"]); // [2, 3, 4]
 const countBy = (arr, prop) =>
   arr.reduce(
     (prev, curr) => ((prev[curr[prop]] = ++prev[curr[prop]] || 1), prev),
-    {},
+    {}
   );
 
 // Example
@@ -169,7 +169,7 @@ countBy(
       year: "2020",
     },
   ],
-  "branch",
+  "branch"
 );
 
 // { 'audi': 2, 'ford': 2, 'bmw': 1 }
@@ -205,7 +205,7 @@ const accumulate = (arr) =>
     (
       (sum) => (value) =>
         (sum += value)
-    )(0),
+    )(0)
   );
 
 // Or
@@ -242,7 +242,7 @@ const range = (min, max) =>
     {
       length: max - min + 1,
     },
-    (_, i) => min + i,
+    (_, i) => min + i
   );
 
 // Example
@@ -264,7 +264,7 @@ arr = [];
 // Find the number from `arr` which is closest to `n`
 const closest = (arr, n) =>
   arr.reduce((prev, curr) =>
-    Math.abs(curr - n) < Math.abs(prev - n) ? curr : prev,
+    Math.abs(curr - n) < Math.abs(prev - n) ? curr : prev
   );
 
 // Or
@@ -302,7 +302,7 @@ const min = (arr) => Math.min(...arr);
 const flat = (arr) =>
   [].concat.apply(
     [],
-    arr.map((a) => (Array.isArray(a) ? flat(a) : a)),
+    arr.map((a) => (Array.isArray(a) ? flat(a) : a))
   );
 // Or
 const flat = (arr) =>
@@ -367,7 +367,7 @@ union([1, 2], [2, 3], [3]); // [1, 2, 3]
 const groupBy = (arr, key) =>
   arr.reduce(
     (acc, item) => ((acc[item[key]] = [...(acc[item[key]] || []), item]), acc),
-    {},
+    {}
   );
 
 // Example
@@ -399,7 +399,7 @@ groupBy(
       year: "2020",
     },
   ],
-  "branch",
+  "branch"
 );
 
 /*
@@ -498,7 +498,7 @@ const chunk = (arr, size) =>
     (acc, e, i) => (
       i % size ? acc[acc.length - 1].push(e) : acc.push([e]), acc
     ),
-    [],
+    []
   );
 
 // Examples
@@ -520,7 +520,7 @@ const transpose = (matrix) =>
 const transpose = (matrix) =>
   matrix.reduce(
     (prev, next) => next.map((item, i) => (prev[i] || []).concat(next[i])),
-    [],
+    []
   );
 
 // Example
@@ -542,8 +542,8 @@ const unzip = (arr) =>
       {
         length: Math.max(...arr.map((a) => a.length)),
       },
-      (_) => [],
-    ),
+      (_) => []
+    )
   );
 
 // Example
@@ -572,7 +572,7 @@ const zip = (...arr) =>
     {
       length: Math.max(...arr.map((a) => a.length)),
     },
-    (_, i) => arr.map((a) => a[i]),
+    (_, i) => arr.map((a) => a[i])
   );
 
 // Example
@@ -608,7 +608,7 @@ const monthDiff = (startDate, endDate) =>
     0,
     (endDate.getFullYear() - startDate.getFullYear()) * 12 -
       startDate.getMonth() +
-      endDate.getMonth(),
+      endDate.getMonth()
   );
 
 // Example
@@ -692,7 +692,7 @@ const ts = () => Math.floor(new Date().getTime() / 1000);
 // `date` is a Date object
 const dayOfYear = (date) =>
   Math.floor(
-    (date - new Date(date.getFullYear(), 0, 0)) / (1000 * 60 * 60 * 24),
+    (date - new Date(date.getFullYear(), 0, 0)) / (1000 * 60 * 60 * 24)
   );
 
 // Example
@@ -980,7 +980,7 @@ const getPercent = (percent) => Number.parseFloat(percent.replace(/\%/)) * 0.01;
 const getDiscountPrice = (price, discount) =>
   boxHandler(getMoney(price))
     .done((cents) =>
-      boxHandler(getPercent(discount)).next((save) => cents - cents * save),
+      boxHandler(getPercent(discount)).next((save) => cents - cents * save)
     )
     .done((res) => res);
 
@@ -1282,7 +1282,7 @@ const hexToRgb = (hex) =>
   hex
     .replace(
       /^#?([a-f\d])([a-f\d])([a-f\d])$/i,
-      (_, r, g, b) => `#${r}${r}${g}${g}${b}${b}`,
+      (_, r, g, b) => `#${r}${r}${g}${g}${b}${b}`
     )
     .substring(1)
     .match(/.{2}/g)
@@ -1315,7 +1315,7 @@ const decode = (token) =>
     atob(token.split(".")[1].replace("-", "+").replace("_", "/"))
       .split("")
       .map((c) => `%${("00" + c.charCodeAt(0).toString(16)).slice(-2)}`)
-      .join(""),
+      .join("")
   );
 
 // Example
@@ -1455,7 +1455,7 @@ const redirectHttps = () =>
 const run = (promises) =>
   promises.reduce(
     (p, c) => p.then((rp) => c.then((rc) => [...rp, rc])),
-    Promise.resolve([]),
+    Promise.resolve([])
   );
 
 // Example
@@ -1789,7 +1789,7 @@ pluck(
     { name: "Smith", age: 25 },
     { name: "Peter", age: 30 },
   ],
-  "name",
+  "name"
 ); // ['John', 'Smith', 'Peter']
 ```
 
@@ -1902,7 +1902,7 @@ const generateString = (length, chars) =>
 // Example
 generateString(
   10,
-  "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",
+  "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 );
 ```
 
@@ -1937,7 +1937,7 @@ const uuid = (a) =>
 const randomArrayInRange = (min, max, n) =>
   Array.from(
     { length: n },
-    () => Math.floor(Math.random() * (max - min + 1)) + min,
+    () => Math.floor(Math.random() * (max - min + 1)) + min
   );
 
 // Example
@@ -2143,9 +2143,9 @@ const escape = (str) =>
   str.replace(
     /[&<>"']/g,
     (m) =>
-      ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[
+      ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[
         m
-      ],
+      ])
   );
 ```
 
@@ -2316,13 +2316,13 @@ sort("hello world"); // dehllloorw
 const stripAnsiCodes = (str) =>
   str.replace(
     /[\u001b\u009b][[()#;?]*(?:[0-9]{1,4}(?:;[0-9]{0,4})*)?[0-9A-ORZcf-nqry=><]/g,
-    "",
+    ""
   );
 
 // Example
 stripAnsiCodes("\u001B[4mcake\u001B[0m"); // 'cake'
 stripAnsiCodes(
-  "\u001B[0m\u001B[4m\u001B[42m\u001B[31mfoo\u001B[39m\u001B[49m\u001B[24mfoo\u001B[0m",
+  "\u001B[0m\u001B[4m\u001B[42m\u001B[31mfoo\u001B[39m\u001B[49m\u001B[24mfoo\u001B[0m"
 ); // 'foofoo'
 ```
 
@@ -2371,7 +2371,7 @@ const truncate = (str, max, suffix) =>
     ? str
     : `${str.substr(
         0,
-        str.substr(0, max - suffix.length).lastIndexOf(" "),
+        str.substr(0, max - suffix.length).lastIndexOf(" ")
       )}${suffix}`;
 
 // Example

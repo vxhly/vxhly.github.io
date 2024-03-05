@@ -365,7 +365,7 @@ duoshuo_info:
 `./themes/next/source/404.html`
 
 ```html
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html;charset=utf-8;" />

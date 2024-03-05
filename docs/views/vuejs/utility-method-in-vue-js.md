@@ -178,7 +178,7 @@ import _ from "lodash";
  */
 export function timerByAdd(
   { num, timer = "days" } = {},
-  formatStr = "YYYY-MM-DD",
+  formatStr = "YYYY-MM-DD"
 ) {
   let startDate = moment().format(formatStr);
   let endDate;
@@ -205,7 +205,7 @@ export function timerByAdd(
  */
 export function timerBySubtract(
   { num, timer = "days" } = {},
-  formatStr = "YYYY-MM-DD",
+  formatStr = "YYYY-MM-DD"
 ) {
   let startDate;
   let endDate = moment().format(formatStr);
@@ -490,7 +490,7 @@ if (compare("compatible") || compare("MSIE") || compare("Trident")) {
         argArr.forEach(function (argItem) {
           var isNode = argItem instanceof Node;
           docFrag.appendChild(
-            isNode ? argItem : document.createTextNode(String(argItem)),
+            isNode ? argItem : document.createTextNode(String(argItem))
           );
         });
 

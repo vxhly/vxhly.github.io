@@ -28,7 +28,7 @@ date: 2019-04-08 10:09:47
 - 模块化
 
 ```html
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -70,7 +70,7 @@ date: 2019-04-08 10:09:47
 - 单向响应的数据流
 
 ```html
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -132,7 +132,7 @@ date: 2019-04-08 10:09:47
 - 模块化友好
 
 ```html
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />

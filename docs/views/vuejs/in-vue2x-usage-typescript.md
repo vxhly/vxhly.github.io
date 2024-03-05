@@ -244,7 +244,7 @@ export default class extends Vue {
       this.$refs.test,
       "定义变量的ref使用方式:",
       this.test,
-      "引入组件的ref",
+      "引入组件的ref"
     );
     console.log(this.img, this.$refs.img, "普通img标签的ref");
   }

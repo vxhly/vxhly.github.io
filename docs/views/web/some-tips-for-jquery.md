@@ -50,7 +50,7 @@ $(".top").click(function (e) {
     {
       scrollTop: 0,
     },
-    800,
+    800
   ); // 用多长时间滚动到何处
 });
 ```
@@ -146,7 +146,7 @@ $(".btn").hover(
   },
   function () {
     $(this).removeClass("hover");
-  },
+  }
 );
 ```
 

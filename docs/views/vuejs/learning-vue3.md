@@ -299,7 +299,7 @@ createApp().mount(
       };
     },
   },
-  "#app",
+  "#app"
 );
 ```
 

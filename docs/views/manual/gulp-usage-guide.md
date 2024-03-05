@@ -129,7 +129,7 @@ gulp.task("webserver", function () {
         // 运行 gulp-webserver
         livereload: true, // 启用 LiveReload
         open: true, // 服务器启动时自动打开网页
-      }),
+      })
     );
 });
 

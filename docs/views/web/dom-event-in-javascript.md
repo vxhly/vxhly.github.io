@@ -88,14 +88,14 @@ btn.addEventListener(
   function () {
     alert("原生 DOM 2 级第一次 click");
   },
-  false,
+  false
 );
 btn.addEventListener(
   "click",
   function () {
     alert("原生 DOM 2 级第二次click");
   },
-  false,
+  false
 );
 ```
 
@@ -132,7 +132,7 @@ btn.addEventListener(
     function () {
       alert("原生 DOM 2 级第一次 click");
     },
-    false,
+    false
   );
 </script>
 ```

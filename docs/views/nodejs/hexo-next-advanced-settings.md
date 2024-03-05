@@ -214,24 +214,23 @@ tab_replace:
       todayDate,
       todayHour,
       todayMinute,
-      todaySecond,
+      todaySecond
     );
     var diff = now - birthDay;
     var diffYears = Math.floor(diff / years);
     var diffDays = Math.floor(diff / days - diffYears * 365);
     var diffHours = Math.floor(
-      (diff - (diffYears * 365 + diffDays) * days) / hours,
+      (diff - (diffYears * 365 + diffDays) * days) / hours
     );
     var diffMinutes = Math.floor(
-      (diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
-        minutes,
+      (diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes
     );
     var diffSeconds = Math.floor(
       (diff -
         (diffYears * 365 + diffDays) * days -
         diffHours * hours -
         diffMinutes * minutes) /
-        seconds,
+        seconds
     );
     document.getElementById("showDays").innerHTML =
       "本站已运行 " +

@@ -150,7 +150,7 @@ HTML 文档应使用 HTML5 的文档类型: `<!DOCTYPE html>` 。
   This is only a test.
 
   <!-- Good -->
-  <!doctype html>
+  <!DOCTYPE html>
   <meta charset="utf-8" />
   <title>Test</title>
   <article>This is only a test.</article>
@@ -342,10 +342,7 @@ div.error {
 /* Good */
 .example {
   border-top: 0;
-  font:
-    100%/1.6 palatino,
-    georgia,
-    serif;
+  font: 100%/1.6 palatino, georgia, serif;
   padding: 0 1em 2em;
 }
 ```
