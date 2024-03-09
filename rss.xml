@@ -6,12 +6,12 @@
     <link>https://vxhly.github.io/</link>
     <description>源于生活而高于生活.</description>
     <language>zh-CN</language>
-    <pubDate>Wed, 06 Mar 2024 00:46:09 GMT</pubDate>
-    <lastBuildDate>Wed, 06 Mar 2024 00:46:09 GMT</lastBuildDate>
+    <pubDate>Sat, 09 Mar 2024 00:31:29 GMT</pubDate>
+    <lastBuildDate>Sat, 09 Mar 2024 00:31:29 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
-    <category>信息系统项目管理师</category>
     <category>软考</category>
+    <category>信息系统项目管理师</category>
     <category>web</category>
     <category>PMP</category>
     <category>liunx</category>
@@ -26,7 +26,94 @@
     <category>other</category>
     <category>pentest</category>
     <category>typescript</category>
-    <category>vite</category>
+    <item>
+      <title>系统架构下午-案例分析-数据库</title>
+      <link>https://vxhly.github.io/system-architect/basic-knowledge/case-analysis-database.html</link>
+      <guid>https://vxhly.github.io/system-architect/basic-knowledge/case-analysis-database.html</guid>
+      <source url="https://vxhly.github.io/rss.xml">系统架构下午-案例分析-数据库</source>
+      <description>前言 系统架构设计师 考试中下午案例分析题知识点汇总。主要记录的是关系型数据库设计 数据库设计过程 设计阶段 阶段 主要任务 -------------------- ------------------------------------------------------------------------------------------- 用...</description>
+      <category>软考</category>
+      <pubDate>Fri, 08 Mar 2024 19:25:19 GMT</pubDate>
+      <content:encoded><![CDATA[<div class="hint-container tip">
+<p class="hint-container-title">前言</p>
+<p><code>系统架构设计师</code> 考试中下午案例分析题知识点汇总。主要记录的是关系型数据库设计</p>
+</div>
+<h2> 数据库设计过程</h2>
+<h3> 设计阶段</h3>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>主要任务</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>用户需求分析</td>
+<td>分析用户活动、收集数据确定系统边界。</td>
+</tr>
+<tr>
+<td>概念结构设计</td>
+<td>将应用对象抽象成不依赖于 DBMS 的数据模型，即概念模型。描述概念模型的较理想的工具是 E-R 图。</td>
+</tr>
+<tr>
+<td>逻辑结构设计</td>
+<td>将抽象的概念模型转化为与选用的 DBMS 产品所支持的数据模型相符合的逻辑模型，即关系模式。</td>
+</tr>
+<tr>
+<td>物理结构设计</td>
+<td>是逻辑模型在计算机中的具体实现方案。</td>
+</tr>
+<tr>
+<td>数据库实施阶段</td>
+<td>根据前两个阶段的结果建立数据库，编制与调试应用程序，组织数据入库，并进行试运行。</td>
+</tr>
+<tr>
+<td>数据库运行和维护阶段</td>
+<td>数据库应用系统经过试运行即可投入运行，但该阶段需要不断地对系统进行评价、调整与修改。</td>
+</tr>
+</tbody>
+</table>
+<h3> 需求分析</h3>
+<p>调查组织机构情况、调查各部门的业务活动情况、协助用户明确对新系统的各种要求、确定新系统的边界，以此获得用户对系统的如下要求。<br>
+① <code>信息要求</code>: 保存的信息、完整性要求等。<br>
+② <code>处理要求</code>: 操作功能、处理的频度、相应时间等。<br>
+③ <code>系统要求</code>: 安全性要求、使用方式要求、可扩充性要求。</p>
+<h3> 概念结构设计</h3>
+<p>对现实事物抽象认识的 3 种方法:</p>
+<ol>
+<li><code>分类(Classification)</code>: 对现实世界的事物，按照其具有的共同特征和行为，定义一种类型。在某一类型中，个体是类型的一个成员或实例，即 “is member of”。</li>
+<li><code>聚集(Aggregation)</code>: 定义某一类型所具有的属性。如学生类型具有学号、姓名、性别、班级等共同属性，每一个学生都是这一类型中的个体, 通过在这些属性上的不同取值来区分。各个属性是所属类型的一个成份，即 “is part of”。</li>
+<li><code>概括(Generalization)</code>: 由一种已知类型定义新的类型。通常把已知类型称为超类(Superclass), 新定义的类型称为子类(Subclass), 即 “is subset"</li>
+</ol>
+<p>概念设计步骤</p>
+<ol>
+<li>需求分析</li>
+<li>确定局部视图范围</li>
+<li>识别实体及其标识</li>
+<li>确定实体之间的联系</li>
+<li>分配实体及联系的属性</li>
+<li>全局 E-R 模式设计</li>
+</ol>
+<p>冲突的类型</p>
+<ol>
+<li>属性冲突</li>
+<li>结构冲突</li>
+<li>命名冲突</li>
+</ol>
+<h3> 逻辑结构设计</h3>
+<ul>
+<li>将抽象的概念模型转化为与选用的 DBMS 产品所支持的数据模型相符合的逻辑模型，即关系模式。</li>
+<li>主要工作步骤包括确定数据模型、将 E-R 图转换成为指定的数据模型、确定完整性约束和确定用户视图。</li>
+</ul>
+<h3> 物理设计</h3>
+<p>物理设计的主要工作步骤包括确定数据分布、存储结构和访问方式。</p>
+<h3> 数据库实施</h3>
+<p>数据库实施。在计算机上建立起实际的数据库结构，数据加载(或称装入)，进行试运行和评价的过程，叫作数据库的实施(或称实现)</p>
+<h3> 数据库运行维护</h3>
+<p>数据库运行维护。数据库一旦投入运行，就标志着数据库维护工作的开始。数据库维护工作的主要内容包括对数据库性能的监测和改善、故障恢复、数据库的重组和重构。</p>
+]]></content:encoded>
+    </item>
     <item>
       <title>第一章：信息化和信息系统</title>
       <link>https://vxhly.github.io/project-manager/knowledge/Information-system.html</link>
@@ -1388,8 +1475,14 @@
 </ul>
 <h3> 面向对象的分析步骤</h3>
 <ol>
-<li>利用用例及用例图来表示需求</li>
-<li>你用包图及类图表示目标软件系统的总体框架结构</li>
+<li>利用<code>用例及用例图</code>来表示需求</li>
+<li>你用<code>包图及类图</code>表示目标软件系统的总体框架结构</li>
+</ol>
+<p>用例之间的关系主要有包含、扩展和泛化</p>
+<ol>
+<li>包含关系: 两个或两个以上的用例的公共行为可以表示用例之间的行为</li>
+<li>扩展关系: 一个用例混合了两种或两种以上不同的场景(分支)可以表示用例之间的关系</li>
+<li>泛化关系: 多用例具有一种共性, 可以将共性抽象为父用例, 其他用例作为泛化关系的子用例</li>
 </ol>
 <h3> 结构化设计的特征</h3>
 <ol>
@@ -1397,6 +1490,83 @@
 <li>模块化</li>
 <li>高内聚低耦合</li>
 </ol>
+<h3> 结构化设计</h3>
+<ul>
+<li>模块化设计是将一个待开发的软件分解成为若干小的简单部分--模块。具体来说，模块是指执行某一特定任务的数据结构和程序代码。</li>
+<li>通常将模块的结构和功能定义为其外部特性，将模块的局部数据和实现该模块的程序代码称为内部特性。</li>
+<li>模块独立是指每个模块完成相对独立的特定子功能，与其他模块之间的关系最简单。</li>
+<li>通常用内聚和耦合两个标准来衡量模块的独立性，其设计原则是"高内聚、低耦合"。</li>
+</ul>
+<h3> 面向对象设计</h3>
+<table>
+<thead>
+<tr>
+<th>设计原则</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>单一职责原则</td>
+<td>设计目的单一的类</td>
+</tr>
+<tr>
+<td>开放-封闭原则</td>
+<td>对扩展开放，对修改封闭</td>
+</tr>
+<tr>
+<td>依赖倒置原则</td>
+<td>要依赖于抽象、不是具体实践。对接口进行编程，不是针对实现编程</td>
+</tr>
+<tr>
+<td>里式替换原则</td>
+<td>子类可以替换父类</td>
+</tr>
+<tr>
+<td>接口隔离原则</td>
+<td>使用多个专门的接口比使用单一的总接口好</td>
+</tr>
+<tr>
+<td>组合重用原则</td>
+<td>尽量使用组合不是继承达到重用的目的</td>
+</tr>
+<tr>
+<td>迪米特原则(最少知识)</td>
+<td>一个对象应当对其他对象有尽可能少的了解</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>模式(分类)</th>
+<th>描述</th>
+<th>具体模式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>创建型模式</td>
+<td>用于创建对象</td>
+<td>工厂方法模式、抽象工厂模式、单例模式、建造者模式、原型模式。共五种。口诀从单抽元件(建)厂工厂方法模式、抽象工厂模式、单例模式、建造者模式、原型模式。共五种。口诀从单抽元件(建)厂</td>
+</tr>
+<tr>
+<td>结构型模式</td>
+<td>处理类或者对象的组合</td>
+<td>适配器模式、装饰器模式、代理模式、外观模式、桥接模式、组合式、享元模式。共七种。口诀:外侨(桥)组员(元)戴(代)配饰。</td>
+</tr>
+<tr>
+<td>行为型模式</td>
+<td>描述类与对象怎样交互、怎样分配职责</td>
+<td>策略模式、模板方法模式、观察者模式、迭代子模式、责任链模式、命令模式、备忘录模式、状态模式、访问者模式、中介者模式、解释器模式。共十一种。口诀:观摩(模)对(迭)策，责令解放(访)，戒(介)忘台</td>
+</tr>
+<tr>
+<td>(态)</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <h3> 结构化方法分析模型</h3>
 <ul>
 <li>数据模型（代表为 E-R 图）</li>
@@ -1497,6 +1667,120 @@
 (5)功用驱动开发方法(FDD)像其他方法一样，它致力于短时的迭代阶段和可见可用的功能。在 FDD 中，一个迭代周期一般是两周。在 FDD 中，编程开发人员分成两类:首席程序员和“类”程序员。首席程序员是最富有经验的开发人员，他们是项目的协调者、设计者和指导者，而“类”程序员则主要做源码编写。<br>
 (6)ASD(Adaptive Software Development)方法的核心是三个非线性的、重叠的开发阶段:猜测、合作与学习。<br>
 (7)开放统一过程开发方法(OpenUP)采用了迭代和增量的生命周期，为了避免过多的过程，开放统一过程开发方法遵循精益原则，只涉及最小集合的敏捷实践，更适合小型敏捷项目。</p>
+<h3> 软件设计阶段</h3>
+<p>从工程管理角度来看，软件设计可分为概要设计和详细设计两个阶段。</p>
+<ul>
+<li>概要设计也称为高层设计或总体设计，即将软件需求转化为软件设计的<code>数据结构</code>和软件的<code>系统结构</code>;</li>
+<li>详细设计也称为低层设计，即对结构图进行细化，得到详细的数据结构与算法。</li>
+</ul>
+<p>① 需求分析阶段: <code>数据流图</code>。<br>
+② 概要设计阶段: <code>模块结构图、层次图和HIPO图</code><br>
+③ 详细设计阶段: <code>程序流程图、伪代码、盒图</code>。</p>
+<h3> 软件测试</h3>
+<ul>
+<li><code>静态测试</code>。被测程序不在机器上运行，采用人工检测和计算机辅助静态分析的手段对程序进行测试。
+<ul>
+<li>静态测试包括对文档的静态测试和对代码的静态测试。对代码的静态测试包括控制流分析、数据流分析、接口分析和表达式分析。</li>
+</ul>
+</li>
+<li><code>动态测试</code>。通过运行程序发现错误。一般包括黑盒测试(等价类划分、边界值分析法、错误推测法)与白盒测试(各种类型的覆盖测试)。</li>
+</ul>
+<h4> 单元测试</h4>
+<ul>
+<li>单元测试也称为模块测试，测的对象是可独立编译或汇编的程序模类(统称为模块)，其目的是检查每个块、软件构件或面向对象软件中模块能否正确地实现设计说明中功能、性能、接口和其他设计约束等条件，发现模块内可能存在的各和中差错。</li>
+<li>单元测试的技术依据是<code>软件详细设计说明书</code>。</li>
+</ul>
+<h4> 集成测试</h4>
+<ul>
+<li>集成测试的目的是检查模块之间，以及模块和已集成的软件之间的接口关系，并验证已集成的软件是否符合设计要求。</li>
+<li>集成测试的技术依据是<code>软件概要设计文档</code>。</li>
+</ul>
+<h4> 系统测试</h4>
+<ul>
+<li>系统测试的对象是完整的、集成的计算机系统，系统测试的目的是在真实系统工作环境下，验证完整的软件配置项能否和系统正确连接，并满足系统/子系统设计文档和软件开发合同规定的要求。</li>
+<li>系统测试的技术依据是<code>用户需求或开发合同</code>。</li>
+</ul>
+<h4> 配置项测试</h4>
+<ul>
+<li>配置项测试的目的是检验软件配置配置项测试的对象是软件配置项项与软件需求规格说明的一致性。</li>
+<li>配置项测试的技术依据是<code>软件配置文档</code>。</li>
+</ul>
+<h4> 确认测试</h4>
+<ul>
+<li>确认测试主要验证软件的功能、性能和其他特性是否与用户需求一致。</li>
+<li>确认测试的技术依据是<code>用户需求或开发合同</code>。</li>
+</ul>
+<h4> 验收测试</h4>
+<ul>
+<li>验收测试是指针对软件需求规格说明，在交付前以用户为主进行的测试。</li>
+<li>验收测试的技术依据是<code>软件需求规格说明</code>。</li>
+</ul>
+<h4> 回归测试</h4>
+<ul>
+<li>回归测试的目的是测试软件变更之后，变更部分的正确性和对变更需求的复合型，以及软件原有的、正确的功能、性能和其他规定的要求的不损害性。</li>
+<li>回归测试的技术依据是<code>软件概要设计文档</code>。</li>
+</ul>
+<h3> 系统运行与维护</h3>
+<p>遗留系统采取的演化策略<br>
+① 淘汰策略。第四象限为低水平、低价值区，即遗留系统的技术含量较低，且具有较低的业务价值。<br>
+② 继承策略。第二象限为低水平、已经满足企业运作的功能或性能要习，但具有较高的商业价值，目前企业的业务尚紧密依赖该系统。<br>
+③ 改造策略。第一象限为高水平、高价值区，即遗留系统的技术含量较高，本身还有强大的生命力。<br>
+④ 集成策略。第三象限为高水平、低价值区，即遗留系统的技术含量较高，但其业务价值较低，可能只完成某个部门(或子公司)的业务管理。</p>
+<p>移植工作大体上分为计划阶段、准备阶段、转换阶段、测试阶段、验证阶段。<br>
+1、<code>计划阶段</code>，在计划阶段，要进行现有系统的调查整理，从移植技术、系统内容(是否进行系统提炼等)、系统运行三个方面，探讨如何转换成新系统，决定移植方法，确立移植工作体制及移植日程。<br>
+2、<code>准备阶段</code>，在准备阶段要进行移植方面的研究，准备转换所的资料。该阶段的作业质量将对以后的生产效率产生很大的影响。<br>
+3、<code>转换阶段</code>，这一阶段是将程序设计和数据转换成新机器能根据需要工作的阶段。提高转换工作的精度，减轻下一阶段的测试负担是提高移植工作效率的基本内容。<br>
+4、<code>测试阶段</code>，这一阶段是进行程多单元、工作单元测试的阶段。在本阶段要核实程序能否在新系统中准确地工作。所以，当有不能准确工作工作。<br>
+5、<code>验证阶段</code>，这是测试完的程序使新系统工作，最后核实系统，准备正式运行的阶段。</p>
+<h2> 需求管理</h2>
+<ul>
+<li>需求管理包括变更控制、版本控制、需求跟踪、需求状态跟踪</li>
+<li>需求变更管理包括三个主要过程:问题分析和变更描述、变更分析和成本计算、变更实现。</li>
+</ul>
+<h2> 软件架构设计</h2>
+<ul>
+<li>软件架构是降低成本、改进质量、按时和按需交付产品的关键因素, 软件架构设计需要满足系统的质量属性, 如性能、安全性和可修改性等。</li>
+<li>基于体系结构(架构)的软件设计方法(ABSD 方法)是一个<code>自顶向下</code>，递归细化的方法，软件系统的体系结构通过该方法得到细化，直到能产生软件<code>构件和类</code>。</li>
+<li>基于体系结构(架构)的软件设计方法(ABSD 方法)采用<code>视角和视图</code>来描述软件架构，采用用例和质量属性场景来描述需求。进一步来说，<code>用例</code>描述的是功能需求，<code>质量属性场景</code>描述的是质量需求(或侧重于非功能需求)。</li>
+<li>基于架构的软件开发模型(Architecture-Based Software DesignModel，ABSDM)把整个基于架构的软件过程划分为架构需求、设计、文档化、复审、实现、演化等 6 个子过程。</li>
+</ul>
+<h2> 软件架构风格</h2>
+<h3> 三层 C/S 架构</h3>
+<table>
+<thead>
+<tr>
+<th>层次</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>表示层</td>
+<td>用户接口, 检查用户输入的数据, 显示输出的数据</td>
+</tr>
+<tr>
+<td>功能层</td>
+<td>业务逻辑层, 是将具体的业务逻辑输入程序中</td>
+</tr>
+<tr>
+<td>数据层</td>
+<td>对 DBSM 进行管理和控制</td>
+</tr>
+</tbody>
+</table>
+<h3> 物联网</h3>
+<p>物联网属于层次型架构，分为:</p>
+<ol>
+<li>感知层: 负责信息采集和物物之间的信息传输。</li>
+<li>网络层: 利用无线和有线网络对采集的数据进行编码、认证和传输。</li>
+<li>应用层: 实现应用。</li>
+</ol>
+<h3> 体系结构风格</h3>
+<ul>
+<li>数据流体系结构包括<code>批处理体系结构风格</code>和<code>管道-过滤器体系结构风格</code>。</li>
+<li>虚拟机体系结构风格包括<code>解释器体系结构风格</code>和<code>规则系统体系结构风格</code>。</li>
+<li>在仓库风格中，有两种不同的构件: <code>中央数据结构</code>说明当前状态，<code>独立构件</code>在中央数据存储上执行</li>
+</ul>
 <h2> 软件架构评估</h2>
 <h3> 架构风格</h3>
 <ul>
@@ -1504,6 +1788,7 @@
 <li>Data flow (数据流)</li>
 <li>Event system (事件系统)</li>
 <li>Rule-based system (基于规则的系统)</li>
+<li>在架构评估中，场景是从<code>风险承担者</code>的角度对与系统交互的描述，一般采用<code>刺激、环境、响应</code>三方面来对场景进行描述。</li>
 </ul>
 <h3> 体现结构风格</h3>
 <ul>
@@ -12169,282 +12454,6 @@ PESTLE、TECOP、VUCA。</p>
 <p>可传参的装饰器</p>
 <div class="language-typescript line-numbers-mode" data-ext="ts"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> 构造函数装饰器</h3>
 <div class="language-typescript line-numbers-mode" data-ext="ts"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content:encoded>
-    </item>
-    <item>
-      <title>Vite 下一代前端开发与构建工具</title>
-      <link>https://vxhly.github.io/views/vite/study-vite.html</link>
-      <guid>https://vxhly.github.io/views/vite/study-vite.html</guid>
-      <source url="https://vxhly.github.io/rss.xml">Vite 下一代前端开发与构建工具</source>
-      <description>前言 Vite2.x 也推出了有一段时间了, 作为一名合格的前端开发人员, 没错我入坑了, 以下本篇文章记录的是 Vite 的一些知识点。</description>
-      <category>vite</category>
-      <pubDate>Wed, 25 Aug 2021 20:03:58 GMT</pubDate>
-      <content:encoded><![CDATA[<div class="hint-container tip">
-<p class="hint-container-title">前言</p>
-<p>Vite2.x 也推出了有一段时间了, 作为一名合格的前端开发人员, 没错我入坑了, 以下本篇文章记录的是 Vite 的一些知识点。</p>
-</div>
-<!-- more -->
-<h2> 回顾以往的前端自动化构建工具</h2>
-<h3> Grunt - 基于任务的构建工具</h3>
-<ul>
-<li>Grunt - 基于任务的构建工具
-<ul>
-<li><strong>优点：</strong>
-<ul>
-<li>灵活, 它只负责执行我们定义好的任务</li>
-<li>大量可复用插件封装好了常见的构建任务</li>
-</ul>
-</li>
-<li><strong>缺点：</strong>
-<ul>
-<li>是集成度不高, 要写很多配置后才可以用, 无法做到开箱即用</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Gulp - 基于任务的构建工具
-<ul>
-<li><strong>优点：</strong>
-<ul>
-<li>好用又不失灵活, 既可以单独完成构建, 也可以和其他工具搭配使用</li>
-</ul>
-</li>
-<li><strong>缺点：</strong>
-<ul>
-<li>是集成度不高, 要写很多配置后才可以用, 无法做到开箱即用</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Webpack - 基于模块化的构建工具</li>
-</ul>
-<figure><img src="/assets/study-vite-1.png" alt="Vite" tabindex="0" loading="lazy"><figcaption>Vite</figcaption></figure>
-<ul>
-<li><strong>优点：</strong>
-<ul>
-<li>专注于处理模块化的项目, 能做到开箱即用、一步到位</li>
-<li>可通过 Plugin 扩展, 完整好用又不失灵活性</li>
-<li>使用场景不局限于 Web 开发</li>
-<li>社区庞大活跃, 经常引入紧跟时代发展的新特性, 能为大多数场景找到已有的开源扩展</li>
-<li>良好的开发体验</li>
-</ul>
-</li>
-<li><strong>缺点：</strong>
-<ul>
-<li>只能用于采用模块化开发的项目</li>
-<li>打包时间与应用大小成正比, 应用越大打包时间越久</li>
-</ul>
-</li>
-<li>Rollup - 基于模块化的构建工具
-<ul>
-<li><strong>优点：</strong>
-<ul>
-<li>配置简单, 打包速度快</li>
-<li>自动移除未引用的代码（内置 <code>tree shaking</code>）</li>
-</ul>
-</li>
-<li><strong>缺点：</strong>
-<ul>
-<li>开发服务器不能实现模块热更新, 调试繁琐</li>
-<li>浏览器环境的代码分割依赖 <code>amd</code></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3> 为什么会有构建工具的出现</h3>
-<ul>
-<li>解决前端模块化问题</li>
-<li>使繁琐的任务变得更加简单</li>
-<li>使 less/scss 预处理变得更加方便</li>
-<li>资源压缩与混淆, 只有更小的和更安全的构建包才能传输的更快且不容易被拦截
-<blockquote>
-<p>扩展：js 混淆与加密在线工具（<a href="https://www.sojson.com/jsjiemi.html" target="_blank" rel="noopener noreferrer">https://www.sojson.com/jsjiemi.html</a>）</p>
-</blockquote>
-</li>
-</ul>
-<h2> Vite 由来</h2>
-<blockquote>
-<p>作者在微博在发言：</p>
-<p>Vite, 一个基于浏览器原生 ES imports 的开发服务器。利用浏览器去解析 imports, 在服务器端按需编译返回, 完全跳过了打包这个概念, 服务器随起随用。同时不仅有 Vue 文件支持, 还搞定了热更新, 而且热更新的速度不会随着模块增多而变慢。针对生产环境则可以把同一份代码用 rollup 打。虽然现在还比较粗糙, 但这个方向我觉得是有潜力的, 做得好可以彻底解决改一行代码等半天热更新的问题</p>
-</blockquote>
-<p>它主要具有以下特点：</p>
-<ul>
-<li>快速的冷启动, 不需要等待打包操作</li>
-<li>即时的模块热更新, 替换性能和模块数量的解耦让更新飞起</li>
-<li>真正的按需编译, 不再等待整个应用编译完成</li>
-<li>基于 ESM 的 Dev Server + HMR（模块热更新）</li>
-<li>基于 esbuild 的依赖预优化</li>
-<li>基于 Rollup 的 Plugins + Bundle</li>
-<li>更好的 SSR 支持</li>
-</ul>
-<p>产生 Vite 的历程</p>
-<ul>
-<li>传统的 Webpack Dev Server 冷启动时间是比较长的</li>
-<li>Webpack 模块热更新的反应速度比较慢</li>
-</ul>
-<h3> Vite 的日活量</h3>
-<figure><img src="/assets/study-vite-2.png" alt="Vite" tabindex="0" loading="lazy"><figcaption>Vite</figcaption></figure>
-<h3> ESM 在浏览器的支持度</h3>
-<p>默认的构建目标浏览器是能 在 script 标签上支持原生 ESM 和 原生 ESM 动态导入。传统浏览器可以通过官方插件 @vitejs/plugin-legacy 支持 &nbsp; &nbsp; Vite 需要 Node.js 版本 &gt;= 12.0.0；Vite 的 2.4.x 版本不兼容 npm@7&nbsp; ESM 最大的特点是在浏览器端使用 <code>export import</code> 的方式导入和导出模块, 在 script 标签里设置 <code>type="module"</code> , 然后使用 <strong>ES module</strong>。正因如此, vite 高度依赖<code>module script</code>特性, 也就意味着从这里开始抛弃了 IE 市场</p>
-<figure><img src="/assets/study-vite-3.png" alt="Vite" tabindex="0" loading="lazy"><figcaption>Vite</figcaption></figure>
-<blockquote>
-<p>扩展</p>
-</blockquote>
-<ul>
-<li>本地 node 环境对于 &nbsp;ECMAScript 6 的支持度</li>
-</ul>
-<figure><img src="/assets/study-vite-4.png" alt="Vite" tabindex="0" loading="lazy"><figcaption>Vite</figcaption></figure>
-<ul>
-<li>浏览器对 import 的支持度</li>
-</ul>
-<figure><img src="/assets/study-vite-5.png" alt="Vite" tabindex="0" loading="lazy"><figcaption>Vite</figcaption></figure>
-<ul>
-<li>浏览器对 export 的支持度</li>
-</ul>
-<figure><img src="/assets/study-vite-6.png" alt="Vite" tabindex="0" loading="lazy"><figcaption>Vite</figcaption></figure>
-<h2> Vite VS Webpack</h2>
-<h3> 功能对比</h3>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Vite</th>
-<th>Webpack</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>支持 Vue2</td>
-<td>非官方支持:&nbsp;<a href="https://link.segmentfault.com/?url=https%3A%2F%2Fgithub.com%2Funderfin%2Fvite-plugin-vue2" target="_blank" rel="noopener noreferrer">https://github.com/underfin/vite-plugin-vue2</a></td>
-<td>支持：vue-loader@^15.0.0</td>
-</tr>
-<tr>
-<td>支持 Vue3</td>
-<td>支持</td>
-<td>支持：vue-loader@^16.0.0(<a href="https://link.segmentfault.com/?url=https%3A%2F%2Fgithub.com%2FJamie-Yang%2Fvue3-boilerplate" target="_blank" rel="noopener noreferrer">https://github.com/Jamie-Yang/vue3-boilerplate</a>)</td>
-</tr>
-<tr>
-<td>支持 Typescript</td>
-<td>支持：ESbuild （默认无类型检查）</td>
-<td>支持：ts-loader</td>
-</tr>
-<tr>
-<td>支持 CSS 预处理器</td>
-<td>支持：&nbsp;<a href="https://link.segmentfault.com/?url=https%3A%2F%2Fvitejs.dev%2Fguide%2Ffeatures.html%23css-pre-processors" target="_blank" rel="noopener noreferrer">https://vitejs.dev/guide/features.html#css-pre-processors</a></td>
-<td>支持：<a href="https://link.segmentfault.com/?url=https%3A%2F%2Fvue-loader.vuejs.org%2Fguide%2Fpre-processors.html" target="_blank" rel="noopener noreferrer">https://vue-loader.vuejs.org/guide/pre-processors.html</a></td>
-</tr>
-<tr>
-<td>支持 CSS Modules</td>
-<td>支持：&nbsp;<a href="https://link.segmentfault.com/?url=https%3A%2F%2Fvitejs.dev%2Fguide%2Ffeatures.html%23css-modules" target="_blank" rel="noopener noreferrer">https://vitejs.dev/guide/features.html#css-modules</a></td>
-<td>支持：<a href="https://link.segmentfault.com/?url=https%3A%2F%2Fvue-loader.vuejs.org%2Fguide%2Fcss-modules.html" target="_blank" rel="noopener noreferrer">https://vue-loader.vuejs.org/guide/css-modules.html</a></td>
-</tr>
-<tr>
-<td>支持静态文件</td>
-<td>支持</td>
-<td>支持</td>
-</tr>
-<tr>
-<td>开发环境</td>
-<td>no-bundle native ESM（CJS → ESM）</td>
-<td>bundle（CJS/UMD/ESM）</td>
-</tr>
-<tr>
-<td>HMR</td>
-<td>支持</td>
-<td>支持</td>
-</tr>
-<tr>
-<td>生产环境</td>
-<td>Rollup、esbuild</td>
-<td>Webpack</td>
-</tr>
-<tr>
-<td>Node API 调用能力</td>
-<td>支持</td>
-<td>支持</td>
-</tr>
-</tbody>
-</table>
-<h3> Webpack 打包方式</h3>
-<figure><img src="/assets/study-vite-7.png" alt="Vite" tabindex="0" loading="lazy"><figcaption>Vite</figcaption></figure>
-<figure><img src="/assets/study-vite-8.png" alt="Vite" tabindex="0" loading="lazy"><figcaption>Vite</figcaption></figure>
-<ul>
-<li>webpack 的打包时间与应用的大小是成正比的, 应用越大打包时间越久</li>
-<li>打包过程：识别入口文件 =&gt; 通过逐层识别模块依赖。（Commonjs、amd 或者 es6 的 import, webpack 都会对其进行分析。来获取代码的依赖）=&gt; webpack 做的就是分析代码。转换代码, 编译代码, 输出代码 =&gt; 最终形成打包后的代码</li>
-<li>根据路由把代码整合成一个文件 bundle.js,启动开发服务器 Serverready</li>
-<li>vue-cli-server serve(启动服务器) → build(打包) → bundle(内存) → 启动 web server（即 Dev Server 必须等待所有模块构建完成）</li>
-<li>如果改了一个模块, 是会经过重新打包的, 但是不会全部打包, 它会根据路由解析的路径差异化的打包, 但是会把内存里面的 bundle 替换, 替换完了之后再一次重启服务器</li>
-<li>webpack 是会把所有的模块进行提前编译, 之后打包进 bundle 里, 换句话说, 不管模块是否会被执行, 都会被编译和打包到 bundle</li>
-</ul>
-<h3> Vite 打包方式</h3>
-<figure><img src="/assets/study-vite-9.png" alt="Vite" tabindex="0" loading="lazy"><figcaption>Vite</figcaption></figure>
-<figure><img src="/assets/study-vite-10.png" alt="Vite" tabindex="0" loading="lazy"><figcaption>Vite</figcaption></figure>
-<ul>
-<li>先去启动服务器, 当浏览器向服务器发送请求的时候, 浏览器需要哪些文件, 服务器 就可以返回哪些文件</li>
-<li>前端需要什么,服务器就给什么,不需要打包,根据不同的路由返回不同的模块/文件 （服务器此时对请求的文件进行编译, 编译后将编译结果返回给浏览器）</li>
-<li>vite 可以做到压缩打包时间, vite 打包时将项目拆分为源码和依赖两部分, 依赖部分无需打包直接加载, 源码部分只需将浏览器不兼容的转成 JavaScript 即可</li>
-<li>Vite 以 原生 ESM 方式服务源码。这实际上是让浏览器接管了打包程序的部分工作：Vite 只需要在浏览器请求源码时进行转换并按需提供源码。根据情景动态导入的代码, 即只在当前屏幕上实际使用时才会被处理。</li>
-</ul>
-<h2> 从 Vite 源码看 Vite 原理</h2>
-<h3> ESM-based Dev Server 存在的问题</h3>
-<ul>
-<li>非 ESM 模块兼容（TS/JSX/CSS...）</li>
-<li>Broswer ESM 不能加载 Node 模块</li>
-<li>Node 模块的其他问题</li>
-<li>浏览器没有环境变量</li>
-</ul>
-<h3> Vite 如何解决问题</h3>
-<blockquote>
-<p>问题：非 ESM 模块兼容（TS/JSX/CSS...）解决方案：将非 ESM 模块转换成 ESM, 至于 TS 或者 JSX 是通过 esbuild 进行转换, esbuild 可以代替 TSC/Babel</p>
-</blockquote>
-<p>Vite 在第一次运行的时候, 会先去分析项目底下的开发依赖, 然后使用 esbuild 将亘古不变的依赖进行提取（这一步叫做预打包）, 将提取到的 ESM 模块统一存放在 node_modules/.vite 这个文件夹下, 下一次运行的时候只要没有新增的依赖项将不会进行提取, 即使新增了一项新的依赖, esbuild 也只会提取新加入的依赖项。 ​ vite 会将应用的模块拆分成依赖和源码部分, 依赖部分即是 package.json 中的运行依赖, 该部分依赖将会通过 esbuild 进行依赖提取源码 通常包含一些并非直接是 JavaScript 的文件, 需要转换（例如 JSX, CSS 或者 Vue/Svelte 组件）, 这一部分通常是交给 Rollup 进行处理</p>
-<p>至于使用了 TS 的应用, esbuild 会将含有 TS 的代码转换成原生的 ESM, 在将其返回给浏览器, 这样浏览器就可以加载该模块而对于 vue 文件, 也会对其编译成 js, 可以从请求头中也可以看到, vue 文件实际上被转换成 js 文件了将要处理的 template,script,style 等所需依赖以 http 请求的形式、通过 query 参数的形式区分, 并加载 SFC(vue 单文件)文件各个模块内容。 vite 是基于浏览器对 ESMoudule 的支持, script 标签加上 <code>type="module"</code>&nbsp; 就可以解析 ES6 模块, 浏览器解析到 ES6 的 import 语法时, 会根据路径从服务端获取要引入的文件, 服务端会根据 import 的文件路径和类型进行解析</p>
-<figure><img src="/assets/study-vite-11.png" alt="Vite" tabindex="0" loading="lazy"><figcaption>Vite</figcaption></figure>
-<blockquote>
-<p>问题：Node 模块的其他问题解决方案：将多个模块合并成一个文件, 即一个请求</p>
-</blockquote>
-<ul>
-<li>Node 模块会随着应用的体积而增多, 在 vite 中一个文件就是一个请求, 如果有非常多的 Node 模块也只能使 vite 的性能降低</li>
-<li>vite 使用依赖预优化（esbulid）,将多个 Node 模块打包成一个文件, 通过 http 进行缓存, 下次请求到同样的, 直接从缓存获取</li>
-<li>Vite 将会使用 esbuild 预构建依赖。Esbuild 使用 Go 编写, 并且比以 JavaScript 编写的打包器预构建依赖快 10-100 倍</li>
-</ul>
-<blockquote>
-<p>问题：Broswer ESM 不能加载 Node 模块解决方案：引入 es-module-lexer 和 magic-string, 或者引入 koa 中间件</p>
-</blockquote>
-<div class="language-json line-numbers-mode" data-ext="json"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
-<li>使用 es-module-lexer 扫描所有的 import 语法</li>
-<li>magic-string 将重写 Node 模块的引入路径</li>
-</ul>
-<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><blockquote>
-<p>扩展：Vite 1.0 的解决方案</p>
-</blockquote>
-<div class="language-json line-numbers-mode" data-ext="json"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>从上我们可以看到, vite 引入入 koa 服务器, 开发时, vite 使用 Koa 构建的服务端, 在 createServer 中主要通过中间件注册相关功能, 提供一个 web server 去代理, 之后浏览器通过 http 进行请求模块。为什么会需要 koa 这样的服务来代理请求, 因为我们的开发依赖都是安装在 node_modules 中, 浏览器 ES Module 是无法直接获取到项目下 node_modules 目录中的文件, 其过程如下：</p>
-<ul>
-<li>通过 koa 中间件获取请求 body</li>
-<li>使用 es-module-lexer 解析资源 ast</li>
-<li>获取 import 的内容后, 判断资源是否是绝对路径, 绝对视为 npm 模块</li>
-<li>返回处理后的路径给浏览器, 例如："vue" =&gt; "/@modules/vue"</li>
-</ul>
-<blockquote>
-<p>问题：浏览器没有环境变量解决方案：将环境变量注入到 import.meta.env</p>
-</blockquote>
-<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> Vite 缺点</h3>
-<ul>
-<li>生态不如 webpack
-<ul>
-<li>webpack 有非常丰富的 loader 和 plugin</li>
-<li>vite 目前无法把 webpack 中的 loader 和 plugin 全部实现</li>
-</ul>
-</li>
-<li>prod 环境的构建, 目前用的 Rollup
-<ul>
-<li>原因在于 esbuild 对于 css 和代码分割不是很友好</li>
-<li>未来 esbuild 可能是一种趋势, esbuild 的生态做的越好的话, 越有可能直接替换 Rollup</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded>
-      <enclosure url="https://vxhly.github.io/assets/study-vite-1.png" type="image/png"/>
     </item>
   </channel>
 </rss>
