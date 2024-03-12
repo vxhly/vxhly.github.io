@@ -35,5 +35,9 @@ export const zhSidebarConfig = sidebar({
 
   "/system-architect/examination": arraySidebar(["", "formula"]),
 
-  "/system-architect/basic-knowledge": arraySidebar(["", "basic-knowledge"]),
+  "/system-architect/basic-knowledge": arraySidebar([
+    "",
+    "basic-knowledge",
+    "case-analysis-database",
+  ]),
 });
