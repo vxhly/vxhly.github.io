@@ -37,6 +37,7 @@ export const zhSidebarConfig = sidebar({
 
   "/system-architect/basic-knowledge": arraySidebar([
     "",
+    "architecture-design",
     "basic-knowledge",
     "case-analysis-database",
   ]),
