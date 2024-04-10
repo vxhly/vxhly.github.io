@@ -12,9 +12,9 @@ export const zhNavbarConfig = navbar([
   //   prefix: "/project-manager/",
   //   children: ["knowledge/"],
   // },
-  {
-    text: "软考-系统架构设计师",
-    prefix: "/system-architect/",
-    children: ["basic-knowledge/", "examination/"],
-  },
+  // {
+  //   text: "软考-系统架构设计师",
+  //   prefix: "/system-architect/",
+  //   children: ["basic-knowledge/", "examination/"],
+  // },
 ]);
