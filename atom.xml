@@ -3,7 +3,7 @@
   <id>https://vxhly.github.io/</id>
   <title>Coding and Fixing</title>
   <subtitle>源于生活而高于生活.</subtitle>
-  <updated>2024-04-10T15:21:16.770Z</updated>
+  <updated>2024-04-15T00:50:28.832Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://vxhly.github.io/atom.xml"/>
   <link rel="alternate" href="https://vxhly.github.io/"/>
@@ -26,31 +26,359 @@
     <name>星火燎原@vxhly</name>
   </contributor>
   <entry>
-    <title type="text">系统架构-章节重点整理-软件架构设计</title>
-    <id>https://vxhly.github.io/system-architect/basic-knowledge/basic-architecture-design.html</id>
-    <link href="https://vxhly.github.io/system-architect/basic-knowledge/basic-architecture-design.html"/>
-    <updated>2024-04-10T15:19:30.000Z</updated>
+    <title type="text">系统架构-章节重点整理-数据库</title>
+    <id>https://vxhly.github.io/system-architect/basic-knowledge/basic-database.html</id>
+    <link href="https://vxhly.github.io/system-architect/basic-knowledge/basic-database.html"/>
+    <updated>2024-04-15T00:48:45.000Z</updated>
     <summary type="html"><![CDATA[<div class="hint-container tip">
 <p class="hint-container-title">前言</p>
-<p>整理 <code>软件架构设计</code> 章节的重点</p>
+<p>整理 <code>系统架构设计</code> 章节的重点</p>
 </div>
-<h2> 软件架构设计</h2>
+<h2> 三级模式</h2>
 <ul>
-<li>软件架构是降低成本、改进质量、按时和按需交付产品的关键因素, 软件架构设计需要满足系统的<code>质量属性</code>, 如性能、安全性和可修改性等。</li>
-<li>架构描述语言（Architecture Description Language, ADL）是一种为明确说明软件系统的概念架构和对这些概念架构建模提供功能的语言。ADL 主要包括以下组成部分：<code>组件、组件接口、连接件和架构配置</code>。</li>
-<li>软件系统架构不仅指定了软件系统的<code>组织和拓扑</code>结构, 而且显示了<code>系统需求和组件</code>之间的对应关系, 包括设计决策和基本方法、基本原理</li>
-<li>架构设计要关注软件组件的<code>结构属性和交互作用</code>, 并通过多种<code>视图</code>来全面描述特定系统的架构</li>
+<li><code>外模式</code>用以描述用户（包括程序员和终端用户）看到或使用的那部分数据的逻辑结构，是数据库用户的数据视图，是与某一应用有关的数据的逻辑表示。一个数据库可以有多个外模式，一个应用程序只能使用一个外模式。对应的是<code>视图</code>级别。</li>
+<li><code>概念模式</code>也称为模式或逻辑模式，对应于概念级数据库。一个数据库只有一个概念模式。对应的是<code>表</code>级别。</li>
+<li><code>内模式</code>对应于物理级数据库，是数据物理结构和存储方式的描述，是数据在数据库内部的表示方式。对应的是<code>文件</code>级别。</li>
 </ul>]]></summary>
     <content type="html"><![CDATA[<div class="hint-container tip">
 <p class="hint-container-title">前言</p>
-<p>整理 <code>软件架构设计</code> 章节的重点</p>
+<p>整理 <code>系统架构设计</code> 章节的重点</p>
+</div>
+<h2> 三级模式</h2>
+<ul>
+<li><code>外模式</code>用以描述用户（包括程序员和终端用户）看到或使用的那部分数据的逻辑结构，是数据库用户的数据视图，是与某一应用有关的数据的逻辑表示。一个数据库可以有多个外模式，一个应用程序只能使用一个外模式。对应的是<code>视图</code>级别。</li>
+<li><code>概念模式</code>也称为模式或逻辑模式，对应于概念级数据库。一个数据库只有一个概念模式。对应的是<code>表</code>级别。</li>
+<li><code>内模式</code>对应于物理级数据库，是数据物理结构和存储方式的描述，是数据在数据库内部的表示方式。对应的是<code>文件</code>级别。</li>
+</ul>
+<h2> 两级独立性</h2>
+<p>数据库系统两级独立性是指<code>物理独立性</code>和<code>逻辑独立性</code>。</p>
+<ul>
+<li><code>物理独立性</code>是指用户的应用程序与存储在磁盘上的数据库中的数据是相互独立的</li>
+<li><code>逻辑独立性</code>是指用户的应用程序与数据库中的逻辑结构是相互独立的，当数据的逻辑结构改变时，应用程序不需要改变</li>
+</ul>
+<h2> 数据模型</h2>
+<ul>
+<li>数据模型所描述的内容包括三个部分，分别是<code>数据结构、数据操作和数据约束</code>。</li>
+<li>基本数据模型: <code>层次模型、网状模型、关系模型和面向对象模型</code>。</li>
+</ul>
+<h2> 关系运算基础</h2>
+<h3> 并</h3>
+<p>计算两个关系在集合理论上的并集，即给出关系 R 和 S（两者有相同元/列数） 的元组包括 R 和 S 所有元组的集合</p>
+<div class="hint-container tip">
+<p class="hint-container-title">公式</p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>∪</mo><mi>S</mi><mo>≡</mo><mo stretchy="false">{</mo><mi>t</mi><mi mathvariant="normal">∣</mi><mi>t</mi><mo>∈</mo><mi>R</mi><mo>∨</mo><mi>t</mi><mo>∈</mo><mi>S</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">R \cup S \equiv \lbrace t|t \in R \vee t \in S \rbrace</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∪</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≡</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord mathnormal">t</span><span class="mord">∣</span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∨</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6542em;vertical-align:-0.0391em;"></span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mclose">}</span></span></span></span></p>
+</div>
+<h3> 差</h3>
+<p>计算两个关系的区别的集合，即给出关系 R 和 S（两者有相同元/列数），R-S 的元组包括 R 中有而 S 中没有的元组的集合</p>
+<div class="hint-container tip">
+<p class="hint-container-title">公式</p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>−</mo><mi>S</mi><mo>≡</mo><mo stretchy="false">{</mo><mi>t</mi><mi mathvariant="normal">∣</mi><mi>t</mi><mo>∈</mo><mi>R</mi><mo>∨</mo><mi>t</mi><mo mathvariant="normal">∉</mo><mi>S</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">R - S \equiv \lbrace t|t \in R \vee t \notin S \rbrace</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≡</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord mathnormal">t</span><span class="mord">∣</span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∨</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel"><span class="mord"><span class="mrel">∈</span></span><span class="mord vbox"><span class="thinbox"><span class="llap"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="inner"><span class="mord"><span class="mord">/</span><span class="mspace" style="margin-right:0.0556em;"></span></span></span><span class="fix"></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mclose">}</span></span></span></span></p>
+</div>
+<h3> 交</h3>
+<p>计算两个关系集合理论上的交集，即给出关系 R 和 S (两者有相同元/列数), R <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∩</mo></mrow><annotation encoding="application/x-tex">\cap</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5556em;"></span><span class="mord">∩</span></span></span></span> S 的元组包括 R 和 S 相同元组的集合</p>
+<div class="hint-container tip">
+<p class="hint-container-title">公式</p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>∩</mo><mi>S</mi><mo>≡</mo><mo stretchy="false">{</mo><mi>t</mi><mi mathvariant="normal">∣</mi><mi>t</mi><mo>∈</mo><mi>R</mi><mo>∧</mo><mi>t</mi><mo>∈</mo><mi>S</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">R \cap S \equiv \lbrace t|t \in R \wedge t \in S \rbrace</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∩</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≡</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord mathnormal">t</span><span class="mord">∣</span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∧</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6542em;vertical-align:-0.0391em;"></span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mclose">}</span></span></span></span></p>
+</div>
+<h3> 笛卡尔积</h3>
+<p>计算两个关系的笛卡尔乘积，令 R 为有 m 元的关系，S 为有 n 元的关系，则 R <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">X</mi></mrow><annotation encoding="application/x-tex">\Chi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathrm">X</span></span></span></span> S 是 m + n 元的元组的集合，其前 m 个元素来自 R 的一个元组，而后 n 个元素来自 S 的一个元组</p>
+<div class="hint-container tip">
+<p class="hint-container-title">公式</p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi mathvariant="normal">X</mi><mi>S</mi><mo>≡</mo><mo stretchy="false">{</mo><mi>t</mi><mi mathvariant="normal">∣</mi><mi>t</mi><mo>=</mo><mo>&lt;</mo><msub><mi>t</mi><mi>r</mi></msub><mo separator="true">,</mo><msub><mi>t</mi><mi>s</mi></msub><mo>&gt;</mo><mo>∧</mo><msub><mi>t</mi><mi>r</mi></msub><mo>∈</mo><mi>R</mi><mo>∧</mo><msub><mi>t</mi><mi>s</mi></msub><mo>∈</mo><mi>S</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">R \Chi S \equiv \lbrace t|t = &lt; t_r,t_s &gt; \wedge t_r \in R \wedge t_s \in S \rbrace</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mord mathrm">X</span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≡</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord mathnormal">t</span><span class="mord">∣</span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8095em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7651em;vertical-align:-0.15em;"></span><span class="mord">∧</span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∧</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7651em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mclose">}</span></span></span></span></p>
+</div>
+<h3> 投影</h3>
+<p>从一个关系中抽取指明的属性（列）。令及为一个包含属性 A 的关系</p>
+<div class="hint-container tip">
+<p class="hint-container-title">公式</p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Π</mi><mi>A</mi></msub><mo stretchy="false">(</mo><mi>R</mi><mo stretchy="false">)</mo><mo>≡</mo><mo stretchy="false">{</mo><mi>t</mi><mo stretchy="false">[</mo><mi>A</mi><mo stretchy="false">]</mo><mi mathvariant="normal">∣</mi><mi>t</mi><mo>∈</mo><mi>R</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\Pi_A (R) \equiv \lbrace t[A]|t \in R \rbrace</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord">Π</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">A</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≡</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord mathnormal">t</span><span class="mopen">[</span><span class="mord mathnormal">A</span><span class="mclose">]</span><span class="mord">∣</span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mclose">}</span></span></span></span></p>
+</div>
+<h3> 选择</h3>
+<p>从一个关系中抽取指明的属性（列）。令及为一个包含属性 A 的关系</p>
+<div class="hint-container tip">
+<p class="hint-container-title">公式</p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>σ</mi><mi>F</mi></msub><mo stretchy="false">(</mo><mi>R</mi><mo stretchy="false">)</mo><mo>≡</mo><mo stretchy="false">{</mo><mi>t</mi><mi mathvariant="normal">∣</mi><mi>t</mi><mo>∈</mo><mi>R</mi><mo>∧</mo><mi>F</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mi>t</mi><mi>r</mi><mi>u</mi><mi>e</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\sigma_F (R) \equiv \lbrace t|t \in R \wedge F(t) = true \rbrace</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">σ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.13889em;">F</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≡</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord mathnormal">t</span><span class="mord">∣</span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∧</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">t</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">u</span><span class="mord mathnormal">e</span><span class="mclose">}</span></span></span></span></p>
+</div>
+<h3> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi></mrow><annotation encoding="application/x-tex">\theta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">θ</span></span></span></span> 连接</h3>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi></mrow><annotation encoding="application/x-tex">\theta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">θ</span></span></span></span> 连接从两个关系的笛卡儿积中选取属性之间满足一定条件的元组</p>
+<p>两个关系中进行比较的分量必须是相同的属性组，并且在结果中将重复的属性去掉，则称为自然连接</p>
+<div class="hint-container tip">
+<p class="hint-container-title">公式</p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mtable rowspacing="0.16em" columnalign="center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mo lspace="0em" rspace="0em">⋈</mo></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mi>A</mi><mo>=</mo><mi>B</mi></mrow></mstyle></mtd></mtr></mtable><mi>S</mi><mo>≡</mo><mo stretchy="false">{</mo><msub><mi>t</mi><mi>r</mi></msub><mo separator="true">,</mo><msub><mi>t</mi><mi>s</mi></msub><mi mathvariant="normal">∣</mi><msub><mi>t</mi><mi>r</mi></msub><mo>∈</mo><mi>R</mi><mo>∧</mo><msub><mi>t</mi><mi>s</mi></msub><mo>∈</mo><mi>S</mi><mo>∧</mo><msub><mi>t</mi><mi>r</mi></msub><mo stretchy="false">[</mo><mi>A</mi><mo stretchy="false">]</mo><mi>s</mi><mo>=</mo><msub><mi>t</mi><mi>s</mi></msub><mo stretchy="false">[</mo><mi>B</mi><mo stretchy="false">]</mo><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">R \begin{matrix} \bowtie \\ A=B\end{matrix} S \equiv \lbrace t_r,t_s|t_r \in R \wedge t_s \in S \wedge t_r[A] s= t_s[B] \rbrace</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.4em;vertical-align:-0.95em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.61em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mrel">⋈</span></span></span><span style="top:-2.41em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.95em;"><span></span></span></span></span></span></span></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≡</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord">∣</span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∧</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7651em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∧</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">[</span><span class="mord mathnormal">A</span><span class="mclose">]</span><span class="mord mathnormal">s</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">[</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mclose">]}</span></span></span></span></p>
+</div>
+<p>如果两个关系中进行比较的分量必须是相同的属性组，并且在结果中将重复的属性去掉，则称为自然连接</p>
+<div class="hint-container tip">
+<p class="hint-container-title">公式</p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>⋈</mo><mi>S</mi><mo>≡</mo><mo stretchy="false">{</mo><msub><mi>t</mi><mi>r</mi></msub><mo separator="true">,</mo><msub><mi>t</mi><mi>s</mi></msub><mi mathvariant="normal">∣</mi><msub><mi>t</mi><mi>r</mi></msub><mo>∈</mo><mi>R</mi><mo>∧</mo><msub><mi>t</mi><mi>s</mi></msub><mo>∈</mo><mi>S</mi><mo>∧</mo><msub><mi>t</mi><mi>r</mi></msub><mo stretchy="false">[</mo><mi>A</mi><mo stretchy="false">]</mo><mi>s</mi><mo>=</mo><msub><mi>t</mi><mi>s</mi></msub><mo stretchy="false">[</mo><mi>B</mi><mo stretchy="false">]</mo><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">R \bowtie  S \equiv \lbrace t_r,t_s|t_r \in R \wedge t_s \in S \wedge t_r[A] s= t_s[B] \rbrace</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6883em;vertical-align:-0.005em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⋈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≡</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord">∣</span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∧</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7651em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∧</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">[</span><span class="mord mathnormal">A</span><span class="mclose">]</span><span class="mord mathnormal">s</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">[</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mclose">]}</span></span></span></span></p>
+</div>
+<h2> Armstrong 公理</h2>
+<div class="hint-container tip">
+<p class="hint-container-title">前置条件</p>
+<p>设关系模式 <code>R&lt;U,F&gt;</code>, 其中 U 为属性集合, F 是 U 上的一组函数依赖, 则有以下的推论</p>
+</div>
+<ul>
+<li>自反律: 若 Y <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⊆</mo></mrow><annotation encoding="application/x-tex">\subseteq</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mrel">⊆</span></span></span></span> X <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⊆</mo></mrow><annotation encoding="application/x-tex">\subseteq</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mrel">⊆</span></span></span></span> U, 则 X <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span> Y 为 F 所蕴含</li>
+<li>增广律: 若 X <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span> Y 为 F 所蕴含, 且 Z <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⊆</mo></mrow><annotation encoding="application/x-tex">\subseteq</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mrel">⊆</span></span></span></span> U, 则 XZ <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span> YZ 为 F 所蕴含</li>
+<li>传递律: 若 X <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span> Y, Y <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span> Z 为 F 所蕴含, 则 X <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span> Z 为 F 所蕴含</li>
+<li>合并规则: 若 X <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span> Y, X <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span> Z, 则 X <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span> YZ 为 F 所蕴含</li>
+<li>伪传递规则: 若 X <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span> Y, WY <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span> Z, 则 XW <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span> Z 为 F 所蕴含</li>
+<li>分解规则: 若 X <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span> Y, Z <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⊆</mo></mrow><annotation encoding="application/x-tex">\subseteq</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mrel">⊆</span></span></span></span> Y, 则 X <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span> Z 为 F 所蕴含</li>
+</ul>
+<h2> 规范化</h2>
+<h3> 存储异常</h3>
+<ul>
+<li>数据冗余</li>
+<li>修改异常</li>
+<li>插入异常</li>
+<li>删除异常</li>
+</ul>
+<h3> 范式</h3>
+<ul>
+<li><code>第一范式（1NF）</code>。在关系模式中，当且仅当所有属性只包含原子值，即每个分量都是不可再分的数据项，则称满足 1NF。</li>
+<li><code>第二范式（2NF）</code>。当且仅当关系模式及满足 1NF，且每个非键属性（即不属于任何候选键的属性，也称为非主属性）完全依赖于候选键时，则称满足 2NF。</li>
+<li><code>第三范式（3NF</code>）。当且仅当关系模式 R 满足 1NF，且 R 中没有非键属性传递依赖于候选键时，则称满足 3NF。</li>
+<li><code>BCNF</code>。如果关系模式及满足 1NF，且及中没有属性传递依赖于候选键时，则称满足 BCNF。</li>
+<li><code>第四范式（4NF）</code>。第四范式是 BCNF 的推广，是针对有多值依赖的关系模型所定义的规范化形式。把一个表中多个多值依赖拆分开来。</li>
+</ul>
+<h3> 反规范化设计</h3>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>规范化设计后，数据库设计者希望牺牲部分规范化来提高性能，这种从规范化设计的回退方法称为反规范化技术。<br>
+逆规范化方法优点：提高统计、查询效率。<br>
+逆规范化方法缺点：增加了数据冗余，浪费存储空间，增、删、改操作的效率降低，可能导致数据不一致，可能产生添加、修改、删除异常</p>
+</div>
+<h4> 优点</h4>
+<ul>
+<li>避免进行表之间的连接操作，可以提高数据操作的性能。</li>
+<li>连接操作少，检索快、统计快;需要查的表减少，检索容易，并易出错。</li>
+</ul>
+<h4> 缺点</h4>
+<ul>
+<li>数据的重复存储，浪费了磁盘空间</li>
+<li>会产生数据的不一致性问题(触发器数据同步、应用程序同步)</li>
+<li>更新和插入代码更加难写</li>
+<li>插入、更新、删除操作开销更大</li>
+</ul>
+<h4> 反规范化设计类型</h4>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>作用 / 描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>增加冗余列</td>
+<td>增加冗余列是指在多个表中具有相同的列，它常用来在查询时避免连接操作。</td>
+</tr>
+<tr>
+<td>增加派生列</td>
+<td>增加派生列指增加的列可以通过表中其他数据计算生成它的作用是在查询时减少计算量，从而加快查询速度</td>
+</tr>
+<tr>
+<td>重新组表</td>
+<td>重新组表指如果许多用户需要查看两个表连接出来的结果数据，则把这两个表重新组成一个表来减少连接而提高性能</td>
+</tr>
+<tr>
+<td>水平分割表</td>
+<td>按记录进行分割，把数据放到多个独立的表中，主要用于表数据规模很大、表中数据相对独立或数据需要存放到多个介质上时使用。</td>
+</tr>
+<tr>
+<td>垂直分割表</td>
+<td>对表进行分割，将主键与部分列放到一个表中，主键与其它列放到另一个表中，在查询时减少 1/0 次数。</td>
+</tr>
+</tbody>
+</table>
+<h4> 数据一致性</h4>
+<p>反规范化设计保证数据的一致性方法:</p>
+<ul>
+<li>触发器</li>
+<li>事务机制保证</li>
+<li>应用保证</li>
+<li>批处理脚本</li>
+</ul>
+<h2> 数据库访问接口</h2>
+<p>常见的数据库访问接口有专用调用、开放数据库互连（ODBC）和 Java 数据库连接（JDBC）等。</p>
+<p>ODBC 缺点:</p>
+<ul>
+<li>ODBC 只支持关系型数据，像电子邮件之类的非关系型数据是不支持的。</li>
+<li>由于 ODBC 最初的设计理念就是能够访问所有类型数据库，这种普遍适用也造成了 ODBC 对每种数据库的支持都不是特别理想。</li>
+<li>使用 ODBC 需要进行一些系统的配置工作。当然，这个操作也是可以用程序来完成的。</li>
+</ul>
+<h2> 事务的特性</h2>
+<p>（1）<code>原子性（Atomicity）</code>。事务是数据库的逻辑工作单位，事务的原子性保证事务包含的一组更新操作是原子不可分的，也就是说，这些操作是一个整体，不能部分地完成。<br>
+（2）<code>一致性（Consistency）</code>。一致性是指使数据库从一个一致性状态变到另一个一致性状态。<br>
+（3）<code>隔离性（Isolation）</code>。隔离性是指一个事务的执行不能被其他事务干扰，即一个事务内部的操作及使用的数据对并发的其他事务是隔离的，并发执行的各个事务之间不能互相干扰。<br>
+（4）<code>持久性（Durability）</code>。持久性也称为永久性，是指事务一旦提交，改变就是永久性的，无论发生何种故障，都不应该对其有任何影响。</p>
+<h2> 数据库的完整性</h2>
+<ul>
+<li><code>完整性约束条件</code>: 完整性检查是指对数据库中的数据设置约束条件，确保数据符合预定义的规则。 完整性检查可以帮助我们防止数据错误。 完整性控制机制包括定义功能和检查功能。定义功能用于定义完整性约束条件。检查功能用于检查用户操作是否违反了完整性约束条件。完整性检查可以分为静态约束和动态约束。静态约束对数据库中数据本身的限制，例如数据类型、取值范围等。动态约束对数据库中数据变化的限制。</li>
+<li><code>实体完整性</code>: 实体完整性要求主键中的任一属性不能为空，所谓空值是“不知道”或“无意义”的值。</li>
+<li><code>参照完整性</code>: 若基本关系及中含有与另一基本关系 S 的主键 PK 相对应的属性组 FK（FK 称为 R 的外键），则参照完整性要求，对及中的每个元组在 FK 上的值必须是 S 中某个元组的 PK 值，或者为空值。</li>
+<li><code>用户定义的完整性</code>: 用户定义的完整性就是针对某一具体数据库的约束条件，反映某一具体应用所涉及的数据必须满足的语义要求。</li>
+<li><code>触发器</code>: 所谓触发器，其抽象的含义即是一个事件的发生必然触发（或导致）另外一些事件的发生，其中前面的事件称为触发事件，后面的事件称为结果事件。触发事件一般即为完整性约束条件的否定，而结果事件即为一组操作用以消除触发事件所引起的不良影响。 触发器除了有完整性保护功能外，还有安全性保护功能。</li>
+</ul>
+<h2> 数据库性能优化</h2>
+<h3> 索引优化策略</h3>
+<p>（1）建立索引时，应选用经常作为査询，而不常更新的属性。避免对一个经常被更新的属性建立索引，因为这样会严重影响性能。<br>
+（2）一个关系上的索引过多会影响 UPDATE、INSERT 和 DELETE 的性能，因为关系一旦进行更新，所有的索引都必须跟着做相应的调整。<br>
+（3）尽量分析出每个重要查询的使用频度，这样，可以找出使用最多的索引，然后可以先对这些索引进行适当的优化。<br>
+（4）对于数据量非常小的关系不必建立索引，因为对于小关系而言，关系扫描往往更快，而且消耗的系统资源更少。</p>
+<h3> 查询优化</h3>
+<p>（1）建立物化视图或尽可能减少多表查询；<br>
+（2）以不相干子查询替代相干子查询；<br>
+（3）只检索需要的属性；<br>
+（4）用带 IN 的条件子句等价替换 OR 子句；<br>
+（5）经常提交（COMMIT）以尽早释放锁等。</p>
+<h2> 数据库的安全性</h2>
+<table>
+<thead>
+<tr>
+<th>措施</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>用户标识和鉴别</td>
+<td>最外层的安全保护措施, 可以使用用户账户、口令和随机数检验等方式</td>
+</tr>
+<tr>
+<td>存储控制 (数据授权)</td>
+<td>对用户进行授权, 包括操作类型 (例如, 查找、更新或删除等) 和数据对象的权限</td>
+</tr>
+<tr>
+<td>密码存储和传输</td>
+<td>对远程终端信息用密码传输</td>
+</tr>
+<tr>
+<td>视图的保护</td>
+<td>通过视图的方式进行授权</td>
+</tr>
+<tr>
+<td>审计</td>
+<td>使用一个专用文件或数据库, 自动将用户数据库的所有操作记录下来</td>
+</tr>
+</tbody>
+</table>
+<h2> 数据库设计与建模</h2>
+<blockquote>
+<p>基于数据库系统生命周期的数据库设计可分为如下 5 个阶段：<code>规划、需求分析、概念设计、逻辑设计和物理设计</code>。</p>
+</blockquote>
+<h3> 设计阶段</h3>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>主要任务</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>用户需求分析</td>
+<td>分析用户活动、收集数据确定系统边界。</td>
+</tr>
+<tr>
+<td>概念结构设计</td>
+<td>将应用对象抽象成不依赖于 DBMS 的数据模型，即概念模型。描述概念模型的较理想的工具是 E-R 图。</td>
+</tr>
+<tr>
+<td>逻辑结构设计</td>
+<td>将抽象的概念模型转化为与选用的 DBMS 产品所支持的数据模型相符合的逻辑模型，即关系模式。</td>
+</tr>
+<tr>
+<td>物理结构设计</td>
+<td>是逻辑模型在计算机中的具体实现方案。</td>
+</tr>
+<tr>
+<td>数据库实施阶段</td>
+<td>根据前两个阶段的结果建立数据库，编制与调试应用程序，组织数据入库，并进行试运行。</td>
+</tr>
+<tr>
+<td>数据库运行和维护阶段</td>
+<td>数据库应用系统经过试运行即可投入运行，但该阶段需要不断地对系统进行评价、调整与修改。</td>
+</tr>
+</tbody>
+</table>
+<h3> 规划</h3>
+<p>规划阶段的主要任务是进行<code>建立数据库的必要性及可行性分析</code>，确定数据库系统在企业和信息系统中的地位，以及各个数据库之间的联系。</p>
+<h3> 需求分析</h3>
+<p>调查组织机构情况、调查各部门的业务活动情况、协助用户明确对新系统的各种要求、确定新系统的边界，以此获得用户对系统的如下要求。<br>
+① <code>信息要求</code>: 保存的信息、完整性要求等。<br>
+② <code>处理要求</code>: 操作功能、处理的频度、相应时间等。<br>
+③ <code>系统要求</code>: 安全性要求、使用方式要求、可扩充性要求。</p>
+<h3> 概念结构设计</h3>
+<p>对现实事物抽象认识的 3 种方法:</p>
+<ol>
+<li><code>分类(Classification)</code>: 对现实世界的事物，按照其具有的共同特征和行为，定义一种类型。在某一类型中，个体是类型的一个成员或实例，即 “is member of”。</li>
+<li><code>聚集(Aggregation)</code>: 定义某一类型所具有的属性。如学生类型具有学号、姓名、性别、班级等共同属性，每一个学生都是这一类型中的个体, 通过在这些属性上的不同取值来区分。各个属性是所属类型的一个成份，即 “is part of”。</li>
+<li><code>概括(Generalization)</code>: 由一种已知类型定义新的类型。通常把已知类型称为超类(Superclass), 新定义的类型称为子类(Subclass), 即 “is subset"</li>
+</ol>
+<p>概念设计步骤</p>
+<ol>
+<li>需求分析</li>
+<li>确定局部视图范围</li>
+<li>识别实体及其标识</li>
+<li>确定实体之间的联系</li>
+<li>分配实体及联系的属性</li>
+<li>全局 E-R 模式设计</li>
+</ol>
+<p>冲突的类型</p>
+<ol>
+<li><code>属性冲突</code>: 包括属性域和属性取值的冲突</li>
+<li><code>结构冲突</code>: 包括同一个对象在不同应用中的抽象以及同一实体在不同的局部 E-R 图中所包含的属性个数和属性排列次序不完全相同</li>
+<li><code>命名冲突</code>: 包括同名异议和异名同议</li>
+</ol>
+<h3> 逻辑结构设计</h3>
+<ul>
+<li>将抽象的概念模型转化为与选用的 DBMS 产品所支持的数据模型相符合的逻辑模型，即关系模式。</li>
+<li>主要工作步骤包括确定数据模型、将 E-R 图转换成为指定的数据模型、确定完整性约束和确定用户视图。</li>
+</ul>
+<h3> 物理设计</h3>
+<p>物理设计的主要工作步骤包括确定数据分布、存储结构和访问方式。</p>
+<h3> 数据库实施</h3>
+<p>数据库实施。在计算机上建立起实际的数据库结构，数据加载(或称装入)，进行试运行和评价的过程，叫作数据库的实施(或称实现)</p>
+<h3> 数据库运行维护</h3>
+<p>数据库运行维护。数据库一旦投入运行，就标志着数据库维护工作的开始。数据库维护工作的主要内容包括对数据库性能的监测和改善、故障恢复、数据库的重组和重构。</p>
+]]></content>
+    <author>
+      <name>星火燎原@vxhly</name>
+    </author>
+    <category term="软考"/>
+    <contributor>
+      <name>星火燎原@vxhly</name>
+    </contributor>
+    <published>2024-04-12T18:15:49.000Z</published>
+    <rights>Copyright by 星火燎原@vxhly</rights>
+  </entry>
+  <entry>
+    <title type="text">系统架构-章节重点整理-系统架构设计</title>
+    <id>https://vxhly.github.io/system-architect/basic-knowledge/basic-architecture-design.html</id>
+    <link href="https://vxhly.github.io/system-architect/basic-knowledge/basic-architecture-design.html"/>
+    <updated>2024-04-11T14:03:58.000Z</updated>
+    <summary type="html"><![CDATA[<div class="hint-container tip">
+<p class="hint-container-title">前言</p>
+<p>整理 <code>系统架构设计</code> 章节的重点</p>
 </div>
 <h2> 软件架构设计</h2>
 <ul>
 <li>软件架构是降低成本、改进质量、按时和按需交付产品的关键因素, 软件架构设计需要满足系统的<code>质量属性</code>, 如性能、安全性和可修改性等。</li>
 <li>架构描述语言（Architecture Description Language, ADL）是一种为明确说明软件系统的概念架构和对这些概念架构建模提供功能的语言。ADL 主要包括以下组成部分：<code>组件、组件接口、连接件和架构配置</code>。</li>
 <li>软件系统架构不仅指定了软件系统的<code>组织和拓扑</code>结构, 而且显示了<code>系统需求和组件</code>之间的对应关系, 包括设计决策和基本方法、基本原理</li>
-<li>架构设计要关注软件组件的<code>结构属性和交互作用</code>, 并通过多种<code>视图</code>来全面描述特定系统的架构</li>
+<li>软件架构设计包括<code>提出架构模型、产生架构设计和进行设计评审</code>等活动，是一个<code>迭代</code>的过程。架构设计主要关注软件组件的<code>结构、属性和交互作用</code>，并通过多种<code>视图</code>全面描述特定系统的架构。</li>
+<li>软件架构能够在设计变更相对容易的阶段，考虑系统结构的可选方案，便于技术人员与非技术人员就软件设计进行交互，能够展现软件的结构、属性与内部交互关系。</li>
+</ul>]]></summary>
+    <content type="html"><![CDATA[<div class="hint-container tip">
+<p class="hint-container-title">前言</p>
+<p>整理 <code>系统架构设计</code> 章节的重点</p>
+</div>
+<h2> 软件架构设计</h2>
+<ul>
+<li>软件架构是降低成本、改进质量、按时和按需交付产品的关键因素, 软件架构设计需要满足系统的<code>质量属性</code>, 如性能、安全性和可修改性等。</li>
+<li>架构描述语言（Architecture Description Language, ADL）是一种为明确说明软件系统的概念架构和对这些概念架构建模提供功能的语言。ADL 主要包括以下组成部分：<code>组件、组件接口、连接件和架构配置</code>。</li>
+<li>软件系统架构不仅指定了软件系统的<code>组织和拓扑</code>结构, 而且显示了<code>系统需求和组件</code>之间的对应关系, 包括设计决策和基本方法、基本原理</li>
+<li>软件架构设计包括<code>提出架构模型、产生架构设计和进行设计评审</code>等活动，是一个<code>迭代</code>的过程。架构设计主要关注软件组件的<code>结构、属性和交互作用</code>，并通过多种<code>视图</code>全面描述特定系统的架构。</li>
+<li>软件架构能够在设计变更相对容易的阶段，考虑系统结构的可选方案，便于技术人员与非技术人员就软件设计进行交互，能够展现软件的结构、属性与内部交互关系。</li>
 </ul>
 <h3> 生命周期</h3>
 <ul>
@@ -62,7 +390,9 @@
 <li>后开发阶段</li>
 </ul>
 <h2> 软件架构的重要性</h2>
+<blockquote>
 <p>软件架构设计是<code>降低成本、改进质量、按时和按需交付产品</code>的关键因素</p>
+</blockquote>
 <p>八大重要性:</p>
 <ul>
 <li>架构设计能够满足系统的品质</li>
@@ -75,37 +405,44 @@
 <li>架构设计能够支持冲突分析</li>
 </ul>
 <h3> '4+1' 视图</h3>
+<blockquote>
+<p>多视图指从不同角度和视角描述系统体系结构，以获得多个视图，并将其组合在一起以描述整体模型。多视图反映了<code>关注点分离</code>的思想，每个视图只关注系统的一个侧面。</p>
+</blockquote>
 <p>①<code>逻辑视图</code>(Logical View)，设计的对象模型(使用面向对象的设计方法时)。<br>
 ②<code>过程视图</code>(Process View)，捕捉设计的并发和同步特征。<br>
 ③<code>物理视图</code>(Physical View)，描述了软件到硬件的映射，反映了分布式特性。<br>
 ④<code>开发视图</code>(Development View)，描述了在开发环境中软件的静态组织结构。<br>
-⑤<code>架构的描述</code>，即所做的各种决定，可以围绕着这四个视图来组织，然后由一些用例(Use Cases)或场景(Scenarios)来说明，从而形成了第五个视图。</p>
+⑤<code>架构的描述</code>，即所做的各种决定，可以围绕着这四个视图来组织，然后由一些<code>用例视图(Use Case View)</code>或<code>统一场景(Scenarios)</code>来说明，从而形成了第五个视图。</p>
 <h2> 基于架构的软件开发方法 ABSD</h2>
 <ul>
+<li>ABSD 方法是体系结构驱动，是指构成体系结构的<code>商业、质量和功能需求</code>的组合驱动的。</li>
 <li>ABSD 采用<code>视角和视图</code>来描述软件架构，采用<code>用例和质量属性</code>场景来描述需求。进一步来说，<code>用例</code>描述的是功能需求，<code>质量属性场景</code>描述的是质量需求(或侧重于非功能需求)。</li>
-<li>ABSD 是一个<code>自顶向下，递归细化</code>的方法，软件系统的体系结构通过该方法得到细化，直到能产生软件<code>构件和类</code>。</li>
+<li>ABSD 是一个<code>自顶向下，递归细化</code>的方法，软件系统的体系结构通过该方法得到细化，直到能产生<code>软件构件和类</code>。</li>
 <li>ABSD 把整个基于架构的软件过程划分为<code>架构需求、设计、文档化、复审、实现、演化</code>等 6 个子过程。</li>
+<li>体系结构需求一般来自 3 个方面，分别是<code>系统的质量目标、系统的商业目标和系统开发人员的商业目标</code>。</li>
 </ul>
 <h2> 特定领域软件体系结构 DSSA</h2>
 <ul>
-<li>（1）<code>垂直域</code>：定义了一个特定的系统族，包含整个系统族内的多个系统，结果是在该领域中可作为系统的可行解决方案的一个通用软件体系结构。只能应用于一个成熟的、稳定的领域。</li>
-<li>（2）<code>水平域</code>：定义了在多个系统和多个系统族中功能区城的共有部分。在子系统级上涵盖多个系统族的特定部分功能。</li>
+<li><code>垂直域</code>：定义了一个特定的系统族，包含整个系统族内的多个系统，结果是在该领域中可作为系统的可行解决方案的一个通用软件体系结构。只能应用于一个成熟的、稳定的领域。</li>
+<li><code>水平域</code>：定义了在多个系统和多个系统族中功能区城的共有部分。在子系统级上涵盖多个系统族的特定部分功能。</li>
+<li>DSSA 通常是一个具有三个层次的系统模型，包括<code>领域开发环境、领域特定应用开发环境和应用执行环境</code>，其中<code>领域架构师</code>在领域开发环境工作，<code>应用工程师</code>在领域特定的应用开发环境工作，<code>操作员</code>在应用执行环境工作</li>
+<li>DSSA 以一个特定问题领域为对象，形成由<code>领域参考模型、参考需求、参考架构</code>等组成的开发基础架构</li>
 </ul>
 <h3> DSSA 基本活动</h3>
 <ul>
 <li><code>领域分析</code>
 <ul>
-<li>目标是获得领域模型，描述领域中系统的共同需求。</li>
+<li>目标是获得<code>领域模型</code>，描述领域中系统的共同需求。</li>
 </ul>
 </li>
 <li><code>领域设计</code>
 <ul>
-<li>目标是获得 DSSA（Domain-Specific SoftwareArchitecture）。</li>
+<li>目标是获得 <code>DSSA（Domain-Specific SoftwareArchitecture）</code>。</li>
 </ul>
 </li>
 <li><code>领域实现</code>
 <ul>
-<li>目标是开发和组织可重用信息</li>
+<li>目标是<code>开发和组织可重用信息</code></li>
 </ul>
 </li>
 </ul>
@@ -170,10 +507,18 @@
 <li>更新构件的相互作用</li>
 <li>构件组装与测试和技术评审</li>
 </ul>
+<h2> 基于场景的架构评估方法（SAAM）</h2>
+<ul>
+<li>在进行体系结构评估时，需要使用<code>场景</code>对于质量目标进行判断，以判定体系结构的优劣。</li>
+<li>场景是从<code>风险承担者</code>的角度对系统交互的简短描述。</li>
+<li>在体系结构评估中，通常采用<code>刺激、环境和响应</code>三个方面对场景进行描述。</li>
+</ul>
 <h2> 软件架构风格</h2>
+<p>概念:</p>
+<p>软件架构风格是描述某一特定应用领域中系统组织方式的惯用模式。一个体系结构定义了<code>一个词汇表和一组约束</code>。架构风格反映领域中众多系统所共有的<code>结构和语义特征</code>。</p>
 <p>架构的本质:</p>
 <ul>
-<li>架构风格反映领域中众多系统说共有的<code>结构和语义</code> 特性, 强调对架构设计的<code>重用</code></li>
+<li>架构风格反映领域中众多系统说共有的<code>结构和语义</code>特性, 强调对架构<code>设计</code>的重用</li>
 <li>架构风格定义了用于描述系统的术语表和一组指导构建系统的规则。</li>
 <li>软件架构为软件系统提供了一个<code>结构、行为和属性</code>的高级抽象。</li>
 </ul>
@@ -239,6 +584,11 @@
 </table>
 <h4> 客户端/服务器体系结构风格</h4>
 <p>概念: 客户端/服务器体系结构风格是基于资源不对等，且为实现共享而提出的。两层 C/S 体系结构有 3 个主要组成部分：数据库服务器、客户应用程序和网络。三层 C/S 结构增加了一个应用服务器。整个应用逻辑驻留在应用服务器上。应用功能分为表示层、功能层和数据层三层。</p>
+<ul>
+<li><code>表示层</code>作为用户接口，用于输入和输出数据。</li>
+<li><code>功能层</code>是应用的核心，负责具体业务处理逻辑。</li>
+<li><code>数据层</code>是数据库管理系统，负责管理数据读写。</li>
+</ul>
 <h3> 以数据为中心的体系结构风格</h3>
 <h4> 仓库体系结构风格</h4>
 <p>概念: 仓库是存储和维护数据的中心场所。两种不同的构件：中央数据结构说明当前数据的状态以及一组对中央数据进行操作的独立构件，仓库与独立构件间的相互作用在系统中会有大的变化。连接件即为仓库与独立构件之间的交互。</p>
@@ -311,27 +661,43 @@
 </tbody>
 </table>
 <h3> C2</h3>
-<p>概念: C2 体系结构风格可以概括为通过连接件绑定在一起按照一组规则运作的并行构件网络。（1）构件和连接件都有顶部和底<br>
-部。（2）构件的顶部连接到连接件的底部,构件的底部连接到连接件的顶部,构件之间不允许直接连接。（3）连接件可以连接任意数量的构件和其他连接件。（4）当两个连接件直接相连时，必须一个的底部连接到另一个的顶部。</p>
+<p>概念: C2 体系结构风格可以概括为通过连接件绑定在一起按照一组规则运作的并行构件网络。</p>
+<ul>
+<li>（1）构件和连接件都有顶部和底部。</li>
+<li>（2）构件的顶部连接到连接件的底部,构件的底部连接到连接件的顶部,构件之间不允许直接连接。</li>
+<li>（3）连接件可以连接任意数量的构件和其他连接件。</li>
+<li>（4）当两个连接件直接相连时，必须一个的底部连接到另一个的顶部。</li>
+</ul>
 <h3> 闭环控制架构 - 过程控制</h3>
 <p>概念: 软件与硬件之间可以粗略地表示为一个反馈循环，这个反馈循环通过接受一定的输入，确定一系列的输出，最终使环境达到一个新的状态。</p>
 <h2> 软件架构复用</h2>
+<blockquote>
 <p>软件架构复用的类型包括<code>机会复用</code>和<code>系统复用</code>。</p>
+</blockquote>
 <ul>
 <li><code>机会复用</code>是指开发过程中，只要发现有可复用的资产，就对其进行复用。</li>
 <li><code>系统复用</code>是指在开发之前，就要进行规划，以决定哪些需要复用。</li>
 </ul>
 <p>软件架构复用的三个阶段</p>
 <ul>
-<li>获取可复用的软件资产。</li>
+<li>构造/获取可复用的软件资产。</li>
 <li>管理可复用资产。</li>
 <li>使用可复用资产。</li>
 </ul>
 <h2> 软件系统质量属性</h2>
+<ul>
+<li>通过信息隐蔽可以提高软件的<code>可修改性、可测试性和可移植性</code>，它也是现代软件设计的一个关键性原则</li>
+</ul>
 <h3> 开发期质量属性（6 个）</h3>
 <p>易理解性、可扩展性、可重用性、可测试性、可维护性、可移植性</p>
+<ul>
+<li><code>可维护性</code>是指当需要修改缺陷、增加功能、提高质量属性时，定位修改点并实施修改的难易程度。</li>
+</ul>
 <h3> 运行期质量属性（7 个）</h3>
 <p>性能、安全性、可伸缩性、互操作性、可靠性、可用性、鲁棒性。</p>
+<ul>
+<li><code>可伸缩性</code>指当用户数和数据量增加时，软件系统维持高服务质量的能力。</li>
+</ul>
 <h2> 七大面向架构评估的质量属性</h2>
 <h3> 性能</h3>
 <ul>
@@ -343,12 +709,12 @@
 <ul>
 <li>指软件在应用错误、意外错误使用情况下维持功能特性的基本能力。</li>
 <li>通过平均失效时间（MTTF/MTBF）来衡量包括容错（故障时确保正常行为）和健壮性（错误输入时按预定义方式终止）</li>
-<li>常用的设计策略为: <code>冗余设计</code>和<code>心跳</code></li>
+<li>常用的设计策略为: <code>Ping/Echo</code>、<code>冗余</code>和<code>心跳线</code></li>
 </ul>
 <h3> 可用性</h3>
 <ul>
 <li>指系统正常运行的时间比例，表现为两次故障间时长或故障时恢复正常速度</li>
-<li>常用的设计策略为: <code>冗余设计</code>和<code>心跳</code></li>
+<li>常用的设计策略为: <code>Ping/Echo</code>、<code>冗余</code>和<code>心跳线</code></li>
 </ul>
 <h3> 安全性</h3>
 <ul>
@@ -357,8 +723,15 @@
 </ul>
 <h3> 可修改性</h3>
 <ul>
-<li>指快速、高性价比地变更系统的能力/包括可维护性、可扩展性、结构重组、可移植性</li>
-<li>常用的设计策略为: <code>信息隐藏</code></li>
+<li>指快速、高性价比地变更系统的能力; 包括<code>可维护性、可扩展性、结构重组、可移植性</code>
+<ul>
+<li><code>可维护性</code>关注问题修复，需要准备好的软件体系结构和局部修改。</li>
+<li><code>可扩展性</code>关注新特性的使用和构件的替换，需要松散耦合的构件和体系结构的支持。</li>
+<li><code>结构重构</code>关注构件和构件间的关系的重新组织。</li>
+<li><code>可移植</code>性使软件系统适用于多种环境，需要按照硬件无关的方式组织软件系统。</li>
+</ul>
+</li>
+<li>常用的设计策略为: <code>接口-实现分离</code>、<code>抽象</code>、 <code>信息隐藏</code></li>
 </ul>
 <h3> 功能性</h3>
 <ul>
@@ -400,10 +773,19 @@
 引入质量属性场景的目的是为了<code>精确描述软件系统的质量属性</code>。</p>
 <p>概念:<br>
 质量属性场景是<code>对利益相关者与系统交互的简短陈述</code>，描述了一个<code>具体的质量属性需求</code></p>
-<p>6 个组成部分:<br>
-刺激源、刺激、环境、制品、响应、响应度量</p>
-<p>6 类质量属性:<br>
-可用性、可修改性、性能、可测试性、易用性和安全性</p>
+<ul>
+<li>6 个组成部分:
+<ul>
+<li>刺激源、刺激、环境、制品、响应、响应度量</li>
+</ul>
+</li>
+<li>6 类质量属性:
+<ul>
+<li>可用性、可修改性、性能、可测试性、易用性和安全性</li>
+</ul>
+</li>
+<li>性能质量属性场景主要关注系统的响应速度，可以通<code>过效率、响应时间、吞吐量、负载</code>来客观评价性能的好坏 。</li>
+</ul>
 <h2> 软件架构评估</h2>
 <h3> 架构层次</h3>
 <ul>
@@ -421,6 +803,42 @@
 <ul>
 <li>ATAM 包括 4 个主要阶段: <code>场景和需求收集、架构视图和场景实现、属性模型构造和分析、权衡</code>。</li>
 <li>ATAM 效用树的结构包括：<code>树根—质量属性—属性分类—质量属性场景（叶子节点）</code>。</li>
+<li>ATAM 方法要求在系统开发之前，首先对这些质量属性进行<code>评价和折中</code>。</li>
+<li>主要关注系统的<code>需求说明</code>，针对<code>性能、可用性、安全性和可修改性</code>，在系统开发之前进行<code>分析、评价与折中</code>。</li>
+</ul>
+<h2> 基于体系结构的开发模型（ABSDM）</h2>
+<blockquote>
+<p>ABSDM 把整个基于体系结构的软件过程划分为<code>体系结构需求、设计、文档化、复审、实现和演化</code>等 6 个过程。</p>
+</blockquote>
+<ul>
+<li><code>体系结构需求过程</code>，其目的是获取用户需求和标识系统中所需要的构件。</li>
+<li><code>体系结构设计过程</code>是一个迭代过程，可以使用已有的系统适用于大部分开发需求。</li>
+<li><code>体系结构文档化过程</code>，并提到其主要输出物包括体系结构规格说明和质量设计说明书。</li>
+<li><code>体系结构复审</code>，其目的是早期发现设计中的缺陷和错误。在一个主版本的软件架构分析之后，要安排一次由外部人员（用户代表和领域专家）参加的复审。</li>
+<li><code>体系结构实现过程</code>，其过程是以文档化的体系结构说明书为基础的，并且每个构件必须满足其责任。</li>
+<li><code>体系结构演化</code>，使用系统演化步骤对应用程序进行修改，以适应新的需求情况。</li>
+</ul>
+<h2> 面向服务的架构（SOA）</h2>
+<p>微服务架构使用<code>去中心化</code>的扁平化管理方式，每个服务都是一个独立的应用程序，独立管理、使用独立的数据库、独立部署和独立运行。</p>
+<h2> 消息中间件</h2>
+<ul>
+<li>概念: 消息中间件是保存信息的容器</li>
+<li>特点: 消息中间件具有<code>异步处理模式和松耦合</code>的特点，即发送者和接收者无需等待对方的同步回应，也无需了解对方的具体信息</li>
+<li>传输模式: 消息中间件的传输模式包括<code>点对点模型和发布-订阅模型</code></li>
+<li>在分布式系统中，中间件通常提供两种不同类型的支持，即<code>支持交互支持</code>和<code>提供公共服务</code></li>
+</ul>
+<h2> 新兴技术</h2>
+<h3> 云计算</h3>
+<ul>
+<li><code>PaaS</code>: 平台即服务</li>
+<li><code>SaaS</code>: 软件（应用）即服务</li>
+<li><code>IaaS</code>: 基础设施即服务</li>
+</ul>
+<h3> 区块链</h3>
+<ul>
+<li><code>公有链</code>是公有区块链的简称</li>
+<li><code>私有链</code>是私有区块链的简称</li>
+<li><code>联盟链</code>则是联盟区块链的简称</li>
 </ul>
 ]]></content>
     <author>
@@ -14461,113 +14879,6 @@ PESTLE、TECOP、VUCA。</p>
       <name>星火燎原@vxhly</name>
     </contributor>
     <published>2016-10-08T16:02:34.000Z</published>
-    <rights>Copyright by 星火燎原@vxhly</rights>
-  </entry>
-  <entry>
-    <title type="text">渗透工具用法（三）Nmap 的用法</title>
-    <id>https://vxhly.github.io/views/pentest/usage-of-nmap.html</id>
-    <link href="https://vxhly.github.io/views/pentest/usage-of-nmap.html"/>
-    <updated>2022-06-11T12:24:01.000Z</updated>
-    <summary type="html"><![CDATA[<div class="hint-container tip">
-<p class="hint-container-title">前言</p>
-<p>此系列笔记是网络渗透工具的使用方法, 本篇是介绍端口扫描工具 Nmap 的使用方法。Nmap 在渗透测试中经常用到, 它不仅可以用来确定目标网络上计算机的存活状态, 而且可以扫描各个计算机的操作系统、开放端口、服务, 还有可能获得用户的证书。熟练掌握 Nmap 的用法, 可以极大的提高渗透测试技术。</p>
-</div>
-]]></summary>
-    <content type="html"><![CDATA[<div class="hint-container tip">
-<p class="hint-container-title">前言</p>
-<p>此系列笔记是网络渗透工具的使用方法, 本篇是介绍端口扫描工具 Nmap 的使用方法。Nmap 在渗透测试中经常用到, 它不仅可以用来确定目标网络上计算机的存活状态, 而且可以扫描各个计算机的操作系统、开放端口、服务, 还有可能获得用户的证书。熟练掌握 Nmap 的用法, 可以极大的提高渗透测试技术。</p>
-</div>
-<!-- more -->
-<h2> Nmap 环境</h2>
-<p><code>kali Liunx</code> 里已经集成了 Namp 环境, 所以就不在 <code>Windows</code> 下进行了。</p>
-<h2> Nmap 命令结构</h2>
-<p><code>Scanning Format:</code></p>
-<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2> Nmap 使用解释</h2>
-<h3> 识别系统</h3>
-<p><code>Scanning Format:</code></p>
-<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>使用 <code>-O</code> 选项, 可以获取到被扫描的主机的系统。 <code>-Pn</code> 选项禁用 Nmap 网络发现功能, 假定所有系统都是活动的</p>
-<h3> Timing 模板</h3>
-<p><code>timing</code> 参数可以指定 nmap 扫描的速度。其中各个选项如下:</p>
-<ul>
-<li><strong>T0</strong> =&gt; paranoid 慢速网络扫描, 串行扫描, 两次扫描间隔 <code>5 分钟</code> 。扫描速度极慢。</li>
-<li><strong>T1</strong> =&gt; Sneky 慢速网络扫描, 串行扫描, 两次扫描间隔 <code>15 秒</code> , 扫描速度较慢。</li>
-<li><strong>T2</strong> =&gt; Polite 中速网络扫描, 串行扫描, 两次扫描间隔 <code>400 毫秒</code> , 扫描速度慢。</li>
-<li><strong>T3</strong> =&gt; Normal 中速网络扫描, 并行扫描, 两次扫描间隔 <code>0 秒</code> , 扫描速度正常。</li>
-<li><strong>T4</strong> =&gt; Aggressive 快速网络扫描, 并行扫描, 两次扫描间隔 <code>0 秒</code> , 扫描速度较快。</li>
-<li><strong>T5</strong> =&gt; Normal 快速网络扫描, 并行扫描, 两次扫描间隔 <code>0 秒</code> , 扫描速度极快。</li>
-</ul>
-<p><code>Scanning Format:</code></p>
-<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3> 扫描方式</h3>
-<h3> TCP 扫描</h3>
-<p>端口扫描中最稳定的, 利用的是 TCP 三次握手。TCP 扫描通常用于收集有关目标的更多信息, 但是会和目标主机建立一个完成的 TCP 连接。</p>
-<p><code>Scanning Format:</code></p>
-<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><div class="hint-container tip">
-<p class="hint-container-title">提示</p>
-<p><code>-sT</code> TCP 连接扫描（ <code>s</code> ==&gt; 哪种类型扫描； <code>T</code> ==&gt; TCP 类型）</p>
-</div>
-<h4> SYN 扫描</h4>
-<p>TCP 两次握手（隐藏扫描, 速度快, nmap 缺省参数）</p>
-<p><code>Scanning Format:</code></p>
-<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><div class="hint-container tip">
-<p class="hint-container-title">提示</p>
-<p><code>-sS</code> SYN 连接扫描（ <code>s</code> ==&gt; 哪种类型扫描； <code>S</code> ==&gt; SYN 类型）</p>
-</div>
-<h4> ACK 扫描</h4>
-<p>ACK 扫描, 用于确定 TCP 端口是否被防火墙过滤。</p>
-<p><code>Scanning Format:</code></p>
-<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><div class="hint-container tip">
-<p class="hint-container-title">提示</p>
-<p><code>-sA</code> ACK 连接扫描（ <code>s</code> ==&gt; 哪种类型扫描； <code>A</code> ==&gt; ACK 类型）</p>
-</div>
-<h4> UDP 扫描</h4>
-<p>DHCP, DNS, SNMP, TFTP 等都使用了 UDP 协议；UDP 扫描会评估目标系统上的 UDP 端口, 可以确认 UDP 端口是开放还是被防火墙过滤。</p>
-<p><code>Scanning Format:</code></p>
-<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><div class="hint-container tip">
-<p class="hint-container-title">提示</p>
-<p><code>-sU</code> UDP 连接扫描（ <code>s</code> ==&gt; 哪种类型扫描； <code>U</code> ==&gt; UDP 类型）<br> <code>-sV</code> UDP 扫描中添加版本扫描信息（ <code>V</code> ==&gt; 版本信息）<br> 不存在 <code>-Pn</code> 参数（从 UDP 协议去理解, 你发了就 ok 管他收没收到）</p>
-</div>
-<h3> 扫描 IP 段</h3>
-<p><code>For Example:</code></p>
-<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> 输出保存选项</h3>
-<ul>
-<li><strong>-oN</strong> =&gt; 保存为文本文件</li>
-<li><strong>-oX</strong> =&gt; 保存为 XML 文件</li>
-<li><strong>-oG</strong> =&gt; 保存为 GREPable 输出</li>
-<li><strong>-oS</strong> =&gt; 脚本输出</li>
-</ul>
-<h2> 其他更详细的扫描</h2>
-<h3> Nmap 扫描策略</h3>
-<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> Nmap 躲避防火墙</h3>
-<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> Nmap 进行 Web 漏洞扫描</h3>
-<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> Nmap 端口扫描</h3>
-<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 示例扫描</h2>
-<h3> 示例一: SYN 扫描</h3>
-<p><code>For Example:</code></p>
-<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><figure><img src="/assets/liunx-nmap-1.png" alt="Namp" tabindex="0" loading="lazy"><figcaption>Namp</figcaption></figure>
-<h3> 示例二: 基础信息扫描</h3>
-<p><code>For Example:</code></p>
-<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><figure><img src="/assets/liunx-nmap-2.png" alt="Namp" tabindex="0" loading="lazy"><figcaption>Namp</figcaption></figure>
-<h3> 示例三: 详细信息扫描</h3>
-<p><code>For Example:</code></p>
-<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><figure><img src="/assets/liunx-nmap-3.png" alt="Namp" tabindex="0" loading="lazy"><figcaption>Namp</figcaption></figure>
-<br>
-<figure><img src="/assets/liunx-nmap-4.png" alt="Namp" tabindex="0" loading="lazy"><figcaption>Namp</figcaption></figure>
-<br>
-<figure><img src="/assets/liunx-nmap-5.png" alt="Namp" tabindex="0" loading="lazy"><figcaption>Namp</figcaption></figure>
-<h3> 示例四: 网段扫描</h3>
-<p><code>For Example:</code></p>
-<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><figure><img src="/assets/liunx-nmap-6.png" alt="Namp" tabindex="0" loading="lazy"><figcaption>Namp</figcaption></figure>
-<br>
-<figure><img src="/assets/liunx-nmap-7.png" alt="Namp" tabindex="0" loading="lazy"><figcaption>Namp</figcaption></figure>
-]]></content>
-    <author>
-      <name>星火燎原@vxhly</name>
-    </author>
-    <category term="pentest"/>
-    <contributor>
-      <name>星火燎原@vxhly</name>
-    </contributor>
-    <published>2016-09-23T16:29:57.000Z</published>
     <rights>Copyright by 星火燎原@vxhly</rights>
   </entry>
 </feed>
