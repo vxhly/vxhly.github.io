@@ -146,7 +146,7 @@ sudo apt-get -y install mongodb
 ### 环境需求
 
 - Node.js(使用 nvm 进行安装)
-- pm2( `npm -g pm2` )
+- pm2(`npm -g pm2`)
 - git
 
 ### 下载

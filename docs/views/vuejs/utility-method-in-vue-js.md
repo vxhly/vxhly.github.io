@@ -272,7 +272,7 @@ formatNumber({
     if (!Number(value) && value) {
         console.warn('你未正确传递值')
     } else {
-        const rgx = new RegExp( `(\\d+)(\\d{${apart}})` )
+        const rgx = new RegExp(`(\\d+)(\\d{${apart}})`)
         const refValue = String(value)
         const x = refValue.split('.')
         let x1 = x[0]

@@ -94,7 +94,7 @@ input::-webkit-input-placeholder {
 
 需要注意的是不同浏览器写法不同:
 
-- 都要加上各自浏览器的前缀(如 `-webkit-` )
+- 都要加上各自浏览器的前缀(如 `-webkit-`)
 - `firefox` 的 `placeholder` 的前面没有 `input-`
 - `firefox` 与 `chrome` 都是 `::` 两个冒号, 而 IE 则是一个 `:`
 - 低版本的浏览器与新版本浏览器可能写法不同

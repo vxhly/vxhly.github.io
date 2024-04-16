@@ -323,7 +323,7 @@ function AppSetup() {
   return (
     <AppSetupContext.Provider value={{  state }}>
     </AppSetupContext.Provider>
-  )
+ )
 }
 export default AppSetup
 
@@ -413,7 +413,7 @@ class List3 extends Component {
         哈哈,我是List3
         <button onClick={this.props.hideConponent}>隐藏List3组件</button>
       </div>
-    );
+   );
   }
 }
 export default List3;
@@ -448,7 +448,7 @@ export default class App extends Component {
               this.state.isShowList3 ?<List3 hideConponent={this.hideConponent} />:null
           }
         </div>
-    );
+   );
   }
 }
 ```

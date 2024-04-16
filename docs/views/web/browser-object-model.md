@@ -38,7 +38,7 @@ BOM (Browser Object Model) 是指浏览器对象模型, 是用于描述这种对
 
 ### window 对象
 
-window 对象表示浏览器的一个实例, 同时也是 ECMAScript 规定的 Global 对象。 （Global: 所有在全局作用域中定义的属性和函数, 都是 Global 对象的属性。 在浏览器中 Global 对象实际上就是 window 对象实现的 ） 全局作用域( 所有全局对象都可以通过 window 来访问 )
+window 对象表示浏览器的一个实例, 同时也是 ECMAScript 规定的 Global 对象。 （Global: 所有在全局作用域中定义的属性和函数, 都是 Global 对象的属性。 在浏览器中 Global 对象实际上就是 window 对象实现的 ） 全局作用域(所有全局对象都可以通过 window 来访问)
 
 `For Example:`
 

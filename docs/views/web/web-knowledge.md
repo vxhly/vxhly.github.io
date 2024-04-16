@@ -696,7 +696,7 @@ switch () {
 #### for-in
 
 ```js
-for ( in ) {
+for (in) {
     //
 }
 ```

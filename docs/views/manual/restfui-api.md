@@ -225,5 +225,5 @@ Hypermedia API 的设计被称为 [HATEOAS](http://en.wikipedia.org/wiki/HATEOAS
 
 ## 其他
 
-- （1）API 的身份认证应该使用 [OAuth 2.0](http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html) 框架。
-- （2）服务器返回的数据格式, 应该尽量使用 JSON, 避免使用 XML。
+（1）API 的身份认证应该使用 [OAuth 2.0](http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html) 框架。
+（2）服务器返回的数据格式, 应该尽量使用 JSON, 避免使用 XML。

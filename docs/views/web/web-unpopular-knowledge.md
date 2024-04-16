@@ -51,7 +51,7 @@ date: 2019-02-26 20:22:38
 
 - Promise 的三种状态
 
--- 异步操作（未完成）=> `pending` -- 异步操作（已完成）=> `resolved` (又称 `fulfilled` ) -- 异步操作（失 败） => `rejected` -- 状态改变只能是 `pending` => `resolved` 或者 `pending` => `rejected` -- 状态一旦改变就不能再次进行改变
+-- 异步操作（未完成）=> `pending` -- 异步操作（已完成）=> `resolved` (又称 `fulfilled`) -- 异步操作（失 败） => `rejected` -- 状态改变只能是 `pending` => `resolved` 或者 `pending` => `rejected` -- 状态一旦改变就不能再次进行改变
 
 - JavaScript 基本数据类型: String、Boolean、Null、Number、undefind
 - JavaScript 复杂数据类型: Object、Array、Function、RegExp、Date、Error

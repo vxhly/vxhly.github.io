@@ -127,7 +127,7 @@ print('Please restart Sublime Text to finish installation')
 
 ### 注意
 
-国内使用 `Sublime Text 3` , 经常可能遇到无法安装可用插件问题, 可 `remove` 掉 `Package Control` 重新安装下；如遇到连 `Package Control` 也无法安装, 则可以在别处拷贝一份关于 `Package Control` 的文件( `Package Control.sublime-package` )存放于 `Installed Packages` 目录之下即可
+国内使用 `Sublime Text 3` , 经常可能遇到无法安装可用插件问题, 可 `remove` 掉 `Package Control` 重新安装下；如遇到连 `Package Control` 也无法安装, 则可以在别处拷贝一份关于 `Package Control` 的文件(`Package Control.sublime-package`)存放于 `Installed Packages` 目录之下即可
 
 ### 插件推荐
 

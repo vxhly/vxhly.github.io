@@ -307,7 +307,7 @@ export default class HelloWorld extends Vue {
   @Inject('bar') readonly bar!: string
 
   private moun ted(): void {
-    console.log( 22, this.foo, this.optional, this.bar)
+    console.log(22, this.foo, this.optional, this.bar)
   }
 }
 </script>

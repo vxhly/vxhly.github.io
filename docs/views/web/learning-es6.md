@@ -324,13 +324,13 @@ export const getDefaultData = () => (dispatch) => {};
 ```js
 ...{
     render() {
-        return ( <
+        return (<
             div >
             (() => {
-                    return ( < div > icepy < /div>)
+                    return (< div > icepy < /div>)
                     })() <
                 /div>
-            );
+           );
         }
     }
 ```

@@ -39,5 +39,6 @@ export const zhSidebarConfig = sidebar({
     "",
     "basic-architecture-design",
     "basic-database",
+    "basic-software-engineering",
   ]),
 });
