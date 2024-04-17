@@ -3,7 +3,7 @@
   <id>https://vxhly.github.io/</id>
   <title>Coding and Fixing</title>
   <subtitle>源于生活而高于生活.</subtitle>
-  <updated>2024-04-17T13:45:23.977Z</updated>
+  <updated>2024-04-17T14:48:43.072Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://vxhly.github.io/atom.xml"/>
   <link rel="alternate" href="https://vxhly.github.io/"/>
@@ -29,7 +29,7 @@
     <title type="text">系统架构-章节重点整理-软件工程、软件需求工程</title>
     <id>https://vxhly.github.io/system-architect/basic-knowledge/basic-software-engineering.html</id>
     <link href="https://vxhly.github.io/system-architect/basic-knowledge/basic-software-engineering.html"/>
-    <updated>2024-04-17T13:43:30.000Z</updated>
+    <updated>2024-04-17T14:46:44.000Z</updated>
     <summary type="html"><![CDATA[<div class="hint-container tip">
 <p class="hint-container-title">前言</p>
 <p>整理 <code>软件工程、软件需求工程</code> 章节的重点</p>
@@ -56,8 +56,9 @@
 （4）<code>A(Action)</code>——软件演进。</p>
 <h2> 软件生命周期</h2>
 <ul>
-<li>根据国家标准 G B/T 8566—2007 ，软件生命周期可以划分为<code>可行性研究、需求分析、概要设计、详细设计、实现、组装测试、确认测试、使用、维护、退役</code> 10 个阶段，</li>
+<li>根据国家标准 GB/T 8566—2007 ，软件生命周期可以划分为<code>可行性研究、需求分析、概要设计、详细设计、实现、组装测试、确认测试、使用、维护、退役</code> 10 个阶段，</li>
 <li>DO-178C 的软件生命周期过程包括<code>指导、目标、活动、证据</code>。</li>
+<li>软件过程是制作软件产品的一组活动及其结果。这些活动主要由软件人员来完成，软件活动主要包括<code>软件描述、软件开发、软件有效性验证和软件演化</code>。 其中，软件描述定义了软件功能以及使用的限制。</li>
 </ul>
 <h2> 软件开发方法</h2>
 <ul>
@@ -401,21 +402,25 @@
 <p>（1）<code>参数不兼容</code>。接口操作名称相同但参数类型或个数不同。<br>
 （2）<code>操作不兼容</code>。提供接口和请求接口的操作名不同。<br>
 （3）<code>操作不完备</code>。一个构件接口是另一个构件接口的子集。</p>
-<h2> 需求管理</h2>
+<h2> 需求工程</h2>
+<ul>
+<li>需求工程包括需求开发和需求管理两大类活动。</li>
+<li>需求开发包括<code>需求获取，需求分析，需求定义，需求验证</code>这些主要活动。</li>
+<li>需求管理包括<code>变更控制、版本控制、需求跟踪和需求状态跟踪</code>这些活动。</li>
+</ul>
+<h3> 需求管理</h3>
 <ul>
 <li><code>问题分析和变更描述</code>，通过识别和分析需求问题或提出的变更提议确保其有效性。</li>
 <li><code>变更分析和成本计算</code>，使用可追溯性信息和系统需求的一般知识对变更提议进行影响分析和评估，同时计算修改需求文档和系统实现的成本。确认后进行是否执行该变更的决策。</li>
 <li><code>变更实现</code>，要求同时修改需求文档和系统设计实现，避免文档和程序的不一致。</li>
 </ul>
-<h2> 需求工程</h2>
-<ul>
-<li>需求工程包括需求开发和需求管理两大类活动。
-<ul>
-<li>需求开发包括<code>需求获取，需求分析，需求定义，需求验证</code>这些主要活动。</li>
-<li>需求管理包括<code>变更控制、版本控制、需求跟踪和需求状态跟踪</code>这些活动。</li>
-</ul>
-</li>
-</ul>
+<h3> 变更管理</h3>
+<p>（1）<code>变更申请</code>。提出对配置项和基线进行变更的申请。<br>
+（2）<code>变更评估</code>。变更控制委员会(CCB)对变更申请进行评估,包括影响分析、必要性、范围、可行性、工作量估计等，并决定是否批准变更。<br>
+（3）<code>通告评估</code>。结果 CCB 将对每个变更申请的批准、否决或推迟决定通知相关人员。<br>
+（4）<code>变更实施</code>。项目经理组织对受影响的配置项进行修改，并记录变更信息。<br>
+（5）<code>变更验证与确认</code>。对变更后的配置项进行测试验证，由 CCB 确认变更是否按要求完成。<br>
+（6）<code>变更的发布</code>。配置管理员将变更后的配置项纳入基线。配置管理员将变更内容和结果通知相关人员，并做好记录。</p>
 <h2> UML 统一建模语言</h2>
 <h3> 系统视图</h3>
 <p>(1) <code>逻辑视图</code>。逻辑视图也称为设计视图，它表示了设计模型中在架构方面具有重要意义的部分，即类、子系统、包和用例实现的子集。<br>
@@ -472,6 +477,8 @@
 <li><code>β测试</code>是软件开发过程中的一种测试阶段，通常在正式发布之前进行。在这个阶段，开发团队会将软件提供给一部分用户群体使用，以便获取反馈和意见</li>
 <li><code>验收测试</code>的目的是确保软件能够准备就绪，并且可以让最终用户将其用于执行既定的功能和任务。</li>
 <li><code>回归测试</code>的目的是测试软件变更之后变更部分的正确性和对变更需求的符合性，以及确保软件原有的功能不受损害。</li>
+<li><code>集成测试</code>主要是检查模块之间的接口关系，以及已集成的软件是否符合设计要求。其测试的技术依据是软件概要设计文档。</li>
+<li><code>系统测试</code>则是在真实系统环境下验证整个软件配置项的连接和是否满足各种要求。</li>
 </ul>
 <h2> 产品配置状态</h2>
 <ul>
@@ -481,13 +488,6 @@
 <blockquote>
 <p>面向对象设计原则总共有六种，分别是<code>单一职责原则、开放-封闭原则、李氏替换原则、依赖倒置原则、接口隔离原则和组合重用原则</code></p>
 </blockquote>
-<h2> 消息中间件</h2>
-<ul>
-<li>概念: 消息中间件是保存信息的容器</li>
-<li>特点: 消息中间件具有<code>异步处理模式和松耦合</code>的特点，即发送者和接收者无需等待对方的同步回应，也无需了解对方的具体信息</li>
-<li>传输模式: 消息中间件的传输模式包括<code>点对点模型和发布-订阅模型</code></li>
-<li>在分布式系统中，中间件通常提供两种不同类型的支持，即<code>支持交互支持</code>和<code>提供公共服务</code></li>
-</ul>
 ]]></content>
     <author>
       <name>星火燎原@vxhly</name>
@@ -829,7 +829,7 @@
     <title type="text">系统架构-章节重点整理-系统架构设计</title>
     <id>https://vxhly.github.io/system-architect/basic-knowledge/basic-architecture-design.html</id>
     <link href="https://vxhly.github.io/system-architect/basic-knowledge/basic-architecture-design.html"/>
-    <updated>2024-04-17T13:43:30.000Z</updated>
+    <updated>2024-04-17T14:46:44.000Z</updated>
     <summary type="html"><![CDATA[<div class="hint-container tip">
 <p class="hint-container-title">前言</p>
 <p>整理 <code>系统架构设计</code> 章节的重点</p>
@@ -1296,6 +1296,13 @@
 </ul>
 <h2> 面向服务的架构（SOA）</h2>
 <p>微服务架构使用<code>去中心化</code>的扁平化管理方式，每个服务都是一个独立的应用程序，独立管理、使用独立的数据库、独立部署和独立运行。</p>
+<h2> 消息中间件</h2>
+<ul>
+<li>概念: 消息中间件是保存信息的容器</li>
+<li>特点: 消息中间件具有<code>异步处理模式和松耦合</code>的特点，即发送者和接收者无需等待对方的同步回应，也无需了解对方的具体信息</li>
+<li>传输模式: 消息中间件的传输模式包括<code>点对点模型和发布-订阅模型</code></li>
+<li>在分布式系统中，中间件通常提供两种不同类型的支持，即<code>支持交互支持</code>和<code>提供公共服务</code></li>
+</ul>
 <h2> 新兴技术</h2>
 <h3> 云计算</h3>
 <ul>
@@ -3245,7 +3252,7 @@
     <title type="text">系统架构上午-基础知识点整理</title>
     <id>https://vxhly.github.io/system-architect/basic-knowledge/basic-knowledge.html</id>
     <link href="https://vxhly.github.io/system-architect/basic-knowledge/basic-knowledge.html"/>
-    <updated>2024-04-17T13:43:30.000Z</updated>
+    <updated>2024-04-17T14:46:44.000Z</updated>
     <summary type="html"><![CDATA[<div class="hint-container tip">
 <p class="hint-container-title">前言</p>
 <p>整理除去 <code>系统架构设计</code>、<code>软件工程</code>、<code>数据库</code> 章节的重点</p>
@@ -3358,6 +3365,12 @@
 <li><code>G2E</code>: 政府对公务员</li>
 <li><code>G2G</code>: 政府对政府</li>
 </ul>
+<h3> 企业信息化集成</h3>
+<ul>
+<li><code>信息集成服务实</code>现不同数据库系统之间的数据交换、互操作、分布数据管理和共享信息模型定义。</li>
+<li><code>应用集成服务</code>能够为应用提供数据交换和访问操作，使各种不同的系统能够相互协作</li>
+<li><code>业务过程集成</code>实现了不同应用系统之间的连接、协调运作和信息共享。</li>
+</ul>
 <h2> 系统配置与性能评价</h2>
 <ul>
 <li>系统性能度量指标有 <code>可靠性、可用性、可测试性和可理解性</code></li>
@@ -3429,14 +3442,15 @@
 <li><code>能力需求计划</code>是为实现企业的生产任务而提供能力方面的保障</li>
 <li><code>车间作业计划</code>属于 ERP 执行层计划</li>
 </ul>
-<h2> 集成平台</h2>
-<ul>
-<li><code>信息集成服务实</code>现不同数据库系统之间的数据交换、互操作、分布数据管理和共享信息模型定义。</li>
-<li><code>应用集成服务</code>能够为应用提供数据交换和访问操作，使各种不同的系统能够相互协作</li>
-</ul>
 <h2> 商业智能系统</h2>
 <ul>
-<li>在商业智能系统中，<code>数据预处理、建立数据仓库、数据分析和数据展现</code>是四个主要阶段，其核心是<code>建立数据仓库</code>。</li>
+<li>在商业智能系统中，<code>数据预处理、建立数据仓库、数据分析和数据展现</code>是四个主要阶段，其核心是<code>建立数据仓库</code>。
+<ul>
+<li><code>数据预处理</code>包括 ETL（抽取，转换，加载）过程</li>
+<li><code>建立数据仓库</code>是处理海量数据的基础</li>
+<li><code>数据分析</code>采用联机分析（OLAP）处理和数据挖掘技术，数据展现保障系统分析结果的可视化。</li>
+</ul>
+</li>
 </ul>
 <h2> 电子商务</h2>
 <ul>
@@ -3447,13 +3461,6 @@
 <p>① 保密性：在握手协议中定义了会话密钥后，所有的消息都被加密;<br>
 ② 可靠性：可选的客户端认证，和强制的服务器端认证;<br>
 ③ 完整性：传送的消息包括消息完整性检查（使用 MAC）。不包括不可抵赖性。不可抵赖性由数字签名保证</p>
-<h2> 变更管理</h2>
-<p>（1）<code>变更申请</code>。提出对配置项和基线进行变更的申请。<br>
-（2）<code>变更评估</code>。变更控制委员会(CCB)对变更申请进行评估,包括影响分析、必要性、范围、可行性、工作量估计等，并决定是否批准变更。<br>
-（3）<code>通告评估</code>。结果 CCB 将对每个变更申请的批准、否决或推迟决定通知相关人员。<br>
-（4）<code>变更实施</code>。项目经理组织对受影响的配置项进行修改，并记录变更信息。<br>
-（5）<code>变更验证与确认</code>。对变更后的配置项进行测试验证，由 CCB 确认变更是否按要求完成。<br>
-（6）<code>变更的发布</code>。配置管理员将变更后的配置项纳入基线。配置管理员将变更内容和结果通知相关人员，并做好记录。</p>
 <h2> 信息安全</h2>
 <ul>
 <li>一个完整的信息安全系统包括三类措施<code>技术方面的安全措施</code>、<code>管理方面的安全措施</code>和<code>政策法律方面的安全措施</code>。
@@ -3469,7 +3476,7 @@
 <li>高水平、低价值 =&gt; 集成</li>
 <li>高水平、高价值 =&gt; 改造</li>
 <li>低水平、低价值 =&gt; 淘汰</li>
-<li>都水平、高价值 =&gt; 继承</li>
+<li>低水平、高价值 =&gt; 继承</li>
 </ul>
 ]]></content>
     <author>
