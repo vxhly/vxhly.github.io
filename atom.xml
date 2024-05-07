@@ -3,7 +3,7 @@
   <id>https://vxhly.github.io/</id>
   <title>Coding and Fixing</title>
   <subtitle>源于生活而高于生活.</subtitle>
-  <updated>2024-04-17T14:48:43.072Z</updated>
+  <updated>2024-05-07T12:35:55.046Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://vxhly.github.io/atom.xml"/>
   <link rel="alternate" href="https://vxhly.github.io/"/>
@@ -3252,7 +3252,7 @@
     <title type="text">系统架构上午-基础知识点整理</title>
     <id>https://vxhly.github.io/system-architect/basic-knowledge/basic-knowledge.html</id>
     <link href="https://vxhly.github.io/system-architect/basic-knowledge/basic-knowledge.html"/>
-    <updated>2024-04-17T14:46:44.000Z</updated>
+    <updated>2024-05-07T12:34:02.000Z</updated>
     <summary type="html"><![CDATA[<div class="hint-container tip">
 <p class="hint-container-title">前言</p>
 <p>整理除去 <code>系统架构设计</code>、<code>软件工程</code>、<code>数据库</code> 章节的重点</p>
@@ -3312,6 +3312,10 @@
 </blockquote>
 <p>SC 包括<code>模块、模块之间的调用关系、模块之间的通信和辅助控制符号</code>等 4 个部分。</p>
 <h2> 计算机原理</h2>
+<h3> 实时操作系统</h3>
+<ul>
+<li>实时是指计算机对于外来信息能够以足够快的速度进行处理，并在被控对象允许的时间范围内做出快速响应。</li>
+</ul>
 <h3> 指令系统</h3>
 <ul>
 <li>指令系统是计算机硬件的语言系统, 是机器所具有的全部指令的集合, 反映了计算机所拥有的基本功能。</li>
@@ -3346,11 +3350,11 @@
 </table>
 <h3> 计算机存储</h3>
 <ul>
-<li>存储速度从快到慢分别是：寄存器组(CPU)、Cache、内存、Flash。</li>
+<li>存储速度从快到慢分别是：<code>寄存器组(CPU)、Cache、内存、Flash</code>。</li>
 <li>接近 CPU 的存储器容量更小、速度更快、成本更高, 辅存容量更大、速度更慢、成本更低。</li>
 <li>采用分级存储体系的目的是解决存储的容量、价格和速度之间的矛盾。</li>
 <li>不能转换对应的物理地址原因是逻辑地址到物理地址转换时地址越界。</li>
-<li>段页式存储管理方式即先将用户程序分成若干个段，再把每个段分成若干个页，并为每一个段赋予一个段名，使用段页表来进行管理。</li>
+<li><code>段页式存储管理</code>方式即先将用户程序分成若干个段，再把每个段分成若干个页，并为每一个段赋予一个段名，使用段页表来进行管理。</li>
 </ul>
 <h2> 信息系统基础知识</h2>
 <ul>
@@ -3360,10 +3364,10 @@
 </ul>
 <h3> 电子政务</h3>
 <ul>
-<li><code>G2B</code>: 政府对企业</li>
-<li><code>G2C</code>: 政府对公民</li>
-<li><code>G2E</code>: 政府对公务员</li>
-<li><code>G2G</code>: 政府对政府</li>
+<li><code>G2B</code>: 政府对企业 =&gt; 包括政策环境、营业执照等颁发</li>
+<li><code>G2C</code>: 政府对公民 =&gt; 包括公共安全信息、证件管理等服务</li>
+<li><code>G2E</code>: 政府对公务员 =&gt; 包括政府内部电子化管理</li>
+<li><code>G2G</code>: 政府对政府 =&gt; 包括基础信息采集、处理和利用，政府间通信和决策支持</li>
 </ul>
 <h3> 企业信息化集成</h3>
 <ul>
@@ -3493,7 +3497,7 @@
     <title type="text">系统架构设计师-公式篇</title>
     <id>https://vxhly.github.io/system-architect/examination/formula.html</id>
     <link href="https://vxhly.github.io/system-architect/examination/formula.html"/>
-    <updated>2024-04-16T14:39:31.000Z</updated>
+    <updated>2024-05-07T12:34:02.000Z</updated>
     <summary type="html"><![CDATA[<div class="hint-container tip">
 <p class="hint-container-title">前言</p>
 <p>在 <code>系统架构设计师</code> 考试中存在一定的计算题, 一般分布在进度管理和成本管理章节, 以下是记录考试中会使用到的公式以及相关名词解释。</p>
@@ -3564,8 +3568,15 @@ n/(2Δt+1Δt+3Δt+1Δt+2Δt+(n-1)*3Δt)=n/(6Δt+3nΔt)<br>
 <p class="hint-container-title">提示</p>
 <p>主频 = 外频 × 倍频</p>
 </div>
-<p>例题：CPU 的频率有主频、倍频和外频。某处理器外频是 200MHz，倍频是 13，该款处理器的主频是（__）。</p>
+<p>例题：CPU 的频率有主频、倍频和外频。某处理器外频是 200MHz，倍频是 13，该款处理器的主频是（ ）。</p>
 <p>解答：主频 = 200MHz × 13 = 2600MHz</p>
+<h2> 位示图大小</h2>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>位示图大小 = 物理块大小 / 字长位数</p>
+</div>
+<p>例题：假设某计算机的字长为 32 位，该计算机文件管理系统磁盘空间管理采用位示图(bitmap)记录磁盘的使用情况。若磁盘的容量为 300GB，物理块的大小为 4MB，那么位示图的大小为（__）个字。</p>
+<p>解答：根据题意系统中字长为 32 位，所以一个字可记录 32 个物理块的使用情况。若磁盘的容量为 300GB，物理块的大小为 4MB，那么该磁盘有 300 * 1024 / 4 = 76800 个物理块，所需位示图的大小为 76800 / 32 = 2400 个字。</p>
 ]]></content>
     <author>
       <name>星火燎原@vxhly</name>
