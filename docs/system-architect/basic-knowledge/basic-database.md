@@ -71,7 +71,7 @@ $R \cap S \equiv \lbrace t|t \in R \wedge t \in S \rbrace$
 
 ::: tip 公式
 
-$R \Chi S \equiv \lbrace t|t = < t_r,t_s > \wedge t_r \in R \wedge t_s \in S \rbrace$
+$R \Chi S \equiv \lbrace t|t = < t_r, t_s > \wedge t_r \in R \wedge t_s \in S \rbrace$
 
 :::
 
@@ -103,7 +103,7 @@ $\theta$ 连接从两个关系的笛卡儿积中选取属性之间满足一定�
 
 ::: tip 公式
 
-$R \begin{matrix} \bowtie \\ A=B\end{matrix} S \equiv \lbrace t_r,t_s|t_r \in R \wedge t_s \in S \wedge t_r[A] s= t_s[B] \rbrace$
+$R \begin{matrix} \bowtie \\ A=B\end{matrix} S \equiv \lbrace t_r, t_s|t_r \in R \wedge t_s \in S \wedge t_r[A] s= t_s[B] \rbrace$
 
 :::
 
@@ -111,7 +111,7 @@ $R \begin{matrix} \bowtie \\ A=B\end{matrix} S \equiv \lbrace t_r,t_s|t_r \in R 
 
 ::: tip 公式
 
-$R \bowtie  S \equiv \lbrace t_r,t_s|t_r \in R \wedge t_s \in S \wedge t_r[A] s= t_s[B] \rbrace$
+$R \bowtie  S \equiv \lbrace t_r, t_s|t_r \in R \wedge t_s \in S \wedge t_r[A] s= t_s[B] \rbrace$
 
 :::
 
@@ -119,7 +119,7 @@ $R \bowtie  S \equiv \lbrace t_r,t_s|t_r \in R \wedge t_s \in S \wedge t_r[A] s=
 
 ::: tip 前置条件
 
-设关系模式 `R<U,F>`, 其中 U 为属性集合, F 是 U 上的一组函数依赖, 则有以下的推论
+设关系模式 `R<U, F>`, 其中 U 为属性集合, F 是 U 上的一组函数依赖, 则有以下的推论
 
 :::
 
