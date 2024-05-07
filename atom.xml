@@ -3,7 +3,7 @@
   <id>https://vxhly.github.io/</id>
   <title>Coding and Fixing</title>
   <subtitle>源于生活而高于生活.</subtitle>
-  <updated>2024-05-07T12:35:55.046Z</updated>
+  <updated>2024-05-07T14:01:58.522Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://vxhly.github.io/atom.xml"/>
   <link rel="alternate" href="https://vxhly.github.io/"/>
@@ -29,7 +29,7 @@
     <title type="text">系统架构-章节重点整理-软件工程、软件需求工程</title>
     <id>https://vxhly.github.io/system-architect/basic-knowledge/basic-software-engineering.html</id>
     <link href="https://vxhly.github.io/system-architect/basic-knowledge/basic-software-engineering.html"/>
-    <updated>2024-04-17T14:46:44.000Z</updated>
+    <updated>2024-05-07T13:59:41.000Z</updated>
     <summary type="html"><![CDATA[<div class="hint-container tip">
 <p class="hint-container-title">前言</p>
 <p>整理 <code>软件工程、软件需求工程</code> 章节的重点</p>
@@ -59,6 +59,13 @@
 <li>根据国家标准 GB/T 8566—2007 ，软件生命周期可以划分为<code>可行性研究、需求分析、概要设计、详细设计、实现、组装测试、确认测试、使用、维护、退役</code> 10 个阶段，</li>
 <li>DO-178C 的软件生命周期过程包括<code>指导、目标、活动、证据</code>。</li>
 <li>软件过程是制作软件产品的一组活动及其结果。这些活动主要由软件人员来完成，软件活动主要包括<code>软件描述、软件开发、软件有效性验证和软件演化</code>。 其中，软件描述定义了软件功能以及使用的限制。</li>
+<li>软件设计包括四个既独立又相互联系的活动——<code>数据设计、软件结构设计、人机界面设计和过程设计</code>
+<ul>
+<li>高质量的<code>数据设计</code>将改善程序结构和模块划分，降低过程复杂性；</li>
+<li><code>软件结构设计</code>的主要目标是开发一个模块化的程序结构，并表示出模块间的控制关系；</li>
+<li><code>人机界面设计</code>描述了软件与用户之间的交互关系。</li>
+</ul>
+</li>
 </ul>
 <h2> 软件开发方法</h2>
 <ul>
@@ -66,6 +73,20 @@
 <li>从开发风格上看，可分为<code>自顶向下</code>的开发方法与<code>自底向上</code>的开发方法。</li>
 <li>从性质上看，可分为<code>形式化方法</code>与<code>非形式化方法</code>。</li>
 <li>从适应范围来看，可分为<code>整体性方法</code>与<code>局部性方法</code>。</li>
+</ul>
+<h2> 软件开发工具</h2>
+<ul>
+<li>
+<p>软件开发工具包括<code>软件开发工具、软件维护工具 、软件管理工具和软件支持工具</code>等</p>
+<ul>
+<li><code>软件开发工具</code>——需求分析工具、设计工具、编码与排错工具</li>
+<li><code>软件维护工具</code>——版本控制工具、文档分析工具、开发信息库工具、逆向工程工具、再工程工具</li>
+<li><code>软件管理工具和软件支持工具</code>——项目管理工具、配置管理工具、软件评价工具、软件开发工具的评价和选择</li>
+</ul>
+</li>
+<li>
+<p>软件开发工具包括<code>需求分析工具、设计工具、编码与排错工具、测试工具</code>等。其中，需求分析工具可以基于自然语言或图像描述，也可以使用基于形式化需求定义语言的工具。</p>
+</li>
 </ul>
 <h3> 结构化方法分析模型</h3>
 <ul>
@@ -376,11 +397,11 @@
 <h3> 构件管理</h3>
 <p>构件管理的内容包括<code>构件描述，构件分类，构件库组织，人员及权限管理，用户意见反馈</code>等。</p>
 <h3> 构件分类</h3>
-<p>（1）<code>独立而成熟的构件</code>。经过多次实际环境检验,接口完全隐藏,用户只需使用规定命令,如数据库系统、操作系统等。<br>
-（2）<code>有限制的构件</code>。提供接口说明使用条件和前提,在装配时可能产生资源冲突、覆盖等影响,需测试,如面向对象语言的基础类库。<br>
-（3）<code>适应性构件</code>。通过包装或接口技术处理了不兼容、资源冲突等问题,可直接在各环境使用,如 ActiveX。<br>
-（4）<code>装配的构件</code>。已经装配到操作系统、数据库或信息系统不同层次,可通过胶水代码连接使用,多为软件商提供的产品。<br>
-（5）<code>可修改的构件</code>。可进行版本替换,修改错误、增加新功能通过重新包装或接口实现,在应用系统开发中使用较多。</p>
+<p>（1）<code>独立而成熟的构件</code>。经过多次实际环境检验, 接口完全隐藏, 用户只需使用规定命令, 如数据库系统、操作系统等。<br>
+（2）<code>有限制的构件</code>。提供接口说明使用条件和前提, 在装配时可能产生资源冲突、覆盖等影响, 需测试, 如面向对象语言的基础类库。<br>
+（3）<code>适应性构件</code>。通过包装或接口技术处理了不兼容、资源冲突等问题, 可直接在各环境使用, 如 ActiveX。<br>
+（4）<code>装配的构件</code>。已经装配到操作系统、数据库或信息系统不同层次, 可通过胶水代码连接使用, 多为软件商提供的产品。<br>
+（5）<code>可修改的构件</code>。可进行版本替换, 修改错误、增加新功能通过重新包装或接口实现, 在应用系统开发中使用较多。</p>
 <h3> 构件的特性</h3>
 <p>（1）<code>可组装性</code>。构件的所有外部交互必须通过公开定义的接口进行，同时还必须对自身信息提供外部访问。<br>
 （2）<code>可部署性</code>。构件必须是自包含的，能够作为独立实体在构件平台上运行，以二进制形式部署而无需编译。<br>
@@ -395,9 +416,9 @@
 （5）构件定制与适配<br>
 （6）组装构件，创建系统。</p>
 <h3> 构件组装</h3>
-<p>（1）<code>顺序组装</code>通过按顺序调用已有构件来创建新构件,适用于构件作为程序元素或服务。需要胶水代码保证前一构件输出与下一构件输入相兼容。<br>
+<p>（1）<code>顺序组装</code>通过按顺序调用已有构件来创建新构件, 适用于构件作为程序元素或服务。需要胶水代码保证前一构件输出与下一构件输入相兼容。<br>
 （2）<code>层次组装</code>一个构件直接调用另一构件提供的服务，被调用构件的"提供"接口必须与调用构件的"请求"接口相容，否则需编写胶水代码实现转换。<br>
-（3）<code>叠加组装</code>是两个或多个构件合并创建新构件，新构件合并了原构件功能并对外提供新接口。原构件之间无依赖关系,外部应用通过新接口调用原构件接口。</p>
+（3）<code>叠加组装</code>是两个或多个构件合并创建新构件，新构件合并了原构件功能并对外提供新接口。原构件之间无依赖关系, 外部应用通过新接口调用原构件接口。</p>
 <h3> 构件不兼容</h3>
 <p>（1）<code>参数不兼容</code>。接口操作名称相同但参数类型或个数不同。<br>
 （2）<code>操作不兼容</code>。提供接口和请求接口的操作名不同。<br>
@@ -409,6 +430,7 @@
 <li>需求管理包括<code>变更控制、版本控制、需求跟踪和需求状态跟踪</code>这些活动。</li>
 </ul>
 <h3> 需求管理</h3>
+<p>需求变更阶段：</p>
 <ul>
 <li><code>问题分析和变更描述</code>，通过识别和分析需求问题或提出的变更提议确保其有效性。</li>
 <li><code>变更分析和成本计算</code>，使用可追溯性信息和系统需求的一般知识对变更提议进行影响分析和评估，同时计算修改需求文档和系统实现的成本。确认后进行是否执行该变更的决策。</li>
@@ -416,11 +438,15 @@
 </ul>
 <h3> 变更管理</h3>
 <p>（1）<code>变更申请</code>。提出对配置项和基线进行变更的申请。<br>
-（2）<code>变更评估</code>。变更控制委员会(CCB)对变更申请进行评估,包括影响分析、必要性、范围、可行性、工作量估计等，并决定是否批准变更。<br>
+（2）<code>变更评估</code>。变更控制委员会(CCB)对变更申请进行评估, 包括影响分析、必要性、范围、可行性、工作量估计等，并决定是否批准变更。<br>
 （3）<code>通告评估</code>。结果 CCB 将对每个变更申请的批准、否决或推迟决定通知相关人员。<br>
 （4）<code>变更实施</code>。项目经理组织对受影响的配置项进行修改，并记录变更信息。<br>
 （5）<code>变更验证与确认</code>。对变更后的配置项进行测试验证，由 CCB 确认变更是否按要求完成。<br>
 （6）<code>变更的发布</code>。配置管理员将变更后的配置项纳入基线。配置管理员将变更内容和结果通知相关人员，并做好记录。</p>
+<h2> 项目管理</h2>
+<ul>
+<li>项目的成本管理中，<code>成本预算</code>将总的成本估算分配到各项活动和工作包上，来建立一个成本的基线。</li>
+</ul>
 <h2> UML 统一建模语言</h2>
 <h3> 系统视图</h3>
 <p>(1) <code>逻辑视图</code>。逻辑视图也称为设计视图，它表示了设计模型中在架构方面具有重要意义的部分，即类、子系统、包和用例实现的子集。<br>
@@ -477,7 +503,11 @@
 <li><code>β测试</code>是软件开发过程中的一种测试阶段，通常在正式发布之前进行。在这个阶段，开发团队会将软件提供给一部分用户群体使用，以便获取反馈和意见</li>
 <li><code>验收测试</code>的目的是确保软件能够准备就绪，并且可以让最终用户将其用于执行既定的功能和任务。</li>
 <li><code>回归测试</code>的目的是测试软件变更之后变更部分的正确性和对变更需求的符合性，以及确保软件原有的功能不受损害。</li>
-<li><code>集成测试</code>主要是检查模块之间的接口关系，以及已集成的软件是否符合设计要求。其测试的技术依据是软件概要设计文档。</li>
+<li><code>集成测试</code>主要是检查模块之间的接口关系，以及已集成的软件是否符合设计要求。其测试的技术依据是软件概要设计文档。
+<ul>
+<li>集成测试可以分为<code>一次性组装和增量式组装</code>，增量式组装测试效果更好。集成测试计划一般在<code>概要设计阶段</code>完成。</li>
+</ul>
+</li>
 <li><code>系统测试</code>则是在真实系统环境下验证整个软件配置项的连接和是否满足各种要求。</li>
 </ul>
 <h2> 产品配置状态</h2>
@@ -503,7 +533,7 @@
     <title type="text">系统架构-章节重点整理-数据库</title>
     <id>https://vxhly.github.io/system-architect/basic-knowledge/basic-database.html</id>
     <link href="https://vxhly.github.io/system-architect/basic-knowledge/basic-database.html"/>
-    <updated>2024-04-16T14:39:31.000Z</updated>
+    <updated>2024-05-07T13:59:41.000Z</updated>
     <summary type="html"><![CDATA[<div class="hint-container tip">
 <p class="hint-container-title">前言</p>
 <p>整理 <code>数据库</code> 章节的重点</p>
@@ -558,7 +588,7 @@
 <p>计算两个关系的笛卡尔乘积，令 R 为有 m 元的关系，S 为有 n 元的关系，则 R <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">X</mi></mrow><annotation encoding="application/x-tex">\Chi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathrm">X</span></span></span></span> S 是 m + n 元的元组的集合，其前 m 个元素来自 R 的一个元组，而后 n 个元素来自 S 的一个元组</p>
 <div class="hint-container tip">
 <p class="hint-container-title">公式</p>
-<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi mathvariant="normal">X</mi><mi>S</mi><mo>≡</mo><mo stretchy="false">{</mo><mi>t</mi><mi mathvariant="normal">∣</mi><mi>t</mi><mo>=</mo><mo>&lt;</mo><msub><mi>t</mi><mi>r</mi></msub><mo separator="true">,</mo><msub><mi>t</mi><mi>s</mi></msub><mo>&gt;</mo><mo>∧</mo><msub><mi>t</mi><mi>r</mi></msub><mo>∈</mo><mi>R</mi><mo>∧</mo><msub><mi>t</mi><mi>s</mi></msub><mo>∈</mo><mi>S</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">R \Chi S \equiv \lbrace t|t = &lt; t_r,t_s &gt; \wedge t_r \in R \wedge t_s \in S \rbrace</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mord mathrm">X</span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≡</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord mathnormal">t</span><span class="mord">∣</span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8095em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7651em;vertical-align:-0.15em;"></span><span class="mord">∧</span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∧</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7651em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mclose">}</span></span></span></span></p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi mathvariant="normal">X</mi><mi>S</mi><mo>≡</mo><mo stretchy="false">{</mo><mi>t</mi><mi mathvariant="normal">∣</mi><mi>t</mi><mo>=</mo><mo>&lt;</mo><msub><mi>t</mi><mi>r</mi></msub><mo separator="true">,</mo><msub><mi>t</mi><mi>s</mi></msub><mo>&gt;</mo><mo>∧</mo><msub><mi>t</mi><mi>r</mi></msub><mo>∈</mo><mi>R</mi><mo>∧</mo><msub><mi>t</mi><mi>s</mi></msub><mo>∈</mo><mi>S</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">R \Chi S \equiv \lbrace t|t = &lt; t_r, t_s &gt; \wedge t_r \in R \wedge t_s \in S \rbrace</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mord mathrm">X</span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≡</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord mathnormal">t</span><span class="mord">∣</span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8095em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7651em;vertical-align:-0.15em;"></span><span class="mord">∧</span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∧</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7651em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mclose">}</span></span></span></span></p>
 </div>
 <h3> 投影</h3>
 <p>从一个关系中抽取指明的属性（列）。令及为一个包含属性 A 的关系</p>
@@ -577,17 +607,17 @@
 <p>两个关系中进行比较的分量必须是相同的属性组，并且在结果中将重复的属性去掉，则称为自然连接</p>
 <div class="hint-container tip">
 <p class="hint-container-title">公式</p>
-<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mtable rowspacing="0.16em" columnalign="center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mo lspace="0em" rspace="0em">⋈</mo></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mi>A</mi><mo>=</mo><mi>B</mi></mrow></mstyle></mtd></mtr></mtable><mi>S</mi><mo>≡</mo><mo stretchy="false">{</mo><msub><mi>t</mi><mi>r</mi></msub><mo separator="true">,</mo><msub><mi>t</mi><mi>s</mi></msub><mi mathvariant="normal">∣</mi><msub><mi>t</mi><mi>r</mi></msub><mo>∈</mo><mi>R</mi><mo>∧</mo><msub><mi>t</mi><mi>s</mi></msub><mo>∈</mo><mi>S</mi><mo>∧</mo><msub><mi>t</mi><mi>r</mi></msub><mo stretchy="false">[</mo><mi>A</mi><mo stretchy="false">]</mo><mi>s</mi><mo>=</mo><msub><mi>t</mi><mi>s</mi></msub><mo stretchy="false">[</mo><mi>B</mi><mo stretchy="false">]</mo><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">R \begin{matrix} \bowtie \\ A=B\end{matrix} S \equiv \lbrace t_r,t_s|t_r \in R \wedge t_s \in S \wedge t_r[A] s= t_s[B] \rbrace</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.4em;vertical-align:-0.95em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.61em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mrel">⋈</span></span></span><span style="top:-2.41em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.95em;"><span></span></span></span></span></span></span></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≡</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord">∣</span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∧</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7651em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∧</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">[</span><span class="mord mathnormal">A</span><span class="mclose">]</span><span class="mord mathnormal">s</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">[</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mclose">]}</span></span></span></span></p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mtable rowspacing="0.16em" columnalign="center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mo lspace="0em" rspace="0em">⋈</mo></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mi>A</mi><mo>=</mo><mi>B</mi></mrow></mstyle></mtd></mtr></mtable><mi>S</mi><mo>≡</mo><mo stretchy="false">{</mo><msub><mi>t</mi><mi>r</mi></msub><mo separator="true">,</mo><msub><mi>t</mi><mi>s</mi></msub><mi mathvariant="normal">∣</mi><msub><mi>t</mi><mi>r</mi></msub><mo>∈</mo><mi>R</mi><mo>∧</mo><msub><mi>t</mi><mi>s</mi></msub><mo>∈</mo><mi>S</mi><mo>∧</mo><msub><mi>t</mi><mi>r</mi></msub><mo stretchy="false">[</mo><mi>A</mi><mo stretchy="false">]</mo><mi>s</mi><mo>=</mo><msub><mi>t</mi><mi>s</mi></msub><mo stretchy="false">[</mo><mi>B</mi><mo stretchy="false">]</mo><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">R \begin{matrix} \bowtie \\ A=B\end{matrix} S \equiv \lbrace t_r, t_s|t_r \in R \wedge t_s \in S \wedge t_r[A] s= t_s[B] \rbrace</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.4em;vertical-align:-0.95em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.61em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mrel">⋈</span></span></span><span style="top:-2.41em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.95em;"><span></span></span></span></span></span></span></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≡</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord">∣</span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∧</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7651em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∧</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">[</span><span class="mord mathnormal">A</span><span class="mclose">]</span><span class="mord mathnormal">s</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">[</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mclose">]}</span></span></span></span></p>
 </div>
 <p>如果两个关系中进行比较的分量必须是相同的属性组，并且在结果中将重复的属性去掉，则称为自然连接</p>
 <div class="hint-container tip">
 <p class="hint-container-title">公式</p>
-<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>⋈</mo><mi>S</mi><mo>≡</mo><mo stretchy="false">{</mo><msub><mi>t</mi><mi>r</mi></msub><mo separator="true">,</mo><msub><mi>t</mi><mi>s</mi></msub><mi mathvariant="normal">∣</mi><msub><mi>t</mi><mi>r</mi></msub><mo>∈</mo><mi>R</mi><mo>∧</mo><msub><mi>t</mi><mi>s</mi></msub><mo>∈</mo><mi>S</mi><mo>∧</mo><msub><mi>t</mi><mi>r</mi></msub><mo stretchy="false">[</mo><mi>A</mi><mo stretchy="false">]</mo><mi>s</mi><mo>=</mo><msub><mi>t</mi><mi>s</mi></msub><mo stretchy="false">[</mo><mi>B</mi><mo stretchy="false">]</mo><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">R \bowtie  S \equiv \lbrace t_r,t_s|t_r \in R \wedge t_s \in S \wedge t_r[A] s= t_s[B] \rbrace</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6883em;vertical-align:-0.005em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⋈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≡</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord">∣</span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∧</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7651em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∧</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">[</span><span class="mord mathnormal">A</span><span class="mclose">]</span><span class="mord mathnormal">s</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">[</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mclose">]}</span></span></span></span></p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>⋈</mo><mi>S</mi><mo>≡</mo><mo stretchy="false">{</mo><msub><mi>t</mi><mi>r</mi></msub><mo separator="true">,</mo><msub><mi>t</mi><mi>s</mi></msub><mi mathvariant="normal">∣</mi><msub><mi>t</mi><mi>r</mi></msub><mo>∈</mo><mi>R</mi><mo>∧</mo><msub><mi>t</mi><mi>s</mi></msub><mo>∈</mo><mi>S</mi><mo>∧</mo><msub><mi>t</mi><mi>r</mi></msub><mo stretchy="false">[</mo><mi>A</mi><mo stretchy="false">]</mo><mi>s</mi><mo>=</mo><msub><mi>t</mi><mi>s</mi></msub><mo stretchy="false">[</mo><mi>B</mi><mo stretchy="false">]</mo><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">R \bowtie  S \equiv \lbrace t_r, t_s|t_r \in R \wedge t_s \in S \wedge t_r[A] s= t_s[B] \rbrace</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6883em;vertical-align:-0.005em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⋈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≡</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord">∣</span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∧</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7651em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∧</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">[</span><span class="mord mathnormal">A</span><span class="mclose">]</span><span class="mord mathnormal">s</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">[</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mclose">]}</span></span></span></span></p>
 </div>
 <h2> Armstrong 公理</h2>
 <div class="hint-container tip">
 <p class="hint-container-title">前置条件</p>
-<p>设关系模式 <code>R&lt;U,F&gt;</code>, 其中 U 为属性集合, F 是 U 上的一组函数依赖, 则有以下的推论</p>
+<p>设关系模式 <code>R&lt;U, F&gt;</code>, 其中 U 为属性集合, F 是 U 上的一组函数依赖, 则有以下的推论</p>
 </div>
 <ul>
 <li>自反律: 若 Y <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⊆</mo></mrow><annotation encoding="application/x-tex">\subseteq</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mrel">⊆</span></span></span></span> X <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⊆</mo></mrow><annotation encoding="application/x-tex">\subseteq</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mrel">⊆</span></span></span></span> U, 则 X <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span> Y 为 F 所蕴含</li>
@@ -829,7 +859,7 @@
     <title type="text">系统架构-章节重点整理-系统架构设计</title>
     <id>https://vxhly.github.io/system-architect/basic-knowledge/basic-architecture-design.html</id>
     <link href="https://vxhly.github.io/system-architect/basic-knowledge/basic-architecture-design.html"/>
-    <updated>2024-04-17T14:46:44.000Z</updated>
+    <updated>2024-05-07T13:59:41.000Z</updated>
     <summary type="html"><![CDATA[<div class="hint-container tip">
 <p class="hint-container-title">前言</p>
 <p>整理 <code>系统架构设计</code> 章节的重点</p>
@@ -1079,7 +1109,7 @@
 </thead>
 <tbody>
 <tr>
-<td>1.便于多客户共享大量数据,而不必关心数据是何时产生的、由谁提供的及通过何种途径来提供。</td>
+<td>1.便于多客户共享大量数据, 而不必关心数据是何时产生的、由谁提供的及通过何种途径来提供。</td>
 <td>1.对共享数据结构，不同知识源要达成一致; 2.需要同步机制和加锁机制来保证数据的完整性和一致性，增大了系统设计的复杂度</td>
 </tr>
 </tbody>
@@ -1141,7 +1171,7 @@
 <h3> C2</h3>
 <p>概念: C2 体系结构风格可以概括为通过连接件绑定在一起按照一组规则运作的并行构件网络。</p>
 <p>（1）构件和连接件都有顶部和底部。<br>
-（2）构件的顶部连接到连接件的底部,构件的底部连接到连接件的顶部,构件之间不允许直接连接。<br>
+（2）构件的顶部连接到连接件的底部, 构件的底部连接到连接件的顶部, 构件之间不允许直接连接。<br>
 （3）连接件可以连接任意数量的构件和其他连接件。<br>
 （4）当两个连接件直接相连时，必须一个的底部连接到另一个的顶部。</p>
 <h3> 闭环控制架构 - 过程控制</h3>
@@ -1177,7 +1207,7 @@
 <h2> 七大面向架构评估的质量属性</h2>
 <h3> 性能</h3>
 <ul>
-<li>指系统的响应能力,处理事务所需时间或单位时间内处理事务数量。</li>
+<li>指系统的响应能力, 处理事务所需时间或单位时间内处理事务数量。</li>
 <li>通常使用<code>基准测试程序</code>进行测试</li>
 <li>常用的设计策略为: <code>优先级队列</code>和<code>资源调度</code></li>
 </ul>
@@ -1219,7 +1249,7 @@
 </ul>
 <h3> 互操作性</h3>
 <ul>
-<li>软件不是独立存在的,需要与其他系统或环境交互。为了支持互操作性,软件架构必须为外部功能和数据结构提供精心设计的入口。不同编程语言编写的软件系统之间的交互作用体现了互操作性问题。</li>
+<li>软件不是独立存在的, 需要与其他系统或环境交互。为了支持互操作性, 软件架构必须为外部功能和数据结构提供精心设计的入口。不同编程语言编写的软件系统之间的交互作用体现了互操作性问题。</li>
 </ul>
 <h2> 软件质量特性</h2>
 <ul>
@@ -1562,7 +1592,7 @@
     <title type="text">系统架构下午-案例分析-数据库</title>
     <id>https://vxhly.github.io/system-architect/basic-knowledge/case-analysis-database.html</id>
     <link href="https://vxhly.github.io/system-architect/basic-knowledge/case-analysis-database.html"/>
-    <updated>2024-04-16T14:39:31.000Z</updated>
+    <updated>2024-05-07T13:59:41.000Z</updated>
     <summary type="html"><![CDATA[<div class="hint-container tip">
 <p class="hint-container-title">前言</p>
 <p><code>系统架构设计师</code> 考试中下午案例分析题知识点汇总。本篇是数据库专题部分。</p>
@@ -1965,7 +1995,7 @@
 <td>1、使用主从复制提高可用性， 使用 cluster 集群方案降低故障时影响的范围。2、如果出现故障，则可以采取服务降级、熔断、限流等措施。</td>
 </tr>
 <tr>
-<td>采用了相同的过期时间,例如在同一时刻设置了大量的 key，但过期时间都是 5 分钟。</td>
+<td>采用了相同的过期时间, 例如在同一时刻设置了大量的 key，但过期时间都是 5 分钟。</td>
 <td>过期时间加上一个随机值，使得众多 key 均匀过期。</td>
 </tr>
 </tbody>
@@ -2002,7 +2032,7 @@
     <title type="text">第一章：信息化和信息系统</title>
     <id>https://vxhly.github.io/project-manager/knowledge/Information-system.html</id>
     <link href="https://vxhly.github.io/project-manager/knowledge/Information-system.html"/>
-    <updated>2023-12-07T13:22:51.000Z</updated>
+    <updated>2024-05-07T13:59:41.000Z</updated>
     <summary type="html"><![CDATA[<div class="hint-container tip">
 <p class="hint-container-title">前言</p>
 <p>记录信息化和信息系统章节的相关知识、频繁考点。</p>
@@ -2493,7 +2523,7 @@
 <h4> 白盒测试</h4>
 <p>也称为结构测试, 主要用于软件的单元测试, 它的主要思想是, 将程序看作一个透明的白盒, 测试人员完全清楚程序的结构和处理算法。</p>
 <h4> 黑盒测试</h4>
-<p>也称为功能测试, 主要用于集成测试、确认测试和系统测试, 它的主要思想是,将程序看作一个不透明的黑盒, 测试人员完全不考虑（或者不了解）程序的内部结构和处理算法</p>
+<p>也称为功能测试, 主要用于集成测试、确认测试和系统测试, 它的主要思想是, 将程序看作一个不透明的黑盒, 测试人员完全不考虑（或者不了解）程序的内部结构和处理算法</p>
 <h2> 软件测试分类</h2>
 <p>（1）单元测试 =&gt; 测试依据软件详细设计说明书<br>
 （2）集成测试 =&gt; 测试依据软件概要设计说明书<br>
@@ -2504,6 +2534,18 @@
 （4）系统测试<br>
 （5）配置项测试<br>
 （6）回归测试</p>
+<h2> 自动化测试</h2>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>自动化测试的常用脚本技术，包括<code>线性脚本、结构化脚本、共享脚本、数据驱动脚本和关键字驱动脚本</code>。</p>
+</div>
+<ul>
+<li><code>线性脚本</code>，是录制手工执行的测试用例得到的脚本，这种脚本包含所有的击键、移动、输入数据等，所有录制的测试用例都可以得到完整的回放。</li>
+<li><code>数据驱动脚本</code>，将测试输入存储在独立的（数据）文件中，而不是存储在脚本中。可以针对不同数据输入实现多个测试用例。</li>
+<li><code>结构化脚本</code>，类似于结构化程序设计，具有各种逻辑结构、函数调用功能。</li>
+<li><code>共享脚本</code>，共享脚本是指可以被多个测试用例使用的脚本，也允许其他脚本调用。共享脚本可以在不同主机、不同系统之间共享，也可以在同一主机、同一系统之间共享。关键字驱动脚本，</li>
+<li><code>关键字驱动脚本</code>是数据驱动脚本的逻辑扩展。它将数据文件变成测试用例的描述，采用一些关键字指定要执行的任务。</li>
+</ul>
 <h2> 软件集成技术</h2>
 <ol>
 <li>表示集成：也称为界面集成, 是黑盒集成, 无须了解程序与数据库的内部构造</li>
@@ -3252,7 +3294,7 @@
     <title type="text">系统架构上午-基础知识点整理</title>
     <id>https://vxhly.github.io/system-architect/basic-knowledge/basic-knowledge.html</id>
     <link href="https://vxhly.github.io/system-architect/basic-knowledge/basic-knowledge.html"/>
-    <updated>2024-05-07T12:34:02.000Z</updated>
+    <updated>2024-05-07T13:59:41.000Z</updated>
     <summary type="html"><![CDATA[<div class="hint-container tip">
 <p class="hint-container-title">前言</p>
 <p>整理除去 <code>系统架构设计</code>、<code>软件工程</code>、<code>数据库</code> 章节的重点</p>
@@ -3334,14 +3376,14 @@
 <tbody>
 <tr>
 <td>复杂指令系统 CISC</td>
-<td>指令数量众多,使用频率相差悬殊.可变长指令格式</td>
+<td>指令数量众多, 使用频率相差悬殊.可变长指令格式</td>
 <td>多种寻址方式</td>
 <td>与主存直接交互.微程序控制</td>
 <td>编译复杂</td>
 </tr>
 <tr>
 <td>精简指令系统 RISC</td>
-<td>指令数量少,长度固定</td>
+<td>指令数量少, 长度固定</td>
 <td>寻址方式少</td>
 <td>硬布线逻辑控制.流水线技术.与寄存器交互.</td>
 <td>优化的编辑器</td>
@@ -3368,6 +3410,8 @@
 <li><code>G2C</code>: 政府对公民 =&gt; 包括公共安全信息、证件管理等服务</li>
 <li><code>G2E</code>: 政府对公务员 =&gt; 包括政府内部电子化管理</li>
 <li><code>G2G</code>: 政府对政府 =&gt; 包括基础信息采集、处理和利用，政府间通信和决策支持</li>
+<li><code>B2G</code>: 企业对政府 =&gt; 包括企业纳税和为政府提供服务</li>
+<li><code>C2G</code>: 公民对政府 =&gt; 包括居民参政议政和报警服务</li>
 </ul>
 <h3> 企业信息化集成</h3>
 <ul>
@@ -3440,11 +3484,17 @@
 </ul>
 <h2> 企业资源规划 ERP</h2>
 <ul>
-<li>企业生产管理中的四个计划<code>生产计划大纲、主生产计划、物料需求计划和能力需求计划，以及车间作业计划</code></li>
+<li>企业生产管理中的四个计划<code>生产计划大纲、主生产计划、物料需求计划和能力需求计划，以及车间作业计划</code>
+<ul>
 <li><code>主生产计划</code>是 ERP 的主要工作内容</li>
 <li><code>物料需求计划</code>是生产管理的核心</li>
 <li><code>能力需求计划</code>是为实现企业的生产任务而提供能力方面的保障</li>
 <li><code>车间作业计划</code>属于 ERP 执行层计划</li>
+</ul>
+</li>
+<li>ERP 中的企业资源包括企业的“三流”资源，即<code>物流资源、资金流资源和信息流资源</code>。</li>
+<li>采购管理模块是对采购工作——从采购订单产生至货物收到的全过程进行组织、实施与控制</li>
+<li>库存管理模块则是对<code>企业物料的进、出、存进行管理</code>。</li>
 </ul>
 <h2> 商业智能系统</h2>
 <ul>
@@ -3474,6 +3524,13 @@
 <li><code>信息安全管理</code>主要涉及人事管理、设备管理、场地管理、存储媒体管理、软件管理、网络管理、密码和密钥管理等方面</li>
 </ul>
 </li>
+</ul>
+<h2> 网络安全</h2>
+<ul>
+<li>被动攻击是旨在获取信息而不改变系统或数据的攻击方式，如<code>窃听和流量分析</code></li>
+<li>主动攻击可能会修改信息或危害系统完整性和可用性，如<code>篡改、伪装、重放和拒绝服务攻击</code></li>
+<li>物理攻击是指攻击者直接接触到系统硬件、软件和周边环境设备，通过破坏使系统无法工作，甚至无法恢复数据和程序</li>
+<li>分发攻击则是在软硬件开发后到安装期间或传输过程中恶意修改，可能引入后门程序等恶意代码，以非授权方式访问信息或系统</li>
 </ul>
 <h2> 遗留系统</h2>
 <ul>
