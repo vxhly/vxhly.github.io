@@ -905,11 +905,11 @@ react 的优势以及特点？
 
 编码阶段
 
-- 尽量减少 data 中的数据，data 中的数据都会增加 getter 和 setter，会收集对应的 watcher
+- 尽量减少 data 中的数据, data 中的数据都会增加 getter 和 setter, 会收集对应的 watcher
 - v-if 和 v-for 不能连用
 - 如果需要使用 v-for 给每项元素绑定事件时使用事件代理
 - SPA 页面采用 keep-alive 缓存组件
-- 在更多的情况下，使用 v-if 替代 v-show
+- 在更多的情况下, 使用 v-if 替代 v-show
 - key 保证唯一
 - 使用路由懒加载、异步组件
 - 防抖、节流
