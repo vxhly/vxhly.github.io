@@ -6,8 +6,8 @@
     <link>https://vxhly.github.io/</link>
     <description>源于生活而高于生活.</description>
     <language>zh-CN</language>
-    <pubDate>Tue, 07 May 2024 14:01:58 GMT</pubDate>
-    <lastBuildDate>Tue, 07 May 2024 14:01:58 GMT</lastBuildDate>
+    <pubDate>Wed, 15 May 2024 11:46:47 GMT</pubDate>
+    <lastBuildDate>Wed, 15 May 2024 11:46:47 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>软考</category>
@@ -30,7 +30,7 @@
       <link>https://vxhly.github.io/system-architect/basic-knowledge/basic-software-engineering.html</link>
       <guid>https://vxhly.github.io/system-architect/basic-knowledge/basic-software-engineering.html</guid>
       <source url="https://vxhly.github.io/rss.xml">系统架构-章节重点整理-软件工程、软件需求工程</source>
-      <description>前言 整理 软件工程、软件需求工程 章节的重点 PDCA 软件工程由方法、工具和过程三个部分组成。软件工程过程是指为获得软件产品，在软件工具的支持下由软件工程师完成的一系列软件工程活动 （1）P(Plan)——软件规格说明。规定软件的功能及其运行时的限制。 （2）D(Do)——软件开发。开发出满足规格说明的软件。 （3）C(Check)——软件确认。确...</description>
+      <description>前言 整理 软件工程、软件需求工程 章节的重点 PDCA 软件工程由方法、工具和过程三个部分组成。软件工程过程是指为获得软件产品, 在软件工具的支持下由软件工程师完成的一系列软件工程活动 （1）P(Plan)——软件规格说明。规定软件的功能及其运行时的限制。 （2）D(Do)——软件开发。开发出满足规格说明的软件。 （3）C(Check)——软件确认。...</description>
       <category>软考</category>
       <pubDate>Fri, 12 Apr 2024 18:15:49 GMT</pubDate>
       <content:encoded><![CDATA[<div class="hint-container tip">
@@ -39,7 +39,7 @@
 </div>
 <h2> PDCA</h2>
 <blockquote>
-<p>软件工程由方法、工具和过程三个部分组成。软件工程过程是指为获得软件产品，在软件工具的支持下由软件工程师完成的一系列软件工程活动</p>
+<p>软件工程由<code>方法、工具和过程</code>三个部分组成。软件工程过程是指为获得软件产品, 在软件工具的支持下由软件工程师完成的一系列软件工程活动</p>
 </blockquote>
 <p>（1）<code>P(Plan)</code>——软件规格说明。规定软件的功能及其运行时的限制。<br>
 （2）<code>D(Do)</code>——软件开发。开发出满足规格说明的软件。<br>
@@ -47,23 +47,23 @@
 （4）<code>A(Action)</code>——软件演进。</p>
 <h2> 软件生命周期</h2>
 <ul>
-<li>根据国家标准 GB/T 8566—2007 ，软件生命周期可以划分为<code>可行性研究、需求分析、概要设计、详细设计、实现、组装测试、确认测试、使用、维护、退役</code> 10 个阶段，</li>
+<li>根据国家标准 GB/T 8566—2007 , 软件生命周期可以划分为<code>可行性研究、需求分析、概要设计、详细设计、实现、组装测试、确认测试、使用、维护、退役</code> 10 个阶段,</li>
 <li>DO-178C 的软件生命周期过程包括<code>指导、目标、活动、证据</code>。</li>
-<li>软件过程是制作软件产品的一组活动及其结果。这些活动主要由软件人员来完成，软件活动主要包括<code>软件描述、软件开发、软件有效性验证和软件演化</code>。 其中，软件描述定义了软件功能以及使用的限制。</li>
+<li>软件过程是制作软件产品的一组活动及其结果。这些活动主要由软件人员来完成, 软件活动主要包括<code>软件描述、软件开发、软件有效性验证和软件演化</code>。 其中, 软件描述定义了软件功能以及使用的限制。</li>
 <li>软件设计包括四个既独立又相互联系的活动——<code>数据设计、软件结构设计、人机界面设计和过程设计</code>
 <ul>
-<li>高质量的<code>数据设计</code>将改善程序结构和模块划分，降低过程复杂性；</li>
-<li><code>软件结构设计</code>的主要目标是开发一个模块化的程序结构，并表示出模块间的控制关系；</li>
+<li>高质量的<code>数据设计</code>将改善程序结构和模块划分, 降低过程复杂性；</li>
+<li><code>软件结构设计</code>的主要目标是开发一个模块化的程序结构, 并表示出模块间的控制关系；</li>
 <li><code>人机界面设计</code>描述了软件与用户之间的交互关系。</li>
 </ul>
 </li>
 </ul>
 <h2> 软件开发方法</h2>
 <ul>
-<li><code>软件开发方法是指软件开发过程所遵循的办法和步骤</code>，从不同的角度可以对软件开发方法进行不同的分类。</li>
-<li>从开发风格上看，可分为<code>自顶向下</code>的开发方法与<code>自底向上</code>的开发方法。</li>
-<li>从性质上看，可分为<code>形式化方法</code>与<code>非形式化方法</code>。</li>
-<li>从适应范围来看，可分为<code>整体性方法</code>与<code>局部性方法</code>。</li>
+<li><code>软件开发方法是指软件开发过程所遵循的办法和步骤</code>, 从不同的角度可以对软件开发方法进行不同的分类。</li>
+<li>从开发风格上看, 可分为<code>自顶向下</code>的开发方法与<code>自底向上</code>的开发方法。</li>
+<li>从性质上看, 可分为<code>形式化方法</code>与<code>非形式化方法</code>。</li>
+<li>从适应范围来看, 可分为<code>整体性方法</code>与<code>局部性方法</code>。</li>
 </ul>
 <h2> 软件开发工具</h2>
 <ul>
@@ -76,7 +76,7 @@
 </ul>
 </li>
 <li>
-<p>软件开发工具包括<code>需求分析工具、设计工具、编码与排错工具、测试工具</code>等。其中，需求分析工具可以基于自然语言或图像描述，也可以使用基于形式化需求定义语言的工具。</p>
+<p>软件开发工具包括<code>需求分析工具、设计工具、编码与排错工具、测试工具</code>等。其中, 需求分析工具可以基于自然语言或图像描述, 也可以使用基于形式化需求定义语言的工具。</p>
 </li>
 </ul>
 <h3> 结构化方法分析模型</h3>
@@ -88,24 +88,24 @@
 <h3> 逆向工程</h3>
 <p>(1) <code>重构（restructuring）</code>。重构是指在同一抽象级别上转换系统描述形式。<br>
 (2) <code>设计恢复（design recovery）</code>。设计恢复是指借助工具从已有程序中抽象出有关数据设计、总体结构设计和过程设计等方面的信息。<br>
-(3) <code>再工程（re-engineering）</code>。再工程是指在逆向工程所获得信息的基础上，修改或重构已有的系统，产生系统的一个新版本。<br>
-(4) <code>正向工程（Forward Engineering）</code>。正向工程是指不仅从现有系统中恢复设计信息，而且使用该信息去改变或重构现有系统，以改善其整体质量。</p>
+(3) <code>再工程（re-engineering）</code>。再工程是指在逆向工程所获得信息的基础上, 修改或重构已有的系统, 产生系统的一个新版本。<br>
+(4) <code>正向工程（Forward Engineering）</code>。正向工程是指不仅从现有系统中恢复设计信息, 而且使用该信息去改变或重构现有系统, 以改善其整体质量。</p>
 <h2> 软件开发/过程/生命周期模型</h2>
 <ul>
-<li>软件开发模型给出了软件开发活动各阶段之间的关系，它是软件开发过程的概括，是软件工程的重要内容。</li>
-<li>软件要经历从<code>软件定义、软件开发、软件运行、软件维护（软件生命周期方法学），直至被淘汰</code>这样的全过程</li>
+<li>软件开发模型给出了软件开发活动各阶段之间的关系, 它是软件开发过程的概括, 是软件工程的重要内容。</li>
+<li>软件要经历从<code>软件定义、软件开发、软件运行、软件维护（软件生命周期方法学）, 直至被淘汰</code>这样的全过程</li>
 </ul>
 <h3> 瀑布模型</h3>
 <h4> 特点</h4>
 <ul>
-<li>严格区分阶段，每个阶段因果关系紧密相连</li>
+<li>严格区分阶段, 每个阶段因果关系紧密相连</li>
 <li>只适合需求明确的项目</li>
 </ul>
 <h4> 缺点</h4>
 <ul>
 <li>软件需求完整性、正确性难确定</li>
-<li>严格串行化，很长时间才能看到结果</li>
-<li>瀑布模型要求每个阶段一次性完全解决该阶段工作，这不现实。</li>
+<li>严格串行化, 很长时间才能看到结果</li>
+<li>瀑布模型要求每个阶段一次性完全解决该阶段工作, 这不现实。</li>
 </ul>
 <h4> 阶段</h4>
 <ul>
@@ -139,19 +139,19 @@
 <h3> 喷泉模型</h3>
 <h4> 特点</h4>
 <ul>
-<li>喷泉模型是一种以用户需求为动力，以对象为驱动的模型，主要用于描述面向对象的软件开发过程</li>
-<li>在喷泉模型中，各活动之间无明显边界</li>
+<li>喷泉模型是一种以用户需求为动力, 以对象为驱动的模型, 主要用于描述面向对象的软件开发过程</li>
+<li>在喷泉模型中, 各活动之间无明显边界</li>
 </ul>
 <h3> 变换模型</h3>
 <h4> 特点/优点</h4>
 <ul>
-<li>变换模型是基于形式化规格说明语言和程序变换的软件开发模型，它对形式化的软件规格说明进行一系列自动或半自动的程序变换，最后映射为计算机能够接受的软件系统。</li>
-<li>解决了代码结构性多次修改而变坏的问题，减少了许多中间步骤（例如，设计、编码和测试等）</li>
+<li>变换模型是基于形式化规格说明语言和程序变换的软件开发模型, 它对形式化的软件规格说明进行一系列自动或半自动的程序变换, 最后映射为计算机能够接受的软件系统。</li>
+<li>解决了代码结构性多次修改而变坏的问题, 减少了许多中间步骤（例如, 设计、编码和测试等）</li>
 </ul>
 <h3> V 模型</h3>
 <h4> 特点/优点</h4>
 <ul>
-<li>V 模型强调软件开发的协作和速度，将软件实现和验证有机地结合起来，在保证较高的软件质量情况下缩短开发周期。</li>
+<li>V 模型强调软件开发的协作和速度, 将软件实现和验证有机地结合起来, 在保证较高的软件质量情况下缩短开发周期。</li>
 <li>V 模型适合企业级的软件开发。</li>
 </ul>
 <h4> 阶段</h4>
@@ -164,43 +164,43 @@
 <h3> 增量模型</h3>
 <h4> 优点</h4>
 <ul>
-<li>增量模型的优点是降低了实现需求变更的成本，相对于瀑布模型，重新分析和修改文档的工作流程更少</li>
-<li>在开发过程中能够更容易得到客户的反馈意见，客户可以对已完成的开发工作进行评价并判断项目进度，相比较从软件设计文档中评价项目和判断项目进度更为便捷</li>
+<li>增量模型的优点是降低了实现需求变更的成本, 相对于瀑布模型, 重新分析和修改文档的工作流程更少</li>
+<li>在开发过程中能够更容易得到客户的反馈意见, 客户可以对已完成的开发工作进行评价并判断项目进度, 相比较从软件设计文档中评价项目和判断项目进度更为便捷</li>
 </ul>
 <h4> 缺点</h4>
 <ul>
-<li>增量模型的缺点是过程不可见，需要常规的交付物来掌握进度，如果系统是快速开发的，则产生每个版本的文档不划算</li>
+<li>增量模型的缺点是过程不可见, 需要常规的交付物来掌握进度, 如果系统是快速开发的, 则产生每个版本的文档不划算</li>
 </ul>
 <h3> 快速应用开发</h3>
 <blockquote>
-<p>快速应用开发（Rapid Application Development，RAD ） 是一种比传统生命周期法快得多的开发方法，它强调极短的开发周期。</p>
+<p>快速应用开发（Rapid Application Development, RAD ） 是一种比传统生命周期法快得多的开发方法, 它强调极短的开发周期。</p>
 </blockquote>
 <h4> RAD 的开发阶段</h4>
 <ul>
-<li>RAD 的流程从<code>业务建模开始，随后是数据建模、过程建模、应用生成、测试与交付</code>。</li>
+<li>RAD 的流程从<code>业务建模开始, 随后是数据建模、过程建模、应用生成、测试与交付</code>。</li>
 </ul>
 <h4> RAD 的特点</h4>
-<p>（1）并非所有应用都适合 RAD 。RAD 对模块化要求比较高，如果有哪一项功能不能被模块化，那么 RAD 所需要的构件就会有问题<br>
+<p>（1）并非所有应用都适合 RAD 。RAD 对模块化要求比较高, 如果有哪一项功能不能被模块化, 那么 RAD 所需要的构件就会有问题<br>
 （2）开发者和客户必须在很短的时间完成一系列的需求分析<br>
-（3）RAD 只能用于管理信息系统的开发，不适合技术风险很高的情况</p>
+（3）RAD 只能用于管理信息系统的开发, 不适合技术风险很高的情况</p>
 <h3> 统一过程</h3>
 <blockquote>
-<p>统一过程（Unified Process， UP）是一个通用过程框架，可以用于种类广泛的软件系统、不同的应用领域、不同的组织类型、不同的性能水平和不同的项目规模。<code>UP是基于构件的</code>，在为软件系统建模时，UP 使用的是 UML。与其他软件过程相比，UP 具有三个显著的特点，即<code>用例驱动、以架构为中心、迭代和增量</code>。</p>
+<p>统一过程（Unified Process, UP）是一个通用过程框架, 可以用于种类广泛的软件系统、不同的应用领域、不同的组织类型、不同的性能水平和不同的项目规模。<code>UP是基于构件的</code>, 在为软件系统建模时, UP 使用的是 UML。与其他软件过程相比, UP 具有三个显著的特点, 即<code>用例驱动、以架构为中心、迭代和增量</code>。</p>
 </blockquote>
 <h4> 生命周期</h4>
-<p>（1）<code>业务建模 (Business Modeling)</code>： 理解待开发系统所在的机构及其商业运作，确保所有参与人员对待开发系统所在的机构有共同的认识，评估待开发系统对所在机构的影响。<br>
-（2）<code>需求 (Requirements)</code>：定义系统功能及用户界面，使客户知道系统的功能，使开发人员理解系统的需求，为项目预算及计划提供基础。<br>
+<p>（1）<code>业务建模 (Business Modeling)</code>： 理解待开发系统所在的机构及其商业运作, 确保所有参与人员对待开发系统所在的机构有共同的认识, 评估待开发系统对所在机构的影响。<br>
+（2）<code>需求 (Requirements)</code>：定义系统功能及用户界面, 使客户知道系统的功能, 使开发人员理解系统的需求, 为项目预算及计划提供基础。<br>
 （3）<code>分析与设计 （Analysis &amp; Dcsign）</code>：把需求分析的结果转化为分析与设计模型。<br>
-（4）<code>实现 (Implementation)</code>： 把设计模型转换为实现结果，对开发的代码做单元测试，将不同实现人员开发的模块集成为可执行系统。<br>
-（5）<code>测试（Test）</code>：检查各子系统之间的交互、集成，验证所有需求是否均被正确实现，对发现的软件质量上的缺陷进行归档，对软件质量提出改进建议。<br>
-（6）<code>部署 (Deployment)</code>: 打包、分发、安装软件，升级旧系统；培训用户及销售人员，并提供技术支持。<br>
+（4）<code>实现 (Implementation)</code>： 把设计模型转换为实现结果, 对开发的代码做单元测试, 将不同实现人员开发的模块集成为可执行系统。<br>
+（5）<code>测试（Test）</code>：检查各子系统之间的交互、集成, 验证所有需求是否均被正确实现, 对发现的软件质量上的缺陷进行归档, 对软件质量提出改进建议。<br>
+（6）<code>部署 (Deployment)</code>: 打包、分发、安装软件, 升级旧系统；培训用户及销售人员, 并提供技术支持。<br>
 （7）<code>配置与变更管理 (Configuration &amp; Change Management)</code>: 跟踪并维护系统开发过程中产生的所有制品的完整性和一致性。<br>
-（8）<code>项目管理 (Project Management)</code>: 为软件开发项目提供计划、人员分配、执行、监控等方面的指导，为风险管理提供框架。<br>
-（9）<code>环境 (Environment)</code>: 为软件开发机构提供软件开发环境，即提供过程管理和工具的支持。</p>
+（8）<code>项目管理 (Project Management)</code>: 为软件开发项目提供计划、人员分配、执行、监控等方面的指导, 为风险管理提供框架。<br>
+（9）<code>环境 (Environment)</code>: 为软件开发机构提供软件开发环境, 即提供过程管理和工具的支持。</p>
 <h4> 核心概念</h4>
-<p>（1）<code>角色 (Role)</code>：Who 的问题。角色描述某个人或一个小组的行为与职责。 RUP 预先定义了很多角色，如体系结构师 (Architect)、设计人员 (Designer)、实现人员（Implementer）、测试员 （tester）和配置管理人员 （Configuration Manager）等，并对每一个角色的工作和职责都做了详尽的说明。<br>
-（2）<code>活动 (Activity)</code>：How 的问题。活动是一个有明确目的的独立工作单元。制品（Artifact）：What 的问题。视频是活动生成、创建或修改的一段信息。也有些书把 Artifact 翻译为产品、工件等，和制品的意思差不多。<br>
-（3）<code>工作流 (Workflow)</code>：When 的问题。工作流描述了一个有意义的连续的活动序列，每个工作流产生一些有价值的产品，并显示了角色之间的关系。</p>
+<p>（1）<code>角色 (Role)</code>：Who 的问题。角色描述某个人或一个小组的行为与职责。 RUP 预先定义了很多角色, 如体系结构师 (Architect)、设计人员 (Designer)、实现人员（Implementer）、测试员 （tester）和配置管理人员 （Configuration Manager）等, 并对每一个角色的工作和职责都做了详尽的说明。<br>
+（2）<code>活动 (Activity)</code>：How 的问题。活动是一个有明确目的的独立工作单元。制品（Artifact）：What 的问题。视频是活动生成、创建或修改的一段信息。也有些书把 Artifact 翻译为产品、工件等, 和制品的意思差不多。<br>
+（3）<code>工作流 (Workflow)</code>：When 的问题。工作流描述了一个有意义的连续的活动序列, 每个工作流产生一些有价值的产品, 并显示了角色之间的关系。</p>
 <h4> 初时阶段</h4>
 <blockquote>
 <p>初始阶段的任务是为系统建立业务模型并确定项目的边界</p>
@@ -211,7 +211,7 @@
 (4) 阶段技术评审。</p>
 <h4> 细化阶段</h4>
 <blockquote>
-<p>细化阶段的任务是分析问题领域，建立完善的架构，淘汰项目中最高风险的元素</p>
+<p>细化阶段的任务是分析问题领域, 建立完善的架构, 淘汰项目中最高风险的元素</p>
 </blockquote>
 <p>(1) 确定架构。<br>
 (2) 制订构建阶段计划。<br>
@@ -219,11 +219,11 @@
 (5) 阶段技术评审。</p>
 <h4> 构建阶段</h4>
 <blockquote>
-<p>在构建阶段，要开发所有剩余的构件和应用程序功能，把这些构件集成为产品，并进行详细测试</p>
+<p>在构建阶段, 要开发所有剩余的构件和应用程序功能, 把这些构件集成为产品, 并进行详细测试</p>
 </blockquote>
 <h4> 移交阶段</h4>
 <blockquote>
-<p>当基线已经足够完善，可以安装到最终用户实际环境中时，则进入交付阶段。交付阶段的重点是确保软件对最终用户是可用的。</p>
+<p>当基线已经足够完善, 可以安装到最终用户实际环境中时, 则进入交付阶段。交付阶段的重点是确保软件对最终用户是可用的。</p>
 </blockquote>
 <h3> 敏捷方法</h3>
 <h4> 敏捷宣言</h4>
@@ -240,14 +240,14 @@
 （4）持续集成<br>
 （5）自我管理</p>
 <h4> 核心思想</h4>
-<p>（1）敏捷方法是适应型，而非可预测型。<br>
-（2）敏捷方法是以人为本，而非以过程为本。<br>
+<p>（1）敏捷方法是适应型, 而非可预测型。<br>
+（2）敏捷方法是以人为本, 而非以过程为本。<br>
 （3）迭代增量式的开发过程。</p>
 <h4> 主要敏捷方法</h4>
 <blockquote>
 <p>主要的敏捷方法有极限编程（XP）、自适应软件开发(ASD)、水晶方法（Crystal）、特性驱动开发（FDD）、动态系统开发方法（DSDM）、测试驱动开发（TDD）、敏捷数据库技术（AD）和精益软件开发等</p>
 </blockquote>
-<h5> 极限编程（Extreme Programming，XP）</h5>
+<h5> 极限编程（Extreme Programming, XP）</h5>
 <ul>
 <li>它的基础和价值观是<code>交流、朴素、反馈和勇气</code></li>
 <li>可以从 4 个方面入手进行改善: 加强交流；从简单做起；寻求反馈；勇于实事求是</li>
@@ -255,7 +255,7 @@
 <h5> 水晶系列方法</h5>
 <ul>
 <li>都有<code>以人为中心</code>的理念</li>
-<li>其目的是发展一种提倡“机动性的”方法，包含具有共性的核心元素，每个都含有独特的角色、过程模式、工作产品和实践。</li>
+<li>其目的是发展一种提倡“机动性的”方法, 包含具有共性的核心元素, 每个都含有独特的角色、过程模式、工作产品和实践。</li>
 </ul>
 <h5> Scrum</h5>
 <ul>
@@ -263,7 +263,7 @@
 <p>该方法侧重于项目管理。</p>
 </li>
 <li>
-<p>Scrum 是迭代式增量软件开发过程，通常用于敏捷软件开发。</p>
+<p>Scrum 是迭代式增量软件开发过程, 通常用于敏捷软件开发。</p>
 </li>
 <li>
 <p>3 个核心角色</p>
@@ -312,19 +312,19 @@
 <ul>
 <li>W 模型中测试与开发是同步进行的</li>
 <li>W 模型增加了软件各开发阶段中应同步进行的验证和确认活动</li>
-<li>W 模型强调：测试伴随着整个软件开发周期，而且测试的对象不仅仅是程序，需求、设计等同样要测试，也就是说，测试与开发是同步进行的</li>
+<li>W 模型强调：测试伴随着整个软件开发周期, 而且测试的对象不仅仅是程序, 需求、设计等同样要测试, 也就是说, 测试与开发是同步进行的</li>
 <li>W 模型有利于尽早地全面的发现问题</li>
 </ul>
-<h2> 软件能力成熟度模型（Capability Maturity Model ， CMM）</h2>
+<h2> 软件能力成熟度模型（Capability Maturity Model , CMM）</h2>
 <p>5 个等级：</p>
-<p>（1）<code>初始级</code>。初始级是未加定义的随意过程，软件过程的特点是无秩序的，有时甚至是混乱的。<br>
-（2）<code>可重复级</code>。可重复级是规则化和纪律化的过程，软件过程已建立了基本的项目管理过程，可用于对成本、进度和功能特性进行跟踪。对类似的应用项目，有章可循并能重复以往所取得的成功。<br>
-（3）<code>已定义级</code>。已定义级是标准的和一致的过程，用于管理的和工程的软件过程均已文档化、标准化，并形成了整个软件组织的标准软件过程。全部项目均采用与实际情况相吻合的、适当修改后的标准软件过程来进行操作。<br>
-（4）<code>已管理级</code>。已管理级是可预测的过程，软件过程和产品质量有详细的度量标准。软件过程和产品质量得到了定量的认识和控制。<br>
-（5）<code>优化级</code>。优化级是持续改进的过程，通过对来自过程、新概念和新技术等方面的各种有用信息的定量分析，能够不断地、持续性地对过程进行改进。</p>
+<p>（1）<code>初始级</code>。初始级是未加定义的随意过程, 软件过程的特点是无秩序的, 有时甚至是混乱的。<br>
+（2）<code>可重复级</code>。可重复级是规则化和纪律化的过程, 软件过程已建立了基本的项目管理过程, 可用于对成本、进度和功能特性进行跟踪。对类似的应用项目, 有章可循并能重复以往所取得的成功。<br>
+（3）<code>已定义级</code>。已定义级是标准的和一致的过程, 用于管理的和工程的软件过程均已文档化、标准化, 并形成了整个软件组织的标准软件过程。全部项目均采用与实际情况相吻合的、适当修改后的标准软件过程来进行操作。<br>
+（4）<code>已管理级</code>。已管理级是可预测的过程, 软件过程和产品质量有详细的度量标准。软件过程和产品质量得到了定量的认识和控制。<br>
+（5）<code>优化级</code>。优化级是持续改进的过程, 通过对来自过程、新概念和新技术等方面的各种有用信息的定量分析, 能够不断地、持续性地对过程进行改进。</p>
 <p>8 个核心能力域：</p>
 <p>数据战略、数据治理、数据架构、数据应用、数据安全、数据质量、数据标准和数据生存周期</p>
-<h2> 能力成熟度模型集成（Capability Maturity Model Integration，CMMI）</h2>
+<h2> 能力成熟度模型集成（Capability Maturity Model Integration, CMMI）</h2>
 <h3> 体系文件的层次结构</h3>
 <p>(1) 方针文件<br>
 (2) 过程文件<br>
@@ -386,7 +386,7 @@
 </table>
 <h2> 基于构件的软件开发方法</h2>
 <h3> 构件管理</h3>
-<p>构件管理的内容包括<code>构件描述，构件分类，构件库组织，人员及权限管理，用户意见反馈</code>等。</p>
+<p>构件管理的内容包括<code>构件描述, 构件分类, 构件库组织, 人员及权限管理, 用户意见反馈</code>等。</p>
 <h3> 构件分类</h3>
 <p>（1）<code>独立而成熟的构件</code>。经过多次实际环境检验, 接口完全隐藏, 用户只需使用规定命令, 如数据库系统、操作系统等。<br>
 （2）<code>有限制的构件</code>。提供接口说明使用条件和前提, 在装配时可能产生资源冲突、覆盖等影响, 需测试, 如面向对象语言的基础类库。<br>
@@ -394,10 +394,10 @@
 （4）<code>装配的构件</code>。已经装配到操作系统、数据库或信息系统不同层次, 可通过胶水代码连接使用, 多为软件商提供的产品。<br>
 （5）<code>可修改的构件</code>。可进行版本替换, 修改错误、增加新功能通过重新包装或接口实现, 在应用系统开发中使用较多。</p>
 <h3> 构件的特性</h3>
-<p>（1）<code>可组装性</code>。构件的所有外部交互必须通过公开定义的接口进行，同时还必须对自身信息提供外部访问。<br>
-（2）<code>可部署性</code>。构件必须是自包含的，能够作为独立实体在构件平台上运行，以二进制形式部署而无需编译。<br>
-（3）<code>文档化</code>。构件必须完全文档化，用户可以根据文档判断构件是否满足需求。<br>
-（4）<code>独立性</code>。构件应该是独立的，可以在无需其他特殊构件的情况下进行组装和部署，只有在确实需要其他构件提供服务时才应声明依赖。<br>
+<p>（1）<code>可组装性</code>。构件的所有外部交互必须通过公开定义的接口进行, 同时还必须对自身信息提供外部访问。<br>
+（2）<code>可部署性</code>。构件必须是自包含的, 能够作为独立实体在构件平台上运行, 以二进制形式部署而无需编译。<br>
+（3）<code>文档化</code>。构件必须完全文档化, 用户可以根据文档判断构件是否满足需求。<br>
+（4）<code>独立性</code>。构件应该是独立的, 可以在无需其他特殊构件的情况下进行组装和部署, 只有在确实需要其他构件提供服务时才应声明依赖。<br>
 （5）<code>标准化</code>。在 CBSE 过程中使用的构件必须符合某种标准化的构件模型。</p>
 <h3> CBSE 过程的主要活动</h3>
 <p>（1）系统需求概览<br>
@@ -405,11 +405,11 @@
 （3）根据发现的构件修改需求<br>
 （4）体系结构设计<br>
 （5）构件定制与适配<br>
-（6）组装构件，创建系统。</p>
+（6）组装构件, 创建系统。</p>
 <h3> 构件组装</h3>
 <p>（1）<code>顺序组装</code>通过按顺序调用已有构件来创建新构件, 适用于构件作为程序元素或服务。需要胶水代码保证前一构件输出与下一构件输入相兼容。<br>
-（2）<code>层次组装</code>一个构件直接调用另一构件提供的服务，被调用构件的"提供"接口必须与调用构件的"请求"接口相容，否则需编写胶水代码实现转换。<br>
-（3）<code>叠加组装</code>是两个或多个构件合并创建新构件，新构件合并了原构件功能并对外提供新接口。原构件之间无依赖关系, 外部应用通过新接口调用原构件接口。</p>
+（2）<code>层次组装</code>一个构件直接调用另一构件提供的服务, 被调用构件的"提供"接口必须与调用构件的"请求"接口相容, 否则需编写胶水代码实现转换。<br>
+（3）<code>叠加组装</code>是两个或多个构件合并创建新构件, 新构件合并了原构件功能并对外提供新接口。原构件之间无依赖关系, 外部应用通过新接口调用原构件接口。</p>
 <h3> 构件不兼容</h3>
 <p>（1）<code>参数不兼容</code>。接口操作名称相同但参数类型或个数不同。<br>
 （2）<code>操作不兼容</code>。提供接口和请求接口的操作名不同。<br>
@@ -417,86 +417,85 @@
 <h2> 需求工程</h2>
 <ul>
 <li>需求工程包括需求开发和需求管理两大类活动。</li>
-<li>需求开发包括<code>需求获取，需求分析，需求定义，需求验证</code>这些主要活动。</li>
+<li>需求开发包括<code>需求获取, 需求分析, 需求定义, 需求验证</code>这些主要活动。</li>
 <li>需求管理包括<code>变更控制、版本控制、需求跟踪和需求状态跟踪</code>这些活动。</li>
 </ul>
 <h3> 需求管理</h3>
 <p>需求变更阶段：</p>
 <ul>
-<li><code>问题分析和变更描述</code>，通过识别和分析需求问题或提出的变更提议确保其有效性。</li>
-<li><code>变更分析和成本计算</code>，使用可追溯性信息和系统需求的一般知识对变更提议进行影响分析和评估，同时计算修改需求文档和系统实现的成本。确认后进行是否执行该变更的决策。</li>
-<li><code>变更实现</code>，要求同时修改需求文档和系统设计实现，避免文档和程序的不一致。</li>
+<li><code>问题分析和变更描述</code>, 通过识别和分析需求问题或提出的变更提议确保其有效性。</li>
+<li><code>变更分析和成本计算</code>, 使用可追溯性信息和系统需求的一般知识对变更提议进行影响分析和评估, 同时计算修改需求文档和系统实现的成本。确认后进行是否执行该变更的决策。</li>
+<li><code>变更实现</code>, 要求同时修改需求文档和系统设计实现, 避免文档和程序的不一致。</li>
 </ul>
 <h3> 变更管理</h3>
 <p>（1）<code>变更申请</code>。提出对配置项和基线进行变更的申请。<br>
-（2）<code>变更评估</code>。变更控制委员会(CCB)对变更申请进行评估, 包括影响分析、必要性、范围、可行性、工作量估计等，并决定是否批准变更。<br>
+（2）<code>变更评估</code>。变更控制委员会(CCB)对变更申请进行评估, 包括影响分析、必要性、范围、可行性、工作量估计等, 并决定是否批准变更。<br>
 （3）<code>通告评估</code>。结果 CCB 将对每个变更申请的批准、否决或推迟决定通知相关人员。<br>
-（4）<code>变更实施</code>。项目经理组织对受影响的配置项进行修改，并记录变更信息。<br>
-（5）<code>变更验证与确认</code>。对变更后的配置项进行测试验证，由 CCB 确认变更是否按要求完成。<br>
-（6）<code>变更的发布</code>。配置管理员将变更后的配置项纳入基线。配置管理员将变更内容和结果通知相关人员，并做好记录。</p>
+（4）<code>变更实施</code>。项目经理组织对受影响的配置项进行修改, 并记录变更信息。<br>
+（5）<code>变更验证与确认</code>。对变更后的配置项进行测试验证, 由 CCB 确认变更是否按要求完成。<br>
+（6）<code>变更的发布</code>。配置管理员将变更后的配置项纳入基线。配置管理员将变更内容和结果通知相关人员, 并做好记录。</p>
 <h2> 项目管理</h2>
 <ul>
-<li>项目的成本管理中，<code>成本预算</code>将总的成本估算分配到各项活动和工作包上，来建立一个成本的基线。</li>
+<li>项目的成本管理中, <code>成本预算</code>将总的成本估算分配到各项活动和工作包上, 来建立一个成本的基线。</li>
 </ul>
 <h2> UML 统一建模语言</h2>
 <h3> 系统视图</h3>
-<p>(1) <code>逻辑视图</code>。逻辑视图也称为设计视图，它表示了设计模型中在架构方面具有重要意义的部分，即类、子系统、包和用例实现的子集。<br>
-(2) <code>进程视图</code>。进程视图是可执行线程和进程作为活动类的建模，它是逻辑视图的一次执行实例，描述了并发与同步结构。<br>
+<p>(1) <code>逻辑视图</code>。逻辑视图也称为设计视图, 它表示了设计模型中在架构方面具有重要意义的部分, 即类、子系统、包和用例实现的子集。<br>
+(2) <code>进程视图</code>。进程视图是可执行线程和进程作为活动类的建模, 它是逻辑视图的一次执行实例, 描述了并发与同步结构。<br>
 (3) <code>实现视图</code>。实现视图对组成基于系统的物理代码的文件和构件进行建模。<br>
-(4) <code>部署视图</code>。部署视图把构件部署到一组物理节点上，表示软<br>
-件到硬件的映射和分布结构。<br>
+(4) <code>部署视图</code>。部署视图把构件部署到一组物理节点上, 表示软件到硬件的映射和分布结构。<br>
 (5) <code>用例视图</code>。用例视图是最基本的需求分析模型。</p>
 <h3> 关系</h3>
-<p>(1) <code>依赖</code>。依赖是两个事物之间的语义关系，其中一个事物发生变化会影响另一个事物的语义。<br>
+<p>(1) <code>依赖</code>。依赖是两个事物之间的语义关系, 其中一个事物发生变化会影响另一个事物的语义。<br>
 (2) <code>关联</code>。关联描述一组对象之间连接的结构关系。<br>
-(3) <code>泛化</code>。泛化是一般化和特殊化的关系，描述特殊元素的对象可替换一般元素的对象。<br>
-(4) <code>实现</code>。实现是类之间的语义关系，其中的一个类指定了由另<br>
+(3) <code>泛化</code>。泛化是一般化和特殊化的关系, 描述特殊元素的对象可替换一般元素的对象。<br>
+(4) <code>实现</code>。实现是类之间的语义关系, 其中的一个类指定了由另<br>
 一个类保证执行的契约。</p>
 <h3> 图</h3>
-<p>(1) <code>类图</code>。类图描述一组类、接口、协作和它们之间的关系。在 OO 系统的建模中，最常见的图就是类图。<br>
+<p>(1) <code>类图</code>。类图描述一组类、接口、协作和它们之间的关系。在 OO 系统的建模中, 最常见的图就是类图。<br>
 (2) <code>对象图</code>。对象图描述一组对象及它们之间的关系。对象图描述了在类图中所建立的事物实例的静态快照。<br>
-(3) <code>构件图</code>。构件图描述一个封装的类和它的接口、端口，以及由内嵌的构件和连接件构成的内部结构。<br>
-(4) <code>组合结构图</code>。组合结构图描述结构化类（例如，构件或类）的内部结构，包括结构化类与系统其余部分的交互点。<br>
+(3) <code>构件图</code>。构件图描述一个封装的类和它的接口、端口, 以及由内嵌的构件和连接件构成的内部结构。<br>
+(4) <code>组合结构图</code>。组合结构图描述结构化类（例如, 构件或类）的内部结构, 包括结构化类与系统其余部分的交互点。<br>
 (5) <code>用例图</code>。用例图描述一组用例、参与者及它们之间的关系。<br>
-(6) <code>顺序图（序列图）</code>。顺序图是一种交互图，交互图展现了一种交互，它由一组对象或参与者以及它们之间可能发送的消息构成。<br>
-(7) <code>通信图</code>。通信图也是一种交互图，它强调收发消息的对象或参与者的结构组织。<br>
-(8) <code>定时图（计时图）</code>。定时图也是一种交互图，它强调消息跨越不同对象或参与者的实际时间，而不仅仅是关心消息的相对顺序。<br>
-(9) <code>状态图</code>。状态图描述一个状态机，它由状态、转移、事件和活动组成。<br>
+(6) <code>顺序图（序列图）</code>。顺序图是一种交互图, 交互图展现了一种交互, 它由一组对象或参与者以及它们之间可能发送的消息构成。<br>
+(7) <code>通信图</code>。通信图也是一种交互图, 它强调收发消息的对象或参与者的结构组织。<br>
+(8) <code>定时图（计时图）</code>。定时图也是一种交互图, 它强调消息跨越不同对象或参与者的实际时间, 而不仅仅是关心消息的相对顺序。<br>
+(9) <code>状态图</code>。状态图描述一个状态机, 它由状态、转移、事件和活动组成。<br>
 (10) <code>活动图</code>。活动图将进程或其他计算结构展示为计算内部一步步的控制流和数据流。<br>
 (11) <code>部署图</code>。部署图描述对运行时的处理节点及在其中生存的构件的配置。<br>
 (12) <code>制品图</code>。视品图描述计算机中一个系统的物理结构。<br>
-(13) <code>包图</code>。包图描述由模型本身分解而成的组织单元，以及它们之间的依赖关系。<br>
+(13) <code>包图</code>。包图描述由模型本身分解而成的组织单元, 以及它们之间的依赖关系。<br>
 (14) <code>交互概览图</code>。交互概览图是活动图和顺序图的混合物。</p>
 <h2> 软件测试</h2>
 <ul>
-<li><code>控制流图</code>用于检查程序控制结构，描绘程序元素和执行顺序；</li>
-<li><code>数据流图</code>则用于发现数据异常，这些异常包括初始化、赋值、或引用数据等的序列的异常；</li>
-<li><code>接口分析</code>则用于检查子程序和函数接口的一致性，包括形参实参的类型、个数、维数、顺序等。</li>
-<li><code>驱动模块</code>相当于被测模块的主程序，接收数据并将数据传送给被测模块，启动被测模块并打印结果，自顶向下的单元测试中不需要另外编写驱动模块。</li>
-<li><code>桩模块</code>是模拟被测模块调用的模块，用于替代直接相连的模块，以便测试被测模块的接口。为了模拟下级模块功能，测试前需要编写一些模拟接口的桩模块。</li>
+<li><code>控制流图</code>用于检查程序控制结构, 描绘程序元素和执行顺序；</li>
+<li><code>数据流图</code>则用于发现数据异常, 这些异常包括初始化、赋值、或引用数据等的序列的异常；</li>
+<li><code>接口分析</code>则用于检查子程序和函数接口的一致性, 包括形参实参的类型、个数、维数、顺序等。</li>
+<li><code>驱动模块</code>相当于被测模块的主程序, 接收数据并将数据传送给被测模块, 启动被测模块并打印结果, 自顶向下的单元测试中不需要另外编写驱动模块。</li>
+<li><code>桩模块</code>是模拟被测模块调用的模块, 用于替代直接相连的模块, 以便测试被测模块的接口。为了模拟下级模块功能, 测试前需要编写一些模拟接口的桩模块。</li>
 </ul>
 <h3> 测试方法</h3>
 <blockquote>
-<p>盒测试依据软件内部逻辑设计测试用例，常用的技术是<code>逻辑覆盖</code>。逻辑覆盖有 6 种覆盖标准，分别是<code>语句覆盖、判定覆盖、条件覆盖、判定/条件覆盖、条件组合覆盖和路径覆盖</code>，强度从低到高。</p>
+<p>盒测试依据软件内部逻辑设计测试用例, 常用的技术是<code>逻辑覆盖</code>。逻辑覆盖有 6 种覆盖标准, 分别是<code>语句覆盖、判定覆盖、条件覆盖、判定/条件覆盖、条件组合覆盖和路径覆盖</code>, 强度从低到高。</p>
 </blockquote>
 <ul>
-<li><code>静态测试</code>是一种程序测试的方法，通过人工检测和计算机辅助静态分析，在机器上不运行程序，检测文档和代码的准确性和逻辑错误</li>
+<li><code>静态测试</code>是一种程序测试的方法, 通过人工检测和计算机辅助静态分析, 在机器上不运行程序, 检测文档和代码的准确性和逻辑错误</li>
 <li><code>动态测试</code>则是利用计算机运行程序的方式进行测试</li>
-<li><code>黑盒测试</code>是不需了解内部结构和代码实现，只关注程序的输入和输出，测试其功能需求是否满足
+<li><code>黑盒测试</code>是不需了解内部结构和代码实现, 只关注程序的输入和输出, 测试其功能需求是否满足
 <ul>
 <li>黑盒测试的方法包括<code>等价类划分法、边界值分析法、因果图法、判定表驱动法和错误推测法</code>等</li>
 <li>黑盒测试主要用于<code>集成测试、确认测试和系统测试阶段</code></li>
 </ul>
 </li>
-<li><code>白盒测试</code>需要了解程序内部结构和逻辑，针对代码进行测试以确保运行正确</li>
-<li><code>灰盒测试</code>不仅关注输入输出，也关注逻辑</li>
-<li><code>α测试</code>是在开发者场地由开发人员或测试人员执行的内部测试，侧重于功能验证和重大缺陷检测</li>
-<li><code>β测试</code>是软件开发过程中的一种测试阶段，通常在正式发布之前进行。在这个阶段，开发团队会将软件提供给一部分用户群体使用，以便获取反馈和意见</li>
-<li><code>验收测试</code>的目的是确保软件能够准备就绪，并且可以让最终用户将其用于执行既定的功能和任务。</li>
-<li><code>回归测试</code>的目的是测试软件变更之后变更部分的正确性和对变更需求的符合性，以及确保软件原有的功能不受损害。</li>
-<li><code>集成测试</code>主要是检查模块之间的接口关系，以及已集成的软件是否符合设计要求。其测试的技术依据是软件概要设计文档。
+<li><code>白盒测试</code>需要了解程序内部结构和逻辑, 针对代码进行测试以确保运行正确</li>
+<li><code>灰盒测试</code>不仅关注输入输出, 也关注逻辑</li>
+<li><code>α测试</code>是在开发者场地由开发人员或测试人员执行的内部测试, 侧重于功能验证和重大缺陷检测</li>
+<li><code>β测试</code>是软件开发过程中的一种测试阶段, 通常在正式发布之前进行。在这个阶段, 开发团队会将软件提供给一部分用户群体使用, 以便获取反馈和意见</li>
+<li><code>验收测试</code>的目的是确保软件能够准备就绪, 并且可以让最终用户将其用于执行既定的功能和任务。</li>
+<li><code>回归测试</code>的目的是测试软件变更之后变更部分的正确性和对变更需求的符合性, 以及确保软件原有的功能不受损害。</li>
+<li><code>集成测试</code>主要是检查模块之间的接口关系, 以及已集成的软件是否符合设计要求。其测试的技术依据是软件概要设计文档。
 <ul>
-<li>集成测试可以分为<code>一次性组装和增量式组装</code>，增量式组装测试效果更好。集成测试计划一般在<code>概要设计阶段</code>完成。</li>
+<li>集成测试可以分为<code>一次性组装和增量式组装</code>, 增量式组装测试效果更好。集成测试计划一般在<code>概要设计阶段</code>完成。</li>
 </ul>
 </li>
 <li><code>系统测试</code>则是在真实系统环境下验证整个软件配置项的连接和是否满足各种要求。</li>
@@ -507,7 +506,7 @@
 </ul>
 <h2> 面向对象设计原则</h2>
 <blockquote>
-<p>面向对象设计原则总共有六种，分别是<code>单一职责原则、开放-封闭原则、李氏替换原则、依赖倒置原则、接口隔离原则和组合重用原则</code></p>
+<p>面向对象设计原则总共有六种, 分别是<code>单一职责原则、开放-封闭原则、李氏替换原则、依赖倒置原则、接口隔离原则和组合重用原则</code></p>
 </blockquote>
 ]]></content:encoded>
     </item>
@@ -516,7 +515,7 @@
       <link>https://vxhly.github.io/system-architect/basic-knowledge/basic-database.html</link>
       <guid>https://vxhly.github.io/system-architect/basic-knowledge/basic-database.html</guid>
       <source url="https://vxhly.github.io/rss.xml">系统架构-章节重点整理-数据库</source>
-      <description>前言 整理 数据库 章节的重点 三级模式 外模式用以描述用户（包括程序员和终端用户）看到或使用的那部分数据的逻辑结构，是数据库用户的数据视图，是与某一应用有关的数据的逻辑表示。一个数据库可以有多个外模式，一个应用程序只能使用一个外模式。对应的是视图级别。; 概念模式也称为模式或逻辑模式，对应于概念级数据库。一个数据库只有一个概念模式。对应的是表级别。;...</description>
+      <description>前言 整理 数据库 章节的重点 三级模式 外模式用以描述用户（包括程序员和终端用户）看到或使用的那部分数据的逻辑结构, 是数据库用户的数据视图, 是与某一应用有关的数据的逻辑表示。一个数据库可以有多个外模式, 一个应用程序只能使用一个外模式。对应的是视图级别。; 概念模式也称为模式或逻辑模式, 对应于概念级数据库。一个数据库只有一个概念模式。对应的是表...</description>
       <category>软考</category>
       <pubDate>Fri, 12 Apr 2024 18:15:49 GMT</pubDate>
       <content:encoded><![CDATA[<div class="hint-container tip">
@@ -525,42 +524,42 @@
 </div>
 <h2> 三级模式</h2>
 <ul>
-<li><code>外模式</code>用以描述用户（包括程序员和终端用户）看到或使用的那部分数据的逻辑结构，是数据库用户的数据视图，是与某一应用有关的数据的逻辑表示。一个数据库可以有多个外模式，一个应用程序只能使用一个外模式。对应的是<code>视图</code>级别。</li>
-<li><code>概念模式</code>也称为模式或逻辑模式，对应于概念级数据库。一个数据库只有一个概念模式。对应的是<code>表</code>级别。</li>
-<li><code>内模式</code>对应于物理级数据库，是数据物理结构和存储方式的描述，是数据在数据库内部的表示方式。对应的是<code>文件</code>级别。</li>
+<li><code>外模式</code>用以描述用户（包括程序员和终端用户）看到或使用的那部分数据的逻辑结构, 是数据库用户的数据视图, 是与某一应用有关的数据的逻辑表示。一个数据库可以有多个外模式, 一个应用程序只能使用一个外模式。对应的是<code>视图</code>级别。</li>
+<li><code>概念模式</code>也称为模式或逻辑模式, 对应于概念级数据库。一个数据库只有一个概念模式。对应的是<code>表</code>级别。</li>
+<li><code>内模式</code>对应于物理级数据库, 是数据物理结构和存储方式的描述, 是数据在数据库内部的表示方式。对应的是<code>文件</code>级别。</li>
 </ul>
 <h2> 两级独立性</h2>
 <p>数据库系统两级独立性是指<code>物理独立性</code>和<code>逻辑独立性</code>。</p>
 <ul>
 <li><code>物理独立性</code>是指用户的应用程序与存储在磁盘上的数据库中的数据是相互独立的</li>
-<li><code>逻辑独立性</code>是指用户的应用程序与数据库中的逻辑结构是相互独立的，当数据的逻辑结构改变时，应用程序不需要改变</li>
+<li><code>逻辑独立性</code>是指用户的应用程序与数据库中的逻辑结构是相互独立的, 当数据的逻辑结构改变时, 应用程序不需要改变</li>
 </ul>
 <h2> 数据模型</h2>
 <ul>
-<li>数据模型所描述的内容包括三个部分，分别是<code>数据结构、数据操作和数据约束</code>。</li>
+<li>数据模型所描述的内容包括三个部分, 分别是<code>数据结构、数据操作和数据约束</code>。</li>
 <li>基本数据模型: <code>层次模型、网状模型、关系模型和面向对象模型</code>。</li>
 </ul>
 <h2> 关系运算基础</h2>
 <h3> 并</h3>
-<p>计算两个关系在集合理论上的并集，即给出关系 R 和 S（两者有相同元/列数） 的元组包括 R 和 S 所有元组的集合</p>
+<p>计算两个关系在集合理论上的并集, 即给出关系 R 和 S（两者有相同元/列数） 的元组包括 R 和 S 所有元组的集合</p>
 <div class="hint-container tip">
 <p class="hint-container-title">公式</p>
 <p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>∪</mo><mi>S</mi><mo>≡</mo><mo stretchy="false">{</mo><mi>t</mi><mi mathvariant="normal">∣</mi><mi>t</mi><mo>∈</mo><mi>R</mi><mo>∨</mo><mi>t</mi><mo>∈</mo><mi>S</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">R \cup S \equiv \lbrace t|t \in R \vee t \in S \rbrace</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∪</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≡</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord mathnormal">t</span><span class="mord">∣</span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∨</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6542em;vertical-align:-0.0391em;"></span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mclose">}</span></span></span></span></p>
 </div>
 <h3> 差</h3>
-<p>计算两个关系的区别的集合，即给出关系 R 和 S（两者有相同元/列数），R-S 的元组包括 R 中有而 S 中没有的元组的集合</p>
+<p>计算两个关系的区别的集合, 即给出关系 R 和 S（两者有相同元/列数）, R-S 的元组包括 R 中有而 S 中没有的元组的集合</p>
 <div class="hint-container tip">
 <p class="hint-container-title">公式</p>
 <p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>−</mo><mi>S</mi><mo>≡</mo><mo stretchy="false">{</mo><mi>t</mi><mi mathvariant="normal">∣</mi><mi>t</mi><mo>∈</mo><mi>R</mi><mo>∨</mo><mi>t</mi><mo mathvariant="normal">∉</mo><mi>S</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">R - S \equiv \lbrace t|t \in R \vee t \notin S \rbrace</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≡</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord mathnormal">t</span><span class="mord">∣</span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∨</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel"><span class="mord"><span class="mrel">∈</span></span><span class="mord vbox"><span class="thinbox"><span class="llap"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="inner"><span class="mord"><span class="mord">/</span><span class="mspace" style="margin-right:0.0556em;"></span></span></span><span class="fix"></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mclose">}</span></span></span></span></p>
 </div>
 <h3> 交</h3>
-<p>计算两个关系集合理论上的交集，即给出关系 R 和 S (两者有相同元/列数), R <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∩</mo></mrow><annotation encoding="application/x-tex">\cap</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5556em;"></span><span class="mord">∩</span></span></span></span> S 的元组包括 R 和 S 相同元组的集合</p>
+<p>计算两个关系集合理论上的交集, 即给出关系 R 和 S (两者有相同元/列数), R <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∩</mo></mrow><annotation encoding="application/x-tex">\cap</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5556em;"></span><span class="mord">∩</span></span></span></span> S 的元组包括 R 和 S 相同元组的集合</p>
 <div class="hint-container tip">
 <p class="hint-container-title">公式</p>
 <p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>∩</mo><mi>S</mi><mo>≡</mo><mo stretchy="false">{</mo><mi>t</mi><mi mathvariant="normal">∣</mi><mi>t</mi><mo>∈</mo><mi>R</mi><mo>∧</mo><mi>t</mi><mo>∈</mo><mi>S</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">R \cap S \equiv \lbrace t|t \in R \wedge t \in S \rbrace</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∩</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≡</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord mathnormal">t</span><span class="mord">∣</span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∧</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6542em;vertical-align:-0.0391em;"></span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mclose">}</span></span></span></span></p>
 </div>
 <h3> 笛卡尔积</h3>
-<p>计算两个关系的笛卡尔乘积，令 R 为有 m 元的关系，S 为有 n 元的关系，则 R <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">X</mi></mrow><annotation encoding="application/x-tex">\Chi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathrm">X</span></span></span></span> S 是 m + n 元的元组的集合，其前 m 个元素来自 R 的一个元组，而后 n 个元素来自 S 的一个元组</p>
+<p>计算两个关系的笛卡尔乘积, 令 R 为有 m 元的关系, S 为有 n 元的关系, 则 R <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">X</mi></mrow><annotation encoding="application/x-tex">\Chi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathrm">X</span></span></span></span> S 是 m + n 元的元组的集合, 其前 m 个元素来自 R 的一个元组, 而后 n 个元素来自 S 的一个元组</p>
 <div class="hint-container tip">
 <p class="hint-container-title">公式</p>
 <p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi mathvariant="normal">X</mi><mi>S</mi><mo>≡</mo><mo stretchy="false">{</mo><mi>t</mi><mi mathvariant="normal">∣</mi><mi>t</mi><mo>=</mo><mo>&lt;</mo><msub><mi>t</mi><mi>r</mi></msub><mo separator="true">,</mo><msub><mi>t</mi><mi>s</mi></msub><mo>&gt;</mo><mo>∧</mo><msub><mi>t</mi><mi>r</mi></msub><mo>∈</mo><mi>R</mi><mo>∧</mo><msub><mi>t</mi><mi>s</mi></msub><mo>∈</mo><mi>S</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">R \Chi S \equiv \lbrace t|t = &lt; t_r, t_s &gt; \wedge t_r \in R \wedge t_s \in S \rbrace</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mord mathrm">X</span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≡</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord mathnormal">t</span><span class="mord">∣</span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8095em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7651em;vertical-align:-0.15em;"></span><span class="mord">∧</span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∧</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7651em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mclose">}</span></span></span></span></p>
@@ -579,12 +578,12 @@
 </div>
 <h3> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi></mrow><annotation encoding="application/x-tex">\theta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">θ</span></span></span></span> 连接</h3>
 <p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi></mrow><annotation encoding="application/x-tex">\theta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">θ</span></span></span></span> 连接从两个关系的笛卡儿积中选取属性之间满足一定条件的元组</p>
-<p>两个关系中进行比较的分量必须是相同的属性组，并且在结果中将重复的属性去掉，则称为自然连接</p>
+<p>两个关系中进行比较的分量必须是相同的属性组, 并且在结果中将重复的属性去掉, 则称为自然连接</p>
 <div class="hint-container tip">
 <p class="hint-container-title">公式</p>
 <p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mtable rowspacing="0.16em" columnalign="center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mo lspace="0em" rspace="0em">⋈</mo></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mi>A</mi><mo>=</mo><mi>B</mi></mrow></mstyle></mtd></mtr></mtable><mi>S</mi><mo>≡</mo><mo stretchy="false">{</mo><msub><mi>t</mi><mi>r</mi></msub><mo separator="true">,</mo><msub><mi>t</mi><mi>s</mi></msub><mi mathvariant="normal">∣</mi><msub><mi>t</mi><mi>r</mi></msub><mo>∈</mo><mi>R</mi><mo>∧</mo><msub><mi>t</mi><mi>s</mi></msub><mo>∈</mo><mi>S</mi><mo>∧</mo><msub><mi>t</mi><mi>r</mi></msub><mo stretchy="false">[</mo><mi>A</mi><mo stretchy="false">]</mo><mi>s</mi><mo>=</mo><msub><mi>t</mi><mi>s</mi></msub><mo stretchy="false">[</mo><mi>B</mi><mo stretchy="false">]</mo><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">R \begin{matrix} \bowtie \\ A=B\end{matrix} S \equiv \lbrace t_r, t_s|t_r \in R \wedge t_s \in S \wedge t_r[A] s= t_s[B] \rbrace</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.4em;vertical-align:-0.95em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.61em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mrel">⋈</span></span></span><span style="top:-2.41em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.95em;"><span></span></span></span></span></span></span></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≡</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord">∣</span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∧</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7651em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∧</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">[</span><span class="mord mathnormal">A</span><span class="mclose">]</span><span class="mord mathnormal">s</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">[</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mclose">]}</span></span></span></span></p>
 </div>
-<p>如果两个关系中进行比较的分量必须是相同的属性组，并且在结果中将重复的属性去掉，则称为自然连接</p>
+<p>如果两个关系中进行比较的分量必须是相同的属性组, 并且在结果中将重复的属性去掉, 则称为自然连接</p>
 <div class="hint-container tip">
 <p class="hint-container-title">公式</p>
 <p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>⋈</mo><mi>S</mi><mo>≡</mo><mo stretchy="false">{</mo><msub><mi>t</mi><mi>r</mi></msub><mo separator="true">,</mo><msub><mi>t</mi><mi>s</mi></msub><mi mathvariant="normal">∣</mi><msub><mi>t</mi><mi>r</mi></msub><mo>∈</mo><mi>R</mi><mo>∧</mo><msub><mi>t</mi><mi>s</mi></msub><mo>∈</mo><mi>S</mi><mo>∧</mo><msub><mi>t</mi><mi>r</mi></msub><mo stretchy="false">[</mo><mi>A</mi><mo stretchy="false">]</mo><mi>s</mi><mo>=</mo><msub><mi>t</mi><mi>s</mi></msub><mo stretchy="false">[</mo><mi>B</mi><mo stretchy="false">]</mo><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">R \bowtie  S \equiv \lbrace t_r, t_s|t_r \in R \wedge t_s \in S \wedge t_r[A] s= t_s[B] \rbrace</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6883em;vertical-align:-0.005em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⋈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≡</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord">∣</span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∧</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7651em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∧</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">[</span><span class="mord mathnormal">A</span><span class="mclose">]</span><span class="mord mathnormal">s</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">[</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mclose">]}</span></span></span></span></p>
@@ -612,27 +611,27 @@
 </ul>
 <h3> 范式</h3>
 <ul>
-<li><code>第一范式（1NF）</code>。在关系模式中，当且仅当所有属性只包含原子值，即每个分量都是不可再分的数据项，则称满足 1NF。</li>
-<li><code>第二范式（2NF）</code>。当且仅当关系模式及满足 1NF，且每个非键属性（即不属于任何候选键的属性，也称为非主属性）完全依赖于候选键时，则称满足 2NF。</li>
-<li><code>第三范式（3NF</code>）。当且仅当关系模式 R 满足 1NF，且 R 中没有非键属性传递依赖于候选键时，则称满足 3NF。</li>
-<li><code>BCNF</code>。如果关系模式及满足 1NF，且及中没有属性传递依赖于候选键时，则称满足 BCNF。</li>
-<li><code>第四范式（4NF）</code>。第四范式是 BCNF 的推广，是针对有多值依赖的关系模型所定义的规范化形式。把一个表中多个多值依赖拆分开来。</li>
+<li><code>第一范式（1NF）</code>。在关系模式中, 当且仅当所有属性只包含原子值, 即每个分量都是不可再分的数据项, 则称满足 1NF。</li>
+<li><code>第二范式（2NF）</code>。当且仅当关系模式及满足 1NF, 且每个非键属性（即不属于任何候选键的属性, 也称为非主属性）完全依赖于候选键时, 则称满足 2NF。</li>
+<li><code>第三范式（3NF</code>）。当且仅当关系模式 R 满足 1NF, 且 R 中没有非键属性传递依赖于候选键时, 则称满足 3NF。</li>
+<li><code>BCNF</code>。如果关系模式及满足 1NF, 且及中没有属性传递依赖于候选键时, 则称满足 BCNF。</li>
+<li><code>第四范式（4NF）</code>。第四范式是 BCNF 的推广, 是针对有多值依赖的关系模型所定义的规范化形式。把一个表中多个多值依赖拆分开来。</li>
 </ul>
 <h3> 反规范化设计</h3>
 <div class="hint-container tip">
 <p class="hint-container-title">提示</p>
-<p>规范化设计后，数据库设计者希望牺牲部分规范化来提高性能，这种从规范化设计的回退方法称为反规范化技术。<br>
+<p>规范化设计后, 数据库设计者希望牺牲部分规范化来提高性能, 这种从规范化设计的回退方法称为反规范化技术。<br>
 逆规范化方法优点：提高统计、查询效率。<br>
-逆规范化方法缺点：增加了数据冗余，浪费存储空间，增、删、改操作的效率降低，可能导致数据不一致，可能产生添加、修改、删除异常</p>
+逆规范化方法缺点：增加了数据冗余, 浪费存储空间, 增、删、改操作的效率降低, 可能导致数据不一致, 可能产生添加、修改、删除异常</p>
 </div>
 <h4> 优点</h4>
 <ul>
-<li>避免进行表之间的连接操作，可以提高数据操作的性能。</li>
-<li>连接操作少，检索快、统计快;需要查的表减少，检索容易，并易出错。</li>
+<li>避免进行表之间的连接操作, 可以提高数据操作的性能。</li>
+<li>连接操作少, 检索快、统计快;需要查的表减少, 检索容易, 并易出错。</li>
 </ul>
 <h4> 缺点</h4>
 <ul>
-<li>数据的重复存储，浪费了磁盘空间</li>
+<li>数据的重复存储, 浪费了磁盘空间</li>
 <li>会产生数据的不一致性问题(触发器数据同步、应用程序同步)</li>
 <li>更新和插入代码更加难写</li>
 <li>插入、更新、删除操作开销更大</li>
@@ -648,23 +647,23 @@
 <tbody>
 <tr>
 <td>增加冗余列</td>
-<td>增加冗余列是指在多个表中具有相同的列，它常用来在查询时避免连接操作。</td>
+<td>增加冗余列是指在多个表中具有相同的列, 它常用来在查询时避免连接操作。</td>
 </tr>
 <tr>
 <td>增加派生列</td>
-<td>增加派生列指增加的列可以通过表中其他数据计算生成它的作用是在查询时减少计算量，从而加快查询速度</td>
+<td>增加派生列指增加的列可以通过表中其他数据计算生成它的作用是在查询时减少计算量, 从而加快查询速度</td>
 </tr>
 <tr>
 <td>重新组表</td>
-<td>重新组表指如果许多用户需要查看两个表连接出来的结果数据，则把这两个表重新组成一个表来减少连接而提高性能</td>
+<td>重新组表指如果许多用户需要查看两个表连接出来的结果数据, 则把这两个表重新组成一个表来减少连接而提高性能</td>
 </tr>
 <tr>
 <td>水平分割表</td>
-<td>按记录进行分割，把数据放到多个独立的表中，主要用于表数据规模很大、表中数据相对独立或数据需要存放到多个介质上时使用。</td>
+<td>按记录进行分割, 把数据放到多个独立的表中, 主要用于表数据规模很大、表中数据相对独立或数据需要存放到多个介质上时使用。</td>
 </tr>
 <tr>
 <td>垂直分割表</td>
-<td>对表进行分割，将主键与部分列放到一个表中，主键与其它列放到另一个表中，在查询时减少 1/0 次数。</td>
+<td>对表进行分割, 将主键与部分列放到一个表中, 主键与其它列放到另一个表中, 在查询时减少 1/0 次数。</td>
 </tr>
 </tbody>
 </table>
@@ -680,29 +679,29 @@
 <p>常见的数据库访问接口有专用调用、开放数据库互连（ODBC）和 Java 数据库连接（JDBC）等。</p>
 <p>ODBC 缺点:</p>
 <ul>
-<li>ODBC 只支持关系型数据，像电子邮件之类的非关系型数据是不支持的。</li>
-<li>由于 ODBC 最初的设计理念就是能够访问所有类型数据库，这种普遍适用也造成了 ODBC 对每种数据库的支持都不是特别理想。</li>
-<li>使用 ODBC 需要进行一些系统的配置工作。当然，这个操作也是可以用程序来完成的。</li>
+<li>ODBC 只支持关系型数据, 像电子邮件之类的非关系型数据是不支持的。</li>
+<li>由于 ODBC 最初的设计理念就是能够访问所有类型数据库, 这种普遍适用也造成了 ODBC 对每种数据库的支持都不是特别理想。</li>
+<li>使用 ODBC 需要进行一些系统的配置工作。当然, 这个操作也是可以用程序来完成的。</li>
 </ul>
 <h2> 事务的特性</h2>
-<p>（1）<code>原子性（Atomicity）</code>。事务是数据库的逻辑工作单位，事务的原子性保证事务包含的一组更新操作是原子不可分的，也就是说，这些操作是一个整体，不能部分地完成。<br>
+<p>（1）<code>原子性（Atomicity）</code>。事务是数据库的逻辑工作单位, 事务的原子性保证事务包含的一组更新操作是原子不可分的, 也就是说, 这些操作是一个整体, 不能部分地完成。<br>
 （2）<code>一致性（Consistency）</code>。一致性是指使数据库从一个一致性状态变到另一个一致性状态。<br>
-（3）<code>隔离性（Isolation）</code>。隔离性是指一个事务的执行不能被其他事务干扰，即一个事务内部的操作及使用的数据对并发的其他事务是隔离的，并发执行的各个事务之间不能互相干扰。<br>
-（4）<code>持久性（Durability）</code>。持久性也称为永久性，是指事务一旦提交，改变就是永久性的，无论发生何种故障，都不应该对其有任何影响。</p>
+（3）<code>隔离性（Isolation）</code>。隔离性是指一个事务的执行不能被其他事务干扰, 即一个事务内部的操作及使用的数据对并发的其他事务是隔离的, 并发执行的各个事务之间不能互相干扰。<br>
+（4）<code>持久性（Durability）</code>。持久性也称为永久性, 是指事务一旦提交, 改变就是永久性的, 无论发生何种故障, 都不应该对其有任何影响。</p>
 <h2> 数据库的完整性</h2>
 <ul>
-<li><code>完整性约束条件</code>: 完整性检查是指对数据库中的数据设置约束条件，确保数据符合预定义的规则。 完整性检查可以帮助我们防止数据错误。 完整性控制机制包括定义功能和检查功能。定义功能用于定义完整性约束条件。检查功能用于检查用户操作是否违反了完整性约束条件。完整性检查可以分为静态约束和动态约束。静态约束对数据库中数据本身的限制，例如数据类型、取值范围等。动态约束对数据库中数据变化的限制。</li>
-<li><code>实体完整性</code>: 实体完整性要求主键中的任一属性不能为空，所谓空值是“不知道”或“无意义”的值。</li>
-<li><code>参照完整性</code>: 若基本关系及中含有与另一基本关系 S 的主键 PK 相对应的属性组 FK（FK 称为 R 的外键），则参照完整性要求，对及中的每个元组在 FK 上的值必须是 S 中某个元组的 PK 值，或者为空值。</li>
-<li><code>用户定义的完整性</code>: 用户定义的完整性就是针对某一具体数据库的约束条件，反映某一具体应用所涉及的数据必须满足的语义要求。</li>
-<li><code>触发器</code>: 所谓触发器，其抽象的含义即是一个事件的发生必然触发（或导致）另外一些事件的发生，其中前面的事件称为触发事件，后面的事件称为结果事件。触发事件一般即为完整性约束条件的否定，而结果事件即为一组操作用以消除触发事件所引起的不良影响。 触发器除了有完整性保护功能外，还有安全性保护功能。</li>
+<li><code>完整性约束条件</code>: 完整性检查是指对数据库中的数据设置约束条件, 确保数据符合预定义的规则。 完整性检查可以帮助我们防止数据错误。 完整性控制机制包括定义功能和检查功能。定义功能用于定义完整性约束条件。检查功能用于检查用户操作是否违反了完整性约束条件。完整性检查可以分为静态约束和动态约束。静态约束对数据库中数据本身的限制, 例如数据类型、取值范围等。动态约束对数据库中数据变化的限制。</li>
+<li><code>实体完整性</code>: 实体完整性要求主键中的任一属性不能为空, 所谓空值是“不知道”或“无意义”的值。</li>
+<li><code>参照完整性</code>: 若基本关系及中含有与另一基本关系 S 的主键 PK 相对应的属性组 FK（FK 称为 R 的外键）, 则参照完整性要求, 对及中的每个元组在 FK 上的值必须是 S 中某个元组的 PK 值, 或者为空值。</li>
+<li><code>用户定义的完整性</code>: 用户定义的完整性就是针对某一具体数据库的约束条件, 反映某一具体应用所涉及的数据必须满足的语义要求。</li>
+<li><code>触发器</code>: 所谓触发器, 其抽象的含义即是一个事件的发生必然触发（或导致）另外一些事件的发生, 其中前面的事件称为触发事件, 后面的事件称为结果事件。触发事件一般即为完整性约束条件的否定, 而结果事件即为一组操作用以消除触发事件所引起的不良影响。 触发器除了有完整性保护功能外, 还有安全性保护功能。</li>
 </ul>
 <h2> 数据库性能优化</h2>
 <h3> 索引优化策略</h3>
-<p>（1）建立索引时，应选用经常作为査询，而不常更新的属性。避免对一个经常被更新的属性建立索引，因为这样会严重影响性能。<br>
-（2）一个关系上的索引过多会影响 UPDATE、INSERT 和 DELETE 的性能，因为关系一旦进行更新，所有的索引都必须跟着做相应的调整。<br>
-（3）尽量分析出每个重要查询的使用频度，这样，可以找出使用最多的索引，然后可以先对这些索引进行适当的优化。<br>
-（4）对于数据量非常小的关系不必建立索引，因为对于小关系而言，关系扫描往往更快，而且消耗的系统资源更少。</p>
+<p>（1）建立索引时, 应选用经常作为査询, 而不常更新的属性。避免对一个经常被更新的属性建立索引, 因为这样会严重影响性能。<br>
+（2）一个关系上的索引过多会影响 UPDATE、INSERT 和 DELETE 的性能, 因为关系一旦进行更新, 所有的索引都必须跟着做相应的调整。<br>
+（3）尽量分析出每个重要查询的使用频度, 这样, 可以找出使用最多的索引, 然后可以先对这些索引进行适当的优化。<br>
+（4）对于数据量非常小的关系不必建立索引, 因为对于小关系而言, 关系扫描往往更快, 而且消耗的系统资源更少。</p>
 <h3> 查询优化</h3>
 <p>（1）建立物化视图或尽可能减少多表查询；<br>
 （2）以不相干子查询替代相干子查询；<br>
@@ -759,11 +758,11 @@
 </tr>
 <tr>
 <td>概念结构设计</td>
-<td>将应用对象抽象成不依赖于 DBMS 的数据模型，即概念模型。描述概念模型的较理想的工具是 E-R 图。</td>
+<td>将应用对象抽象成不依赖于 DBMS 的数据模型, 即概念模型。描述概念模型的较理想的工具是 E-R 图。</td>
 </tr>
 <tr>
 <td>逻辑结构设计</td>
-<td>将抽象的概念模型转化为与选用的 DBMS 产品所支持的数据模型相符合的逻辑模型，即关系模式。</td>
+<td>将抽象的概念模型转化为与选用的 DBMS 产品所支持的数据模型相符合的逻辑模型, 即关系模式。</td>
 </tr>
 <tr>
 <td>物理结构设计</td>
@@ -771,26 +770,26 @@
 </tr>
 <tr>
 <td>数据库实施阶段</td>
-<td>根据前两个阶段的结果建立数据库，编制与调试应用程序，组织数据入库，并进行试运行。</td>
+<td>根据前两个阶段的结果建立数据库, 编制与调试应用程序, 组织数据入库, 并进行试运行。</td>
 </tr>
 <tr>
 <td>数据库运行和维护阶段</td>
-<td>数据库应用系统经过试运行即可投入运行，但该阶段需要不断地对系统进行评价、调整与修改。</td>
+<td>数据库应用系统经过试运行即可投入运行, 但该阶段需要不断地对系统进行评价、调整与修改。</td>
 </tr>
 </tbody>
 </table>
 <h3> 规划</h3>
-<p>规划阶段的主要任务是进行<code>建立数据库的必要性及可行性分析</code>，确定数据库系统在企业和信息系统中的地位，以及各个数据库之间的联系。</p>
+<p>规划阶段的主要任务是进行<code>建立数据库的必要性及可行性分析</code>, 确定数据库系统在企业和信息系统中的地位, 以及各个数据库之间的联系。</p>
 <h3> 需求分析</h3>
-<p>调查组织机构情况、调查各部门的业务活动情况、协助用户明确对新系统的各种要求、确定新系统的边界，以此获得用户对系统的如下要求。<br>
+<p>调查组织机构情况、调查各部门的业务活动情况、协助用户明确对新系统的各种要求、确定新系统的边界, 以此获得用户对系统的如下要求。<br>
 ① <code>信息要求</code>: 保存的信息、完整性要求等。<br>
 ② <code>处理要求</code>: 操作功能、处理的频度、相应时间等。<br>
 ③ <code>系统要求</code>: 安全性要求、使用方式要求、可扩充性要求。</p>
 <h3> 概念结构设计</h3>
 <p>对现实事物抽象认识的 3 种方法:</p>
 <ol>
-<li><code>分类(Classification)</code>: 对现实世界的事物，按照其具有的共同特征和行为，定义一种类型。在某一类型中，个体是类型的一个成员或实例，即 “is member of”。</li>
-<li><code>聚集(Aggregation)</code>: 定义某一类型所具有的属性。如学生类型具有学号、姓名、性别、班级等共同属性，每一个学生都是这一类型中的个体, 通过在这些属性上的不同取值来区分。各个属性是所属类型的一个成份，即 “is part of”。</li>
+<li><code>分类(Classification)</code>: 对现实世界的事物, 按照其具有的共同特征和行为, 定义一种类型。在某一类型中, 个体是类型的一个成员或实例, 即 “is member of”。</li>
+<li><code>聚集(Aggregation)</code>: 定义某一类型所具有的属性。如学生类型具有学号、姓名、性别、班级等共同属性, 每一个学生都是这一类型中的个体, 通过在这些属性上的不同取值来区分。各个属性是所属类型的一个成份, 即 “is part of”。</li>
 <li><code>概括(Generalization)</code>: 由一种已知类型定义新的类型。通常把已知类型称为超类(Superclass), 新定义的类型称为子类(Subclass), 即 “is subset"</li>
 </ol>
 <p>概念设计步骤</p>
@@ -810,15 +809,15 @@
 </ol>
 <h3> 逻辑结构设计</h3>
 <ul>
-<li>将抽象的概念模型转化为与选用的 DBMS 产品所支持的数据模型相符合的逻辑模型，即关系模式。</li>
+<li>将抽象的概念模型转化为与选用的 DBMS 产品所支持的数据模型相符合的逻辑模型, 即关系模式。</li>
 <li>主要工作步骤包括确定数据模型、将 E-R 图转换成为指定的数据模型、确定完整性约束和确定用户视图。</li>
 </ul>
 <h3> 物理设计</h3>
 <p>物理设计的主要工作步骤包括确定数据分布、存储结构和访问方式。</p>
 <h3> 数据库实施</h3>
-<p>数据库实施。在计算机上建立起实际的数据库结构，数据加载(或称装入)，进行试运行和评价的过程，叫作数据库的实施(或称实现)</p>
+<p>数据库实施。在计算机上建立起实际的数据库结构, 数据加载(或称装入), 进行试运行和评价的过程, 叫作数据库的实施(或称实现)</p>
 <h3> 数据库运行维护</h3>
-<p>数据库运行维护。数据库一旦投入运行，就标志着数据库维护工作的开始。数据库维护工作的主要内容包括对数据库性能的监测和改善、故障恢复、数据库的重组和重构。</p>
+<p>数据库运行维护。数据库一旦投入运行, 就标志着数据库维护工作的开始。数据库维护工作的主要内容包括对数据库性能的监测和改善、故障恢复、数据库的重组和重构。</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -838,8 +837,8 @@
 <li>软件架构是降低成本、改进质量、按时和按需交付产品的关键因素, 软件架构设计需要满足系统的<code>质量属性</code>, 如性能、安全性和可修改性等。</li>
 <li>架构描述语言（Architecture Description Language, ADL）是一种为明确说明软件系统的概念架构和对这些概念架构建模提供功能的语言。ADL 主要包括以下组成部分：<code>组件、组件接口、连接件和架构配置</code>。</li>
 <li>软件系统架构不仅指定了软件系统的<code>组织和拓扑</code>结构, 而且显示了<code>系统需求和组件</code>之间的对应关系, 包括设计决策和基本方法、基本原理</li>
-<li>软件架构设计包括<code>提出架构模型、产生架构设计和进行设计评审</code>等活动，是一个<code>迭代</code>的过程。架构设计主要关注软件组件的<code>结构、属性和交互作用</code>，并通过多种<code>视图</code>全面描述特定系统的架构。</li>
-<li>软件架构能够在设计变更相对容易的阶段，考虑系统结构的可选方案，便于技术人员与非技术人员就软件设计进行交互，能够展现软件的结构、属性与内部交互关系。</li>
+<li>软件架构设计包括<code>提出架构模型、产生架构设计和进行设计评审</code>等活动, 是一个<code>迭代</code>的过程。架构设计主要关注软件组件的<code>结构、属性和交互作用</code>, 并通过多种<code>视图</code>全面描述特定系统的架构。</li>
+<li>软件架构能够在设计变更相对容易的阶段, 考虑系统结构的可选方案, 便于技术人员与非技术人员就软件设计进行交互, 能够展现软件的结构、属性与内部交互关系。</li>
 </ul>
 <h3> 生命周期</h3>
 <ul>
@@ -865,35 +864,39 @@
 <li>架构设计能够降低维护费用</li>
 <li>架构设计能够支持冲突分析</li>
 </ul>
+<h3> 软件架构演化</h3>
+<ul>
+<li>软件架构演化时期包括<code>设计时演化、运行前演化、有限制运行时演化和运行时演化</code>。</li>
+</ul>
 <h3> '4+1' 视图</h3>
 <blockquote>
-<p>多视图指从不同角度和视角描述系统体系结构，以获得多个视图，并将其组合在一起以描述整体模型。多视图反映了<code>关注点分离</code>的思想，每个视图只关注系统的一个侧面。</p>
+<p>多视图指从不同角度和视角描述系统体系结构, 以获得多个视图, 并将其组合在一起以描述整体模型。多视图反映了<code>关注点分离</code>的思想, 每个视图只关注系统的一个侧面。</p>
 </blockquote>
-<p>①<code>逻辑视图</code>(Logical View)，设计的对象模型(使用面向对象的设计方法时)。<br>
-②<code>过程视图</code>(Process View)，捕捉设计的并发和同步特征。<br>
-③<code>物理视图</code>(Physical View)，描述了软件到硬件的映射，反映了分布式特性。<br>
-④<code>开发视图</code>(Development View)，描述了在开发环境中软件的静态组织结构。<br>
-⑤<code>架构的描述</code>，即所做的各种决定，可以围绕着这四个视图来组织，然后由一些<code>用例视图(Use Case View)</code>或<code>统一场景(Scenarios)</code>来说明，从而形成了第五个视图。</p>
+<p>①<code>逻辑视图</code>(Logical View), 设计的对象模型(使用面向对象的设计方法时)。<br>
+②<code>过程视图</code>(Process View), 捕捉设计的并发和同步特征。<br>
+③<code>物理视图</code>(Physical View), 描述了软件到硬件的映射, 反映了分布式特性。<br>
+④<code>开发视图</code>(Development View), 描述了在开发环境中软件的静态组织结构。<br>
+⑤<code>架构的描述</code>, 即所做的各种决定, 可以围绕着这四个视图来组织, 然后由一些<code>用例视图(Use Case View)</code>或<code>统一场景(Scenarios)</code>来说明, 从而形成了第五个视图。</p>
 <h2> 基于架构的软件开发方法 ABSD</h2>
 <ul>
-<li>ABSD 方法是体系结构驱动，是指构成体系结构的<code>商业、质量和功能需求</code>的组合驱动的。</li>
-<li>ABSD 采用<code>视角和视图</code>来描述软件架构，采用<code>用例和质量属性</code>场景来描述需求。进一步来说，<code>用例</code>描述的是功能需求，<code>质量属性场景</code>描述的是质量需求(或侧重于非功能需求)。</li>
-<li>ABSD 是一个<code>自顶向下，递归细化</code>的方法，软件系统的体系结构通过该方法得到细化，直到能产生<code>软件构件和类</code>。</li>
+<li>ABSD 方法是体系结构驱动, 是指构成体系结构的<code>商业、质量和功能需求</code>的组合驱动的。</li>
+<li>ABSD 采用<code>视角和视图</code>来描述软件架构, 采用<code>用例和质量属性</code>场景来描述需求。进一步来说, <code>用例</code>描述的是功能需求, <code>质量属性场景</code>描述的是质量需求(或侧重于非功能需求)。</li>
+<li>ABSD 是一个<code>自顶向下, 递归细化</code>的方法, 软件系统的体系结构通过该方法得到细化, 直到能产生<code>软件构件和类</code>。</li>
 <li>ABSD 把整个基于架构的软件过程划分为<code>架构需求、设计、文档化、复审、实现、演化</code>等 6 个子过程。</li>
-<li>体系结构需求一般来自 3 个方面，分别是<code>系统的质量目标、系统的商业目标和系统开发人员的商业目标</code>。</li>
+<li>体系结构需求一般来自 3 个方面, 分别是<code>系统的质量目标、系统的商业目标和系统开发人员的商业目标</code>。</li>
 </ul>
 <h2> 特定领域软件体系结构 DSSA</h2>
 <ul>
-<li><code>垂直域</code>：定义了一个特定的系统族，包含整个系统族内的多个系统，结果是在该领域中可作为系统的可行解决方案的一个通用软件体系结构。只能应用于一个成熟的、稳定的领域。</li>
+<li><code>垂直域</code>：定义了一个特定的系统族, 包含整个系统族内的多个系统, 结果是在该领域中可作为系统的可行解决方案的一个通用软件体系结构。只能应用于一个成熟的、稳定的领域。</li>
 <li><code>水平域</code>：定义了在多个系统和多个系统族中功能区城的共有部分。在子系统级上涵盖多个系统族的特定部分功能。</li>
-<li>DSSA 通常是一个具有三个层次的系统模型，包括<code>领域开发环境、领域特定应用开发环境和应用执行环境</code>，其中<code>领域架构师</code>在领域开发环境工作，<code>应用工程师</code>在领域特定的应用开发环境工作，<code>操作员</code>在应用执行环境工作</li>
-<li>DSSA 以一个特定问题领域为对象，形成由<code>领域参考模型、参考需求、参考架构</code>等组成的开发基础架构</li>
+<li>DSSA 通常是一个具有三个层次的系统模型, 包括<code>领域开发环境、领域特定应用开发环境和应用执行环境</code>, 其中<code>领域架构师</code>在领域开发环境工作, <code>应用工程师</code>在领域特定的应用开发环境工作, <code>操作员</code>在应用执行环境工作</li>
+<li>DSSA 以一个特定问题领域为对象, 形成由<code>领域参考模型、参考需求、参考架构</code>等组成的开发基础架构</li>
 </ul>
 <h3> DSSA 基本活动</h3>
 <ul>
 <li><code>领域分析</code>
 <ul>
-<li>目标是获得<code>领域模型</code>，描述领域中系统的共同需求。</li>
+<li>目标是获得<code>领域模型</code>, 描述领域中系统的共同需求。</li>
 </ul>
 </li>
 <li><code>领域设计</code>
@@ -912,7 +915,7 @@
 <li><code>领域专家</code>
 <ul>
 <li>包括该领域系统的资深用户、从事需求分析、设计、实现及项目管理的软件工程师</li>
-<li>主要任务是提供有关领域中系统需求规格和实现知识，维护领域字典和复审领域模型和 DSSA 等</li>
+<li>主要任务是提供有关领域中系统需求规格和实现知识, 维护领域字典和复审领域模型和 DSSA 等</li>
 </ul>
 </li>
 <li><code>领域分析人员</code>
@@ -974,9 +977,9 @@
 </ul>
 <h2> 基于场景的架构评估方法（SAAM）</h2>
 <ul>
-<li>在进行体系结构评估时，需要使用<code>场景</code>对于质量目标进行判断，以判定体系结构的优劣。</li>
+<li>在进行体系结构评估时, 需要使用<code>场景</code>对于质量目标进行判断, 以判定体系结构的优劣。</li>
 <li>场景是从<code>风险承担者</code>的角度对系统交互的简短描述。</li>
-<li>在体系结构评估中，通常采用<code>刺激、环境和响应</code>三个方面对场景进行描述。</li>
+<li>在体系结构评估中, 通常采用<code>刺激、环境和响应</code>三个方面对场景进行描述。</li>
 </ul>
 <h2> 软件架构风格</h2>
 <p>概念:</p>
@@ -990,14 +993,14 @@
 <p>架构的作用:</p>
 <ul>
 <li>软件架构是项目干系人进行交流的手段。</li>
-<li>软件架构是可传递和可复用的模型，通过研究软件架构可能预测软件的质量。</li>
-<li>软件架构使推理和控制的更改更加简单，有助于循序渐进的原型设计，可以作为培训的基础。</li>
+<li>软件架构是可传递和可复用的模型, 通过研究软件架构可能预测软件的质量。</li>
+<li>软件架构使推理和控制的更改更加简单, 有助于循序渐进的原型设计, 可以作为培训的基础。</li>
 </ul>
 <h3> 数据流体系结构风格</h3>
 <h4> 批处理体系结构风格</h4>
-<p>概念: 每个处理步骤是一个单独的程序，每一步必须在前一步结束后才能开始，并且数据必须是完整的，以整体的方式传递。它的基本构件是独立的应用程序，连接件是某种类型的媒介。</p>
+<p>概念: 每个处理步骤是一个单独的程序, 每一步必须在前一步结束后才能开始, 并且数据必须是完整的, 以整体的方式传递。它的基本构件是独立的应用程序, 连接件是某种类型的媒介。</p>
 <h4> 管道-过滤器体系结构风格</h4>
-<p>概念: 把系统分解为几个处理步骤，这些步骤之间通过数据流连接，一个步骤的输出是另一个步骤的输入。每个处理步骤由一个过滤器实现，处理步骤之间的数据传输由管道负责。每个处理步骤（过滤器）都有一组输入和输出，过滤器从管道中读取输入的数据流，经过内部处理，然后产生输出数据流并写入管道中。基本构件是过滤器，连接件是数据流传输管道。</p>
+<p>概念: 把系统分解为几个处理步骤, 这些步骤之间通过数据流连接, 一个步骤的输出是另一个步骤的输入。每个处理步骤由一个过滤器实现, 处理步骤之间的数据传输由管道负责。每个处理步骤（过滤器）都有一组输入和输出, 过滤器从管道中读取输入的数据流, 经过内部处理, 然后产生输出数据流并写入管道中。基本构件是过滤器, 连接件是数据流传输管道。</p>
 <table>
 <thead>
 <tr>
@@ -1008,15 +1011,15 @@
 <tbody>
 <tr>
 <td>1.简单性;2.支持复用;3.便于系统分析</td>
-<td>1.不适合用来设计交互式应用系统;2.由于没有通用的数据传输标准，因此每个过滤器都需要解析输入数据和合成数据;3.难以进行错误处理。</td>
+<td>1.不适合用来设计交互式应用系统;2.由于没有通用的数据传输标准, 因此每个过滤器都需要解析输入数据和合成数据;3.难以进行错误处理。</td>
 </tr>
 </tbody>
 </table>
 <h3> 调用/返回体系结构风格</h3>
 <h4> 主程序/子程序风格</h4>
-<p>概念: 主程序/子程序风格一般采用单线程控制，把问题划分为若干处理步骤，构件即为主程序和子程序。子程序通常可合成为模块。过程调用作为交互机制，即充当连接件。调用关系具有层次性，其语义逻辑表现为子程序的正确性取决于它调用的子程序的正确性。</p>
+<p>概念: 主程序/子程序风格一般采用单线程控制, 把问题划分为若干处理步骤, 构件即为主程序和子程序。子程序通常可合成为模块。过程调用作为交互机制, 即充当连接件。调用关系具有层次性, 其语义逻辑表现为子程序的正确性取决于它调用的子程序的正确性。</p>
 <h4> 面向对象体系结构风格</h4>
-<p>概念: 面向对象系统风格建立在数据抽象和面向对象的基础上，数据的表示方法和它们的相应操作封装在一个抽象数据类型或对象中。这种风格的构件是对象。</p>
+<p>概念: 面向对象系统风格建立在数据抽象和面向对象的基础上, 数据的表示方法和它们的相应操作封装在一个抽象数据类型或对象中。这种风格的构件是对象。</p>
 <table>
 <thead>
 <tr>
@@ -1027,12 +1030,12 @@
 <tbody>
 <tr>
 <td>1.一个对象对外隐藏了自己的详细信息;2.对象将数据和操作封装在一起;3.继承和封装方法为对象服用提供了技术支持</td>
-<td>如果一个对象要调用另一个对象，则必须知道它的标识和名称</td>
+<td>如果一个对象要调用另一个对象, 则必须知道它的标识和名称</td>
 </tr>
 </tbody>
 </table>
 <h4> 层次型体系结构风格</h4>
-<p>概念: 层次系统组成一个层次结构，每一层为上层提供服务，并作为下层的客户。这样的系统中构件在层上实现了虚拟机。连接件由通过层间交互协议来定义，拓扑约束包括对相邻层间交互的约束。每一层最多只影响两层，同时只要给相邻层提供相同的接口，允许每层用不同的方法实现，为软件重用提供了强大的支持。</p>
+<p>概念: 层次系统组成一个层次结构, 每一层为上层提供服务, 并作为下层的客户。这样的系统中构件在层上实现了虚拟机。连接件由通过层间交互协议来定义, 拓扑约束包括对相邻层间交互的约束。每一层最多只影响两层, 同时只要给相邻层提供相同的接口, 允许每层用不同的方法实现, 为软件重用提供了强大的支持。</p>
 <table>
 <thead>
 <tr>
@@ -1042,21 +1045,21 @@
 </thead>
 <tbody>
 <tr>
-<td>1.设计者可以将系统分解为一个增量的步骤序列从而完成复杂的业务逻辑;2.每一层最多和相邻的上下两层进行交互，只给相邻层提供相同的接口。</td>
+<td>1.设计者可以将系统分解为一个增量的步骤序列从而完成复杂的业务逻辑;2.每一层最多和相邻的上下两层进行交互, 只给相邻层提供相同的接口。</td>
 <td>1.并非所有系统都能够按照层次来进行划分。2.很难找到一种合适和正确的层次划分方法。3.传输数据需要经过多个层次。4.多层结构难以调试。</td>
 </tr>
 </tbody>
 </table>
 <h4> 客户端/服务器体系结构风格</h4>
-<p>概念: 客户端/服务器体系结构风格是基于资源不对等，且为实现共享而提出的。两层 C/S 体系结构有 3 个主要组成部分：数据库服务器、客户应用程序和网络。三层 C/S 结构增加了一个应用服务器。整个应用逻辑驻留在应用服务器上。应用功能分为表示层、功能层和数据层三层。</p>
+<p>概念: 客户端/服务器体系结构风格是基于资源不对等, 且为实现共享而提出的。两层 C/S 体系结构有 3 个主要组成部分：数据库服务器、客户应用程序和网络。三层 C/S 结构增加了一个应用服务器。整个应用逻辑驻留在应用服务器上。应用功能分为表示层、功能层和数据层三层。</p>
 <ul>
-<li><code>表示层</code>作为用户接口，用于输入和输出数据。</li>
-<li><code>功能层</code>是应用的核心，负责具体业务处理逻辑。</li>
-<li><code>数据层</code>是数据库管理系统，负责管理数据读写。</li>
+<li><code>表示层</code>作为用户接口, 用于输入和输出数据。</li>
+<li><code>功能层</code>是应用的核心, 负责具体业务处理逻辑。</li>
+<li><code>数据层</code>是数据库管理系统, 负责管理数据读写。</li>
 </ul>
 <h3> 以数据为中心的体系结构风格</h3>
 <h4> 仓库体系结构风格</h4>
-<p>概念: 仓库是存储和维护数据的中心场所。两种不同的构件：中央数据结构说明当前数据的状态以及一组对中央数据进行操作的独立构件，仓库与独立构件间的相互作用在系统中会有大的变化。连接件即为仓库与独立构件之间的交互。</p>
+<p>概念: 仓库是存储和维护数据的中心场所。两种不同的构件：中央数据结构说明当前数据的状态以及一组对中央数据进行操作的独立构件, 仓库与独立构件间的相互作用在系统中会有大的变化。连接件即为仓库与独立构件之间的交互。</p>
 <table>
 <thead>
 <tr>
@@ -1067,12 +1070,12 @@
 <tbody>
 <tr>
 <td>1.便于多客户共享大量数据, 而不必关心数据是何时产生的、由谁提供的及通过何种途径来提供。</td>
-<td>1.对共享数据结构，不同知识源要达成一致; 2.需要同步机制和加锁机制来保证数据的完整性和一致性，增大了系统设计的复杂度</td>
+<td>1.对共享数据结构, 不同知识源要达成一致; 2.需要同步机制和加锁机制来保证数据的完整性和一致性, 增大了系统设计的复杂度</td>
 </tr>
 </tbody>
 </table>
 <h4> 黑板体系结构风格</h4>
-<p>概念: 黑板系统是一种问题求解模型。它将问题的解空间组织成一个或多个应用相关的分级结构。分级结构的每一层信息由一个唯一的词汇来描述，它代表了问题的部分解。</p>
+<p>概念: 黑板系统是一种问题求解模型。它将问题的解空间组织成一个或多个应用相关的分级结构。分级结构的每一层信息由一个唯一的词汇来描述, 它代表了问题的部分解。</p>
 <h3> 虚拟机体系结构风格</h3>
 <h4> 解释器体系结构风格</h4>
 <p>概念: 一个解释器包括（1）完成解释工作的解释引擎（2）一个包含将被解释的代码的存储区（3）一个记录解释引擎当前工作状态的数据结构（4）一个记录源代码被解释执行进度的数据结构。解释器缺点是执行效率较低。</p>
@@ -1086,7 +1089,7 @@
 <tbody>
 <tr>
 <td>1.可移植性好</td>
-<td>1.由于使用了特定了语言和自定义操作规则，因此增加了系统运行的开销;2.解释器系统难以设计和测试。</td>
+<td>1.由于使用了特定了语言和自定义操作规则, 因此增加了系统运行的开销;2.解释器系统难以设计和测试。</td>
 </tr>
 </tbody>
 </table>
@@ -1101,16 +1104,16 @@
 </thead>
 <tbody>
 <tr>
-<td>1.规则数据可以动态改变，灵活性好;2.定义新的规则，即可扩展</td>
+<td>1.规则数据可以动态改变, 灵活性好;2.定义新的规则, 即可扩展</td>
 <td>1.实时解释规则、性能较差</td>
 </tr>
 </tbody>
 </table>
 <h3> 独立构件体系结构风格</h3>
 <h4> 进程通信体系结构风格</h4>
-<p>概念: 在进程通信结构体系结构风格中，构件是独立的过程，连接件是消息传递。这种风格的特点是构件通常是命名过程，消息传递的方式可以是点到点、异步或同步方式及远程过程调用等。</p>
+<p>概念: 在进程通信结构体系结构风格中, 构件是独立的过程, 连接件是消息传递。这种风格的特点是构件通常是命名过程, 消息传递的方式可以是点到点、异步或同步方式及远程过程调用等。</p>
 <h4> 事件系统体系结构风格</h4>
-<p>概念: 基于事件的隐式调用风格的思想是构件不直接调用一个过程，而是触发或广播一个或多个事件。系统中的其他构件中的过程在一个或多个事件中注册，当一个事件被触发，系统自动调用在这个事件中注册的所有过程。</p>
+<p>概念: 基于事件的隐式调用风格的思想是构件不直接调用一个过程, 而是触发或广播一个或多个事件。系统中的其他构件中的过程在一个或多个事件中注册, 当一个事件被触发, 系统自动调用在这个事件中注册的所有过程。</p>
 <table>
 <thead>
 <tr>
@@ -1121,7 +1124,7 @@
 <tbody>
 <tr>
 <td>1.事件发布者不需要知道哪些构件会响应事件</td>
-<td>1.构件放弃了对计算的控制权，完全由系统来决定;2.存在数据传输问题</td>
+<td>1.构件放弃了对计算的控制权, 完全由系统来决定;2.存在数据传输问题</td>
 </tr>
 </tbody>
 </table>
@@ -1130,16 +1133,16 @@
 <p>（1）构件和连接件都有顶部和底部。<br>
 （2）构件的顶部连接到连接件的底部, 构件的底部连接到连接件的顶部, 构件之间不允许直接连接。<br>
 （3）连接件可以连接任意数量的构件和其他连接件。<br>
-（4）当两个连接件直接相连时，必须一个的底部连接到另一个的顶部。</p>
+（4）当两个连接件直接相连时, 必须一个的底部连接到另一个的顶部。</p>
 <h3> 闭环控制架构 - 过程控制</h3>
-<p>概念: 软件与硬件之间可以粗略地表示为一个反馈循环，这个反馈循环通过接受一定的输入，确定一系列的输出，最终使环境达到一个新的状态。</p>
+<p>概念: 软件与硬件之间可以粗略地表示为一个反馈循环, 这个反馈循环通过接受一定的输入, 确定一系列的输出, 最终使环境达到一个新的状态。</p>
 <h2> 软件架构复用</h2>
 <blockquote>
 <p>软件架构复用的类型包括<code>机会复用</code>和<code>系统复用</code>。</p>
 </blockquote>
 <ul>
-<li><code>机会复用</code>是指开发过程中，只要发现有可复用的资产，就对其进行复用。</li>
-<li><code>系统复用</code>是指在开发之前，就要进行规划，以决定哪些需要复用。</li>
+<li><code>机会复用</code>是指开发过程中, 只要发现有可复用的资产, 就对其进行复用。</li>
+<li><code>系统复用</code>是指在开发之前, 就要进行规划, 以决定哪些需要复用。</li>
 </ul>
 <p>软件架构复用的三个阶段</p>
 <ul>
@@ -1149,17 +1152,17 @@
 </ul>
 <h2> 软件系统质量属性</h2>
 <ul>
-<li>通过信息隐蔽可以提高软件的<code>可修改性、可测试性和可移植性</code>，它也是现代软件设计的一个关键性原则</li>
+<li>通过信息隐蔽可以提高软件的<code>可修改性、可测试性和可移植性</code>, 它也是现代软件设计的一个关键性原则</li>
 </ul>
 <h3> 开发期质量属性（6 个）</h3>
 <p>易理解性、可扩展性、可重用性、可测试性、可维护性、可移植性</p>
 <ul>
-<li><code>可维护性</code>是指当需要修改缺陷、增加功能、提高质量属性时，定位修改点并实施修改的难易程度。</li>
+<li><code>可维护性</code>是指当需要修改缺陷、增加功能、提高质量属性时, 定位修改点并实施修改的难易程度。</li>
 </ul>
 <h3> 运行期质量属性（7 个）</h3>
 <p>性能、安全性、可伸缩性、互操作性、可靠性、可用性、鲁棒性。</p>
 <ul>
-<li><code>可伸缩性</code>指当用户数和数据量增加时，软件系统维持高服务质量的能力。</li>
+<li><code>可伸缩性</code>指当用户数和数据量增加时, 软件系统维持高服务质量的能力。</li>
 </ul>
 <h2> 七大面向架构评估的质量属性</h2>
 <h3> 性能</h3>
@@ -1176,29 +1179,29 @@
 </ul>
 <h3> 可用性</h3>
 <ul>
-<li>指系统正常运行的时间比例，表现为两次故障间时长或故障时恢复正常速度</li>
+<li>指系统正常运行的时间比例, 表现为两次故障间时长或故障时恢复正常速度</li>
 <li>常用的设计策略为: <code>Ping/Echo</code>、<code>冗余</code>和<code>心跳线</code></li>
 </ul>
 <h3> 安全性</h3>
 <ul>
-<li>指向合法用户提供服务同时阻止非授权访问或拒绝服务的能力，包括机密性、完整性、不可否认性、可控性等</li>
+<li>指向合法用户提供服务同时阻止非授权访问或拒绝服务的能力, 包括机密性、完整性、不可否认性、可控性等</li>
 <li>常用的设计策略为: <code>追踪审计</code></li>
 </ul>
 <h3> 可修改性</h3>
 <ul>
 <li>指快速、高性价比地变更系统的能力; 包括<code>可维护性、可扩展性、结构重组、可移植性</code>
 <ul>
-<li><code>可维护性</code>关注问题修复，需要准备好的软件体系结构和局部修改。</li>
-<li><code>可扩展性</code>关注新特性的使用和构件的替换，需要松散耦合的构件和体系结构的支持。</li>
+<li><code>可维护性</code>关注问题修复, 需要准备好的软件体系结构和局部修改。</li>
+<li><code>可扩展性</code>关注新特性的使用和构件的替换, 需要松散耦合的构件和体系结构的支持。</li>
 <li><code>结构重构</code>关注构件和构件间的关系的重新组织。</li>
-<li><code>可移植</code>性使软件系统适用于多种环境，需要按照硬件无关的方式组织软件系统。</li>
+<li><code>可移植</code>性使软件系统适用于多种环境, 需要按照硬件无关的方式组织软件系统。</li>
 </ul>
 </li>
 <li>常用的设计策略为: <code>接口-实现分离</code>、<code>抽象</code>、 <code>信息隐藏</code></li>
 </ul>
 <h3> 功能性</h3>
 <ul>
-<li>指系统完成所期望工作的能力，需要系统中多个构件相互协作</li>
+<li>指系统完成所期望工作的能力, 需要系统中多个构件相互协作</li>
 </ul>
 <h3> 可变性</h3>
 <ul>
@@ -1210,24 +1213,24 @@
 </ul>
 <h2> 软件质量特性</h2>
 <ul>
-<li><code>敏感点</code>: 为了实现某种特定的质量属性，一个或多个构件（和/或构件之间的关系）的特性。
+<li><code>敏感点</code>: 为了实现某种特定的质量属性, 一个或多个构件（和/或构件之间的关系）的特性。
 <ul>
 <li>对查询请求处理时间的要求将影响系统的数据传输协议和处理过程的设计</li>
 </ul>
 </li>
-<li><code>权衡点</code>: 指影响多个质量特性，并对多个质量特性来说都是敏感点的质量特性。
+<li><code>权衡点</code>: 指影响多个质量特性, 并对多个质量特性来说都是敏感点的质量特性。
 <ul>
 <li>改变业务数据编码方式会对系统的性能和安全性产生影响</li>
 </ul>
 </li>
 <li><code>风险</code>: 不以标准术语出现。某些做法有一些隐患可能导致一些问题。
 <ul>
-<li>对系统某业务逻辑的描述尚未达成共识，这可能导致部分业务功能模块的重复，影响系统的可修改性;</li>
+<li>对系统某业务逻辑的描述尚未达成共识, 这可能导致部分业务功能模块的重复, 影响系统的可修改性;</li>
 </ul>
 </li>
 <li><code>非风险</code>: 某些做法是可行的、可接受的。
 <ul>
-<li>业务处理时间小于 30 毫秒，则将请求响应时间设定为 1 秒钟是可以接受的</li>
+<li>业务处理时间小于 30 毫秒, 则将请求响应时间设定为 1 秒钟是可以接受的</li>
 </ul>
 </li>
 </ul>
@@ -1235,7 +1238,7 @@
 <p>目的:<br>
 引入质量属性场景的目的是为了<code>精确描述软件系统的质量属性</code>。</p>
 <p>概念:<br>
-质量属性场景是<code>对利益相关者与系统交互的简短陈述</code>，描述了一个<code>具体的质量属性需求</code></p>
+质量属性场景是<code>对利益相关者与系统交互的简短陈述</code>, 描述了一个<code>具体的质量属性需求</code></p>
 <ul>
 <li>6 个组成部分:
 <ul>
@@ -1247,7 +1250,7 @@
 <li>可用性、可修改性、性能、可测试性、易用性和安全性</li>
 </ul>
 </li>
-<li>性能质量属性场景主要关注系统的响应速度，可以通<code>过效率、响应时间、吞吐量、负载</code>来客观评价性能的好坏 。</li>
+<li>性能质量属性场景主要关注系统的响应速度, 可以通<code>过效率、响应时间、吞吐量、负载</code>来客观评价性能的好坏 。</li>
 </ul>
 <h2> 软件架构评估</h2>
 <h3> 架构层次</h3>
@@ -1266,29 +1269,29 @@
 <ul>
 <li>ATAM 包括 4 个主要阶段: <code>场景和需求收集、架构视图和场景实现、属性模型构造和分析、权衡</code>。</li>
 <li>ATAM 效用树的结构包括：<code>树根—质量属性—属性分类—质量属性场景（叶子节点）</code>。</li>
-<li>ATAM 方法要求在系统开发之前，首先对这些质量属性进行<code>评价和折中</code>。</li>
-<li>主要关注系统的<code>需求说明</code>，针对<code>性能、可用性、安全性和可修改性</code>，在系统开发之前进行<code>分析、评价与折中</code>。</li>
+<li>ATAM 方法要求在系统开发之前, 首先对这些质量属性进行<code>评价和折中</code>。</li>
+<li>主要关注系统的<code>需求说明</code>, 针对<code>性能、可用性、安全性和可修改性</code>, 在系统开发之前进行<code>分析、评价与折中</code>。</li>
 </ul>
 <h2> 基于体系结构的开发模型（ABSDM）</h2>
 <blockquote>
 <p>ABSDM 把整个基于体系结构的软件过程划分为<code>体系结构需求、设计、文档化、复审、实现和演化</code>等 6 个过程。</p>
 </blockquote>
 <ul>
-<li><code>体系结构需求过程</code>，其目的是获取用户需求和标识系统中所需要的构件。</li>
-<li><code>体系结构设计过程</code>是一个迭代过程，可以使用已有的系统适用于大部分开发需求。</li>
-<li><code>体系结构文档化过程</code>，并提到其主要输出物包括体系结构规格说明和质量设计说明书。</li>
-<li><code>体系结构复审</code>，其目的是早期发现设计中的缺陷和错误。在一个主版本的软件架构分析之后，要安排一次由外部人员（用户代表和领域专家）参加的复审。</li>
-<li><code>体系结构实现过程</code>，其过程是以文档化的体系结构说明书为基础的，并且每个构件必须满足其责任。</li>
-<li><code>体系结构演化</code>，使用系统演化步骤对应用程序进行修改，以适应新的需求情况。</li>
+<li><code>体系结构需求过程</code>, 其目的是获取用户需求和标识系统中所需要的构件。</li>
+<li><code>体系结构设计过程</code>是一个迭代过程, 可以使用已有的系统适用于大部分开发需求。</li>
+<li><code>体系结构文档化过程</code>, 并提到其主要输出物包括体系结构规格说明和质量设计说明书。</li>
+<li><code>体系结构复审</code>, 其目的是早期发现设计中的缺陷和错误。在一个主版本的软件架构分析之后, 要安排一次由外部人员（用户代表和领域专家）参加的复审。</li>
+<li><code>体系结构实现过程</code>, 其过程是以文档化的体系结构说明书为基础的, 并且每个构件必须满足其责任。</li>
+<li><code>体系结构演化</code>, 使用系统演化步骤对应用程序进行修改, 以适应新的需求情况。</li>
 </ul>
 <h2> 面向服务的架构（SOA）</h2>
-<p>微服务架构使用<code>去中心化</code>的扁平化管理方式，每个服务都是一个独立的应用程序，独立管理、使用独立的数据库、独立部署和独立运行。</p>
+<p>微服务架构使用<code>去中心化</code>的扁平化管理方式, 每个服务都是一个独立的应用程序, 独立管理、使用独立的数据库、独立部署和独立运行。</p>
 <h2> 消息中间件</h2>
 <ul>
 <li>概念: 消息中间件是保存信息的容器</li>
-<li>特点: 消息中间件具有<code>异步处理模式和松耦合</code>的特点，即发送者和接收者无需等待对方的同步回应，也无需了解对方的具体信息</li>
+<li>特点: 消息中间件具有<code>异步处理模式和松耦合</code>的特点, 即发送者和接收者无需等待对方的同步回应, 也无需了解对方的具体信息</li>
 <li>传输模式: 消息中间件的传输模式包括<code>点对点模型和发布-订阅模型</code></li>
-<li>在分布式系统中，中间件通常提供两种不同类型的支持，即<code>支持交互支持</code>和<code>提供公共服务</code></li>
+<li>在分布式系统中, 中间件通常提供两种不同类型的支持, 即<code>支持交互支持</code>和<code>提供公共服务</code></li>
 </ul>
 <h2> 新兴技术</h2>
 <h3> 云计算</h3>
@@ -1310,20 +1313,20 @@
       <link>https://vxhly.github.io/system-architect/basic-knowledge/software-engineering.html</link>
       <guid>https://vxhly.github.io/system-architect/basic-knowledge/software-engineering.html</guid>
       <source url="https://vxhly.github.io/rss.xml">系统架构下午-案例分析-软件工程</source>
-      <description>瀑布模型 特点 严格区分阶段，每个阶段因果关系紧密相连; 只适合需求明确的项目; 缺点 软件需求完整性、正确性难确定; 严格串行化，很长时间才能看到结果; 瀑布模型要求每个阶段一次性完全解决该阶段工作，这不现实。; 阶段 需求分析; 软件设计; 程序设计; 编码实现; 单元测试; 集成测试; 系统测试; 运行维护; 原型模型 分类 抛弃型原型; 演化型...</description>
+      <description>瀑布模型 特点 严格区分阶段, 每个阶段因果关系紧密相连; 只适合需求明确的项目; 缺点 软件需求完整性、正确性难确定; 严格串行化, 很长时间才能看到结果; 瀑布模型要求每个阶段一次性完全解决该阶段工作, 这不现实。; 阶段 需求分析; 软件设计; 程序设计; 编码实现; 单元测试; 集成测试; 系统测试; 运行维护; 原型模型 分类 抛弃型原型; ...</description>
       <category>软考</category>
       <pubDate>Fri, 29 Mar 2024 19:53:09 GMT</pubDate>
       <content:encoded><![CDATA[<h2> 瀑布模型</h2>
 <h3> 特点</h3>
 <ul>
-<li>严格区分阶段，每个阶段因果关系紧密相连</li>
+<li>严格区分阶段, 每个阶段因果关系紧密相连</li>
 <li>只适合需求明确的项目</li>
 </ul>
 <h3> 缺点</h3>
 <ul>
 <li>软件需求完整性、正确性难确定</li>
-<li>严格串行化，很长时间才能看到结果</li>
-<li>瀑布模型要求每个阶段一次性完全解决该阶段工作，这不现实。</li>
+<li>严格串行化, 很长时间才能看到结果</li>
+<li>瀑布模型要求每个阶段一次性完全解决该阶段工作, 这不现实。</li>
 </ul>
 <h3> 阶段</h3>
 <ul>
@@ -1351,7 +1354,7 @@
 <h3> 特点</h3>
 <ul>
 <li>测试贯穿于始终</li>
-<li>测试分阶段，测试计划提前</li>
+<li>测试分阶段, 测试计划提前</li>
 </ul>
 <h3> 阶段</h3>
 <ul>
@@ -1473,7 +1476,7 @@
 </ul>
 <h3> 水晶方法</h3>
 <ul>
-<li>提倡“机动性”的方法，拥有对不同类型项目非常有效的敏捷过程。</li>
+<li>提倡“机动性”的方法, 拥有对不同类型项目非常有效的敏捷过程。</li>
 </ul>
 <h3> 特征驱动开发方法（FDD）</h3>
 <ul>
@@ -1494,16 +1497,16 @@
 <h2> 逆向工程</h2>
 <ul>
 <li><code>实现级</code>；包括程序的抽象语法树、符号表、过程的设计表示</li>
-<li><code>结构级</code>；包括反映程序分量之间相互依赖关系的信息，例如调用图、结构图、程序和数据结构</li>
-<li><code>功能级</code>；包括反映程序段功能及程序段之间关系的信息，例如数据和控制流模型</li>
-<li><code>过程级</code>；包括反映程序分量或程序诸实体与应用领域概念之间对应关系的信息，例如实体关系模型</li>
+<li><code>结构级</code>；包括反映程序分量之间相互依赖关系的信息, 例如调用图、结构图、程序和数据结构</li>
+<li><code>功能级</code>；包括反映程序段功能及程序段之间关系的信息, 例如数据和控制流模型</li>
+<li><code>过程级</code>；包括反映程序分量或程序诸实体与应用领域概念之间对应关系的信息, 例如实体关系模型</li>
 </ul>
 <h2> 净室软件工程</h2>
 <h3> 缺点</h3>
 <ul>
-<li>太理论化，正确性验证的步骤比较困难且耗时。</li>
-<li>开发小组不进行传统的模块测试，这是不现实的。</li>
-<li>脱胎于传统软件工程，不可避免带有传统软件工程的一些弊端。</li>
+<li>太理论化, 正确性验证的步骤比较困难且耗时。</li>
+<li>开发小组不进行传统的模块测试, 这是不现实的。</li>
+<li>脱胎于传统软件工程, 不可避免带有传统软件工程的一些弊端。</li>
 </ul>
 ]]></content:encoded>
     </item>
@@ -1512,7 +1515,7 @@
       <link>https://vxhly.github.io/system-architect/basic-knowledge/case-analysis-database.html</link>
       <guid>https://vxhly.github.io/system-architect/basic-knowledge/case-analysis-database.html</guid>
       <source url="https://vxhly.github.io/rss.xml">系统架构下午-案例分析-数据库</source>
-      <description>前言 系统架构设计师 考试中下午案例分析题知识点汇总。本篇是数据库专题部分。 概念 超类实体 某个实体类型中所有实体同时也是另一个实体类型中的实体，此时称前一实体为子类实体，后一实体为超类实体。或根据官方教程由一种已知类型定义新的类型。通常把已知类型称为超类, 新定义的类型称为子类。; 派生属性 实体的某个属性可以从其他属性或其他数据推导出来，那么这个...</description>
+      <description>前言 系统架构设计师 考试中下午案例分析题知识点汇总。本篇是数据库专题部分。 概念 超类实体 某个实体类型中所有实体同时也是另一个实体类型中的实体, 此时称前一实体为子类实体, 后一实体为超类实体。或根据官方教程由一种已知类型定义新的类型。通常把已知类型称为超类, 新定义的类型称为子类。; 派生属性 实体的某个属性可以从其他属性或其他数据推导出来, 那...</description>
       <category>软考</category>
       <pubDate>Fri, 08 Mar 2024 19:25:19 GMT</pubDate>
       <content:encoded><![CDATA[<div class="hint-container tip">
@@ -1522,28 +1525,28 @@
 <h2> 概念</h2>
 <h3> 超类实体</h3>
 <ul>
-<li>某个实体类型中所有实体同时也是另一个实体类型中的实体，此时称前一实体为子类实体，后一实体为超类实体。或根据官方教程由一种已知类型定义新的类型。通常把已知类型称为超类, 新定义的类型称为子类。</li>
+<li>某个实体类型中所有实体同时也是另一个实体类型中的实体, 此时称前一实体为子类实体, 后一实体为超类实体。或根据官方教程由一种已知类型定义新的类型。通常把已知类型称为超类, 新定义的类型称为子类。</li>
 </ul>
 <h3> 派生属性</h3>
 <ul>
-<li>实体的某个属性可以从其他属性或其他数据推导出来，那么这个属性就是派生属性。</li>
+<li>实体的某个属性可以从其他属性或其他数据推导出来, 那么这个属性就是派生属性。</li>
 </ul>
 <h3> 索引</h3>
 <ul>
-<li>索引是提高数据库查询效率的机制，但不能进行数据更新。</li>
-<li>数据库索引：提升查询效率，降低添加、修改、删除效率。采用 B 树，B+树等。</li>
+<li>索引是提高数据库查询效率的机制, 但不能进行数据更新。</li>
+<li>数据库索引：提升查询效率, 降低添加、修改、删除效率。采用 B 树, B+树等。</li>
 </ul>
 <h3> 视图</h3>
 <ul>
-<li>视图具有一定的安全机制，但也不能更新数据。</li>
+<li>视图具有一定的安全机制, 但也不能更新数据。</li>
 </ul>
 <h3> 触发器</h3>
 <ul>
-<li>触发器可以作为更新机制，但无法完全保证数据库安全性。</li>
+<li>触发器可以作为更新机制, 但无法完全保证数据库安全性。</li>
 </ul>
 <h3> 存储过程</h3>
 <ul>
-<li>存储过程可以定义一段代码来提供给用户程序调用，通过代码调用来实现更新，避免了向第三方提供系统表结构的过程，从而更好地保证了数据库的安全性。</li>
+<li>存储过程可以定义一段代码来提供给用户程序调用, 通过代码调用来实现更新, 避免了向第三方提供系统表结构的过程, 从而更好地保证了数据库的安全性。</li>
 </ul>
 <h2> 数据库设计过程</h2>
 <ul>
@@ -1564,11 +1567,11 @@
 </tr>
 <tr>
 <td>概念结构设计</td>
-<td>将应用对象抽象成不依赖于 DBMS 的数据模型，即概念模型。描述概念模型的较理想的工具是 E-R 图。</td>
+<td>将应用对象抽象成不依赖于 DBMS 的数据模型, 即概念模型。描述概念模型的较理想的工具是 E-R 图。</td>
 </tr>
 <tr>
 <td>逻辑结构设计</td>
-<td>将抽象的概念模型转化为与选用的 DBMS 产品所支持的数据模型相符合的逻辑模型，即关系模式。</td>
+<td>将抽象的概念模型转化为与选用的 DBMS 产品所支持的数据模型相符合的逻辑模型, 即关系模式。</td>
 </tr>
 <tr>
 <td>物理结构设计</td>
@@ -1576,26 +1579,26 @@
 </tr>
 <tr>
 <td>数据库实施阶段</td>
-<td>根据前两个阶段的结果建立数据库，编制与调试应用程序，组织数据入库，并进行试运行。</td>
+<td>根据前两个阶段的结果建立数据库, 编制与调试应用程序, 组织数据入库, 并进行试运行。</td>
 </tr>
 <tr>
 <td>数据库运行和维护阶段</td>
-<td>数据库应用系统经过试运行即可投入运行，但该阶段需要不断地对系统进行评价、调整与修改。</td>
+<td>数据库应用系统经过试运行即可投入运行, 但该阶段需要不断地对系统进行评价、调整与修改。</td>
 </tr>
 </tbody>
 </table>
 <h3> 规划</h3>
-<p>规划阶段的主要任务是进行建立数据库的必要性及可行性分析，确定数据库系统在企业和信息系统中的地位，以及各个数据库之间的联系。</p>
+<p>规划阶段的主要任务是进行建立数据库的必要性及可行性分析, 确定数据库系统在企业和信息系统中的地位, 以及各个数据库之间的联系。</p>
 <h3> 需求分析</h3>
-<p>调查组织机构情况、调查各部门的业务活动情况、协助用户明确对新系统的各种要求、确定新系统的边界，以此获得用户对系统的如下要求。<br>
+<p>调查组织机构情况、调查各部门的业务活动情况、协助用户明确对新系统的各种要求、确定新系统的边界, 以此获得用户对系统的如下要求。<br>
 ① <code>信息要求</code>: 保存的信息、完整性要求等。<br>
 ② <code>处理要求</code>: 操作功能、处理的频度、相应时间等。<br>
 ③ <code>系统要求</code>: 安全性要求、使用方式要求、可扩充性要求。</p>
 <h3> 概念结构设计</h3>
 <p>对现实事物抽象认识的 3 种方法:</p>
 <ol>
-<li><code>分类(Classification)</code>: 对现实世界的事物，按照其具有的共同特征和行为，定义一种类型。在某一类型中，个体是类型的一个成员或实例，即 “is member of”。</li>
-<li><code>聚集(Aggregation)</code>: 定义某一类型所具有的属性。如学生类型具有学号、姓名、性别、班级等共同属性，每一个学生都是这一类型中的个体, 通过在这些属性上的不同取值来区分。各个属性是所属类型的一个成份，即 “is part of”。</li>
+<li><code>分类(Classification)</code>: 对现实世界的事物, 按照其具有的共同特征和行为, 定义一种类型。在某一类型中, 个体是类型的一个成员或实例, 即 “is member of”。</li>
+<li><code>聚集(Aggregation)</code>: 定义某一类型所具有的属性。如学生类型具有学号、姓名、性别、班级等共同属性, 每一个学生都是这一类型中的个体, 通过在这些属性上的不同取值来区分。各个属性是所属类型的一个成份, 即 “is part of”。</li>
 <li><code>概括(Generalization)</code>: 由一种已知类型定义新的类型。通常把已知类型称为超类(Superclass), 新定义的类型称为子类(Subclass), 即 “is subset"</li>
 </ol>
 <p>概念设计步骤</p>
@@ -1615,59 +1618,59 @@
 </ol>
 <h3> 逻辑结构设计</h3>
 <ul>
-<li>将抽象的概念模型转化为与选用的 DBMS 产品所支持的数据模型相符合的逻辑模型，即关系模式。</li>
+<li>将抽象的概念模型转化为与选用的 DBMS 产品所支持的数据模型相符合的逻辑模型, 即关系模式。</li>
 <li>主要工作步骤包括确定数据模型、将 E-R 图转换成为指定的数据模型、确定完整性约束和确定用户视图。</li>
 </ul>
 <h3> 物理设计</h3>
 <p>物理设计的主要工作步骤包括确定数据分布、存储结构和访问方式。</p>
 <h3> 数据库实施</h3>
-<p>数据库实施。在计算机上建立起实际的数据库结构，数据加载(或称装入)，进行试运行和评价的过程，叫作数据库的实施(或称实现)</p>
+<p>数据库实施。在计算机上建立起实际的数据库结构, 数据加载(或称装入), 进行试运行和评价的过程, 叫作数据库的实施(或称实现)</p>
 <h3> 数据库运行维护</h3>
-<p>数据库运行维护。数据库一旦投入运行，就标志着数据库维护工作的开始。数据库维护工作的主要内容包括对数据库性能的监测和改善、故障恢复、数据库的重组和重构。</p>
+<p>数据库运行维护。数据库一旦投入运行, 就标志着数据库维护工作的开始。数据库维护工作的主要内容包括对数据库性能的监测和改善、故障恢复、数据库的重组和重构。</p>
 <h2> 数据库访问接口</h2>
 <p>常见的数据库访问接口有专用调用、开放数据库互连（ODBC）和 Java 数据库连接（JDBC）等。</p>
 <p>ODBC 其缺点要体现在以下三个方面</p>
 <ul>
-<li>ODBC 只支持关系型数据，像电子邮件之类的非关系型数据是不支持的。</li>
-<li>由于 ODBC 最初的设计理念就是能够访问所有类型数据库，这种普遍适用也造成了 ODBC 对每种数据库的支持都不是特别理想。</li>
-<li>使用 ODBC 需要进行一些系统的配置工作。当然，这个操作也是可以用程序来完成的。</li>
+<li>ODBC 只支持关系型数据, 像电子邮件之类的非关系型数据是不支持的。</li>
+<li>由于 ODBC 最初的设计理念就是能够访问所有类型数据库, 这种普遍适用也造成了 ODBC 对每种数据库的支持都不是特别理想。</li>
+<li>使用 ODBC 需要进行一些系统的配置工作。当然, 这个操作也是可以用程序来完成的。</li>
 </ul>
 <h2> 事物的特性 ACID</h2>
 <ul>
-<li><code>原子性（Atomicity）</code>。事务是数据库的逻辑工作单位，事务的原子性保证事务包含的一组更新操作是原子不可分的，也就是说，这些操作是一个整体，不能部分地完成。</li>
+<li><code>原子性（Atomicity）</code>。事务是数据库的逻辑工作单位, 事务的原子性保证事务包含的一组更新操作是原子不可分的, 也就是说, 这些操作是一个整体, 不能部分地完成。</li>
 <li><code>一致性（Consistency）</code>。一致性是指使数据库从一个一致性状态变到另一个一致性状态。</li>
-<li><code>隔离性（Isolation）</code>。隔离性是指一个事务的执行不能被其他事务干扰，即一个事务内部的操作及使用的数据对并发的其他事务是隔离的，并发执行的各个事务之间不能互相干扰。</li>
-<li><code>持久性（Durability）</code>。持久性也称为永久性，是指事务一旦提交，改变就是永久性的，无论发生何种故障，都不应该对其有任何影响。</li>
+<li><code>隔离性（Isolation）</code>。隔离性是指一个事务的执行不能被其他事务干扰, 即一个事务内部的操作及使用的数据对并发的其他事务是隔离的, 并发执行的各个事务之间不能互相干扰。</li>
+<li><code>持久性（Durability）</code>。持久性也称为永久性, 是指事务一旦提交, 改变就是永久性的, 无论发生何种故障, 都不应该对其有任何影响。</li>
 </ul>
 <h2> 数据不一致问题</h2>
 <ul>
-<li><code>丢失修改</code>。事务 A 与事务 B 从数据库中读入同一数据并修改，事务 B 的提交结果破坏了事务 A 提交的结果，导致事务 A 的修改被丢失。</li>
-<li><code>读 “脏数据”</code>。事务 A 修改某一数据，并将其写回磁盘，事务 B 读取同一数据后，事务 A 由于某种原因被撤销，这时事务 A 已修改过的数据恢复原值，事务 B 读到的数据就与数据库中的数据不一致，是不正确的数据，称为“脏数据”。</li>
-<li><code>不可重复读</code>。不可重复读是指事务 A 读取数据后，事务 B 执行了更新操作，事务 A 使用的仍是更新前的值，造成了数据不一致性。</li>
+<li><code>丢失修改</code>。事务 A 与事务 B 从数据库中读入同一数据并修改, 事务 B 的提交结果破坏了事务 A 提交的结果, 导致事务 A 的修改被丢失。</li>
+<li><code>读 “脏数据”</code>。事务 A 修改某一数据, 并将其写回磁盘, 事务 B 读取同一数据后, 事务 A 由于某种原因被撤销, 这时事务 A 已修改过的数据恢复原值, 事务 B 读到的数据就与数据库中的数据不一致, 是不正确的数据, 称为“脏数据”。</li>
+<li><code>不可重复读</code>。不可重复读是指事务 A 读取数据后, 事务 B 执行了更新操作, 事务 A 使用的仍是更新前的值, 造成了数据不一致性。</li>
 </ul>
 <h2> 范式</h2>
 <ul>
-<li>第一范式（1NF）。在关系模式中，当且仅当所有属性只包含原子值，即每个分量都是不可再分的数据项，则称满足 1NF。</li>
-<li>第二范式（2NF）。当且仅当关系模式及满足 1NF，且每个非键属性（即不属于任何候选键的属性，也称为非主属性）完全依赖于候选键时，则称满足 2NF。</li>
-<li>第三范式（3NF）。当且仅当关系模式 R 满足 1NF，且 R 中没有非键属性传递依赖于候选键时，则称满足 3NF。</li>
-<li>BCNF。如果关系模式及满足 1NF，且及中没有属性传递依赖于候选键时，则称满足 BCNF。</li>
-<li>第四范式（4NF）。第四范式是 BCNF 的推广，是针对有多值依赖的关系模型所定义的规范化形式。把一个表中多个多值依赖拆分开来。</li>
+<li>第一范式（1NF）。在关系模式中, 当且仅当所有属性只包含原子值, 即每个分量都是不可再分的数据项, 则称满足 1NF。</li>
+<li>第二范式（2NF）。当且仅当关系模式及满足 1NF, 且每个非键属性（即不属于任何候选键的属性, 也称为非主属性）完全依赖于候选键时, 则称满足 2NF。</li>
+<li>第三范式（3NF）。当且仅当关系模式 R 满足 1NF, 且 R 中没有非键属性传递依赖于候选键时, 则称满足 3NF。</li>
+<li>BCNF。如果关系模式及满足 1NF, 且及中没有属性传递依赖于候选键时, 则称满足 BCNF。</li>
+<li>第四范式（4NF）。第四范式是 BCNF 的推广, 是针对有多值依赖的关系模型所定义的规范化形式。把一个表中多个多值依赖拆分开来。</li>
 </ul>
 <h2> 反规范化设计</h2>
 <div class="hint-container tip">
 <p class="hint-container-title">提示</p>
-<p>规范化设计后，数据库设计者希望牺牲部分规范化来提高性能，这种从规范化设计的回退方法称为反规范化技术。<br>
+<p>规范化设计后, 数据库设计者希望牺牲部分规范化来提高性能, 这种从规范化设计的回退方法称为反规范化技术。<br>
 逆规范化方法优点：提高统计、查询效率。<br>
-逆规范化方法缺点：增加了数据冗余，浪费存储空间，增、删、改操作的效率降低，可能导致数据不一致，可能产生添加、修改、删除异常</p>
+逆规范化方法缺点：增加了数据冗余, 浪费存储空间, 增、删、改操作的效率降低, 可能导致数据不一致, 可能产生添加、修改、删除异常</p>
 </div>
 <h3> 优点</h3>
 <ul>
-<li>避免进行表之间的连接操作，可以提高数据操作的性能。</li>
-<li>连接操作少，检索快、统计快;需要查的表减少，检索容易，并易出错。</li>
+<li>避免进行表之间的连接操作, 可以提高数据操作的性能。</li>
+<li>连接操作少, 检索快、统计快;需要查的表减少, 检索容易, 并易出错。</li>
 </ul>
 <h3> 缺点</h3>
 <ul>
-<li>数据的重复存储，浪费了磁盘空间</li>
+<li>数据的重复存储, 浪费了磁盘空间</li>
 <li>会产生数据的不一致性问题(触发器数据同步、应用程序同步)</li>
 <li>更新和插入代码更加难写</li>
 <li>插入、更新、删除操作开销更大</li>
@@ -1683,23 +1686,23 @@
 <tbody>
 <tr>
 <td>增加冗余列</td>
-<td>增加冗余列是指在多个表中具有相同的列，它常用来在查询时避免连接操作。</td>
+<td>增加冗余列是指在多个表中具有相同的列, 它常用来在查询时避免连接操作。</td>
 </tr>
 <tr>
 <td>增加派生列</td>
-<td>增加派生列指增加的列可以通过表中其他数据计算生成它的作用是在查询时减少计算量，从而加快查询速度</td>
+<td>增加派生列指增加的列可以通过表中其他数据计算生成它的作用是在查询时减少计算量, 从而加快查询速度</td>
 </tr>
 <tr>
 <td>重新组表</td>
-<td>重新组表指如果许多用户需要查看两个表连接出来的结果数据，则把这两个表重新组成一个表来减少连接而提高性能</td>
+<td>重新组表指如果许多用户需要查看两个表连接出来的结果数据, 则把这两个表重新组成一个表来减少连接而提高性能</td>
 </tr>
 <tr>
 <td>水平分割表</td>
-<td>按记录进行分割，把数据放到多个独立的表中，主要用于表数据规模很大、表中数据相对独立或数据需要存放到多个介质上时使用。</td>
+<td>按记录进行分割, 把数据放到多个独立的表中, 主要用于表数据规模很大、表中数据相对独立或数据需要存放到多个介质上时使用。</td>
 </tr>
 <tr>
 <td>垂直分割表</td>
-<td>对表进行分割，将主键与部分列放到一个表中，主键与其它列放到另一个表中，在查询时减少 1/0 次数。</td>
+<td>对表进行分割, 将主键与部分列放到一个表中, 主键与其它列放到另一个表中, 在查询时减少 1/0 次数。</td>
 </tr>
 </tbody>
 </table>
@@ -1713,54 +1716,54 @@
 </ul>
 <h2> 数据库的完整性</h2>
 <ul>
-<li><code>完整性约束条件</code>: 完整性检查是指对数据库中的数据设置约束条件，确保数据符合预定义的规则。 完整性检查可以帮助我们防止数据错误。 完整性控制机制包括定义功能和检查功能。定义功能用于定义完整性约束条件。检查功能用于检查用户操作是否违反了完整性约束条件。完整性检查可以分为静态约束和动态约束。静态约束对数据库中数据本身的限制，例如数据类型、取值范围等。动态约束对数据库中数据变化的限制。</li>
-<li><code>实体完整性</code>: 实体完整性要求主键中的任一属性不能为空，所谓空值是“不知道”或“无意义”的值。</li>
-<li><code>参照完整性</code>: 若基本关系及中含有与另一基本关系 S 的主键 PK 相对应的属性组 FK（FK 称为 R 的外键），则参照完整性要求，对及中的每个元组在 FK 上的值必须是 S 中某个元组的 PK 值，或者为空值。</li>
-<li><code>用户定义的完整性</code>: 用户定义的完整性就是针对某一具体数据库的约束条件，反映某一具体应用所涉及的数据必须满足的语义要求。</li>
-<li><code>触发器</code>: 所谓触发器，其抽象的含义即是一个事件的发生必然触发（或导致）另外一些事件的发生，其中前面的事件称为触发事件，后面的事件称为结果事件。触发事件一般即为完整性约束条件的否定，而结果事件即为一组操作用以消除触发事件所引起的不良影响。 触发器除了有完整性保护功能外，还有安全性保护功能。</li>
+<li><code>完整性约束条件</code>: 完整性检查是指对数据库中的数据设置约束条件, 确保数据符合预定义的规则。 完整性检查可以帮助我们防止数据错误。 完整性控制机制包括定义功能和检查功能。定义功能用于定义完整性约束条件。检查功能用于检查用户操作是否违反了完整性约束条件。完整性检查可以分为静态约束和动态约束。静态约束对数据库中数据本身的限制, 例如数据类型、取值范围等。动态约束对数据库中数据变化的限制。</li>
+<li><code>实体完整性</code>: 实体完整性要求主键中的任一属性不能为空, 所谓空值是“不知道”或“无意义”的值。</li>
+<li><code>参照完整性</code>: 若基本关系及中含有与另一基本关系 S 的主键 PK 相对应的属性组 FK（FK 称为 R 的外键）, 则参照完整性要求, 对及中的每个元组在 FK 上的值必须是 S 中某个元组的 PK 值, 或者为空值。</li>
+<li><code>用户定义的完整性</code>: 用户定义的完整性就是针对某一具体数据库的约束条件, 反映某一具体应用所涉及的数据必须满足的语义要求。</li>
+<li><code>触发器</code>: 所谓触发器, 其抽象的含义即是一个事件的发生必然触发（或导致）另外一些事件的发生, 其中前面的事件称为触发事件, 后面的事件称为结果事件。触发事件一般即为完整性约束条件的否定, 而结果事件即为一组操作用以消除触发事件所引起的不良影响。 触发器除了有完整性保护功能外, 还有安全性保护功能。</li>
 </ul>
 <h2> 数据库性能优化</h2>
 <h3> 主从复制</h3>
-<p>主从复制，是用来建立一个和主数据库完全一样的数据库环境，称为从数据库。这样做的好处是:</p>
+<p>主从复制, 是用来建立一个和主数据库完全一样的数据库环境, 称为从数据库。这样做的好处是:</p>
 <ol>
-<li>做数据的热备。作为后备数据库，主数据库服务器故障后，可切换到从数据库继续工作，避免数据丢失。</li>
-<li>架构的扩展。、业务量越来越大，I/O 访问频率过高，单机无法满足此时做多库的存储，降低磁盘 I/O 访问的频率，提高单个机器的 I/O 性能。</li>
+<li>做数据的热备。作为后备数据库, 主数据库服务器故障后, 可切换到从数据库继续工作, 避免数据丢失。</li>
+<li>架构的扩展。、业务量越来越大, I/O 访问频率过高, 单机无法满足此时做多库的存储, 降低磁盘 I/O 访问的频率, 提高单个机器的 I/O 性能。</li>
 <li>读写分离。使数据库能支持更大的并发。</li>
 </ol>
 <h3> 读写分离</h3>
-<p>读写分离: 设置不同的主/从数据库分别负责不同的操作。让主数据库负责数据的写操件，从数据库负责数据的读操作。通过角色分担的策略，分别提升读写性能，有效减少数据并发操作的延迟。</p>
+<p>读写分离: 设置不同的主/从数据库分别负责不同的操作。让主数据库负责数据的写操件, 从数据库负责数据的读操作。通过角色分担的策略, 分别提升读写性能, 有效减少数据并发操作的延迟。</p>
 <h3> 分库</h3>
-<p>分库，将原本存放在一个实例上众多分类的数据(表)，分开存放到不同的实例上。有利于差异化管理。</p>
+<p>分库, 将原本存放在一个实例上众多分类的数据(表), 分开存放到不同的实例上。有利于差异化管理。</p>
 <h3> 分表</h3>
-<p>分表也叫分片，解决并发能力、1/0 性能提升、将一张大表分成若干小表，业务同时访问多个表。分表是重在单个实例内部，一张表拆分成多个表。</p>
+<p>分表也叫分片, 解决并发能力、1/0 性能提升、将一张大表分成若干小表, 业务同时访问多个表。分表是重在单个实例内部, 一张表拆分成多个表。</p>
 <h2> 分布式数据库的优点</h2>
-<p>分布式数据库的物理层面分布、逻辑层面统一的特色，让它具有一些集中式数据库所不可及的优势。</p>
+<p>分布式数据库的物理层面分布、逻辑层面统一的特色, 让它具有一些集中式数据库所不可及的优势。</p>
 <ul>
 <li>分布式数据库可以解决企业部门分散而数据需要相互联系的问题。</li>
-<li>如果企业需要增加新的相对自主的部门来扩充机构，则分布式数据库系统可以在对当前机构影响最小的情况下进行扩充。</li>
+<li>如果企业需要增加新的相对自主的部门来扩充机构, 则分布式数据库系统可以在对当前机构影响最小的情况下进行扩充。</li>
 <li>分布式数据库可以满足均衡负载的需要。</li>
-<li>当企业己存在几个数据库系统，而且实现全局应用的必要性增加时，就可以由这些数据库自下而上构成分布式数据库系统。</li>
+<li>当企业己存在几个数据库系统, 而且实现全局应用的必要性增加时, 就可以由这些数据库自下而上构成分布式数据库系统。</li>
 <li>相等规模的分布式数据库系统在出现故障的概率上不会比集中式数据库系统低 。</li>
 </ul>
 <h2> NoSQL</h2>
 <h3> NoSQL 优势</h3>
-<p>（1）<code>可扩展性——NoSQL</code>: 数据库可以轻松地扩展到处理海量数据，而无需昂贵的硬件或复杂的配置。<br>
-（2）<code>高并发性——NoSQL</code>: 数据库可以处理大量并发请求，使其非常适合处理实时数据和高流量应用程序。<br>
-（3）<code>灵活性—— NoSQL</code>: 数据库提供灵活的数据模型，可以轻松适应不断变化的数据需求，而无需更改架构。<br>
-（4）<code>高可用性——NoSQL</code>: 数据库通常具有高可用性，并提供冗余和故障转移功能，以确保数据始终可用。</p>
+<p>（1）<code>可扩展性——NoSQL</code>: 数据库可以轻松地扩展到处理海量数据, 而无需昂贵的硬件或复杂的配置。<br>
+（2）<code>高并发性——NoSQL</code>: 数据库可以处理大量并发请求, 使其非常适合处理实时数据和高流量应用程序。<br>
+（3）<code>灵活性—— NoSQL</code>: 数据库提供灵活的数据模型, 可以轻松适应不断变化的数据需求, 而无需更改架构。<br>
+（4）<code>高可用性——NoSQL</code>: 数据库通常具有高可用性, 并提供冗余和故障转移功能, 以确保数据始终可用。</p>
 <h3> NoSQL 解决的问题</h3>
-<p>（1）<code>大数据处理</code>: 关系数据库在处理海量数据时性能较差，而 NoSQL 数据库可以轻松扩展以处理 TB 级甚至 PB 级的数据。<br>
-（2）<code>并发性</code>: 关系数据库在高并发环境下容易出现瓶颈，而 NoSQL 数据库可以同时处理大量并发请求。<br>
-（3）<code>数据灵活性</code>: 关系数据库的固定模式限制了数据存储和检索的灵活性，而 NoSQL 数据库提供了更灵活的数据模型。<br>
-（4）<code>成本</code>: NoSQL 数据库通常比关系数据库更具成本效益，因为它们可以运行在廉价的硬件上，并且不需要昂贵的许可证。</p>
+<p>（1）<code>大数据处理</code>: 关系数据库在处理海量数据时性能较差, 而 NoSQL 数据库可以轻松扩展以处理 TB 级甚至 PB 级的数据。<br>
+（2）<code>并发性</code>: 关系数据库在高并发环境下容易出现瓶颈, 而 NoSQL 数据库可以同时处理大量并发请求。<br>
+（3）<code>数据灵活性</code>: 关系数据库的固定模式限制了数据存储和检索的灵活性, 而 NoSQL 数据库提供了更灵活的数据模型。<br>
+（4）<code>成本</code>: NoSQL 数据库通常比关系数据库更具成本效益, 因为它们可以运行在廉价的硬件上, 并且不需要昂贵的许可证。</p>
 <h3> NoSQL 带来的问题</h3>
-<p>（1）<code>数据一致性</code>: NoSQL 数据库通常提供最终一致性，而不是关系数据库提供的强一致性，这可能会导致数据不一致。<br>
-（2）<code>事务处理</code>: NoSQL 数据库通常不提供事务支持，这使得跨多个操作维护数据完整性变得困难。<br>
-（3）<code>查询功能</code>: NoSQL 数据库的查询功能可能不如关系数据库强大，这可能会限制复杂查询和数据分析。<br>
-（4）<code>数据建模</code>: NoSQL 数据库的非关系数据模型需要不同的建模技术，这可能需要学习曲线。</p>
+<p>（1）<code>数据一致性</code>: NoSQL 数据库通常提供最终一致性, 而不是关系数据库提供的强一致性, 这可能会导致数据不一致。<br>
+（2）<code>事务处理</code>: NoSQL 数据库通常不提供事务支持, 这使得跨多个操作维护数据完整性变得困难。<br>
+（3）<code>查询功能</code>: NoSQL 数据库的查询功能可能不如关系数据库强大, 这可能会限制复杂查询和数据分析。<br>
+（4）<code>数据建模</code>: NoSQL 数据库的非关系数据模型需要不同的建模技术, 这可能需要学习曲线。</p>
 <h2> 分布式缓存技术</h2>
 <h3> Redis 作用</h3>
-<p>redis 用作缓存组件时，其基于肉存的读写特性，比基于磁盘读写的数据库性能要高很多，适合缓存高频热点的数据，来提高读性能这样可以降低对数据库服务器的查询请求，提高系统性能。</p>
+<p>redis 用作缓存组件时, 其基于肉存的读写特性, 比基于磁盘读写的数据库性能要高很多, 适合缓存高频热点的数据, 来提高读性能这样可以降低对数据库服务器的查询请求, 提高系统性能。</p>
 <h3> Redis 读写数据基本步骤</h3>
 <p>读数据:</p>
 <ol>
@@ -1787,19 +1790,19 @@
 <tbody>
 <tr>
 <td>string</td>
-<td>实体的某个属性可以从其他属性或其他数据推导出来，那么这个属性就是派生属性。</td>
+<td>实体的某个属性可以从其他属性或其他数据推导出来, 那么这个属性就是派生属性。</td>
 </tr>
 <tr>
 <td>hash</td>
-<td>代替 string 类型，节省空间。描述用户信息较为方便</td>
+<td>代替 string 类型, 节省空间。描述用户信息较为方便</td>
 </tr>
 <tr>
 <td>set</td>
-<td>无序集合，每个值不能重复。可用于去重、抽奖、初始化用户池等</td>
+<td>无序集合, 每个值不能重复。可用于去重、抽奖、初始化用户池等</td>
 </tr>
 <tr>
 <td>list</td>
-<td>双向链表结构，可以模拟栈、队列等形式。可用于回复评论、点赞</td>
+<td>双向链表结构, 可以模拟栈、队列等形式。可用于回复评论、点赞</td>
 </tr>
 <tr>
 <td>zset</td>
@@ -1807,7 +1810,7 @@
 </tr>
 <tr>
 <td>pub/sub</td>
-<td>可以用做消息队列，生产者将消息投送给某个 key 为主题的队列，消费者监听并得到消息的推送</td>
+<td>可以用做消息队列, 生产者将消息投送给某个 key 为主题的队列, 消费者监听并得到消息的推送</td>
 </tr>
 </tbody>
 </table>
@@ -1824,7 +1827,7 @@
 <tr>
 <td>说明</td>
 <td>把当前内存中的数据集快照写入磁盘</td>
-<td>(数据库中所有键值对数据)恢复时是将快照文件直接读到内存里。 s 通过持续不断地保存 Redis 服务器所执行的更新命令来记录数据库状态，类似 mysql 的 binlog。恢复数据时需要从头开始回放更新命令。</td>
+<td>(数据库中所有键值对数据)恢复时是将快照文件直接读到内存里。 s 通过持续不断地保存 Redis 服务器所执行的更新命令来记录数据库状态, 类似 mysql 的 binlog。恢复数据时需要从头开始回放更新命令。</td>
 </tr>
 <tr>
 <td>磁盘刷新频率</td>
@@ -1852,23 +1855,23 @@
 <ul>
 <li>惰性删除
 <ul>
-<li>查询 key 的时候才对 key 进行检测，如果已经达到过期时间，则删除。缺点是如果这些过期的 key 没有被访问，那么他就一直无法被删除，而且一直占用内存。</li>
+<li>查询 key 的时候才对 key 进行检测, 如果已经达到过期时间, 则删除。缺点是如果这些过期的 key 没有被访问, 那么他就一直无法被删除, 而且一直占用内存。</li>
 </ul>
 </li>
 <li>定期删除
 <ul>
-<li>redis 每隔一段时间对数据库做一次检查，删除里面的过期 key。由于不可能对所有 key 去做轮询来删除，所以 redis 会每次随机取一些 key 去做检查和删除。</li>
+<li>redis 每隔一段时间对数据库做一次检查, 删除里面的过期 key。由于不可能对所有 key 去做轮询来删除, 所以 redis 会每次随机取一些 key 去做检查和删除。</li>
 </ul>
 </li>
 <li>内存淘汰机制
 <ul>
-<li>当内存不足时，redis 会根据一定的策略去删除一些 key。策略有 noeviction、allkeys-lru、volatile-lru、allkeys-random、volatile-random、volatile-ttl。</li>
+<li>当内存不足时, redis 会根据一定的策略去删除一些 key。策略有 noeviction、allkeys-lru、volatile-lru、allkeys-random、volatile-random、volatile-ttl。</li>
 </ul>
 </li>
 </ul>
 <h3> Redis 缓存异常</h3>
 <ol>
-<li>缓存穿透: 访问的 key 在 redis 中不存在，导致请求直接访问数据库。</li>
+<li>缓存穿透: 访问的 key 在 redis 中不存在, 导致请求直接访问数据库。</li>
 </ol>
 <table>
 <thead>
@@ -1879,17 +1882,17 @@
 </thead>
 <tbody>
 <tr>
-<td>恶意攻击，造成大量访问 Redis 中不存在的 key</td>
-<td>1、针对来源是比较少的请求来源 ip 主动限制访问次数，或者拉入黑名单。2、应用程序检查 key 的合法性，提前拒绝不合法的请求。3、使用布隆过滤器。</td>
+<td>恶意攻击, 造成大量访问 Redis 中不存在的 key</td>
+<td>1、针对来源是比较少的请求来源 ip 主动限制访问次数, 或者拉入黑名单。2、应用程序检查 key 的合法性, 提前拒绝不合法的请求。3、使用布隆过滤器。</td>
 </tr>
 <tr>
 <td>大量请求访问数据库里有但 redis 没有的 key。</td>
-<td>1、预热 redis，运行一个批处理脚本，将可能会大量访问的数据预先加载到 redis，业务再开张。2、在最前端进行流量控制，逐步释放进来请求。给出一段时间，让 redis 逐步加载热数据。3、如果数据库里也没有的 key，也要在 redis 中设置 key，使其值为 null 或空。</td>
+<td>1、预热 redis, 运行一个批处理脚本, 将可能会大量访问的数据预先加载到 redis, 业务再开张。2、在最前端进行流量控制, 逐步释放进来请求。给出一段时间, 让 redis 逐步加载热数据。3、如果数据库里也没有的 key, 也要在 redis 中设置 key, 使其值为 null 或空。</td>
 </tr>
 </tbody>
 </table>
 <ol start="2">
-<li>缓存雪崩: Redis 的 key 是已存在的，但同时失效了。</li>
+<li>缓存雪崩: Redis 的 key 是已存在的, 但同时失效了。</li>
 </ol>
 <table>
 <thead>
@@ -1900,12 +1903,12 @@
 </thead>
 <tbody>
 <tr>
-<td>redis 故障。比如 redis 宕机，网路出现抖动等。</td>
-<td>1、使用主从复制提高可用性， 使用 cluster 集群方案降低故障时影响的范围。2、如果出现故障，则可以采取服务降级、熔断、限流等措施。</td>
+<td>redis 故障。比如 redis 宕机, 网路出现抖动等。</td>
+<td>1、使用主从复制提高可用性, 使用 cluster 集群方案降低故障时影响的范围。2、如果出现故障, 则可以采取服务降级、熔断、限流等措施。</td>
 </tr>
 <tr>
-<td>采用了相同的过期时间, 例如在同一时刻设置了大量的 key，但过期时间都是 5 分钟。</td>
-<td>过期时间加上一个随机值，使得众多 key 均匀过期。</td>
+<td>采用了相同的过期时间, 例如在同一时刻设置了大量的 key, 但过期时间都是 5 分钟。</td>
+<td>过期时间加上一个随机值, 使得众多 key 均匀过期。</td>
 </tr>
 </tbody>
 </table>
@@ -1922,7 +1925,7 @@
 <tbody>
 <tr>
 <td>热点的 key 设置了太短的过期时间。例如秒杀业务下的"库存数量"</td>
-<td>1、设置较长的过期时间。非常重要的 key，则设置永久有效但需要解决好与数据库中的 key 的一致性问题使用分布式锁:如果热点 key 失效了，要控制好访问后端数据库的流量。2、只允许一个请求去访问数据库，取出最新的 key，存放到 redis，其他请求必须等待。但分布式锁也要防止出现异常的情况。</td>
+<td>1、设置较长的过期时间。非常重要的 key, 则设置永久有效但需要解决好与数据库中的 key 的一致性问题使用分布式锁:如果热点 key 失效了, 要控制好访问后端数据库的流量。2、只允许一个请求去访问数据库, 取出最新的 key, 存放到 redis, 其他请求必须等待。但分布式锁也要防止出现异常的情况。</td>
 </tr>
 </tbody>
 </table>
@@ -2435,14 +2438,14 @@
 <h2> 自动化测试</h2>
 <div class="hint-container tip">
 <p class="hint-container-title">提示</p>
-<p>自动化测试的常用脚本技术，包括<code>线性脚本、结构化脚本、共享脚本、数据驱动脚本和关键字驱动脚本</code>。</p>
+<p>自动化测试的常用脚本技术, 包括<code>线性脚本、结构化脚本、共享脚本、数据驱动脚本和关键字驱动脚本</code>。</p>
 </div>
 <ul>
-<li><code>线性脚本</code>，是录制手工执行的测试用例得到的脚本，这种脚本包含所有的击键、移动、输入数据等，所有录制的测试用例都可以得到完整的回放。</li>
-<li><code>数据驱动脚本</code>，将测试输入存储在独立的（数据）文件中，而不是存储在脚本中。可以针对不同数据输入实现多个测试用例。</li>
-<li><code>结构化脚本</code>，类似于结构化程序设计，具有各种逻辑结构、函数调用功能。</li>
-<li><code>共享脚本</code>，共享脚本是指可以被多个测试用例使用的脚本，也允许其他脚本调用。共享脚本可以在不同主机、不同系统之间共享，也可以在同一主机、同一系统之间共享。关键字驱动脚本，</li>
-<li><code>关键字驱动脚本</code>是数据驱动脚本的逻辑扩展。它将数据文件变成测试用例的描述，采用一些关键字指定要执行的任务。</li>
+<li><code>线性脚本</code>, 是录制手工执行的测试用例得到的脚本, 这种脚本包含所有的击键、移动、输入数据等, 所有录制的测试用例都可以得到完整的回放。</li>
+<li><code>数据驱动脚本</code>, 将测试输入存储在独立的（数据）文件中, 而不是存储在脚本中。可以针对不同数据输入实现多个测试用例。</li>
+<li><code>结构化脚本</code>, 类似于结构化程序设计, 具有各种逻辑结构、函数调用功能。</li>
+<li><code>共享脚本</code>, 共享脚本是指可以被多个测试用例使用的脚本, 也允许其他脚本调用。共享脚本可以在不同主机、不同系统之间共享, 也可以在同一主机、同一系统之间共享。关键字驱动脚本,</li>
+<li><code>关键字驱动脚本</code>是数据驱动脚本的逻辑扩展。它将数据文件变成测试用例的描述, 采用一些关键字指定要执行的任务。</li>
 </ul>
 <h2> 软件集成技术</h2>
 <ol>
@@ -3163,7 +3166,7 @@
       <link>https://vxhly.github.io/system-architect/basic-knowledge/basic-knowledge.html</link>
       <guid>https://vxhly.github.io/system-architect/basic-knowledge/basic-knowledge.html</guid>
       <source url="https://vxhly.github.io/rss.xml">系统架构上午-基础知识点整理</source>
-      <description>前言 整理除去 系统架构设计、`软件工程、数据库 章节的重点 系统设计 系统设计的主要内容包括概要设计和详细设计。概要设计又称为系统总体结构设计，它是系统开发过程中很关键的一步，其主要任务是将系统的功能需求分配给软件模块，确定每个模块的功能和调用关系，形成软件的模块结构图，即系统结构图。在概要设计中，将系统开发的总任务分解成许多个基本的、具体的任务。 ...</description>
+      <description>前言 整理除去 系统架构设计、`软件工程、数据库 章节的重点 系统设计 系统设计的主要内容包括概要设计和详细设计。概要设计又称为系统总体结构设计, 它是系统开发过程中很关键的一步, 其主要任务是将系统的功能需求分配给软件模块, 确定每个模块的功能和调用关系, 形成软件的模块结构图, 即系统结构图。在概要设计中, 将系统开发的总任务分解成许多个基本的、具...</description>
       <category>软考</category>
       <pubDate>Thu, 07 Dec 2023 20:25:00 GMT</pubDate>
       <content:encoded><![CDATA[<div class="hint-container tip">
@@ -3172,38 +3175,38 @@
 </div>
 <h2> 系统设计</h2>
 <blockquote>
-<p>系统设计的主要内容包括<code>概要设计</code>和<code>详细设计</code>。概要设计又称为<code>系统总体结构设计</code>，它是系统开发过程中很关键的一步，其主要任务是将系统的功能需求分配给软件模块，确定每个模块的功能和调用关系，形成软件的模块结构图，即系统结构图。在概要设计中，将系统开发的总任务分解成许多个基本的、具体的任务。</p>
+<p>系统设计的主要内容包括<code>概要设计</code>和<code>详细设计</code>。概要设计又称为<code>系统总体结构设计</code>, 它是系统开发过程中很关键的一步, 其主要任务是将系统的功能需求分配给软件模块, 确定每个模块的功能和调用关系, 形成软件的模块结构图, 即系统结构图。在概要设计中, 将系统开发的总任务分解成许多个基本的、具体的任务。</p>
 </blockquote>
 <h3> 流程设计工具</h3>
 <blockquote>
-<p>常见的图形工具包括程序流程图、IPO 图、盒图、问题分析图、判定树，表格工具包括判定表, 语言工具包括过程设计语言等。</p>
+<p>常见的图形工具包括程序流程图、IPO 图、盒图、问题分析图、判定树, 表格工具包括判定表, 语言工具包括过程设计语言等。</p>
 </blockquote>
 <h4> 程序流程图</h4>
-<p>程序流程图（Program Flow Diagram，PFD ） 用一些图框表示各种操作，它<code>独立于任何一种程序设计语言</code>，比较<code>直观、清晰，易于学习掌握</code>。</p>
+<p>程序流程图（Program Flow Diagram, PFD ） 用一些图框表示各种操作, 它<code>独立于任何一种程序设计语言</code>, 比较<code>直观、清晰, 易于学习掌握</code>。</p>
 <h4> IPO 图</h4>
 <p>IPO 图是由 IBM 公司发起并逐步完善的一种<code>流程描述工具</code>。</p>
 <h4> N-S 图</h4>
-<p>在 N-S 图中也包括 5 种控制结构，分别是<code>顺序型、选择型、 WHILE 循环型（当型循环）、UNTIL 循环型（直到型循环）和多分支选择型</code></p>
+<p>在 N-S 图中也包括 5 种控制结构, 分别是<code>顺序型、选择型、 WHILE 循环型（当型循环）、UNTIL 循环型（直到型循环）和多分支选择型</code></p>
 <h3> 面向对象设计</h3>
 <h4> 设计类分类</h4>
 <ul>
-<li><code>实体类</code>映射需求中的每个实体，实体类保存需要存储在永久存储体中的信息</li>
-<li><code>控制类</code>是用于控制用例工作的类，一般是由动宾结构的短语（“动词+名词”或 “名 词+动词”）转化来的名词</li>
-<li><code>边界类</code>用于封装在用例内、外流动的信息或数据流。边界类位于系统与外界的交界处，包括所有窗体、报表、打印机和扫描仪等硬件的接口，以及与其他系统的接口</li>
+<li><code>实体类</code>映射需求中的每个实体, 实体类保存需要存储在永久存储体中的信息</li>
+<li><code>控制类</code>是用于控制用例工作的类, 一般是由动宾结构的短语（“动词+名词”或 “名 词+动词”）转化来的名词</li>
+<li><code>边界类</code>用于封装在用例内、外流动的信息或数据流。边界类位于系统与外界的交界处, 包括所有窗体、报表、打印机和扫描仪等硬件的接口, 以及与其他系统的接口</li>
 </ul>
 <h4> 面向对象设计原则</h4>
 <ul>
-<li><code>开闭原则</code>: 开闭原则是指软件实体应对扩展开放，而对修改关闭，即尽量在不修改原有代码的情况下进行扩展</li>
-<li><code>里氏替换原则</code>: 一个软件实体如果使用的是一个基类对象，那么一定适用于其子类对象，而且觉察不出基类对象和子类对象的区别，即把基类都替换成它的子类，程序的行为没有变化</li>
-<li><code>依赖倒置原则</code>: 依赖倒置原则是指抽象不应该依赖于细节，细节应当依赖于抽象。</li>
-<li><code>组合/聚合复用原则</code>: 是在一个新的对象中通过组合关系或聚合关系来使用一些已有的对象，使之成为新对象的一部分，新对象通过委派调用已有对象的方法达到复用其已有功能的目的。简单地说，就是要尽量使用组合/聚合关系，少用继承。</li>
-<li><code>接口隔离原则</code>: 接口隔离原则是指使用多个专门的接口 ， 而不使用单一的总接口。</li>
-<li><code>最少知识原则</code>: 最少知识原则也称为迪米特法则（Law of Demeter），是指一个软件实体应当尽可能少地与其他实体发生相互作用。</li>
+<li><code>开闭原则</code>: 开闭原则是指软件实体应对扩展开放, 而对修改关闭, 即尽量在不修改原有代码的情况下进行扩展</li>
+<li><code>里氏替换原则</code>: 一个软件实体如果使用的是一个基类对象, 那么一定适用于其子类对象, 而且觉察不出基类对象和子类对象的区别, 即把基类都替换成它的子类, 程序的行为没有变化</li>
+<li><code>依赖倒置原则</code>: 依赖倒置原则是指抽象不应该依赖于细节, 细节应当依赖于抽象。</li>
+<li><code>组合/聚合复用原则</code>: 是在一个新的对象中通过组合关系或聚合关系来使用一些已有的对象, 使之成为新对象的一部分, 新对象通过委派调用已有对象的方法达到复用其已有功能的目的。简单地说, 就是要尽量使用组合/聚合关系, 少用继承。</li>
+<li><code>接口隔离原则</code>: 接口隔离原则是指使用多个专门的接口 , 而不使用单一的总接口。</li>
+<li><code>最少知识原则</code>: 最少知识原则也称为迪米特法则（Law of Demeter）, 是指一个软件实体应当尽可能少地与其他实体发生相互作用。</li>
 </ul>
 <h3> 结构化设计</h3>
 <ul>
-<li>结构化设计方法的基本思想是将软件设计成<code>由相对独立且具有单一功能的模块组成的结构</code>，分为<code>概要设计</code>和<code>详细设计</code>两个阶段</li>
-<li><code>概要设计</code>的主要任务是确定软件系统的结构，对系统进行模块划分，确定每个模块的功能、接口和模块之间的调用关系</li>
+<li>结构化设计方法的基本思想是将软件设计成<code>由相对独立且具有单一功能的模块组成的结构</code>, 分为<code>概要设计</code>和<code>详细设计</code>两个阶段</li>
+<li><code>概要设计</code>的主要任务是确定软件系统的结构, 对系统进行模块划分, 确定每个模块的功能、接口和模块之间的调用关系</li>
 <li><code>详细设计</code>的主要任务是为每个模块设计实现的细节。</li>
 </ul>
 <h4> 模块化</h4>
@@ -3213,13 +3216,13 @@
 (3) 深度和宽度适当。</p>
 <h4> 系统结构图</h4>
 <blockquote>
-<p>系统结构图（Structure Chart， SC） 又称为模块结构图，它是软件概要设计阶段的工具，反映系统的功能实现和模块之间的联系与通信</p>
+<p>系统结构图（Structure Chart, SC） 又称为模块结构图, 它是软件概要设计阶段的工具, 反映系统的功能实现和模块之间的联系与通信</p>
 </blockquote>
 <p>SC 包括<code>模块、模块之间的调用关系、模块之间的通信和辅助控制符号</code>等 4 个部分。</p>
 <h2> 计算机原理</h2>
 <h3> 实时操作系统</h3>
 <ul>
-<li>实时是指计算机对于外来信息能够以足够快的速度进行处理，并在被控对象允许的时间范围内做出快速响应。</li>
+<li>实时是指计算机对于外来信息能够以足够快的速度进行处理, 并在被控对象允许的时间范围内做出快速响应。</li>
 </ul>
 <h3> 指令系统</h3>
 <ul>
@@ -3259,7 +3262,7 @@
 <li>接近 CPU 的存储器容量更小、速度更快、成本更高, 辅存容量更大、速度更慢、成本更低。</li>
 <li>采用分级存储体系的目的是解决存储的容量、价格和速度之间的矛盾。</li>
 <li>不能转换对应的物理地址原因是逻辑地址到物理地址转换时地址越界。</li>
-<li><code>段页式存储管理</code>方式即先将用户程序分成若干个段，再把每个段分成若干个页，并为每一个段赋予一个段名，使用段页表来进行管理。</li>
+<li><code>段页式存储管理</code>方式即先将用户程序分成若干个段, 再把每个段分成若干个页, 并为每一个段赋予一个段名, 使用段页表来进行管理。</li>
 </ul>
 <h2> 信息系统基础知识</h2>
 <ul>
@@ -3272,44 +3275,46 @@
 <li><code>G2B</code>: 政府对企业 =&gt; 包括政策环境、营业执照等颁发</li>
 <li><code>G2C</code>: 政府对公民 =&gt; 包括公共安全信息、证件管理等服务</li>
 <li><code>G2E</code>: 政府对公务员 =&gt; 包括政府内部电子化管理</li>
-<li><code>G2G</code>: 政府对政府 =&gt; 包括基础信息采集、处理和利用，政府间通信和决策支持</li>
+<li><code>G2G</code>: 政府对政府 =&gt; 包括基础信息采集、处理和利用, 政府间通信和决策支持</li>
 <li><code>B2G</code>: 企业对政府 =&gt; 包括企业纳税和为政府提供服务</li>
 <li><code>C2G</code>: 公民对政府 =&gt; 包括居民参政议政和报警服务</li>
 </ul>
 <h3> 企业信息化集成</h3>
 <ul>
 <li><code>信息集成服务实</code>现不同数据库系统之间的数据交换、互操作、分布数据管理和共享信息模型定义。</li>
-<li><code>应用集成服务</code>能够为应用提供数据交换和访问操作，使各种不同的系统能够相互协作</li>
+<li><code>应用集成服务</code>能够为应用提供数据交换和访问操作, 使各种不同的系统能够相互协作</li>
 <li><code>业务过程集成</code>实现了不同应用系统之间的连接、协调运作和信息共享。</li>
 </ul>
 <h2> 系统配置与性能评价</h2>
 <ul>
 <li>系统性能度量指标有 <code>可靠性、可用性、可测试性和可理解性</code></li>
 <li>常用的可靠性度量指标主要有 <code>故障率（或失效率）、平均失效等待时间、平均失效间隔时间和可靠度</code></li>
-<li><code>可靠性</code>是指在规定的时间内和规定条件下能有效地实现规定功能的能力。强调软件系统在应用或系统错误面前，在意外或错误使用的情况下维持系统的功能特性。</li>
+<li><code>可靠性</code>是指在规定的时间内和规定条件下能有效地实现规定功能的能力。强调软件系统在应用或系统错误面前, 在意外或错误使用的情况下维持系统的功能特性。</li>
 <li><code>可用性</code>是系统能够正常运行的时间比例。经常用两次故障之间的时间长度或在出现故障时系统能够恢复正常的速度来表示。</li>
 <li><code>可测试性</code>是指验证软件程序正确性的难易程度。</li>
-<li><code>可理解性</code>是指通过阅读源代码和相关文档，了解程序功能及运行过程的容易程度。</li>
+<li><code>可理解性</code>是指通过阅读源代码和相关文档, 了解程序功能及运行过程的容易程度。</li>
 <li>常见的 Web 服务器性能评测方法有<code>基准性能测试、压力测试和可靠性测试</code>。</li>
 <li>性能评价方法: <code>真实程序&gt;核心程序&gt;小型基准程序&gt;合成基准程序</code></li>
-<li>在 Web 服务器的测试中，反映其性能的指标主要有<code>最大并发连接数、响应延迟和吞吐量</code>等</li>
+<li>在 Web 服务器的测试中, 反映其性能的指标主要有<code>最大并发连接数、响应延迟和吞吐量</code>等</li>
 <li>路由器的主要性能指标包括<code>设备吞吐量、丢包率、内部时钟精度</code>等</li>
 <li>交换机的主要性能指标包括<code>缓冲区大小、VLAN 数量、负载均衡</code>等</li>
 <li>数据库系统的主要性能指标包括<code>CPU／内存使用状况、优化数据库设计、优化数据库管理以及进程/线程状态、硬盘剩余空间、日志文件大小、最大的连接数</code>等</li>
 <li>应用系统的主要性能指标包括<code>应用系统的可用性、响应时间、并发用户数以及特定应用的系统资源占用、数据处理速率</code>等</li>
+<li><code>等效指令速度法</code>：也称为吉普森混合法（Gibson mix）或混合比例计算法, 是通过各类指令在程序中所占的比例（Wi）进行计算得到的。</li>
+<li><code>基准程序法</code>：把应用程序中用得最多、最频繁的那部分核心程序作为评估计算机系统性能的标准程序, 称为基准测试程序（benchmark）。基准程序法不但考虑到了 CPU（有时包括主存）的性能, 还将 I/O 结构、操作系统、编译程序的效率等对系统性能的影响考虑进来了, 所以它是目前一致承认的测试系统性能的较好方法。</li>
 </ul>
 <h2> 法律法规</h2>
 <h3> 专利许可</h3>
 <ul>
-<li>专利实施许可分为<code>独占实施许可、排他实施许可和普通实施许</code>可三类，不同的许可类型决定了许可使用的范围、被许可人的人数以及诉讼权利的不同。</li>
+<li>专利实施许可分为<code>独占实施许可、排他实施许可和普通实施许</code>可三类, 不同的许可类型决定了许可使用的范围、被许可人的人数以及诉讼权利的不同。</li>
 </ul>
 <h3> 软件著作权</h3>
 <ul>
 <li>软件著作权中规定开发软件所用的<code>思想、处理过程、操作方法或者数学概念</code>不受保护。</li>
-<li>改编、翻译、注释、整理已有作品而产生的作品，其著作权由改编、翻译、注释、整理人享有，但行使著作权时不得侵犯原作品的著作权。</li>
-<li>著作权因作品的完成而自动产生，不必履行任何形式的登记或注册手续，也不论其是否已经发表。</li>
-<li>著作权包括著作人身权和著作财产权，其中著作人身权包括发表权、署名权、修改权、保护作品完整权。著作财产权包括复制权、发行权、出租权、展览权、表演权、放映权、广播权、改编权、翻译权、汇编权以及其他权利。</li>
-<li>委托创作中，著作权的归属由委托人与受托人签订书面合同约定。无书面合同或者合同未作明确约定的，其著作权由受托人享有。</li>
+<li>改编、翻译、注释、整理已有作品而产生的作品, 其著作权由改编、翻译、注释、整理人享有, 但行使著作权时不得侵犯原作品的著作权。</li>
+<li>著作权因作品的完成而自动产生, 不必履行任何形式的登记或注册手续, 也不论其是否已经发表。</li>
+<li>著作权包括著作人身权和著作财产权, 其中著作人身权包括发表权、署名权、修改权、保护作品完整权。著作财产权包括复制权、发行权、出租权、展览权、表演权、放映权、广播权、改编权、翻译权、汇编权以及其他权利。</li>
+<li>委托创作中, 著作权的归属由委托人与受托人签订书面合同约定。无书面合同或者合同未作明确约定的, 其著作权由受托人享有。</li>
 </ul>
 <h3> 公民作品</h3>
 <ul>
@@ -3318,20 +3323,20 @@
 </ul>
 <h3> 单位作品</h3>
 <ul>
-<li><code>发表权、使用权、获取报酬权</code> =&gt; 保护期限: 50 年(首次发表后的第 50 年的 12 月 31 日)，若其间未发表，不保护</li>
+<li><code>发表权、使用权、获取报酬权</code> =&gt; 保护期限: 50 年(首次发表后的第 50 年的 12 月 31 日), 若其间未发表, 不保护</li>
 </ul>
 <h3> 公民软件产品</h3>
 <ul>
 <li><code>署名权、修改权</code> =&gt; 保护期限: 没有限制</li>
-<li><code>发表权、复制权、发行权、出租权、信息网络传播权、翻译权、使用许可权、获得报酬权、转让权</code> =&gt; 保护期限: 作者终生及死后 50 年(第 50 年 12 月 31 日)。合作开发，以最后死亡作者为准。</li>
+<li><code>发表权、复制权、发行权、出租权、信息网络传播权、翻译权、使用许可权、获得报酬权、转让权</code> =&gt; 保护期限: 作者终生及死后 50 年(第 50 年 12 月 31 日)。合作开发, 以最后死亡作者为准。</li>
 </ul>
 <h3> 单位软件产品</h3>
 <ul>
-<li><code>发表权、复制权、发行权、出租权、信息网络传播权、翻译权、使用许可权、获得报酬权、转让权</code> =&gt; 保护期限: 50 年(首次发表后的第 50 年的 12 月 31 日)，若其间未发表，不保护</li>
+<li><code>发表权、复制权、发行权、出租权、信息网络传播权、翻译权、使用许可权、获得报酬权、转让权</code> =&gt; 保护期限: 50 年(首次发表后的第 50 年的 12 月 31 日), 若其间未发表, 不保护</li>
 </ul>
 <h3> 注册商标</h3>
 <ul>
-<li>有效期 10 年(若注册人死亡或倒闭 1 年后，未转移则可注销，期满后 6 个月内必须续注)</li>
+<li>有效期 10 年(若注册人死亡或倒闭 1 年后, 未转移则可注销, 期满后 6 个月内必须续注)</li>
 </ul>
 <h3> 发明专利</h3>
 <ul>
@@ -3347,7 +3352,7 @@
 </ul>
 <h2> 企业资源规划 ERP</h2>
 <ul>
-<li>企业生产管理中的四个计划<code>生产计划大纲、主生产计划、物料需求计划和能力需求计划，以及车间作业计划</code>
+<li>企业生产管理中的四个计划<code>生产计划大纲、主生产计划、物料需求计划和能力需求计划, 以及车间作业计划</code>
 <ul>
 <li><code>主生产计划</code>是 ERP 的主要工作内容</li>
 <li><code>物料需求计划</code>是生产管理的核心</li>
@@ -3355,17 +3360,17 @@
 <li><code>车间作业计划</code>属于 ERP 执行层计划</li>
 </ul>
 </li>
-<li>ERP 中的企业资源包括企业的“三流”资源，即<code>物流资源、资金流资源和信息流资源</code>。</li>
+<li>ERP 中的企业资源包括企业的“三流”资源, 即<code>物流资源、资金流资源和信息流资源</code>。</li>
 <li>采购管理模块是对采购工作——从采购订单产生至货物收到的全过程进行组织、实施与控制</li>
 <li>库存管理模块则是对<code>企业物料的进、出、存进行管理</code>。</li>
 </ul>
 <h2> 商业智能系统</h2>
 <ul>
-<li>在商业智能系统中，<code>数据预处理、建立数据仓库、数据分析和数据展现</code>是四个主要阶段，其核心是<code>建立数据仓库</code>。
+<li>在商业智能系统中, <code>数据预处理、建立数据仓库、数据分析和数据展现</code>是四个主要阶段, 其核心是<code>建立数据仓库</code>。
 <ul>
-<li><code>数据预处理</code>包括 ETL（抽取，转换，加载）过程</li>
+<li><code>数据预处理</code>包括 ETL（抽取, 转换, 加载）过程</li>
 <li><code>建立数据仓库</code>是处理海量数据的基础</li>
-<li><code>数据分析</code>采用联机分析（OLAP）处理和数据挖掘技术，数据展现保障系统分析结果的可视化。</li>
+<li><code>数据分析</code>采用联机分析（OLAP）处理和数据挖掘技术, 数据展现保障系统分析结果的可视化。</li>
 </ul>
 </li>
 </ul>
@@ -3375,25 +3380,29 @@
 </ul>
 <h2> 计算机网络</h2>
 <h3> SSL 协议</h3>
-<p>① 保密性：在握手协议中定义了会话密钥后，所有的消息都被加密;<br>
-② 可靠性：可选的客户端认证，和强制的服务器端认证;<br>
+<p>① 保密性：在握手协议中定义了会话密钥后, 所有的消息都被加密;<br>
+② 可靠性：可选的客户端认证, 和强制的服务器端认证;<br>
 ③ 完整性：传送的消息包括消息完整性检查（使用 MAC）。不包括不可抵赖性。不可抵赖性由数字签名保证</p>
+<h3> DHCP</h3>
+<ul>
+<li><code>DhcpOffer</code>是 DHCP 协议交互过程中, 由 DHCP 服务器发送给 DHCP 客户端的报文, 用于通知客户端分配的 IP 地址、网关、DNS 服务器地址等配置信息。</li>
+</ul>
 <h2> 信息安全</h2>
 <ul>
 <li>一个完整的信息安全系统包括三类措施<code>技术方面的安全措施</code>、<code>管理方面的安全措施</code>和<code>政策法律方面的安全措施</code>。
 <ul>
 <li><code>技术措施</code>包括信息加密、数字签名、身份鉴别、访问控制、网络控制技术、反病毒技术、数据备份和灾难恢复等方面</li>
-<li><code>安全管理</code>方面应设立专门机构和人员，逐步完善管理制度和提供安全技术设施</li>
+<li><code>安全管理</code>方面应设立专门机构和人员, 逐步完善管理制度和提供安全技术设施</li>
 <li><code>信息安全管理</code>主要涉及人事管理、设备管理、场地管理、存储媒体管理、软件管理、网络管理、密码和密钥管理等方面</li>
 </ul>
 </li>
 </ul>
 <h2> 网络安全</h2>
 <ul>
-<li>被动攻击是旨在获取信息而不改变系统或数据的攻击方式，如<code>窃听和流量分析</code></li>
-<li>主动攻击可能会修改信息或危害系统完整性和可用性，如<code>篡改、伪装、重放和拒绝服务攻击</code></li>
-<li>物理攻击是指攻击者直接接触到系统硬件、软件和周边环境设备，通过破坏使系统无法工作，甚至无法恢复数据和程序</li>
-<li>分发攻击则是在软硬件开发后到安装期间或传输过程中恶意修改，可能引入后门程序等恶意代码，以非授权方式访问信息或系统</li>
+<li>被动攻击是旨在获取信息而不改变系统或数据的攻击方式, 如<code>窃听和流量分析</code></li>
+<li>主动攻击可能会修改信息或危害系统完整性和可用性, 如<code>篡改、伪装、重放和拒绝服务攻击</code></li>
+<li>物理攻击是指攻击者直接接触到系统硬件、软件和周边环境设备, 通过破坏使系统无法工作, 甚至无法恢复数据和程序</li>
+<li>分发攻击则是在软硬件开发后到安装期间或传输过程中恶意修改, 可能引入后门程序等恶意代码, 以非授权方式访问信息或系统</li>
 </ul>
 <h2> 遗留系统</h2>
 <ul>
@@ -3473,15 +3482,15 @@ n/(2Δt+1Δt+3Δt+1Δt+2Δt+(n-1)*3Δt)=n/(6Δt+3nΔt)<br>
 <p class="hint-container-title">提示</p>
 <p>主频 = 外频 × 倍频</p>
 </div>
-<p>例题：CPU 的频率有主频、倍频和外频。某处理器外频是 200MHz，倍频是 13，该款处理器的主频是（ ）。</p>
+<p>例题：CPU 的频率有主频、倍频和外频。某处理器外频是 200MHz, 倍频是 13, 该款处理器的主频是（ ）。</p>
 <p>解答：主频 = 200MHz × 13 = 2600MHz</p>
 <h2> 位示图大小</h2>
 <div class="hint-container tip">
 <p class="hint-container-title">提示</p>
 <p>位示图大小 = 物理块大小 / 字长位数</p>
 </div>
-<p>例题：假设某计算机的字长为 32 位，该计算机文件管理系统磁盘空间管理采用位示图(bitmap)记录磁盘的使用情况。若磁盘的容量为 300GB，物理块的大小为 4MB，那么位示图的大小为（__）个字。</p>
-<p>解答：根据题意系统中字长为 32 位，所以一个字可记录 32 个物理块的使用情况。若磁盘的容量为 300GB，物理块的大小为 4MB，那么该磁盘有 300 * 1024 / 4 = 76800 个物理块，所需位示图的大小为 76800 / 32 = 2400 个字。</p>
+<p>例题：假设某计算机的字长为 32 位, 该计算机文件管理系统磁盘空间管理采用位示图(bitmap)记录磁盘的使用情况。若磁盘的容量为 300GB, 物理块的大小为 4MB, 那么位示图的大小为（__）个字。</p>
+<p>解答：根据题意系统中字长为 32 位, 所以一个字可记录 32 个物理块的使用情况。若磁盘的容量为 300GB, 物理块的大小为 4MB, 那么该磁盘有 300 * 1024 / 4 = 76800 个物理块, 所需位示图的大小为 76800 / 32 = 2400 个字。</p>
 ]]></content:encoded>
     </item>
     <item>
