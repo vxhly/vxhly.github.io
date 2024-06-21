@@ -140,7 +140,7 @@ Zepto(function ($) {
 
 ### rem 单位是如何换算的?
 
-页面 `css` 全部写完之后, 将所有的 `px` 转换为以 `rem` 为单位的数字。 例如 我设置 `body` 的 `width: 320px；` 则根据设置的 `font - size` 值, 转换为 `rem` , 则是 `width: 16 rem；` 【320 / 20 (你设置的标准 `font - size`) = 16】。
+页面 `css` 全部写完之后, 将所有的 `px` 转换为以 `rem` 为单位的数字。 例如 我设置 `body` 的 `width: 320px；` 则根据设置的 `font - size` 值, 转换为 `rem` , 则是 `width: 16 rem；` 【320 / 20 (你设置的标准 `font - size` ) = 16】。
 
 ### 如何使用插件换算?
 

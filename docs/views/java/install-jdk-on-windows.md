@@ -44,7 +44,7 @@ JDK 是 Java 语言的软件开发工具包, 主要用于移动设备、嵌入�
 
 ### 指定 JAVA 程序目录
 
-新建 `JAVA_HOME` 变量 。变量值填写 `jdk` 的安装目录（本人是 `D:\Java\jdk`)<br>
+新建 `JAVA_HOME` 变量 。变量值填写 `jdk` 的安装目录（本人是 `D:\Java\jdk` )<br>
 
 ![JDK 环境变量配置](/assets/jdk-5.png)
 

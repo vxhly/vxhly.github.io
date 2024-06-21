@@ -101,7 +101,7 @@ mysql> insert into users values (1,password(1234),'test');
 
 ## 使用独立用户运行 MySQL
 
-绝对不要作为使用 root 用户运行 `MySQL 服务器` 。这样做非常危险, 因为任何具有 FILE 权限的用户能够用 root 创建文件(例如: `~root/.bashrc`)。mysqld 拒绝使用 root 运行, 除非使用 `–user=root` 选项明显指定。应该用普通非特权用户运行 mysqld。
+绝对不要作为使用 root 用户运行 `MySQL 服务器` 。这样做非常危险, 因为任何具有 FILE 权限的用户能够用 root 创建文件(例如: `~root/.bashrc` )。mysqld 拒绝使用 root 运行, 除非使用 `–user=root` 选项明显指定。应该用普通非特权用户运行 mysqld。
 
 要想用其它 Unix 用户启动 mysqld, , 增加 user 选项指定 `/etc/my.cnf` 选项文件或服务器数据目录的 `my.cnf` 选项文件中的 `[mysqld]` 组的用户名。
 
@@ -329,7 +329,7 @@ mysql> select * from test.passwd into outfile 'test.txt' fields terminated by ':
 
 如果不打算让 Web 访问使用 MySQL 数据库, 没有提供诸如 PHP 这样的 Web 语言的时候, 重新设置或编译你的 PHP, 取消它们对 MySQL 的默认支持。假如服务器中使用 PHP 等 web 程序, 试试用 Web 形式非法的请求, 如果得到任何形式的 MySQL 错误, 立即分析原因, 及时修改 Web 程序, 堵住漏洞, 防止 MySQL 暴露在 web 面前。 对于 Web 的安全检查, 在 MySQL 官方文档中这么建议, 对于 web 应用, 至少检查以下清单:
 
-- 试试用 Web 形式输入单引号和双引号(`‘’’` 和 `‘”’`)。如果得到任何形式的 MySQL 错误, 立即分析原因。
+- 试试用 Web 形式输入单引号和双引号( `‘’’` 和 `‘”’` )。如果得到任何形式的 MySQL 错误, 立即分析原因。
 - 试试修改动态 URL, 可以在其中添加 `%22(‘”’)` 、 `%23(‘#’)` 和 `%27(‘’’)` 。
 - 试试在动态 URL 中修改数据类型, 使用前面示例中的字符, 包括数字和字符类型。你的应用程序应足够安全, 可以防范此类修改和类似攻击。
 - 试试输入字符、空格和特殊符号, 不要输入数值字段的数字。你的应用程序应在将它们传递到 MySQL 之前将它们删除或生成错误。将未经过检查的值传递给 MySQL 是很危险的！
@@ -358,7 +358,7 @@ mysqldump -u root -p mysql > abc.sql
 
 - **`--old-passwords`**
 
--- 强制服务器为新密码生成短(`pre-4.1`)密码哈希。当服务器必须支持旧版本客户端程序时, 为了保证兼容性这很有用。
+-- 强制服务器为新密码生成短( `pre-4.1` )密码哈希。当服务器必须支持旧版本客户端程序时, 为了保证兼容性这很有用。
 
 - **`(OBSOLETE) --safe-show-database`**
 
@@ -370,7 +370,7 @@ mysqldump -u root -p mysql > abc.sql
 
 - **`--secure-auth`**
 
--- 不允许鉴定有旧(`pre-4.1`)密码的账户。
+-- 不允许鉴定有旧( `pre-4.1` )密码的账户。
 
 - **`--skip-grant-tables`**
 

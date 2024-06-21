@@ -153,7 +153,7 @@ Added in: v4.1.0
 
 The directory with links to the store. All direct and indirect dependencies of the project are linked into this directory.
 
-This is a useful setting that can solve issues with long paths on Windows. If you have some dependencies with very long paths, you can select a virtual store in the root of your drive (for instance `C:\my-project-store`).
+This is a useful setting that can solve issues with long paths on Windows. If you have some dependencies with very long paths, you can select a virtual store in the root of your drive (for instance `C:\my-project-store` ).
 
 Or you can set the virtual store to `.pnpm` and add it to `.gitignore` . This will make the stacktraces nicer as paths to dependencies will have one directory less.
 
