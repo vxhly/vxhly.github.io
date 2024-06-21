@@ -3,7 +3,7 @@
   <id>https://vxhly.github.io/</id>
   <title>Coding and Fixing</title>
   <subtitle>源于生活而高于生活.</subtitle>
-  <updated>2024-05-15T11:46:47.702Z</updated>
+  <updated>2024-06-21T06:26:17.792Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://vxhly.github.io/atom.xml"/>
   <link rel="alternate" href="https://vxhly.github.io/"/>
@@ -4182,7 +4182,7 @@ n/(2Δt+1Δt+3Δt+1Δt+2Δt+(n-1)*3Δt)=n/(6Δt+3nΔt)<br>
     <title type="text">PMP 敏捷知识点</title>
     <id>https://vxhly.github.io/pmp/agile/agile-knowledge.html</id>
     <link href="https://vxhly.github.io/pmp/agile/agile-knowledge.html"/>
-    <updated>2024-04-16T14:39:31.000Z</updated>
+    <updated>2024-06-21T05:57:38.000Z</updated>
     <summary type="html"><![CDATA[<div class="hint-container tip">
 <p class="hint-container-title">前言</p>
 <p>在 PMP 中存在大量的敏捷知识点, 本篇将记录相关的重点知识。</p>
@@ -4385,18 +4385,18 @@ n/(2Δt+1Δt+3Δt+1Δt+2Δt+(n-1)*3Δt)=n/(6Δt+3nΔt)<br>
 </ul>
 <h2> 极限编程</h2>
 <ul>
-<li><code>计划游戏(Planning Game)</code>：快速制定计划、随着细节的不断变化而完善;</li>
-<li><code>小型发布(Small Release)</code>：系统的设计要能够尽可能早地交付, 在非常短的周期内以递增的方式发布新版本, 可以很容易地估计每个迭代周期的进度, 便于控制工作量和风险；同时, 也可以及时处理用户的反馈;</li>
-<li><code>系统隐喻(System Metaphor)</code>：找到合适的比喻传达信息;</li>
-<li><code>简单设计(Simple Design)</code>：只处理当前的需求使设计保持简单;</li>
-<li><code>测试驱动(Test-driven)</code>：先写测试代码再编写程序 TDD。（类似的还有 ATDD 验收测试驱动开发, BDD 行为驱动开发）;</li>
-<li><code>重构(Refactoring)</code>：重新审视需求和设计, 重新明确地描述它们, 以符合新的和现有的需求；在不改变系统行为的前提下, 重新调整、优化系统的内部结构以减少复杂性、消除冗余、增加灵活性和提高性能;</li>
-<li><code>结对编程(Pair Programming)</code>：由两个程序员在同一台电脑上共同编写解决同一问题的代码。通常一个人负责写编码, 而另一个负责保证代码的正确性与可读性;</li>
+<li><code>计划游戏( Planning Game )</code>：快速制定计划、随着细节的不断变化而完善;</li>
+<li><code>小型发布( Small Release )</code>：系统的设计要能够尽可能早地交付, 在非常短的周期内以递增的方式发布新版本, 可以很容易地估计每个迭代周期的进度, 便于控制工作量和风险；同时, 也可以及时处理用户的反馈;</li>
+<li><code>系统隐喻( System Metaphor )</code>：找到合适的比喻传达信息;</li>
+<li><code>简单设计( Simple Design )</code>：只处理当前的需求使设计保持简单;</li>
+<li><code>测试驱动( Test-driven )</code>：先写测试代码再编写程序 TDD。（类似的还有 ATDD 验收测试驱动开发, BDD 行为驱动开发）;</li>
+<li><code>重构( Refactoring )</code>：重新审视需求和设计, 重新明确地描述它们, 以符合新的和现有的需求；在不改变系统行为的前提下, 重新调整、优化系统的内部结构以减少复杂性、消除冗余、增加灵活性和提高性能;</li>
+<li><code>结对编程( Pair Programming )</code>：由两个程序员在同一台电脑上共同编写解决同一问题的代码。通常一个人负责写编码, 而另一个负责保证代码的正确性与可读性;</li>
 <li><code>集体所有权（Collective Ownership）</code>：任何人在任何时候都可以在系统中的任何位置更改任何代码。每个成员都有更改代码的权利, 所有的人对于全部代码负责;</li>
-<li><code>持续集成(Continuous Integration)</code>：可以按日甚至按小时为客户提供可运行的版本；提倡在一天中集成系统多次, 而且随着需求的改变, 要不断的进行回归测试, 避免了一次系统集成的恶梦;</li>
-<li><code>每周工作40小时(40-hour Week)</code>：要求项目团队人员每周工作时间不能超过 40 小时, 加班不得连续超过两周, 否则反而会影响生产率;</li>
-<li><code>现场客户(On-site Customer)</code>：在团队中加入一位真正的、起作用的用户, 他将全职负责回答问题;</li>
-<li><code>编码标准(Code Standards)</code>：强调通过指定严格的代码规范来进行沟通, 尽可能减少不必要的文档。</li>
+<li><code>持续集成( Continuous Integration )</code>：可以按日甚至按小时为客户提供可运行的版本；提倡在一天中集成系统多次, 而且随着需求的改变, 要不断的进行回归测试, 避免了一次系统集成的恶梦;</li>
+<li><code>每周工作40小时( 40-hour Week )</code>：要求项目团队人员每周工作时间不能超过 40 小时, 加班不得连续超过两周, 否则反而会影响生产率;</li>
+<li><code>现场客户( On-site Customer )</code>：在团队中加入一位真正的、起作用的用户, 他将全职负责回答问题;</li>
+<li><code>编码标准( Code Standards )</code>：强调通过指定严格的代码规范来进行沟通, 尽可能减少不必要的文档。</li>
 </ul>
 <h2> 工具</h2>
 <ul>
@@ -6144,7 +6144,7 @@ Controlling：受控的语句和想法承接</li>
     <title type="text">第八章：项目质量管理</title>
     <id>https://vxhly.github.io/pmp/knowledge/project-quality-management.html</id>
     <link href="https://vxhly.github.io/pmp/knowledge/project-quality-management.html"/>
-    <updated>2024-04-16T14:39:31.000Z</updated>
+    <updated>2024-06-21T05:57:38.000Z</updated>
     <summary type="html"><![CDATA[<div class="hint-container tip">
 <p class="hint-container-title">前言</p>
 <p>记录项目质量管理章节的相关知识、频繁考点。</p>
@@ -6220,8 +6220,8 @@ Controlling：受控的语句和想法承接</li>
 <li>直方图：一种展示数字数据的条形图, 可以展示每个可交付成果的缺陷数量、缺陷成因的排列、各个过程的不合规次数,<br>
 或项目或产品缺陷的其他表现形式。</li>
 <li>帕累托：二八原则, 累积频率, 找主要原因, 便于有针对性地解决问题。</li>
-<li>散点图：展示两个变量之间的关系的图形。<br>
-（质量）审计：于确定项目活动是否遵循了组织和项目的政策、过程与程序的一种结构化且独立的过程；包括：1 识别, 2 分享, 3 协助, 4<br>
+<li>散点图：展示两个变量之间的关系的图形。</li>
+<li>（质量）审计：于确定项目活动是否遵循了组织和项目的政策、过程与程序的一种结构化且独立的过程；包括：1 识别, 2 分享, 3 协助, 4<br>
 积累, 5 确 认；可事先安排, 也可随机进行；可由内部或外部审计师进行。</li>
 <li>面向 X 的设计 (DfX) ：产品设计期间可采用的一系列技术指南, 旨在优化设计的特定方面。</li>
 <li>问题解决：1 定义, 2 识别, 3 方案, 4 选择, 5 执行, 6 验证。</li>
@@ -6878,7 +6878,7 @@ PESTLE、TECOP、VUCA。</p>
     <title type="text">Mac 下 brew 切换为国内源</title>
     <id>https://vxhly.github.io/views/liunx/HomeBrew-change-source.html</id>
     <link href="https://vxhly.github.io/views/liunx/HomeBrew-change-source.html"/>
-    <updated>2022-08-22T11:52:59.000Z</updated>
+    <updated>2024-06-21T05:57:38.000Z</updated>
     <summary type="html"><![CDATA[<div class="hint-container tip">
 <p class="hint-container-title">前言</p>
 <p>Homebrew 是一款自由及开放源代码的软件包管理系统, 用以简化 macOS 和 linux 系统上的软件安装过程。以下是提供 Homebrew 的国内切源方法。</p>
@@ -6918,6 +6918,26 @@ PESTLE、TECOP、VUCA。</p>
 </tr>
 </tbody>
 </table>
+<h2> 官网安装</h2>
+<p>首先，这里是官网：<a href="https://rumosky.com/go/aHR0cHM6Ly9icmV3LnNo" target="_blank" rel="noopener noreferrer">Homebrew</a>，用官网的脚本安装，执行</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>如果网络没问题，会直接一路安装成功，但如果提示：</p>
+<p>需要修改/etc/hosts，在这个网站 <a href="https://rumosky.com/go/aHR0cHM6Ly93d3cuaXBhZGRyZXNzLmNvbQ" target="_blank" rel="noopener noreferrer">IP address</a>，检测一下 <code>raw.githubusercontent.com</code>，会得到这个域名的 A 解析，将对应的 IP 和域名，添加到 hosts 文件的最后，然后就可以顺利执行脚本了</p>
+<h2> 国内脚本</h2>
+<p>上面的那个官网的，速度不是很理想，可以手动替换源地址，阿里，清华，中科大，腾讯都有。直接百度即可</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>脚本地址：<a href="https://rumosky.com/go/aHR0cHM6Ly9naXRlZS5jb20vY3Vua2FpL0hvbWVicmV3Q04" target="_blank" rel="noopener noreferrer">HomebrewCN</a></p>
+<p>这个脚本，很简单，可以自主选择要使用的国内源，很方便，安装完之后，根据提示运行命令即可</p>
+<p>安装脚本命令</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3> 问题</h3>
+<p>下面记录遇到的几种问题以及解决办法</p>
+<p>1、执行 <code>brew update</code> 遇到如下报错：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>执行这个命令即可</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>2、执行 <code>brew doctor</code> 时，遇到下面的提示：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>这个忽略就好，不用管。</p>
+<p>3、执行 <code>brew update</code>，遇到下面的提示：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>再执行 <code>brew -v</code> 命令看看是不是有两个 warning，这说明你的 <code>homebrew-core</code>、<code>homebrew-cask</code> 和 <code>homebrew-services</code> 目录被 git 认为不是一个安全的目录，需要手动添加</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> 关于文档</h3>
+<p>阿里的文档很旧，内容没有更新，腾讯直接就没有文档，建议用清华和科大的，文档很详细，我最后用的是清华的，按照文档一步一步来，一点问题都没有，最后附上我的配置文件 <code>.zprofile</code></p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>优先使用官方的脚本，觉得慢，就替换成国内的，实在不行，再用国内的脚本。</p>
 <h2> 查看本地的源</h2>
 <div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 替换为阿里源</h2>
 <div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 替换为清华源</h2>
@@ -7164,7 +7184,7 @@ PESTLE、TECOP、VUCA。</p>
     <title type="text">Windows 下安装 MongoDB</title>
     <id>https://vxhly.github.io/views/design/install-mongodb-on-windwos.html</id>
     <link href="https://vxhly.github.io/views/design/install-mongodb-on-windwos.html"/>
-    <updated>2024-04-16T14:39:31.000Z</updated>
+    <updated>2024-06-21T05:57:38.000Z</updated>
     <summary type="html"><![CDATA[<div class="hint-container tip">
 <p class="hint-container-title">前言</p>
 <p>MongoDB 是目前在 IT 行业非常流行的一种非关系型数据库 (NoSql), 其灵活的数据存储方式备受当前 IT 从业人员的青睐。这里主要讲如何在 Windows 平台下安装 MongoDB。</p>
@@ -7221,7 +7241,7 @@ PESTLE、TECOP、VUCA。</p>
 <h3> 环境需求</h3>
 <ul>
 <li>Node.js(使用 nvm 进行安装)</li>
-<li>pm2(<code>npm -g pm2</code>)</li>
+<li>pm2( <code>npm -g pm2</code> )</li>
 <li>git</li>
 </ul>
 <h3> 下载</h3>
@@ -7326,7 +7346,7 @@ PESTLE、TECOP、VUCA。</p>
     <title type="text">移动端网页自适应方案</title>
     <id>https://vxhly.github.io/views/design/layout-project-for-moblie.html</id>
     <link href="https://vxhly.github.io/views/design/layout-project-for-moblie.html"/>
-    <updated>2024-04-16T14:39:31.000Z</updated>
+    <updated>2024-06-21T05:57:38.000Z</updated>
     <summary type="html"><![CDATA[<div class="hint-container tip">
 <p class="hint-container-title">前言</p>
 <p>解决移动端网页的自适应, 让开发变得更加简洁。</p>
@@ -7386,7 +7406,7 @@ PESTLE、TECOP、VUCA。</p>
 <h3> 模拟为什么要使用 iphone 4?</h3>
 <p>假设你部门的设计师给你的页面标准宽度为 <code>640px</code> , 则页面中所有的 <code>宽高</code> 全部除以 2 , Chrome 浏览器 模拟手机页面 设置手机型号为 <code>IPhone 4</code> 。 这也就是为什么要将所有的宽高除以 2 的原因: <code>IPhone 4</code> 标准 宽 是 <code>320 px</code> 。 然后正常的用 <code>px</code> 为单位 写你的 <code>css</code> , 你所需要做的就是你写的页面, 要在 <code>IPhone 4</code> 完全正确显示。 如果你说, 那设计那边给的不是 <code>640px</code> 标准怎么办? 你只要让你的页面按照设计图在 <code>iphone 4</code> 上正确显示, 就木问题。</p>
 <h3> rem 单位是如何换算的?</h3>
-<p>页面 <code>css</code> 全部写完之后, 将所有的 <code>px</code> 转换为以 <code>rem</code> 为单位的数字。 例如 我设置 <code>body</code> 的 <code>width: 320px；</code> 则根据设置的 <code>font - size</code> 值, 转换为 <code>rem</code> , 则是 <code>width: 16 rem；</code> 【320 / 20 (你设置的标准 <code>font - size</code>) = 16】。</p>
+<p>页面 <code>css</code> 全部写完之后, 将所有的 <code>px</code> 转换为以 <code>rem</code> 为单位的数字。 例如 我设置 <code>body</code> 的 <code>width: 320px；</code> 则根据设置的 <code>font - size</code> 值, 转换为 <code>rem</code> , 则是 <code>width: 16 rem；</code> 【320 / 20 (你设置的标准 <code>font - size</code> ) = 16】。</p>
 <h3> 如何使用插件换算?</h3>
 <p>如果你说一个页面的 <code>css</code> 有几百行, 写完再去改太麻烦了, 那可以用 <code>px</code> 转换成 <code>rem</code> 的插件。 我这里有一款推荐: <code>cssrem</code> （下载使用网址 <a href="http://github.com/flashlizi/cssrem" target="_blank" rel="noopener noreferrer">cssrem</a>）。 该插件是 <code>sublime text</code> 的一款插件。<br></p>
 <figure><img src="/assets/layout-moblie.gif" alt="cssrem" tabindex="0" loading="lazy"><figcaption>cssrem</figcaption></figure>
@@ -7405,7 +7425,7 @@ PESTLE、TECOP、VUCA。</p>
     <title type="text">需要一款称手的编辑器</title>
     <id>https://vxhly.github.io/views/design/need-a-super-software.html</id>
     <link href="https://vxhly.github.io/views/design/need-a-super-software.html"/>
-    <updated>2024-04-16T14:39:31.000Z</updated>
+    <updated>2024-06-21T05:57:38.000Z</updated>
     <summary type="html"><![CDATA[<div class="hint-container tip">
 <p class="hint-container-title">前言</p>
 <p>以下介绍的编辑器是跨平台, 无论是 Windows, 还是 Liunx, 甚至是 Mac, 都可以成为程序员称手的利器。</p>
@@ -7483,7 +7503,7 @@ PESTLE、TECOP、VUCA。</p>
 <li>输入 <code>install</code> 调出 Install Package 选项并回车, 然后在列表中选中要安装的插件。</li>
 </ol>
 <h3> 注意</h3>
-<p>国内使用 <code>Sublime Text 3</code> , 经常可能遇到无法安装可用插件问题, 可 <code>remove</code> 掉 <code>Package Control</code> 重新安装下；如遇到连 <code>Package Control</code> 也无法安装, 则可以在别处拷贝一份关于 <code>Package Control</code> 的文件(<code>Package Control.sublime-package</code>)存放于 <code>Installed Packages</code> 目录之下即可</p>
+<p>国内使用 <code>Sublime Text 3</code> , 经常可能遇到无法安装可用插件问题, 可 <code>remove</code> 掉 <code>Package Control</code> 重新安装下；如遇到连 <code>Package Control</code> 也无法安装, 则可以在别处拷贝一份关于 <code>Package Control</code> 的文件( <code>Package Control.sublime-package</code> )存放于 <code>Installed Packages</code> 目录之下即可</p>
 <h3> 插件推荐</h3>
 <ul>
 <li><strong>Emmet</strong> =&gt; 前端开发者必备</li>
@@ -7821,7 +7841,7 @@ PESTLE、TECOP、VUCA。</p>
     <title type="text">JDK 的安装和环境变量的配置</title>
     <id>https://vxhly.github.io/views/java/install-jdk-on-windows.html</id>
     <link href="https://vxhly.github.io/views/java/install-jdk-on-windows.html"/>
-    <updated>2024-04-16T14:39:31.000Z</updated>
+    <updated>2024-06-21T05:57:38.000Z</updated>
     <summary type="html"><![CDATA[<div class="hint-container tip">
 <p class="hint-container-title">前言</p>
 <p>JDK 是 Java 语言的软件开发工具包, 主要用于移动设备、嵌入式设备上的 java 应用程序。JDK 是整个 java 开发的核心, 它包含了 JAVA 的运行环境, JAVA 工具和 JAVA 基础的类库。这里将介绍在 Windows 下 JDK 的安装和环境变量的配置。</p>
@@ -7848,7 +7868,7 @@ PESTLE、TECOP、VUCA。</p>
 <p>安装完 JDK 后配置环境变量, 依次选择: <code>计算机</code> → <code>属性</code> → <code>高级系统设置</code> → <code>高级</code> → <code>环境变量</code> <br></p>
 <figure><img src="/assets/jdk-4.png" alt="JDK 环境变量配置" tabindex="0" loading="lazy"><figcaption>JDK 环境变量配置</figcaption></figure>
 <h3> 指定 JAVA 程序目录</h3>
-<p>新建 <code>JAVA_HOME</code> 变量 。变量值填写 <code>jdk</code> 的安装目录（本人是 <code>D:\Java\jdk</code>)<br></p>
+<p>新建 <code>JAVA_HOME</code> 变量 。变量值填写 <code>jdk</code> 的安装目录（本人是 <code>D:\Java\jdk</code> )<br></p>
 <figure><img src="/assets/jdk-5.png" alt="JDK 环境变量配置" tabindex="0" loading="lazy"><figcaption>JDK 环境变量配置</figcaption></figure>
 <h3> 修改 Path 变量</h3>
 <p>在变量值最后输入 <code>%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;</code> （注意原来 <code>Path</code> 的变量值末尾有没有 <code>;</code> 号, 如果没有, 先输入 <code>;</code> 号再输入上面的代码）<br></p>
@@ -9889,7 +9909,7 @@ PESTLE、TECOP、VUCA。</p>
     <title type="text">MySQL 数据库安全加固</title>
     <id>https://vxhly.github.io/views/liunx/mysql-database-user-policy.html</id>
     <link href="https://vxhly.github.io/views/liunx/mysql-database-user-policy.html"/>
-    <updated>2024-04-16T14:39:31.000Z</updated>
+    <updated>2024-06-21T05:57:38.000Z</updated>
     <summary type="html"><![CDATA[<div class="hint-container tip">
 <p class="hint-container-title">前言</p>
 <p>数据库作为数据管理的平台, 它的安全性首先由系统内部和网络安全两部分来决定的。对于系统管理员来说, 首先要保证系统本身的安全, 在安装 MySQL 数据时, 需要对基础环境进行较好的配置。本篇笔记将记录在 RedHat Liunx 系统下 MySQL 数据库的安全加固方法。</p>
@@ -9925,7 +9945,7 @@ PESTLE、TECOP、VUCA。</p>
 <h2> 关于密码的管理</h2>
 <p>密码是数据库安全管理的一个很重要因素, 不要将纯文本密码保存到数据库中。如果你的计算机有安全危险, 入侵者可以获得所有的密码并使用它们。相反, 应使用 <code>MD5()</code> 、 <code>SHA1()</code> 或单向哈希函数。也不要从词典中选择密码, 有专门的程序可以破解它们, 请选用至少八位, 由字母、数字和符号组成的强密码。在存取密码时, 使用 mysql 的内置函数 <code>password（）</code> 的 sql 语句, 对密码进行加密后存储。例如以下方式在 users 表中加入新用户。</p>
 <div class="language-sql line-numbers-mode" data-ext="sql"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2> 使用独立用户运行 MySQL</h2>
-<p>绝对不要作为使用 root 用户运行 <code>MySQL 服务器</code> 。这样做非常危险, 因为任何具有 FILE 权限的用户能够用 root 创建文件(例如: <code>~root/.bashrc</code>)。mysqld 拒绝使用 root 运行, 除非使用 <code>–user=root</code> 选项明显指定。应该用普通非特权用户运行 mysqld。</p>
+<p>绝对不要作为使用 root 用户运行 <code>MySQL 服务器</code> 。这样做非常危险, 因为任何具有 FILE 权限的用户能够用 root 创建文件(例如: <code>~root/.bashrc</code> )。mysqld 拒绝使用 root 运行, 除非使用 <code>–user=root</code> 选项明显指定。应该用普通非特权用户运行 mysqld。</p>
 <p>要想用其它 Unix 用户启动 mysqld, , 增加 user 选项指定 <code>/etc/my.cnf</code> 选项文件或服务器数据目录的 <code>my.cnf</code> 选项文件中的 <code>[mysqld]</code> 组的用户名。</p>
 <h3> 加固</h3>
 <p><code>/etc/my.cnf</code> 配置文件</p>
@@ -10005,7 +10025,7 @@ PESTLE、TECOP、VUCA。</p>
 <h2> 关闭对 Web 访问的支持</h2>
 <p>如果不打算让 Web 访问使用 MySQL 数据库, 没有提供诸如 PHP 这样的 Web 语言的时候, 重新设置或编译你的 PHP, 取消它们对 MySQL 的默认支持。假如服务器中使用 PHP 等 web 程序, 试试用 Web 形式非法的请求, 如果得到任何形式的 MySQL 错误, 立即分析原因, 及时修改 Web 程序, 堵住漏洞, 防止 MySQL 暴露在 web 面前。 对于 Web 的安全检查, 在 MySQL 官方文档中这么建议, 对于 web 应用, 至少检查以下清单:</p>
 <ul>
-<li>试试用 Web 形式输入单引号和双引号(<code>‘’’</code> 和 <code>‘”’</code>)。如果得到任何形式的 MySQL 错误, 立即分析原因。</li>
+<li>试试用 Web 形式输入单引号和双引号( <code>‘’’</code> 和 <code>‘”’</code> )。如果得到任何形式的 MySQL 错误, 立即分析原因。</li>
 <li>试试修改动态 URL, 可以在其中添加 <code>%22(‘”’)</code> 、 <code>%23(‘#’)</code> 和 <code>%27(‘’’)</code> 。</li>
 <li>试试在动态 URL 中修改数据类型, 使用前面示例中的字符, 包括数字和字符类型。你的应用程序应足够安全, 可以防范此类修改和类似攻击。</li>
 <li>试试输入字符、空格和特殊符号, 不要输入数值字段的数字。你的应用程序应在将它们传递到 MySQL 之前将它们删除或生成错误。将未经过检查的值传递给 MySQL 是很危险的！</li>
@@ -10027,7 +10047,7 @@ PESTLE、TECOP、VUCA。</p>
 <ul>
 <li><strong><code>--old-passwords</code></strong></li>
 </ul>
-<p>-- 强制服务器为新密码生成短(<code>pre-4.1</code>)密码哈希。当服务器必须支持旧版本客户端程序时, 为了保证兼容性这很有用。</p>
+<p>-- 强制服务器为新密码生成短( <code>pre-4.1</code> )密码哈希。当服务器必须支持旧版本客户端程序时, 为了保证兼容性这很有用。</p>
 <ul>
 <li><strong><code>(OBSOLETE) --safe-show-database</code></strong></li>
 </ul>
@@ -10039,7 +10059,7 @@ PESTLE、TECOP、VUCA。</p>
 <ul>
 <li><strong><code>--secure-auth</code></strong></li>
 </ul>
-<p>-- 不允许鉴定有旧(<code>pre-4.1</code>)密码的账户。</p>
+<p>-- 不允许鉴定有旧( <code>pre-4.1</code> )密码的账户。</p>
 <ul>
 <li><strong><code>--skip-grant-tables</code></strong></li>
 </ul>
@@ -10071,7 +10091,7 @@ PESTLE、TECOP、VUCA。</p>
     <title type="text">RedHat 系统安全加固（四）服务和进程管理</title>
     <id>https://vxhly.github.io/views/liunx/service-and-process-management.html</id>
     <link href="https://vxhly.github.io/views/liunx/service-and-process-management.html"/>
-    <updated>2024-04-16T14:39:31.000Z</updated>
+    <updated>2024-06-21T05:57:38.000Z</updated>
     <summary type="html"><![CDATA[<div class="hint-container tip">
 <p class="hint-container-title">前言</p>
 <p>本系列笔记又是 Liunx 学习系列教程的一大步, 本系列学习笔记记录 RedHat 系统的安全加固。本篇笔记是记录系统服务和进程的查看与关闭, 通俗的来说进程是运行起来的程序。唯一标示进程的是进程描述符（PID）, 在 linux 内核中是通过 task_struck 和 task_list 来定义和管理进程的。</p>
@@ -10149,7 +10169,7 @@ PESTLE、TECOP、VUCA。</p>
 <li><strong>-s &lt;信息名称或编号&gt;</strong>-------------------- 指定要送出的信息；</li>
 <li><strong>-u</strong>-------------------- 指定用户。 参数</li>
 </ul>
-<p>只有第 9 种信号(<code>SIGKILL</code>)才可以无条件终止进程, 其他信号进程都有权利忽略, 下面是常用的信号--------------------</p>
+<p>只有第 9 种信号( <code>SIGKILL</code> )才可以无条件终止进程, 其他信号进程都有权利忽略, 下面是常用的信号--------------------</p>
 <ul>
 <li><strong>HUP</strong> 1 终端断线</li>
 <li><strong>INT</strong> 2 中断（同 <code>Ctrl + C</code> ）</li>
@@ -10846,7 +10866,7 @@ PESTLE、TECOP、VUCA。</p>
     <title type="text">RedHat 系统安全加固（二）用户和文件权限</title>
     <id>https://vxhly.github.io/views/liunx/user-and-file-permissions.html</id>
     <link href="https://vxhly.github.io/views/liunx/user-and-file-permissions.html"/>
-    <updated>2024-04-16T14:39:31.000Z</updated>
+    <updated>2024-06-21T05:57:38.000Z</updated>
     <summary type="html"><![CDATA[<div class="hint-container tip">
 <p class="hint-container-title">前言</p>
 <p>本系列笔记又是 Liunx 学习系列教程的一大步, 本系列学习笔记记录 RedHat 系统的安全加固。本篇笔记是记录用户和文件的权限（主要是特殊权限）, 加强系统的防御能力。</p>
@@ -10876,7 +10896,7 @@ PESTLE、TECOP、VUCA。</p>
 <h2> 文件的默认权限</h2>
 <p>使用 <code>umask</code> 指定当前用户创建文件夹和文件的默认权限属性</p>
 <ul>
-<li>若使用者建立为 <code>文件</code> , 则预设 <code>没有可执行 (x) 项目</code> , 亦即只有 <code>rw</code> 这两个项目, 也就是最大为 <code>666</code> , 即权限为 <code>-rw-rw-rw-</code></li>
+<li>若使用者建立为 <code>文件</code> , 则预设 <code>没有可执行 ( x ) 项目</code> , 亦即只有 <code>rw</code> 这两个项目, 也就是最大为 <code>666</code> , 即权限为 <code>-rw-rw-rw-</code></li>
 <li>若使用者建立为 <code>目录</code> , 则由于 <code>x</code> 与是否可以进入此目录有关, 因此预设为所有权限均开放, 亦即为 <code>777</code> , 即权限为 <code>drwxrwxrwx</code></li>
 </ul>
 <h3> 修改默认权限</h3>
@@ -12019,7 +12039,7 @@ PESTLE、TECOP、VUCA。</p>
     <title type="text">RESTful API 设计指南（补充）</title>
     <id>https://vxhly.github.io/views/manual/restfui-api.html</id>
     <link href="https://vxhly.github.io/views/manual/restfui-api.html"/>
-    <updated>2024-04-16T14:39:31.000Z</updated>
+    <updated>2024-06-21T05:57:38.000Z</updated>
     <summary type="html"><![CDATA[<div class="hint-container tip">
 <p class="hint-container-title">前言</p>
 <p>网络应用程序, 分为前端和后端两个部分。这时候必须有一种统一的机制, 方便不同的前端设备与后端进行通信。这导致 API 构架的流行, 甚至出现 "API First" 的设计思想。<a href="http://en.wikipedia.org/wiki/Representational_state_transfer" target="_blank" rel="noopener noreferrer"> <code>RESTful API</code> </a> 是目前比较成熟的一套互联网应用程序的 API 设计理论。</p>
@@ -12184,8 +12204,10 @@ PESTLE、TECOP、VUCA。</p>
 <div class="language-json line-numbers-mode" data-ext="json"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>从上面可以看到, 如果想获取当前用户的信息, 应该去访问 <a href="http://api.github.com/user" target="_blank" rel="noopener noreferrer">api.github.com/user</a>, 然后就得到了下面结果。</p>
 <div class="language-json line-numbers-mode" data-ext="json"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>上面代码表示, 服务器给出了提示信息, 以及文档的网址。</p>
 <h2> 其他</h2>
-<p>（1）API 的身份认证应该使用 <a href="http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html" target="_blank" rel="noopener noreferrer">OAuth 2.0</a> 框架。<br>
-（2）服务器返回的数据格式, 应该尽量使用 JSON, 避免使用 XML。</p>
+<ul>
+<li>（1）API 的身份认证应该使用 <a href="http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html" target="_blank" rel="noopener noreferrer">OAuth 2.0</a> 框架。</li>
+<li>（2）服务器返回的数据格式, 应该尽量使用 JSON, 避免使用 XML。</li>
+</ul>
 ]]></content>
     <author>
       <name>星火燎原@vxhly</name>
@@ -13750,7 +13772,7 @@ PESTLE、TECOP、VUCA。</p>
     <title type="text">使用 pnpm 释放你的磁盘空间</title>
     <id>https://vxhly.github.io/views/nodejs/usage-pnpm.html</id>
     <link href="https://vxhly.github.io/views/nodejs/usage-pnpm.html"/>
-    <updated>2024-04-16T14:39:31.000Z</updated>
+    <updated>2024-06-21T05:57:38.000Z</updated>
     <summary type="html"><![CDATA[<div class="hint-container tip">
 <p class="hint-container-title">前言</p>
 <p>主要介绍 pnpm 的使用, 以及如何使用 pnpm 解决 node 依赖包庞大的问题。pnpm 依赖于 Node.js, 童鞋们要注意你的系统是否有 Node.js 环境。</p>
@@ -13838,7 +13860,7 @@ PESTLE、TECOP、VUCA。</p>
 <li>Types: <em>path</em></li>
 </ul>
 <p>The directory with links to the store. All direct and indirect dependencies of the project are linked into this directory.</p>
-<p>This is a useful setting that can solve issues with long paths on Windows. If you have some dependencies with very long paths, you can select a virtual store in the root of your drive (for instance <code>C:\my-project-store</code>).</p>
+<p>This is a useful setting that can solve issues with long paths on Windows. If you have some dependencies with very long paths, you can select a virtual store in the root of your drive (for instance <code>C:\my-project-store</code> ).</p>
 <p>Or you can set the virtual store to <code>.pnpm</code> and add it to <code>.gitignore</code> . This will make the stacktraces nicer as paths to dependencies will have one directory less.</p>
 <p><em>NOTE</em>: the virtual store cannot be shared between several projects. Every project should have its own virtual store.</p>
 </div>
